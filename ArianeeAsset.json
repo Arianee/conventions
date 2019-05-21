@@ -1,5 +1,5 @@
 {
-    "$schema": "https://arianeeschema",
+    "$schema": "https://raw.githubusercontent.com/Arianee/conventions/master/version1/ArianeeAsset.json",
     "title": "Arianee Certificate",
     "type": "object",
     "properties": {
@@ -7,7 +7,7 @@
         "title": "$schema",
         "type": "string",
         "format": "uri",
-        "default": "https://arianeeschema",
+        "default": "https://raw.githubusercontent.com/Arianee/conventions/master/version1/ArianeeAsset.json",
         "widget": "hidden"
       },
       "name": {
