@@ -1,197 +1,199 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Arianee/conventions/master/version1/ArianeeIdentity.json",
-  "properties": {
-    "$schema": {
-      "title": "$schema",
-      "type": "string",
-      "format": "uri",
-      "default": "https://raw.githubusercontent.com/Arianee/conventions/master/version1/ArianeeIdentity.json",
-      "widget": "hidden"
-    },
-    "name": {
-      "type": "string",
-      "title": "Name",
-      "format": "string"
-    },
-    "website": {
-      "type": "string",
-      "title": "Website",
-      "format": "string"
-    },
-    "mother_company": {
-      "type": "string",
-      "title": "Mother Company",
-      "format": "string"
-    },
-    "certificate_uri": {
-      "type": "string",
-      "title": "Certificate URI",
-      "format": "string"
-    },
-    "arianee_member": {
-      "type": "boolean",
-      "title": "Arianee Member",
-      "format": "string"
-    },
-    "address": {
-      "type": "object",
-      "title": "Address",
-      "properties": {
-        "street_address": {
-          "type": "string",
-          "title": "Street Address"
+    "$schema": "https://raw.githubusercontent.com/Arianee/conventions/master/version1/ArianeeIdentity.json",
+    "title": "Arianee Identity",
+    "type": "object",  
+    "properties": {
+      "$schema": {
+        "title": "$schema",
+        "type": "string",
+        "format": "uri",
+        "default": "https://raw.githubusercontent.com/Arianee/conventions/master/version1/ArianeeIdentity.json",
+        "widget": "hidden"
+      },
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "format": "string"
+      },
+      "website": {
+        "type": "string",
+        "title": "Website",
+        "format": "string"
+      },
+      "mother_company": {
+        "type": "string",
+        "title": "Mother Company",
+        "format": "string"
+      },
+      "certificate_uri": {
+        "type": "string",
+        "title": "Certificate URI",
+        "format": "string"
+      },
+      "arianee_member": {
+        "type": "boolean",
+        "title": "Arianee Member",
+        "format": "string"
+      },
+      "address": {
+        "type": "object",
+        "title": "Address",
+        "properties": {
+          "street_address": {
+            "type": "string",
+            "title": "Street Address"
+          },
+          "zipcode": {
+            "type": "string",
+            "title": "Zip Code"
+          },
+          "city": {
+            "type": "string",
+            "title": "City"
+          },
+          "state": {
+            "type": "string",
+            "title": "State"
+          },
+          "country": {
+            "type": "string",
+            "title": "Country"
+          }
         },
-        "zipcode": {
-          "type": "string",
-          "title": "Zip Code"
-        },
-        "city": {
-          "type": "string",
-          "title": "City"
-        },
-        "state": {
-          "type": "string",
-          "title": "State"
-        },
-        "country": {
-          "type": "string",
-          "title": "Country"
+        "required": [
+          "street_address",
+          "city",
+          "state",
+          "country",
+          "zipcode"
+        ]
+      },
+      "contacts": {
+        "type": "array",
+        "title": "Contacts",
+        "items": {
+          "title": "Contacts",
+          "type": "object",
+          "properties": {
+            "name": {
+              "title": "Name",
+              "type": "string"
+            },
+            "email": {
+              "title": "Email",
+              "type": "string"
+            },
+            "title": {
+              "title": "Title",
+              "type": "string"
+            }
+          }
         }
       },
-      "required": [
-        "street_address",
-        "city",
-        "state",
-        "country",
-        "zipcode"
-      ]
-    },
-    "contacts": {
-      "type": "array",
-      "title": "Contacts",
-      "items": {
-        "title": "Contacts",
+      "brandLogoHeader": {
+        "type": "string",
+        "title": "Brand Logo Header",
+        "description": "url",
+        "format": "string"
+      },
+      "brandLogoSquare": {
+        "type": "string",
+        "title": "Brand Logo Square",
+        "description": "url",
+        "format": "string"
+      },
+      "inAppHTML": {
+        "type": "string",
+        "title": "in App HTML",
+        "format": "string",
+        "widget": {
+          "id": "inAppHTML"
+        }
+      },
+      "socialmedia": {
         "type": "object",
+        "title": "Social Media",
         "properties": {
-          "name": {
-            "title": "Name",
-            "type": "string"
+          "facebook": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 40,
+            "title": "Facebook",
+            "description": "Facebook Page Id",
+            "widget": {
+              "id": "string"
+            }
           },
-          "email": {
-            "title": "Email",
-            "type": "string"
+          "instagram": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 40,
+            "title": "Instagram",
+            "description": "account",
+            "widget": {
+              "id": "string"
+            }
           },
-          "title": {
-            "title": "Title",
-            "type": "string"
+          "twitter": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 40,
+            "title": "Twitter",
+            "description": "account",
+            "widget": {
+              "id": "string"
+            }
           }
         }
-      }
-    },
-    "brandLogoHeader": {
-      "type": "string",
-      "title": "Brand Logo Header",
-      "description": "url",
-      "format": "string"
-    },
-    "brandLogoSquare": {
-      "type": "string",
-      "title": "Brand Logo Square",
-      "description": "url",
-      "format": "string"
-    },
-    "inAppHTML": {
-      "type": "string",
-      "title": "in App HTML",
-      "format": "string",
-      "widget": {
-        "id": "inAppHTML"
-      }
-    },
-    "socialmedia": {
-      "type": "object",
-      "title": "Social Media",
-      "properties": {
-        "facebook": {
-          "type": "string",
-          "minLength": 2,
-          "maxLength": 40,
-          "title": "Facebook",
-          "description": "Facebook Page Id",
-          "widget": {
-            "id": "string"
-          }
-        },
-        "instagram": {
-          "type": "string",
-          "minLength": 2,
-          "maxLength": 40,
-          "title": "Instagram",
-          "description": "account",
-          "widget": {
-            "id": "string"
-          }
-        },
-        "twitter": {
-          "type": "string",
-          "minLength": 2,
-          "maxLength": 40,
-          "title": "Twitter",
-          "description": "account",
-          "widget": {
-            "id": "string"
-          }
-        }
-      }
-    },
-    "externalContents": {
-      "type": "array",
-      "title": "External Contents",
-      "items": {
-        "type": "object",
+      },
+      "externalContents": {
+        "type": "array",
         "title": "External Contents",
-        "properties": {
-          "title": {
-            "type": "string",
-            "title": "Title",
-            "widget": {
-              "id": "string"
-            }
-          },
-          "url": {
-            "type": "string",
-            "title": "Url",
-            "widget": {
-              "id": "string"
-            }
-          },
-          "backgroundColor": {
-            "type": "string",
-            "title": "Background Color",
-            "widget": {
-              "id": "color"
-            }
-          },
-          "color": {
-            "type": "string",
-            "title": "Color",
-            "widget": {
-              "id": "color"
-            }
-          },
-          "icon": {
-            "type": "string",
-            "title": "Icon",
-            "description": "URL",
-            "widget": {
-              "id": "string"
+        "items": {
+          "type": "object",
+          "title": "External Contents",
+          "properties": {
+            "title": {
+              "type": "string",
+              "title": "Title",
+              "widget": {
+                "id": "string"
+              }
+            },
+            "url": {
+              "type": "string",
+              "title": "Url",
+              "widget": {
+                "id": "string"
+              }
+            },
+            "backgroundColor": {
+              "type": "string",
+              "title": "Background Color",
+              "widget": {
+                "id": "color"
+              }
+            },
+            "color": {
+              "type": "string",
+              "title": "Color",
+              "widget": {
+                "id": "color"
+              }
+            },
+            "icon": {
+              "type": "string",
+              "title": "Icon",
+              "description": "URL",
+              "widget": {
+                "id": "string"
+              }
             }
           }
         }
       }
-    }
-  },
-  "required": [
-    "$schema"
-  ]
-}
+    },
+    "required": [
+      "$schema"
+    ]
+  }
