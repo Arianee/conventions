@@ -1,0 +1,47 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "headers": [ {
+      "source" : "**",
+      "headers" : [ {
+        "key" : "Access-Control-Allow-Origin",
+        "value" : "*"
+      },
+      {
+        "key" : "Access-Control-Allow-Methods",
+        "value" : "POST, GET, OPTIONS, HEAD"
+      }      
+     ]
+    },
+   {
+      "source" : "**/**",
+      "headers" : [ {
+        "key" : "Access-Control-Allow-Origin",
+        "value" : "*"
+      },
+      {
+        "key" : "Access-Control-Allow-Methods",
+        "value" : "POST, GET, OPTIONS, HEAD"
+      }      
+     ]
+    },
+    {
+      "source" : "cert/*.json",
+      "headers" : [ {
+        "key" : "Access-Control-Allow-Origin",
+        "value" : "*"
+      },
+      {
+        "key" : "Access-Control-Allow-Methods",
+        "value" : "POST, GET, OPTIONS, HEAD"
+      }      
+     ]
+    }        
+    ]
+  }
+}
