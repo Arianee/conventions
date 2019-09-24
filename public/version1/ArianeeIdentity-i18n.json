@@ -1,38 +1,46 @@
 {
-    "$id": "https://cert.arianee.org/version1/ArianeeIdentity.json",
-    "$schema": "https://cert.arianee.org/version1/ArianeeIdentity.json",
+    "$id": "https://cert.arianee.org/version1/ArianeeIdentity-18n.json",
+    "$schema": "https://cert.arianee.org/version1/ArianeeIdentity-18n.json",
     "title": "Arianee Identity",
+    "description": "Describing an Arianee Identity such as a company, a third party provider, ...",
     "type": "object",  
     "properties": {
       "$schema": {
         "title": "$schema",
         "type": "string",
-        "default": "https://cert.arianee.org/version1/ArianeeIdentity.json",
+        "default": "https://cert.arianee.org/version1/ArianeeIdentity-18n.json",
         "widget": "hidden"
       },
       "name": {
         "type": "string",
-        "title": "Name"
+        "title": "Company Name",
+        "description": "Name of the company"        
       },
       "website": {
         "type": "string",
-        "title": "Website"
+        "title": "Website",
+        "description": "Company Website"
       },
-      "mother_company": {
+      "parentCompany": {
         "type": "string",
-        "title": "Mother Company"
+        "title": "Parent Company",
+        "description": "Name of parent company"
       },
-      "certificate_uri": {
+      "rpcEndpoint": {
         "type": "string",
-        "title": "Certificate URI"
+        "title": "RPC Endpoint",
+        "description": "Certificate Management Platform RPC URL"
       },
-      "arianee_member": {
+      "arianeeMember": {
         "type": "boolean",
-        "title": "Arianee Member"
+        "title": "Arianee Member",
+        "description": "Company is part of Arianee Association"
       },
       "address": {
         "type": "object",
         "title": "Address",
+        "description": "Company address",
+
         "properties": {
           "street_address": {
             "type": "string",
@@ -64,6 +72,7 @@
         ]
       },
       "contacts": {
+        "description": "List of company contact",
         "type": "array",
         "title": "Contacts",
         "items": {
@@ -85,55 +94,61 @@
           }
         }
       },
-      "brandLogoHeader": {
+      "logoHeader": {
         "type": "string",
-        "title": "Brand Logo Header",
-        "description": "url"
+        "title": "Company Logo Header",
+        "description": "Logo Header (1000x1000) transparent TBD"
       },
-      "brandLogoSquare": {
+      "logoSquare": {
         "type": "string",
-        "title": "Brand Logo Square",
-        "description": "url"
+        "title": "Company Logo Square",
+        "description": "Logo Square (1000x1000) transparent TBD"
       },
-      "inAppHTML": {
+      "coverPicture": {
         "type": "string",
-        "title": "in App HTML",
-        "widget": {
-          "id": "inAppHTML"
-        }
-      },
+        "title": "Company Cover Picture",
+        "description": "Brand Cover Square (2000x5000) transparent TBD"
+      },      
       "socialmedia": {
-        "type": "object",
+        "type": "array",
         "title": "Social Media",
-        "properties": {
-          "facebook": {
-            "type": "string",
-            "minLength": 2,
-            "maxLength": 80,
-            "title": "Facebook",
-            "description": "Facebook Page Id",
-            "widget": {
-              "id": "string"
-            }
-          },
-          "instagram": {
-            "type": "string",
-            "minLength": 2,
-            "maxLength": 80,
-            "title": "Instagram",
-            "description": "account",
-            "widget": {
-              "id": "string"
-            }
-          },
-          "twitter": {
-            "type": "string",
-            "minLength": 2,
-            "maxLength": 80,
-            "title": "Twitter",
-            "description": "account",
-            "widget": {
-              "id": "string"
+        "description": "List of Social Media",
+        "items": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "title": "Type",
+              "widget": {
+                "id": "select"
+              },
+              "oneOf": [
+                {
+                  "description": "Facebook Page Id",
+                  "enum": [
+                    "facebook"
+                  ]
+                },
+                {
+                  "description": "Instagram account",
+                  "enum": [
+                    "instagram"
+                  ]
+                },
+                {
+                  "description": "Twitter Account",
+                  "enum": [
+                    "twitter"
+                  ]
+                }
+              ]
+            },
+            "value": {
+              "type": "string",
+              "title": "Value",
+              "widget": {
+                "id": "string"
+              }
             }
           }
         }
@@ -141,6 +156,7 @@
       "externalContents": {
         "type": "array",
         "title": "External Contents",
+        "description": "List of External Contents such as website / documentation",
         "items": {
           "type": "object",
           "title": "External Contents",

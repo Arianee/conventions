@@ -1,25 +1,23 @@
 {
-  "$schema": "https://cert.arianee.org/version1/ArianeeAsseti18n.json",
+  "$id": "https://cert.arianee.org/version1/ArianeeAsset-i18n.json",
+  "$schema": "https://cert.arianee.org/version1/ArianeeAsset-i18n.json",
   "title": "Arianee Certificate",
   "type": "object",
   "properties": {
     "$schema": {
       "title": "$schema",
       "type": "string",
-      "format": "uri",
-      "default": "https://cert.arianee.org/version1/ArianeeAsseti18n.json",
+      "default": "https://cert.arianee.org/version1/ArianeeAsset-i18n.json",
       "widget": "hidden"
     },
     "name": {
       "type": "string",
       "title": "Name",
-      "format": "string",
       "default": ""
     },
     "v": {
       "type": "string",
       "title": "Version",
-      "format": "string",
       "default": "0.1"
     },
     "serialnumber": {
@@ -67,18 +65,15 @@
     },
     "brand": {
       "type": "string",
-      "title": "Brand",
-      "format": "string"
+      "title": "Brand"
     },
     "model": {
       "type": "string",
-      "title": "Model",
-      "format": "string"
+      "title": "Model"
     },
     "description": {
       "type": "string",
       "title": "Description",
-      "format": "string",
       "widget": {
         "id": "textarea"
       }
@@ -135,20 +130,17 @@
     "type": {
       "type": "string",
       "title": "Type",
-      "format": "string",
       "default": "SmartAsset"
     },
     "brandLogoHeader": {
       "type": "string",
       "title": "Brand Logo Header",
-      "description": "url",
-      "format": "string"
+      "description": "url"
     },
     "picture": {
       "type": "string",
       "title": "Main picture",
       "description": "url",
-      "format": "string",
       "buttons": [
         {
           "id": "file",
@@ -389,8 +381,7 @@
     "jsonSurcharger": {
       "type": "string",
       "title": "Json Surcharger",
-      "description": "Json URL to surcharge this certificate overtime",
-      "format": "string"
+      "description": "Json URL to surcharge this certificate overtime"
     }
   },
   "required": [

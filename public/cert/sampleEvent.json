@@ -1,0 +1,5 @@
+{
+  "$schema": "https://cert.arianee.org/version1/ArianeeEvent-i18n.json",
+  "title": "My first event",
+  "eventType": "service",
+  "description": "event description" }
