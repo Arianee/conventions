@@ -3,11 +3,11 @@
         "smartAssets" : "0x512C1FCF401133680f373a386F3f752b98070BC5",
         "identity": "0x74a13bF9eFcD1845E5A2e932849094585AA3BCF9",
         "aria": "0xB81AFe27c103bcd42f4026CF719AF6D802928765",
-        "store": "0xd2d8e2e3bfdfb6adfc24d8b68759b9e8eb163c5a",
+        "store": "0x6024a39e93eb1a29154146da7f512ee9bd304b8b",
         "staking": "0x3a125be5bb8a3e1c171947c384795b4a488b74a0",
         "creditHistory": "0x9C868D9bf85CA649f219204D16d99A240cB1F011",
         "whitelist": "0x3579669219DC20Aa79E74eEFD5fB2EcB0CE5fE0D",
-        "event": "0xf5c950be00CDB79DF2124676Bbc656a38A97A28f"   
+        "event": "0xca04f139e94a54899d50046c868e82cd4b93ead5"   
     },
     "httpProvider": "https://sokol.poa.network",
     "chainId": 77     
