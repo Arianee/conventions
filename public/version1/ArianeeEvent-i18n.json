@@ -1,19 +1,19 @@
 {
-  "$schema": "https://cert.arianee.org/version1/ArianeeEventi18n.json",
-  "title": "Event default template",
+  "$id": "https://cert.arianee.org/version1/ArianeeEvent-i18n.json",
+  "$schema": "https://cert.arianee.org/version1/ArianeeEvent-i18n.json",
+  "title": "Arianee Event",
+  "description": "Describing an Arianee Event such as servicing, auction, special event ...",
   "type": "object",
   "properties": {
     "$schema": {
       "title": "$schema",
       "type": "string",
-      "format": "uri",
-      "default": "https://cert.arianee.org/version1/ArianeeEventi18n.json",
+      "default": "https://cert.arianee.org/version1/ArianeeEvent-18n.json",
       "widget": "hidden"
     },
     "title": {
       "type": "string",
       "title": "Title",
-      "format": "string",
       "description": "Event title",
       "default": ""
     },
@@ -67,11 +67,9 @@
         }
       }
     },    
-    "type": {
+    "eventType": {
       "type": "string",
       "title": "Type",
-      "format": "string",
-      "default": "Service",
       "description": "Event type",
       "widget": {
               "id": "select"
@@ -95,7 +93,6 @@
     "description": {
       "type": "string",
       "title": "Description",
-      "format": "string",
       "widget": {
         "id": "textarea"
       }
@@ -223,7 +220,6 @@
     "location": {
       "type": "string",
       "title": "Location",
-      "format": "string",
       "description": "Event Location",
       "default": ""
     }    
