@@ -21,11 +21,6 @@
         "title": "Company Name",
         "description": "Name of the company"        
       },      
-      "website": {
-        "type": "string",
-        "title": "Website",
-        "description": "Company Website"
-      },
       "parentCompanyName": {
         "type": "string",
         "title": "Parent Company Name",
