@@ -2,7 +2,7 @@
     "$id": "https://cert.arianee.org/version1/ArianeeIdentity-18n.json",
     "$schema": "https://cert.arianee.org/version1/ArianeeIdentity-18n.json",
     "title": "Arianee Identity",
-    "description": "Describing an Arianee Identity such as a company, a third party provider, ...",
+    "description": "Describing an Arianee Brand Identity.",
     "type": "object",  
     "properties": {
       "$schema": {
@@ -13,33 +13,146 @@
       },
       "name": {
         "type": "string",
+        "title": "Brand Name",
+        "description": "Name of the brand"        
+      },
+      "companyName": {
+        "type": "string",
         "title": "Company Name",
         "description": "Name of the company"        
-      },
+      },      
       "website": {
         "type": "string",
         "title": "Website",
         "description": "Company Website"
       },
-      "parentCompany": {
+      "parentCompanyName": {
         "type": "string",
-        "title": "Parent Company",
+        "title": "Parent Company Name",
         "description": "Name of parent company"
       },
+      "description": {
+        "type": "string",
+        "title": "Description",
+        "description": "Brand / Company description in HTML (main language)",
+        "widget": {
+          "id": "textarea"
+        }
+      },
+      "externalContents": {
+        "type": "array",
+        "title": "External Contents",
+        "description": "List of External Contents such as website / documentation",
+        "items": {
+          "type": "object",
+          "title": "External Contents",
+          "properties": {
+            "type": {
+              "type": "string",
+              "title": "Type",
+              "widget": {
+                "id": "select"
+              },              
+              "enum": ["website", "main", "contacts", "shop"]
+            },            
+            "title": {
+              "type": "string",
+              "title": "Title",
+              "widget": {
+                "id": "string"
+              }
+            },
+            "url": {
+              "type": "string",
+              "title": "Url",
+              "widget": {
+                "id": "string"
+              }
+            }
+          }
+        }
+      },      
+      "descriptioni18n": {
+        "type": "array",
+        "title": "Description (languages) / external contents",
+        "description": "Brand / Company description in HTML (specific language)",
+
+        "items": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "title": "Language",
+              "widget": {
+                "id": "select"
+              },
+              "enum": ["fr-FR","en-US", "zh-TW", "zh-CN"]
+            },
+            "content": {
+              "type": "string",
+              "title": "Content",
+              "widget": {
+                "id": "textarea"
+              }
+            },
+      
+            "externalContents": {
+              "type": "array",
+              "title": "External Contents",
+              "description": "List of External Contents such as website / documentation",
+              "items": {
+                "type": "object",
+                "title": "External Contents",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "title": "Type",
+                    "widget": {
+                      "id": "select"
+                    },
+                    "enum": ["website", "main", "contacts", "shop"]
+                  },            
+                  "title": {
+                    "type": "string",
+                    "title": "Title",
+                    "widget": {
+                      "id": "string"
+                    }
+                  },
+                  "url": {
+                    "type": "string",
+                    "title": "Url",
+                    "widget": {
+                      "id": "string"
+                    }
+                  }
+                }
+              }
+            }            
+          }
+        }
+      },         
       "rpcEndpoint": {
         "type": "string",
         "title": "RPC Endpoint",
         "description": "Certificate Management Platform RPC URL"
       },
-      "arianeeMember": {
-        "type": "boolean",
+      "arianeeMembership": {
+        "type": "string",
         "title": "Arianee Member",
-        "description": "Company is part of Arianee Association"
+        "description": "Company is part of Arianee Association",
+
+        "enum": [
+          "not_member", "associate_member","group_member","maison_member"
+        ]
+    
       },
+
+
       "address": {
         "type": "object",
         "title": "Address",
-        "description": "Company address",
+        "description": "Company HQ address",
 
         "properties": {
           "street_address": {
@@ -90,25 +203,47 @@
             "title": {
               "title": "Title",
               "type": "string"
-            }
+            },
+            "type": {
+              "title": "Type",
+              "type": "string",
+              "enum": ["support", "sales", "hq"]
+            }            
           }
         }
       },
-      "logoHeader": {
+      "brandLogoHeader": {
         "type": "string",
-        "title": "Company Logo Header",
-        "description": "Logo Header (1000x1000) transparent TBD"
+        "title": "Brand Logo Header",
+        "description": "Logo Header (2000x700) transparent (working with a white background) PNG"
       },
-      "logoSquare": {
+      "brandLogoHeaderReversed": {
         "type": "string",
-        "title": "Company Logo Square",
-        "description": "Logo Square (1000x1000) transparent TBD"
-      },
-      "coverPicture": {
-        "type": "string",
-        "title": "Company Cover Picture",
-        "description": "Brand Cover Square (2000x5000) transparent TBD"
+        "title": "Brand Logo Header Reversed",
+        "description": "Logo Header (2000x700) transparent (working with a black background) PNG"
       },      
+      "brandLogoSquare": {
+        "type": "string",
+        "title": "Brand Logo Square",
+        "description": "Logo Square (1000x1000) no transparency"
+      },
+      "brandHomePicture": {
+        "type": "string",
+        "title": "Brand Collection Picture",
+        "description": "Brand Collection Picture (3200x1900) ratioed"
+      },       
+      "brandBackgroundPicture": {
+        "type": "string",
+        "title": "Brand Background Picture",
+        "description": "Brand Cover Square (1900x3200) preferably dark"
+      },         
+      "certificateBackgroundPicture": {
+        "type": "string",
+        "title": "Certificate Background Picture",
+        "description": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top"
+      },               
+
+
       "socialmedia": {
         "type": "array",
         "title": "Social Media",
@@ -122,77 +257,11 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
-                {
-                  "description": "Facebook Page Id",
-                  "enum": [
-                    "facebook"
-                  ]
-                },
-                {
-                  "description": "Instagram account",
-                  "enum": [
-                    "instagram"
-                  ]
-                },
-                {
-                  "description": "Twitter Account",
-                  "enum": [
-                    "twitter"
-                  ]
-                }
-              ]
+              "enum": ["facebook", "instagram", "twitter"]
             },
             "value": {
               "type": "string",
               "title": "Value",
-              "widget": {
-                "id": "string"
-              }
-            }
-          }
-        }
-      },
-      "externalContents": {
-        "type": "array",
-        "title": "External Contents",
-        "description": "List of External Contents such as website / documentation",
-        "items": {
-          "type": "object",
-          "title": "External Contents",
-          "properties": {
-            "title": {
-              "type": "string",
-              "title": "Title",
-              "widget": {
-                "id": "string"
-              }
-            },
-            "url": {
-              "type": "string",
-              "title": "Url",
-              "widget": {
-                "id": "string"
-              }
-            },
-            "backgroundColor": {
-              "type": "string",
-              "title": "Background Color",
-              "widget": {
-                "id": "color"
-              }
-            },
-            "color": {
-              "type": "string",
-              "title": "Color",
-              "widget": {
-                "id": "color"
-              }
-            },
-            "icon": {
-              "type": "string",
-              "title": "Icon",
-              "description": "URL",
               "widget": {
                 "id": "string"
               }
