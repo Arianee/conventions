@@ -1,0 +1,13 @@
+{
+  "contractAdresses" : {
+    "aria": "0x55d536e4d6c1993d8ef2e2a4ef77f02088419420",
+    "creditHistory": "0x502a9C8af2441a1E276909405119FaE21F3dC421",
+    "identity": "0x7a751b4784140b1957DF21F7Fb9d0D0E42021838",
+    "smartAsset" : "0x363574E6C5C71c343d7348093D84320c76d5Dd29",
+    "staking": "0xadab3c747563bbf4afd6d38012ac9961d3d01265",
+    "store": "0xB2B59AeA95446e4375D04E1A0113D85c3864a0C2",
+    "whitelist": "0xD3Eee7F8e8021DB24825c3457D5479F2B57f40EF"
+  },
+  "httpProvider": "https://core.poa.network",
+  "chainId": 99
+}
