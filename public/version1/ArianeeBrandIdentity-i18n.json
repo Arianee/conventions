@@ -1,6 +1,6 @@
 {
-    "$id": "https://cert.arianee.org/version1/ArianeeIdentity-18n.json",
-    "$schema": "https://cert.arianee.org/version1/ArianeeIdentity-18n.json",
+    "$id": "https://cert.arianee.org/version1/ArianeeBrandIdentity-i18n.json",
+    "$schema": "https://cert.arianee.org/version1/ArianeeBrandIdentity-i18n.json",
     "title": "Arianee Identity",
     "description": "Describing an Arianee Brand Identity.",
     "type": "object",  
@@ -8,7 +8,7 @@
       "$schema": {
         "title": "$schema",
         "type": "string",
-        "default": "https://cert.arianee.org/version1/ArianeeIdentity-18n.json",
+        "default": "https://cert.arianee.org/version1/ArianeeBrandIdentity-i18n.json",
         "widget": "hidden"
       },
       "name": {
@@ -48,7 +48,11 @@
               "widget": {
                 "id": "select"
               },              
-              "enum": ["website", "main", "contacts", "shop"]
+              "oneOf": [
+                    {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
+                    {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
+                    {"enum": ["other"], "title":"other", "description": "other"}
+                ]   
             },            
             "title": {
               "type": "string",
@@ -81,11 +85,16 @@
               "widget": {
                 "id": "select"
               },
-              "enum": ["fr-FR","en-US", "zh-TW", "zh-CN"]
+              "oneOf": [
+                    {"enum": ["fr-FR"], "title":"French", "description": "French"},
+                    {"enum": ["en-US"], "title":"English (american)", "description": "English (american)"},
+                    {"enum": ["zh-TW"], "title":"Traditional chinese", "description": "Traditional chinese"},
+                    {"enum": ["zh-CN"], "title":"Simplified chinese", "description": "Simplified chinese"}
+                ]                 
             },
-            "content": {
+            "description": {
               "type": "string",
-              "title": "Content",
+              "title": "Description",
               "widget": {
                 "id": "textarea"
               }
@@ -105,7 +114,11 @@
                     "widget": {
                       "id": "select"
                     },
-                    "enum": ["website", "main", "contacts", "shop"]
+                    "oneOf": [
+                          {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
+                          {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
+                          {"enum": ["other"], "title":"other", "description": "other"}
+                      ]                      
                   },            
                   "title": {
                     "type": "string",
@@ -127,23 +140,22 @@
           }
         }
       },         
-      "rpcEndpoint": {
-        "type": "string",
-        "title": "RPC Endpoint",
-        "description": "Certificate Management Platform RPC URL"
-      },
+
       "arianeeMembership": {
         "type": "string",
         "title": "Arianee Member",
         "description": "Company is part of Arianee Association",
+        "widget": {
+          "id": "select"
+        },              
+        "oneOf": [
+              {"enum": ["not_member"], "title":"Not member", "description": "Not member"},
+              {"enum": ["associate_member"], "title":"Associate Member", "description": "Associate Member"},
+              {"enum": ["group_member"], "title":"Group member", "description": "Group member"},
+              {"enum": ["maison_member"], "title":"Maison member", "description": "Maison member"}
 
-        "enum": [
-          "not_member", "associate_member","group_member","maison_member"
-        ]
-    
+          ]                
       },
-
-
       "address": {
         "type": "object",
         "title": "Address",
@@ -154,6 +166,10 @@
             "type": "string",
             "title": "Street Address"
           },
+          "street_address2": {
+            "type": "string",
+            "title": "Street Address 2"
+          },          
           "zipcode": {
             "type": "string",
             "title": "Zip Code"
@@ -170,14 +186,7 @@
             "type": "string",
             "title": "Country"
           }
-        },
-        "required": [
-          "street_address",
-          "city",
-          "state",
-          "country",
-          "zipcode"
-        ]
+        }
       },
       "contacts": {
         "description": "List of company contact",
@@ -202,43 +211,61 @@
             "type": {
               "title": "Type",
               "type": "string",
-              "enum": ["support", "sales", "hq"]
+              "widget": {
+                "id": "select"
+              },              
+              "oneOf": [
+                    {"enum": ["support"], "title":"Support", "description": "Support"},
+                    {"enum": ["sales"], "title":"Sales", "description": "Sales"},
+                    {"enum": ["hq"], "title":"Headquarter", "description": "Headquarter"},
+                    {"enum": ["other"], "title":"other", "description": "other"}
+
+                ]              
             }            
           }
         }
       },
-      "brandLogoHeader": {
-        "type": "string",
-        "title": "Brand Logo Header",
-        "description": "Logo Header (2000x700) transparent (working with a white background) PNG"
-      },
-      "brandLogoHeaderReversed": {
-        "type": "string",
-        "title": "Brand Logo Header Reversed",
-        "description": "Logo Header (2000x700) transparent (working with a black background) PNG"
-      },      
-      "brandLogoSquare": {
-        "type": "string",
-        "title": "Brand Logo Square",
-        "description": "Logo Square (1000x1000) no transparency"
-      },
-      "brandHomePicture": {
-        "type": "string",
-        "title": "Brand Collection Picture",
-        "description": "Brand Collection Picture (3200x1900) ratioed"
-      },       
-      "brandBackgroundPicture": {
-        "type": "string",
-        "title": "Brand Background Picture",
-        "description": "Brand Cover Square (1900x3200) preferably dark"
-      },         
-      "certificateBackgroundPicture": {
-        "type": "string",
-        "title": "Certificate Background Picture",
-        "description": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top"
-      },               
+      "pictures": {
+        "type": "array",
+        "title": "Pictures",
+        "description": "List of Pictures",
+        "items": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "title": "Type",
+              "widget": {
+                "id": "select"
+              },
+              "oneOf": [
+                    {"enum": ["brandLogoHeader"], "title":"Brand Logo Header (2000x700) transparent (working with a white background) PNG", "description": "Brand Logo Header (2000x700) transparent (working with a white background) PNG"},
+                    {"enum": ["brandLogoHeaderReversed"], "title":"Brand Logo Header (2000x700) transparent (working with a black background) PNG", "description": "Brand Logo Header (2000x700) transparent (working with a black background) PNG"},
+                    {"enum": ["brandLogoSquare"], "title":"Brand Logo Square (1000x1000) no transparency", "description": "Brand Logo Square (1000x1000) no transparency"},
+                    {"enum": ["brandHomePicture"], "title":"Brand Collection Picture (3200x1900) ratioed", "description": "Brand Collection Picture (3200x1900) ratioed"},
+                    {"enum": ["brandBackgroundPicture"], "title":"Brand Background picture (1900x3200) preferably dark", "description": "Brand Background picture (1900x3200) preferably dark"},
+                    {"enum": ["certificateBackgroundPicture"], "title":"Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top", "description": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top"}
 
 
+                ]
+            },
+            "url": {
+              "type": "string",
+              "title": "URL",
+              "widget": {
+                "id": "string"
+              }
+            },
+            "hash": {
+              "type": "string",
+              "title": "Image Hash",
+              "widget": {
+                "id": "string"
+              }
+            }            
+          }
+        }
+      },              
       "socialmedia": {
         "type": "array",
         "title": "Social Media",
@@ -252,7 +279,13 @@
               "widget": {
                 "id": "select"
               },
-              "enum": ["facebook", "instagram", "twitter"]
+              "oneOf": [
+                    {"enum": ["facebook"], "title":"Facebook", "description": "Facebook"},
+                    {"enum": ["instagram"], "title":"Instagram", "description": "Instagram"},
+                    {"enum": ["twitter"], "title":"Twitter", "description": "Twitter"},
+                    {"enum": ["youtube"], "title":"Youtube", "description": "Youtube"}
+
+                ]
             },
             "value": {
               "type": "string",
@@ -263,7 +296,12 @@
             }
           }
         }
-      }
+      },
+      "rpcEndpoint": {
+        "type": "string",
+        "title": "RPC Endpoint",
+        "description": "Certificate Management Platform RPC URL"
+      }      
     },
     "required": [
       "$schema"
