@@ -73,8 +73,8 @@
       },      
       "descriptioni18n": {
         "type": "array",
-        "title": "Description (languages) / external contents",
-        "description": "Brand / Company description in HTML (specific language)",
+        "title": "Other languages :  description / external contents",
+        "description": "Brand / Company description in HTML & external contents (specific language)",
 
         "items": {
           "type": "object",
@@ -189,7 +189,7 @@
         }
       },
       "contacts": {
-        "description": "List of company contact",
+        "description": "List of company contacts",
         "type": "array",
         "title": "Contacts",
         "items": {
@@ -243,6 +243,8 @@
                     {"enum": ["brandLogoHeaderReversed"], "title":"Brand Logo Header (2000x700) transparent (working with a black background) PNG", "description": "Brand Logo Header (2000x700) transparent (working with a black background) PNG"},
                     {"enum": ["brandLogoSquare"], "title":"Brand Logo Square (1000x1000) no transparency", "description": "Brand Logo Square (1000x1000) no transparency"},
                     {"enum": ["brandHomePicture"], "title":"Brand Collection Picture (3200x1900) ratioed", "description": "Brand Collection Picture (3200x1900) ratioed"},
+                    {"enum": ["brandItemBackgroundPicture"], "title":"Brand Item Background Picture (3200x1900) ratioed", "description": "Brand Item Background Picture (3200x1900) ratioed"},
+
                     {"enum": ["brandBackgroundPicture"], "title":"Brand Background picture (1900x3200) preferably dark", "description": "Brand Background picture (1900x3200) preferably dark"},
                     {"enum": ["certificateBackgroundPicture"], "title":"Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top", "description": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top"}
 
