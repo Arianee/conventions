@@ -1,5 +1,4 @@
 {
-  "$id": "https://cert.arianee.org/version1/ArianeeAsset-i18n.json",
   "$schema": "https://cert.arianee.org/version1/ArianeeAsset-i18n.json",
   "title": "Arianee Certificate",
   "type": "object",
@@ -7,19 +6,98 @@
     "$schema": {
       "title": "$schema",
       "type": "string",
-      "default": "https://cert.arianee.org/version1/ArianeeAsset-i18n.json",
-      "widget": "hidden"
+      "format": "uri",
+      "default": "https://cert.arianee.org/version1/ArianeeAsseti18n.json",
+      "widget": "hidden",
+      "description" : "Arianee Certificate i18n"
     },
     "name": {
       "type": "string",
       "title": "Name",
-      "default": ""
-    },
-    "v": {
+      "format": "string",
+      "default": "",
+      "description" : "Product Name"
+     },
+    "sku": {
       "type": "string",
-      "title": "Version",
-      "default": "0.1"
+      "title": "SKU",
+      "format": "string",
+      "default": "",
+      "description" : "Product Sku"
+    },   
+    "gtin": {
+      "type": "string",
+      "title": "GTIN",
+      "format": "string",
+      "default": "",
+      "description" : "Product GTIN"
+    },    
+    "brandInternalId": {
+      "type": "string",
+      "title": "Brand Internal ID",
+      "format": "string",
+      "default": "",
+      "description" : "Product Internal Brand ID"
+    },         
+    "category": {
+        "type": "string",
+        "title": "Category",
+        "widget": {
+            "id": "select"
+        },
+        "oneOf": [
+            {
+            "description": "Apparel",
+            "enum": [
+                "apparel"
+            ]
+            },
+            {
+            "description": "Accessory",
+            "enum": [
+                "accessory"
+            ]
+            }
+        ]
+       
     },
+    "subCategory": {
+      "type": "string",
+      "title": "Sub Category",
+      "widget": {
+          "id": "select"
+      },
+      "temp": "Shirt Dress T-shirt Sweater Vest Jacket Denim Pants Skirt Swim",
+
+      "oneOf": [
+          {
+          "description": "Shirt",
+          "enum": [
+              "shirt"
+          ]
+          },
+          {
+          "description": "Dress",
+          "enum": [
+              "dress"
+          ]
+          }          
+      ]
+    },        
+    "intended": {
+      "type": "string",
+      "title": "Intended",
+      "widget": {
+          "id": "select"
+      },
+      "temp": "Women's Men's Youth-Girls Youth-Boys Toddler-Girls Todder-Boys Infant-Girls Infant-Boys Adult Gender Neutral/Non-binary",
+
+      "oneOf": [
+          {"description": "Women's","enum": ["womens"]},
+          {"description": "Men's","enum": ["mens"]},
+          {"description": "Adult Gender Neutral","enum": ["neutral"]}          
+      ]
+    },   
     "serialnumber": {
       "type": "array",
       "title": "Serial Number",
@@ -65,22 +143,61 @@
     },
     "brand": {
       "type": "string",
-      "title": "Brand"
+      "title": "Brand",
+      "format": "string"
     },
     "model": {
       "type": "string",
-      "title": "Model"
+      "title": "Model",
+      "format": "string"
     },
     "description": {
       "type": "string",
       "title": "Description",
+      "format": "string",
       "widget": {
         "id": "textarea"
       }
     },
+    "externalContents": {
+      "required": false,
+      "type": "array",
+      "title": "External Contents",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "widget": {
+              "id": "select"
+            },              
+            "oneOf": [
+                  {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
+                  {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
+                  {"enum": ["other"], "title":"other", "description": "other"}
+              ]   
+          },              
+          "title": {
+            "type": "string",
+            "title": "Title",
+            "widget": {
+              "id": "string"
+            }
+          },
+          "url": {
+            "type": "string",
+            "title": "Url",
+            "widget": {
+              "id": "string"
+            }
+          }
+        }
+      }
+    },    
     "descriptioni18n": {
       "type": "array",
-      "title": "Description (languages)",
+      "title": "Other languages :  description / external contents",
       "items": {
         "type": "object",
         "properties": {
@@ -123,48 +240,143 @@
             "widget": {
               "id": "textarea"
             }
-          }
+          },
+          "externalContents": {
+            "required": false,
+            "type": "array",
+            "title": "External Contents",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "title": "Type",
+                  "widget": {
+                    "id": "select"
+                  },              
+                  "oneOf": [
+                        {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
+                        {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
+                        {"enum": ["other"], "title":"other", "description": "other"}
+                    ]   
+                },              
+                "title": {
+                  "type": "string",
+                  "title": "Title",
+                  "widget": {
+                    "id": "string"
+                  }
+                },
+                "url": {
+                  "type": "string",
+                  "title": "Url",
+                  "widget": {
+                    "id": "string"
+                  }
+                }
+              }
+            }
+          }          
         }
       }
-    },    
-    "type": {
+    },   
+    "msrp": {
       "type": "string",
-      "title": "Type",
-      "default": "SmartAsset"
-    },
-    "brandLogoHeader": {
+      "title": "MSRP",
+      "format": "string",
+      "default": "",
+      "description" : "Manufacturers suggested retail price (number)"
+     },
+    "currency": {
       "type": "string",
-      "title": "Brand Logo Header",
-      "description": "url"
-    },
-    "picture": {
+      "title": "Currency",
+      "format": "string",
+      "default": "",
+      "description" : "Manufacturers suggested retail price (number)",
+      "widget": {
+          "id": "select"
+        },
+        "oneOf": [
+          {
+            "description": "US Dollar",
+            "enum": [
+              "USD"
+            ]
+          },
+          {
+            "description": "Euro",
+            "enum": [
+              "EUR"
+            ]
+          },
+          {
+            "description": "Pound",
+            "enum": [
+              "GBP"
+            ]
+          }
+        ]
+    },     
+    "msrpCountry": {
       "type": "string",
-      "title": "Main picture",
-      "description": "url",
-      "buttons": [
-        {
-          "id": "file",
-          "label": "Browse"
-        }
-      ]
-    },
-    "pictures": {
+      "title": "Country (msrp)",
+      "format": "string",
+      "default": "",
+      "description" : "Country of Intended Original Sale (ISO 3166 alpha-3)"
+     
+    },      
+    "medias": {
       "type": "array",
-      "title": "Pictures",
+      "title": "Medias",
+      "description": "List of Medias (picture, video, ...)",
       "items": {
         "type": "object",
         "properties": {
-          "src": {
+          "mediaType": {
             "type": "string",
-            "title": "Picture URL",
-            "description": "url",
+            "title": "Media Type",
+            "widget": {
+              "id": "select"
+            },
+            "oneOf": [
+                  {"enum": ["picture"], "title":"Picture (png / jpg)", "description": "Picture (png / jpg)"},
+                  {"enum": ["youtube"], "title":"Youtube video", "description": "Youtube video"}                
+              ]
+          },          
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "widget": {
+              "id": "select"
+            },
+            "oneOf": [
+                  {"enum": ["product"], "title":"Product media / picture", "description": "Product media / picture"},
+                  {"enum": ["brandItemBackgroundPicture"], "title":"Brand Item Background Picture (3200x1900) ratioed", "description": "Brand Item Background Picture (3200x1900) ratioed"},
+                  {"enum": ["brandBackgroundPicture"], "title":"Brand Background picture (1900x3200) preferably dark", "description": "Brand Background picture (1900x3200) preferably dark"},
+                  {"enum": ["certificateBackgroundPicture"], "title":"Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top", "description": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top"}
+              ]
+          },
+          "url": {
+            "type": "string",
+            "title": "URL",
             "widget": {
               "id": "string"
             }
-          }
+          },
+          "hash": {
+            "type": "string",
+            "title": "Media Hash",
+            "widget": {
+              "id": "string"
+            }
+          },
+          "order": {
+            "type": "number",
+            "title": "Media Order (number)"
+          }    
         }
       }
-    },
+    },    
     "attributes": {
       "type": "array",
       "title": "Attributes",
@@ -208,6 +420,58 @@
         }
       }
     },
+    "materials": {
+      "type": "array",
+      "title": "Materials",
+      "items": {
+        "type": "object",
+        "properties": {
+          "material": {
+            "type": "string",
+            "title": "Material",
+            "widget": {
+              "id": "select"
+            },
+            "temp": "Cashmere / Cotton / Denim - Jeans / Exotic leathers / Faux fur / Fur /Leather / Linen / Polyester / Silk / Suede / Synthetic / Tweed / Velvet / Viscose / Wool",
+            "oneOf": [
+              {
+                "description": "Cashmere",
+                "enum": [
+                  "cashmere"
+                ]
+              },
+              {
+                "description": "Cotton",
+                "enum": [
+                  "cotton"
+                ]
+              },
+              {
+                "description": "Denim - Jeans",
+                "enum": [
+                  "denim-jeans"
+                ]
+              }
+            ]
+          },
+          "value": {
+            "type": "string",
+            "title": "Value",
+            "widget": {
+              "id": "string"
+            }
+          },
+          "pourcentage": {
+              "type": "string",
+              "title": "Pourcentage",
+              "description": "Pourcentage without % (numeric)",
+              "widget": {
+                "id": "string"
+              }
+            }           
+        }
+      }
+    },     
     "size": {
       "type": "array",
       "title": "Sizes",
@@ -296,95 +560,56 @@
         }
       }
     },
-    "socialmedia": {
-      "type": "object",
-      "title": "Social Media",
-      "properties": {
-        "facebook": {
-          "type": "string",
-          "minLength": 2,
-          "maxLength": 40,
-          "title": "Facebook",
-          "description": "Facebook Page Id",
-          "widget": {
-            "id": "string"
-          }
-        },
-        "instagram": {
-          "type": "string",
-          "minLength": 2,
-          "maxLength": 40,
-          "title": "Instagram",
-          "description": "account",
-          "widget": {
-            "id": "string"
-          }
-        },
-        "twitter": {
-          "type": "string",
-          "minLength": 2,
-          "maxLength": 40,
-          "title": "Twitter",
-          "description": "account",
-          "widget": {
-            "id": "string"
-          }
-        }
-      }
-    },
-    "externalContents": {
-      "required": false,
+    "manufacturingCountry": {
+      "type": "string",
+      "title": "Country (manufacturing)",
+      "format": "string",
+      "default": "",
+      "description" : "Country of manufacture in final assembly stage. (ISO 3166 alpha-3)"
+     
+    }, 
+    "facilityId": {
+      "type": "string",
+      "title": "Facility Identification number",
+      "format": "string",
+      "default": "",
+      "description" : "Facility Identification in Open Apparel Registry (OAR) or GS1 database"
+     
+    }, 
+    "productCertification": {
       "type": "array",
-      "title": "External Contents",
+      "title": "Product Certifications & Compliance",
+      "description": "List any certifications that the product has received.",
       "items": {
         "type": "object",
-        "properties": {
-          "title": {
+        "properties": {           
+          "name": {
             "type": "string",
-            "title": "Title",
+            "title": "Name",
             "widget": {
-              "id": "string"
-            }
-          },
-          "url": {
-            "type": "string",
-            "title": "Url",
-            "widget": {
-              "id": "string"
-            }
-          },
-          "backgroundColor": {
-            "type": "string",
-            "title": "Background Color",
-            "widget": {
-              "id": "color"
-            }
-          },
-          "color": {
-            "type": "string",
-            "title": "Color",
-            "widget": {
-              "id": "color"
-            }
-          },
-          "icon": {
-            "type": "string",
-            "title": "Icon",
-            "description": "URL",
-            "widget": {
-              "id": "string"
-            }
+              "id": "select"
+            },
+            "oneOf": [
+              {
+                "description": "Fair Trade",
+                "enum": [
+                  "fairtrade"
+                ]
+              },
+              {
+                  "description": "WWF",
+                  "enum": [
+                    "wwf"
+                  ]
+                }               
+            ]
           }
         }
       }
-    },
-    "jsonSurcharger": {
-      "type": "string",
-      "title": "Json Surcharger",
-      "description": "Json URL to surcharge this certificate overtime"
-    }
+    }     
   },
   "required": [
     "$schema"
   ]
 }
+

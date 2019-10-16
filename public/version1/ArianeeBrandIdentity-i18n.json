@@ -1,7 +1,7 @@
 {
     "$id": "https://cert.arianee.org/version1/ArianeeBrandIdentity-i18n.json",
     "$schema": "https://cert.arianee.org/version1/ArianeeBrandIdentity-i18n.json",
-    "title": "Arianee Identity",
+    "title": "Arianee Brand Identity",
     "description": "Describing an Arianee Brand Identity.",
     "type": "object",  
     "properties": {
