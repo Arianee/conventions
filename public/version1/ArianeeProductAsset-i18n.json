@@ -1,5 +1,5 @@
 {
-  "$schema": "https://cert.arianee.org/version1/ArianeeAsset-i18n.json",
+  "$schema": "https://cert.arianee.org/version1/ArianeeProductCertificate-i18n.json",
   "title": "Arianee Certificate",
   "type": "object",
   "properties": {
@@ -7,7 +7,7 @@
       "title": "$schema",
       "type": "string",
       "format": "uri",
-      "default": "https://cert.arianee.org/version1/ArianeeAsseti18n.json",
+      "default": "https://cert.arianee.org/version1/ArianeeProductCertificate-i18n.json",
       "widget": "hidden",
       "description" : "Arianee Certificate i18n"
     },
@@ -48,12 +48,16 @@
         "oneOf": [
             {
             "description": "Apparel",
+            "title": "Apparel",
+
             "enum": [
                 "apparel"
             ]
             },
             {
             "description": "Accessory",
+            "title": "Accessory",
+
             "enum": [
                 "accessory"
             ]
@@ -72,12 +76,16 @@
       "oneOf": [
           {
           "description": "Shirt",
+          "title": "Shirt",
+
           "enum": [
               "shirt"
           ]
           },
           {
           "description": "Dress",
+          "title": "Dress",
+
           "enum": [
               "dress"
           ]
@@ -93,9 +101,9 @@
       "temp": "Women's Men's Youth-Girls Youth-Boys Toddler-Girls Todder-Boys Infant-Girls Infant-Boys Adult Gender Neutral/Non-binary",
 
       "oneOf": [
-          {"description": "Women's","enum": ["womens"]},
-          {"description": "Men's","enum": ["mens"]},
-          {"description": "Adult Gender Neutral","enum": ["neutral"]}          
+          {"description": "Women's","title": "Women's","enum": ["womens"]},
+          {"description": "Men's","title": "Men's","enum": ["mens"]},
+          {"description": "Adult Gender Neutral","title": "Adult Gender Neutral","enum": ["neutral"]}          
       ]
     },   
     "serialnumber": {
@@ -113,18 +121,24 @@
             "oneOf": [
               {
                 "description": "Serial Number",
+                "title": "Serial Number",
+
                 "enum": [
                   "serialnumber"
                 ]
               },
               {
                 "description": "Case Number",
+                "title": "Case Number",
+
                 "enum": [
                   "casenumber"
                 ]
               },
               {
                 "description": "Movement Number",
+                "title": "Movement Number",
+
                 "enum": [
                   "movementnumber"
                 ]
@@ -141,9 +155,9 @@
         }
       }
     },
-    "brand": {
+    "subBrand": {
       "type": "string",
-      "title": "Brand",
+      "title": "Sub Brand",
       "format": "string"
     },
     "model": {
@@ -159,6 +173,46 @@
         "id": "textarea"
       }
     },
+    "subDescription": {
+      "required": false,
+      "type": "array",
+      "title": "Description (more)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "widget": {
+              "id": "select"
+            },              
+            "oneOf": [
+                  {"enum": ["service"], "title":"Servicing", "description": "Servicing"},
+                  {"enum": ["recycling"], "title":"Recycling", "description": "Recycling"},
+                  {"enum": ["other"], "title":"other", "description": "other"}
+              ]   
+          },              
+          "title": {
+            "type": "string",
+            "title": "Title",
+            "widget": {
+              "id": "string"
+            }
+          },
+          "content": {
+            "type": "string",
+            "title": "Content",
+            "widget": {
+              "id": "textarea"
+            }
+          },
+          "order": {
+            "type": "number",
+            "title": "Order (number)"                              
+          }
+        }
+      }
+    },       
     "externalContents": {
       "required": false,
       "type": "array",
@@ -191,6 +245,10 @@
             "widget": {
               "id": "string"
             }
+          },
+          "order": {
+            "type": "number",
+            "title": "Order (number)"                              
           }
         }
       }
@@ -210,24 +268,32 @@
             "oneOf": [
               {
                 "description": "French",
+                "title": "French",
+
                 "enum": [
                   "fr-FR"
                 ]
               },
               {
                 "description": "English (US)",
+                "title": "English (US)",
+
                 "enum": [
                   "en-US"
                 ]
               },
               {
                 "description": "Chinese (traditional)",
+                "title": "Chinese (traditional)",
+
                 "enum": [
                   "zh-TW"
                 ]
               },
               {
                 "description": "Chinese (simplified)",
+                "title": "Chinese (simplified)",
+                
                 "enum": [
                   "zh-CN"
                 ]
@@ -241,6 +307,46 @@
               "id": "textarea"
             }
           },
+          "subDescription": {
+            "required": false,
+            "type": "array",
+            "title": "Description (more)",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "title": "Type",
+                  "widget": {
+                    "id": "select"
+                  },              
+                  "oneOf": [
+                        {"enum": ["service"], "title":"Servicing", "description": "Servicing"},
+                        {"enum": ["recycling"], "title":"Recycling", "description": "Recycling"},
+                        {"enum": ["other"], "title":"other", "description": "other"}
+                    ]   
+                },              
+                "title": {
+                  "type": "string",
+                  "title": "Title",
+                  "widget": {
+                    "id": "string"
+                  }
+                },
+                "content": {
+                  "type": "string",
+                  "title": "Content",
+                  "widget": {
+                    "id": "textarea"
+                  }
+                },
+                "order": {
+                  "type": "number",
+                  "title": "Order (number)"                              
+                }
+              }
+            }
+          },            
           "externalContents": {
             "required": false,
             "type": "array",
@@ -273,7 +379,11 @@
                   "widget": {
                     "id": "string"
                   }
-                }
+                },
+                "order": {
+                  "type": "number",
+                  "title": "Order (number)"
+                }                  
               }
             }
           }          
@@ -281,42 +391,58 @@
       }
     },   
     "msrp": {
-      "type": "string",
-      "title": "MSRP",
-      "format": "string",
-      "default": "",
-      "description" : "Manufacturers suggested retail price (number)"
-     },
-    "currency": {
-      "type": "string",
-      "title": "Currency",
-      "format": "string",
-      "default": "",
-      "description" : "Manufacturers suggested retail price (number)",
-      "widget": {
-          "id": "select"
-        },
-        "oneOf": [
-          {
-            "description": "US Dollar",
-            "enum": [
-              "USD"
-            ]
-          },
-          {
-            "description": "Euro",
-            "enum": [
-              "EUR"
-            ]
-          },
-          {
-            "description": "Pound",
-            "enum": [
-              "GBP"
-            ]
-          }
-        ]
-    },     
+      "type": "array",
+      "title": "Manufacturers suggested retail price",
+      "items": {
+        "type": "object",
+        "properties":{
+          "msrp": {
+            "type": "string",
+            "title": "MSRP",
+            "format": "string",
+            "default": "",
+            "description" : "Manufacturers suggested retail price (number)"
+           },
+          "currency": {
+            "type": "string",
+            "title": "Currency",
+            "format": "string",
+            "default": "",
+            "description" : "Currency",
+            "widget": {
+                "id": "select"
+              },
+              "oneOf": [
+                {
+                  "title": "US Dollar",
+      
+                  "description": "US Dollar",
+                  "enum": [
+                    "USD"
+                  ]
+                },
+                {
+                  "title": "Euro",
+      
+                  "description": "Euro",
+                  "enum": [
+                    "EUR"
+                  ]
+                },
+                {
+                  "title": "Pound",
+      
+                  "description": "Pound",
+                  "enum": [
+                    "GBP"
+                  ]
+                }
+              ]
+          } 
+        }
+      }      
+    },
+        
     "msrpCountry": {
       "type": "string",
       "title": "Country (msrp)",
@@ -352,7 +478,6 @@
             "oneOf": [
                   {"enum": ["product"], "title":"Product media / picture", "description": "Product media / picture"},
                   {"enum": ["brandItemBackgroundPicture"], "title":"Brand Item Background Picture (3200x1900) ratioed", "description": "Brand Item Background Picture (3200x1900) ratioed"},
-                  {"enum": ["brandBackgroundPicture"], "title":"Brand Background picture (1900x3200) preferably dark", "description": "Brand Background picture (1900x3200) preferably dark"},
                   {"enum": ["certificateBackgroundPicture"], "title":"Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top", "description": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top"}
               ]
           },
@@ -391,18 +516,24 @@
             },
             "oneOf": [
               {
+                "title": "Color",
+
                 "description": "Color",
                 "enum": [
                   "color"
                 ]
               },
               {
+                "title": "Material",
+
                 "description": "Material",
                 "enum": [
                   "material"
                 ]
               },
               {
+                "title": "Printed",
+
                 "description": "Printed",
                 "enum": [
                   "printed"
@@ -435,18 +566,24 @@
             "temp": "Cashmere / Cotton / Denim - Jeans / Exotic leathers / Faux fur / Fur /Leather / Linen / Polyester / Silk / Suede / Synthetic / Tweed / Velvet / Viscose / Wool",
             "oneOf": [
               {
+                "title": "Cashmere",
+
                 "description": "Cashmere",
                 "enum": [
                   "cashmere"
                 ]
               },
               {
+                "title": "Cotton",
+
                 "description": "Cotton",
                 "enum": [
                   "cotton"
                 ]
               },
               {
+                "title": "Denim - Jeans",
+
                 "description": "Denim - Jeans",
                 "enum": [
                   "denim-jeans"
@@ -486,24 +623,32 @@
             },
             "oneOf": [
               {
+                "title": "Height",
+                
                 "description": "Height",
                 "enum": [
                   "height"
                 ]
               },
               {
+                "title": "Width",
+
                 "description": "Width",
                 "enum": [
                   "width"
                 ]
               },
               {
+                "title": "Depth",
+
                 "description": "Depth",
                 "enum": [
                   "depth"
                 ]
               },
               {
+                "title": "Size",
+
                 "description": "Size",
                 "enum": [
                   "depth"
@@ -526,30 +671,40 @@
             },
             "oneOf": [
               {
+                "title": "Inch",
+
                 "description": "Inch",
                 "enum": [
                   "in"
                 ]
               },
               {
+                "title": "Centimer",
+
                 "description": "Centimer",
                 "enum": [
                   "cm"
                 ]
               },
               {
+                "title": "EU",
+
                 "description": "EU",
                 "enum": [
                   "eu"
                 ]
               },
               {
+                "title": "UK",
+
                 "description": "UK",
                 "enum": [
                   "uk"
                 ]
               },
               {
+                "title": "US",
+
                 "description": "US",
                 "enum": [
                   "us"
@@ -591,12 +746,16 @@
             },
             "oneOf": [
               {
+                "title": "Fair Trade",
+
                 "description": "Fair Trade",
                 "enum": [
                   "fairtrade"
                 ]
               },
               {
+                 "title": "WWF",
+
                   "description": "WWF",
                   "enum": [
                     "wwf"
