@@ -1,13 +1,13 @@
 {
     "contractAdresses" : {
-        "smartAssets" : "0xC89Ce4735882C9F0f0FE26686c53074E09B0D550",
-        "identity": "0x59d3631c86BbE35EF041872d502F218A39FBa150",
         "aria": "0xCfEB869F69431e42cdB54A4F4f105C19C080A601",
-        "store": "0xe982E462b094850F12AF94d21D470e21bE9D0E9C",
-        "staking": "",
         "creditHistory": "0xD833215cBcc3f914bD1C9ece3EE7BF8B14f841bb",
-        "whitelist": "0x254dffcd3277C0b1660F6d42EFbB754edaBAbC2B",
-        "event": "0x9561C133DD8580860B6b7E504bC5Aa500f0f06a7"   
+        "eventArianee": "0x9561C133DD8580860B6b7E504bC5Aa500f0f06a7",
+        "identity": "0x59d3631c86BbE35EF041872d502F218A39FBa150",
+        "smartAsset" : "0xC89Ce4735882C9F0f0FE26686c53074E09B0D550",
+        "staking": "",
+        "store": "0xe982E462b094850F12AF94d21D470e21bE9D0E9C",
+        "whitelist": "0x254dffcd3277C0b1660F6d42EFbB754edaBAbC2B"
     },
     "httpProvider": "http://ec2-54-229-189-152.eu-west-1.compute.amazonaws.com:8545",
     "chainId": 1337 
