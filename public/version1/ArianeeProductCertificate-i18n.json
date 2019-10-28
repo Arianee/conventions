@@ -293,7 +293,7 @@
         }
       }
     },
-    "descriptioni18n": {
+    "i18n": {
       "type": "array",
       "title": "Other languages :  description / external contents",
       "items": {
@@ -336,9 +336,9 @@
               }
             ]
           },
-          "content": {
+          "description": {
             "type": "string",
-            "title": "Content",
+            "title": "Description",
             "widget": {
               "id": "textarea"
             }
