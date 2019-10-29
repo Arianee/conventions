@@ -20,12 +20,14 @@
             },
       "oneOf": [
         {
+          "title": "Service",
           "description": "Service",
           "enum": [
             "service"
           ]
         },
         {
+          "title": "Auction",
           "description": "Auction",
           "enum": [
             "auction"
@@ -33,6 +35,43 @@
         }
        
       ]      
+    },    
+    "language": {
+      "type": "string",
+      "title": "Language",
+      "widget": {
+        "id": "select"
+      },
+      "oneOf": [
+        {
+          "title": "French",
+          "description": "French",
+          "enum": [
+            "fr-FR"
+          ]
+        },
+        {
+          "title": "English (US)",
+          "description": "English (US)",
+          "enum": [
+            "en-US"
+          ]
+        },
+        {
+          "title": "Chinese (traditional)",
+          "description": "Chinese (traditional)",
+          "enum": [
+            "zh-TW"
+          ]
+        },
+        {
+          "title": "Chinese (simplified)",
+          "description": "Chinese (simplified)",
+          "enum": [
+            "zh-CN"
+          ]
+        }
+      ]
     },    
     "title": {
       "type": "string",
@@ -119,24 +158,28 @@
             },
             "oneOf": [
               {
+                "title": "French",
                 "description": "French",
                 "enum": [
                   "fr-FR"
                 ]
               },
               {
+                "title": "English (US)",
                 "description": "English (US)",
                 "enum": [
                   "en-US"
                 ]
               },
               {
+                "title": "Chinese (traditional)",
                 "description": "Chinese (traditional)",
                 "enum": [
                   "zh-TW"
                 ]
               },
               {
+                "title": "Chinese (simplified)",
                 "description": "Chinese (simplified)",
                 "enum": [
                   "zh-CN"
@@ -220,6 +263,74 @@
         }
       }
     },    
+
+    "medias": {
+      "type": "array",
+      "title": "Medias",
+      "description": "List of Medias (picture, video, ...)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "mediaType": {
+            "type": "string",
+            "title": "Media Type",
+            "widget": {
+              "id": "select"
+            },
+            "oneOf": [
+              {
+                "enum": [
+                  "picture"
+                ],
+                "title": "Picture (png / jpg)",
+                "description": "Picture (png / jpg)"
+              },
+              {
+                "enum": [
+                  "youtube"
+                ],
+                "title": "Youtube video",
+                "description": "Youtube video"
+              }
+            ]
+          },
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "widget": {
+              "id": "select"
+            },
+            "oneOf": [
+              {
+                "enum": [
+                  "product"
+                ],
+                "title": "Event media / picture",
+                "description": "Event media / picture"
+              }
+            ]
+          },
+          "url": {
+            "type": "string",
+            "title": "URL",
+            "widget": {
+              "id": "string"
+            }
+          },
+          "hash": {
+            "type": "string",
+            "title": "Media Hash",
+            "widget": {
+              "id": "string"
+            }
+          },
+          "order": {
+            "type": "number",
+            "title": "Media Order (number)"
+          }
+        }
+      }
+    },    
     "attributes": {
       "type": "array",
       "title": "Attributes",
@@ -234,18 +345,21 @@
             },
             "oneOf": [
               {
+                "title": "Color",
                 "description": "Color",
                 "enum": [
                   "color"
                 ]
               },
               {
+                "title": "Material",
                 "description": "Material",
                 "enum": [
                   "material"
                 ]
               },
               {
+                "title": "Printed",          
                 "description": "Printed",
                 "enum": [
                   "printed"
@@ -262,7 +376,45 @@
           }
         }
       }
-    },         
+    },     
+    "valuePrice": {
+      "type": "string",
+      "title": "Event price",
+      "default": "",
+      "description": "Event price"
+    },
+    "currencyPrice": {
+      "type": "string",
+      "title": "Currency",
+      "default": "",
+      "description": "Currency",
+      "widget": {
+        "id": "select"
+      },
+      "oneOf": [
+        {
+          "title": "US Dollar",
+          "description": "US Dollar",
+          "enum": [
+            "USD"
+          ]
+        },
+        {
+          "title": "Euro",
+          "description": "Euro",
+          "enum": [
+            "EUR"
+          ]
+        },
+        {
+          "title": "Pound",
+          "description": "Pound",
+          "enum": [
+            "GBP"
+          ]
+        }
+      ]
+    },        
     "location": {
       "type": "string",
       "title": "Location",
