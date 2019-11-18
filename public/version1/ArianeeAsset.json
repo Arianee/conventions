@@ -87,18 +87,18 @@
     "brandLogoHeader": {
       "type": "string",
       "title": "Brand Logo Header",
-      "description": "url"
+      "description": "url",
+      "widget": {
+        "id": "staticAssets"
+      }      
     },
     "picture": {
       "type": "string",
       "title": "Main picture",
       "description": "url",
-      "buttons": [
-        {
-          "id": "file",
-          "label": "Browse"
-        }
-      ]
+      "widget": {
+        "id": "staticAssets"
+      }
     },
     "pictures": {
       "type": "array",
@@ -111,7 +111,7 @@
             "title": "Picture URL",
             "description": "url",
             "widget": {
-              "id": "string"
+              "id": "staticAssets"
             }
           }
         }
@@ -302,7 +302,7 @@
             "type": "string",
             "title": "Url",
             "widget": {
-              "id": "string"
+              "id": "staticAssets"
             }
           },
           "backgroundColor": {
@@ -322,7 +322,7 @@
           "icon": {
             "type": "string",
             "title": "Icon",
-            "description": "URL",
+            "description": "Icon",
             "widget": {
               "id": "string"
             }
