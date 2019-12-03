@@ -302,7 +302,7 @@
             "type": "string",
             "title": "Url",
             "widget": {
-              "id": "staticAssets"
+              "id": "string"
             }
           },
           "backgroundColor": {
