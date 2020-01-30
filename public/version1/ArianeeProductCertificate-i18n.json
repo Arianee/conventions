@@ -79,6 +79,13 @@
           "enum": [
             "dress"
           ]
+        },
+        {
+          "description": "Watch",
+          "title": "Watch",
+          "enum": [
+            "watch"
+          ]
         }
       ]
     },
@@ -662,17 +669,17 @@
                 ]
               },
               {
-                "title": "Material",
-                "description": "Material",
-                "enum": [
-                  "material"
-                ]
-              },
-              {
                 "title": "Printed",
                 "description": "Printed",
                 "enum": [
                   "printed"
+                ]
+              },
+              {
+                "title": "Complication",
+                "description": "Complication",
+                "enum": [
+                  "complication"
                 ]
               }
             ]
@@ -720,6 +727,20 @@
                 "description": "Denim - Jeans",
                 "enum": [
                   "denim-jeans"
+                ]
+              },
+              {
+                "title": "Gold",
+                "description": "Gold",
+                "enum": [
+                  "gold"
+                ]
+              },
+              {
+                "title": "Silver",
+                "description": "Silver",
+                "enum": [
+                  "silver"
                 ]
               }
             ]
@@ -780,7 +801,7 @@
                 "title": "Size",
                 "description": "Size",
                 "enum": [
-                  "depth"
+                  "size"
                 ]
               }
             ]
@@ -811,6 +832,13 @@
                 "description": "Centimer",
                 "enum": [
                   "cm"
+                ]
+              },
+              {
+                "title": "Millimeter",
+                "description": "Millimeter",
+                "enum": [
+                  "mm"
                 ]
               },
               {
