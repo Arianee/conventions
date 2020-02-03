@@ -309,6 +309,13 @@
               },
               {
                 "enum": [
+                  "proofLinkAction"
+                ],
+                "title": "proofLinkAction",
+                "description": "proofLinkAction"
+              },
+              {
+                "enum": [
                   "other"
                 ],
                 "title": "other",
@@ -472,6 +479,13 @@
                       ],
                       "title": "Eshop",
                       "description": "Eshop"
+                    },
+                    {
+                      "enum": [
+                        "proofLinkAction"
+                      ],
+                      "title": "proofLinkAction",
+                      "description": "proofLinkAction"
                     },
                     {
                       "enum": [
