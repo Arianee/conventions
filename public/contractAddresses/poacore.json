@@ -4,10 +4,10 @@
         "identity": "0x7a751b4784140b1957DF21F7Fb9d0D0E42021838",
         "aria": "0x55d536e4d6c1993d8ef2e2a4ef77f02088419420",
         "store": "0xB2B59AeA95446e4375D04E1A0113D85c3864a0C2",
-        "staking": "0x3a125be5bb8a3e1c171947c384795b4a488b74a0",
+        "staking": "0xe085cb1b4aa0a7097d182865d24897b3837934f4",
         "creditHistory": "0x502a9C8af2441a1E276909405119FaE21F3dC421",
-        "whitelist": "0xD3Eee7F8e8021DB24825c3457D5479F2B57f40EF"   
+        "whitelist": "0xD3Eee7F8e8021DB24825c3457D5479F2B57f40EF"
     },
     "httpProvider": "https://core.poa.network",
-    "chainId": 99     
+    "chainId": 99
 }
