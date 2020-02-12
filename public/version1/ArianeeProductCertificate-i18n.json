@@ -15,29 +15,30 @@
       "type": "string",
       "title": "Name",
       "default": "",
-      "description": "Product Name"
+      "description": "Name of the product. Likely to be the first thing displayed on a wallet app."
     },
     "sku": {
       "type": "string",
       "title": "SKU",
       "default": "",
-      "description": "Product Sku"
+      "description": "The stock keeping unit (SKU) is an alphanumeric code assigned to a product by a business to identify the price, product options and manufacturer of the merchandise."
     },
     "gtin": {
       "type": "string",
       "title": "GTIN",
       "default": "",
-      "description": "Product GTIN"
+      "description": "The Global Trade Item Number (GTIN) is a globally unique 14-digit number used to identify trade items, products, or services. GTIN is also an umbrella term that refers to the entire family of UCC. EAN data structures. The entire family of data structures within the GTIN is: GTIN-12 (UPC)."
     },
     "brandInternalId": {
       "type": "string",
       "title": "Brand Internal ID",
       "default": "",
-      "description": "Product Internal Brand ID"
+      "description": "Identification number that end customers will not have access to."
     },
     "category": {
       "type": "string",
       "title": "Category",
+      "description":"Information on the broad category the product belongs to.",
       "widget": {
         "id": "select"
       },
@@ -61,6 +62,7 @@
     "subCategory": {
       "type": "string",
       "title": "Sub Category",
+      "description":"Information on the specific category the product belongs to.",
       "widget": {
         "id": "select"
       },
@@ -92,6 +94,7 @@
     "intended": {
       "type": "string",
       "title": "Intended",
+      "description":"Information on the target customer market of the product.",
       "widget": {
         "id": "select"
       },
@@ -123,6 +126,7 @@
     "serialnumber": {
       "type": "array",
       "title": "Serial Number",
+      "description": "Identification numbers that end customers will have access to. Example : “Serial Number” OR “Case Number” OR “Movement Number",
       "items": {
         "type": "object",
         "properties": {
@@ -169,12 +173,12 @@
     "subBrand": {
       "type": "string",
       "title": "Sub Brand",
-      "description": "Sub Brand"
+      "description": "This field may be used when a product is part of a sub Brand owned by the Brand who creates the certificate."
     },
     "model": {
       "type": "string",
       "title": "Model",
-      "description": "Product model"
+      "description": "Model of the product to bring precisions to the Name. Likely to be the second thing displayed on a wallet app."
     },
     "language": {
       "type": "string",
@@ -212,11 +216,11 @@
           ]
         }
       ]
-    },    
+    },
     "description": {
       "type": "string",
-      "title": "Description",     
-      "description": "Product Description",
+      "title": "Description",
+      "description": "Description of the product.HTML Accepted A description can be stored for each language",
       "widget": {
         "id": "textarea"
       }
@@ -298,7 +302,7 @@
                   "website"
                 ],
                 "title": "Website (main)",
-                "description": "Website (main)"
+                "description":"This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app. Specific external contents can be stored for each language."
               },
               {
                 "enum": [
@@ -319,7 +323,7 @@
                   "other"
                 ],
                 "title": "other",
-                "description": "other"
+                "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app. Specific external contents can be stored for each language."
               }
             ]
           },
@@ -413,7 +417,7 @@
                         "service"
                       ],
                       "title": "Servicing",
-                      "description": "Servicing"
+                      "description": "Additional descriptions linked to the product. Sub descriptions can be stored for each language"
                     },
                     {
                       "enum": [
@@ -427,7 +431,7 @@
                         "other"
                       ],
                       "title": "other",
-                      "description": "other"
+                      "description": "Additional descriptions linked to the product. Sub descriptions can be stored for each language"
                     }
                   ]
                 },
@@ -523,6 +527,7 @@
     "msrp": {
       "type": "array",
       "title": "Manufacturers suggested retail price",
+      "description":"The manufacturer's suggested retail price (MSRP) is the price a product's producer recommends it be sold for in retail stores. MSRP Country should respect ISO 3166 alpha-3",
       "items": {
         "type": "object",
         "properties": {
@@ -569,7 +574,7 @@
             "title": "Country (msrp)",
             "default": "",
             "description": "Country of Intended Original Sale (ISO 3166 alpha-3)"
-          }          
+          }
         }
       }
     },
@@ -577,7 +582,7 @@
     "medias": {
       "type": "array",
       "title": "Medias",
-      "description": "List of Medias (picture, video, ...)",
+      "description": "Picture & media used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)",
       "items": {
         "type": "object",
         "properties": {
@@ -616,28 +621,28 @@
                   "product"
                 ],
                 "title": "Product media / picture",
-                "description": "Product media / picture"
+                "description": "used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)"
               },
               {
                 "enum": [
                   "brandItemBackgroundPicture"
                 ],
                 "title": "Brand Item Background Picture (3200x1900) ratioed",
-                "description": "Brand Item Background Picture (3200x1900) ratioed"
+                "description": "(3200x1900), format : jpg/png, max 400ko created for the certificate in the list of certificates someone has. It should include a product picture."
               },
               {
                 "enum": [
                   "itemBackgroundPicture"
                 ],
                 "title": "Item Background Picture (3000x3000) ratioed",
-                "description": "Item Background Picture (3000x3000) ratioed"
-              },              
+                "description": "dark, format .jpg, (3000x3000) max 400ko created for the background of the certificate screen"
+              },
               {
                 "enum": [
                   "certificateBackgroundPicture"
                 ],
                 "title": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top",
-                "description": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top"
+                "description": "dark, no logo, format .jpg, (1900x3200), max 400ko created for the background of the transfer/proof of certificate screens"
               }
             ]
           },
@@ -665,6 +670,7 @@
     "attributes": {
       "type": "array",
       "title": "Attributes",
+      "description":"Information on the specific attributes of the product.",
       "items": {
         "type": "object",
         "properties": {
@@ -711,6 +717,7 @@
     "materials": {
       "type": "array",
       "title": "Materials",
+      "description":"Information on the materials used to manufacture the product.",
       "items": {
         "type": "object",
         "properties": {
@@ -780,6 +787,7 @@
     "size": {
       "type": "array",
       "title": "Sizes",
+      "description":"Information on the size of the product.",
       "items": {
         "type": "object",
         "properties": {
@@ -896,7 +904,7 @@
     "productCertification": {
       "type": "array",
       "title": "Product Certifications & Compliance",
-      "description": "List any certifications that the product has received.",
+      "description": "Certifications a Brand owns at the product level. It is currently an information not verified and the Brand bares all responsibilities related to its affiliation to a certification. ",
       "items": {
         "type": "object",
         "properties": {
