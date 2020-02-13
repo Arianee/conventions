@@ -1,0 +1,30 @@
+{
+  "name": "conventions",
+  "version": "1.0.0",
+  "description": "# generate docs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arianee/conventions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arianee/conventions/issues"
+  },
+  "homepage": "https://github.com/Arianee/conventions#readme",
+  "dependencies": {
+    "@arianee/arianeejs": "^0.41.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "@types/node": "^13.7.1",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.0",
+    "typescript": "^3.5.3"
+  }
+}
