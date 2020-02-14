@@ -157,6 +157,13 @@
                 "enum": [
                   "movementnumber"
                 ]
+              },
+              {
+                "description": "Vehicle Identification Number",
+                "title": "Vehicle Identification Number",
+                "enum": [
+                  "vin"
+                ]
               }
             ]
           },

@@ -51,6 +51,13 @@
                 "enum": [
                   "movementnumber"
                 ]
+              },
+              {
+                "description": "Vehicle Identification Number",
+                "title": "Vehicle Identification Number",
+                "enum": [
+                  "vin"
+                ]
               }
             ]
           },
@@ -90,7 +97,7 @@
       "description": "url",
       "widget": {
         "id": "staticAssets"
-      }      
+      }
     },
     "picture": {
       "type": "string",
