@@ -292,6 +292,7 @@
       }
     },
     "externalContents": {
+      "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
       "required": false,
       "type": "array",
       "title": "External Contents",
@@ -301,7 +302,6 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
             "widget": {
               "id": "select"
             },
@@ -318,7 +318,7 @@
                   "proofLinkAction"
                 ],
                 "title": "proofLinkAction",
-                "description": "Link called with a proof of ownership"
+                "description": "Link with a proof of ownership"
               }
             ]
           },
@@ -470,29 +470,15 @@
                         "website"
                       ],
                       "title": "Website (main)",
-                      "description": "Website (main)"
-                    },
-                    {
-                      "enum": [
-                        "eshop"
-                      ],
-                      "title": "Eshop",
-                      "description": "Eshop"
+                      "description": "Regular link"
                     },
                     {
                       "enum": [
                         "proofLinkAction"
                       ],
                       "title": "proofLinkAction",
-                      "description": "proofLinkAction"
+                      "description": "Link with a proof of ownership"
                     },
-                    {
-                      "enum": [
-                        "other"
-                      ],
-                      "title": "other",
-                      "description": "other"
-                    }
                   ]
                 },
                 "title": {
