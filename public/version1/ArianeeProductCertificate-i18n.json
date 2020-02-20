@@ -228,7 +228,7 @@
     "description": {
       "type": "string",
       "title": "Description",
-      "description": "Description of the product.HTML Accepted. \nA description can be stored for each language",
+      "description": "Description of the product. (HTML Accepted)\n A description can be stored for each language",
       "widget": {
         "id": "textarea"
       }
