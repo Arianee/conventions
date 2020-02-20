@@ -478,7 +478,7 @@
                       ],
                       "title": "proofLinkAction",
                       "description": "Link with a proof of ownership"
-                    },
+                    }
                   ]
                 },
                 "title": {
