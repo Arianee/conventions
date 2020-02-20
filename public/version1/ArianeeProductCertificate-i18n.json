@@ -15,7 +15,7 @@
       "type": "string",
       "title": "Name",
       "default": "",
-      "description": "Name of the product. Likely to be the first thing displayed on a wallet app."
+      "description": "Name of the product.\n Likely to be the first thing displayed on a wallet app."
     },
     "sku": {
       "type": "string",
@@ -126,7 +126,7 @@
     "serialnumber": {
       "type": "array",
       "title": "Serial Number",
-      "description": "Identification numbers that end customers will have access to. Example : “Serial Number” OR “Case Number” OR “Movement Number",
+      "description": "Identification numbers that end customers will have access to.",
       "items": {
         "type": "object",
         "properties": {
@@ -185,11 +185,12 @@
     "model": {
       "type": "string",
       "title": "Model",
-      "description": "Model of the product to bring precisions to the Name. Likely to be the second thing displayed on a wallet app."
+      "description": "Model of the product to bring precisions to the Name.\n Likely to be the second thing displayed on a wallet app."
     },
     "language": {
       "type": "string",
       "title": "Language",
+      "description": "Descriptions and external contents can be stored in different languages",
       "widget": {
         "id": "select"
       },
@@ -227,7 +228,7 @@
     "description": {
       "type": "string",
       "title": "Description",
-      "description": "Description of the product.HTML Accepted A description can be stored for each language",
+      "description": "Description of the product.HTML Accepted. \nA description can be stored for each language",
       "widget": {
         "id": "textarea"
       }
@@ -309,7 +310,7 @@
                   "website"
                 ],
                 "title": "Website (main)",
-                "description":"This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app. Specific external contents can be stored for each language."
+                "description":"This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app. \nSpecific external contents can be stored for each language."
               },
               {
                 "enum": [
@@ -424,7 +425,7 @@
                         "service"
                       ],
                       "title": "Servicing",
-                      "description": "Additional descriptions linked to the product. Sub descriptions can be stored for each language"
+                      "description": "Additional descriptions linked to the product. \nSub descriptions can be stored for each language"
                     },
                     {
                       "enum": [
@@ -438,7 +439,7 @@
                         "other"
                       ],
                       "title": "other",
-                      "description": "Additional descriptions linked to the product. Sub descriptions can be stored for each language"
+                      "description": "Additional descriptions linked to the product. \nSub descriptions can be stored for each language"
                     }
                   ]
                 },
@@ -911,7 +912,7 @@
     "productCertification": {
       "type": "array",
       "title": "Product Certifications & Compliance",
-      "description": "Certifications a Brand owns at the product level. It is currently an information not verified and the Brand bares all responsibilities related to its affiliation to a certification. ",
+      "description": "Certifications a Brand owns at the product level. \nIt is currently an information not verified and the Brand bares all responsibilities related to its affiliation to a certification. ",
       "items": {
         "type": "object",
         "properties": {
