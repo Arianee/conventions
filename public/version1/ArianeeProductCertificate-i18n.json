@@ -301,6 +301,7 @@
           "type": {
             "type": "string",
             "title": "Type",
+            "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
             "widget": {
               "id": "select"
             },
@@ -310,28 +311,14 @@
                   "website"
                 ],
                 "title": "Website (main)",
-                "description":"This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app. \nSpecific external contents can be stored for each language."
-              },
-              {
-                "enum": [
-                  "eshop"
-                ],
-                "title": "Eshop",
-                "description": "Eshop"
+                "description":"Regular link"
               },
               {
                 "enum": [
                   "proofLinkAction"
                 ],
                 "title": "proofLinkAction",
-                "description": "proofLinkAction"
-              },
-              {
-                "enum": [
-                  "other"
-                ],
-                "title": "other",
-                "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app. Specific external contents can be stored for each language."
+                "description": "Link called with a proof of ownership"
               }
             ]
           },
