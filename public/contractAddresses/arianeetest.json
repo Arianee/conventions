@@ -7,7 +7,8 @@
         "smartAsset" : "0xC89Ce4735882C9F0f0FE26686c53074E09B0D550",
         "staking": "",
         "store": "0xe982E462b094850F12AF94d21D470e21bE9D0E9C",
-        "whitelist": "0x254dffcd3277C0b1660F6d42EFbB754edaBAbC2B"
+        "whitelist": "0x254dffcd3277C0b1660F6d42EFbB754edaBAbC2B",
+        "lost":"0x4bf749ec68270027C5910220CEAB30Cc284c7BA2"
     },
     "httpProvider": "http://ec2-54-229-189-152.eu-west-1.compute.amazonaws.com:8545",
     "chainId": 1337 
