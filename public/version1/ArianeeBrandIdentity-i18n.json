@@ -94,7 +94,11 @@
                     {"enum": ["fr-FR"], "title":"French", "description": "French"},
                     {"enum": ["en-US"], "title":"English (american)", "description": "English (american)"},
                     {"enum": ["zh-TW"], "title":"Traditional chinese", "description": "Traditional chinese"},
-                    {"enum": ["zh-CN"], "title":"Simplified chinese", "description": "Simplified chinese"}
+                    {"enum": ["zh-CN"], "title":"Simplified chinese", "description": "Simplified chinese"},
+                    {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
+                    {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"}
+
+
                 ]                 
             },
             "description": {
