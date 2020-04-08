@@ -8,7 +8,6 @@
       "title": "$schema",
       "type": "string",
       "default": "https://cert.arianee.org/version1/ArianeeProductCertificate-i18n.json",
-      "widget": "hidden",
       "description": "Arianee Certificate i18n"
     },
     "name": {
@@ -39,9 +38,6 @@
       "type": "string",
       "title": "Category",
       "description":"Information on the broad category the product belongs to.",
-      "widget": {
-        "id": "select"
-      },
       "oneOf": [
         {
           "description": "Apparel",
@@ -63,9 +59,6 @@
       "type": "string",
       "title": "Sub Category",
       "description":"Information on the specific category the product belongs to.",
-      "widget": {
-        "id": "select"
-      },
       "temp": "Shirt Dress T-shirt Sweater Vest Jacket Denim Pants Skirt Swim",
       "oneOf": [
         {
@@ -95,9 +88,6 @@
       "type": "string",
       "title": "Intended",
       "description":"Information on the target customer market of the product.",
-      "widget": {
-        "id": "select"
-      },
       "temp": "Women's Men's Youth-Girls Youth-Boys Toddler-Girls Todder-Boys Infant-Girls Infant-Boys Adult Gender Neutral/Non-binary",
       "oneOf": [
         {
@@ -133,9 +123,6 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "widget": {
-              "id": "select"
-            },
             "oneOf": [
               {
                 "description": "Serial Number",
@@ -169,10 +156,7 @@
           },
           "value": {
             "type": "string",
-            "title": "Value",
-            "widget": {
-              "id": "string"
-            }
+            "title": "Value"
           }
         }
       }
@@ -191,9 +175,6 @@
       "type": "string",
       "title": "Language",
       "description": "Descriptions and external contents can be stored in different languages",
-      "widget": {
-        "id": "select"
-      },
       "oneOf": [
         {
           "title": "French",
@@ -222,16 +203,15 @@
           "enum": [
             "zh-CN"
           ]
-        }
+        },
+        {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
+        {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"}
       ]
     },
     "description": {
       "type": "string",
       "title": "Description",
-      "description": "Description of the product. (HTML Accepted)\n A description can be stored for each language",
-      "widget": {
-        "id": "textarea"
-      }
+      "description": "Description of the product. (HTML Accepted)\n A description can be stored for each language"
     },
     "subDescription": {
       "required": false,
@@ -243,9 +223,6 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "widget": {
-              "id": "select"
-            },
             "oneOf": [
               {
                 "enum": [
@@ -272,17 +249,11 @@
           },
           "title": {
             "type": "string",
-            "title": "Title",
-            "widget": {
-              "id": "string"
-            }
+            "title": "Title"
           },
           "content": {
             "type": "string",
-            "title": "Content",
-            "widget": {
-              "id": "textarea"
-            }
+            "title": "Content"
           },
           "order": {
             "type": "number",
@@ -302,9 +273,6 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "widget": {
-              "id": "select"
-            },
             "oneOf": [
               {
                 "enum": [
@@ -324,17 +292,11 @@
           },
           "title": {
             "type": "string",
-            "title": "Title",
-            "widget": {
-              "id": "string"
-            }
+            "title": "Title"
           },
           "url": {
             "type": "string",
-            "title": "Url",
-            "widget": {
-              "id": "staticAssets"
-            }
+            "title": "Url"
           },
           "order": {
             "type": "number",
@@ -352,9 +314,6 @@
           "language": {
             "type": "string",
             "title": "Language",
-            "widget": {
-              "id": "select"
-            },
             "oneOf": [
               {
                 "description": "French",
@@ -383,15 +342,14 @@
                 "enum": [
                   "zh-CN"
                 ]
-              }
+              },
+              {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
+              {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"}
             ]
           },
           "description": {
             "type": "string",
-            "title": "Description",
-            "widget": {
-              "id": "textarea"
-            }
+            "title": "Description"
           },
           "subDescription": {
             "required": false,
@@ -403,9 +361,6 @@
                 "type": {
                   "type": "string",
                   "title": "Type",
-                  "widget": {
-                    "id": "select"
-                  },
                   "oneOf": [
                     {
                       "enum": [
@@ -432,17 +387,11 @@
                 },
                 "title": {
                   "type": "string",
-                  "title": "Title",
-                  "widget": {
-                    "id": "string"
-                  }
+                  "title": "Title"
                 },
                 "content": {
                   "type": "string",
-                  "title": "Content",
-                  "widget": {
-                    "id": "textarea"
-                  }
+                  "title": "Content"
                 },
                 "order": {
                   "type": "number",
@@ -460,10 +409,7 @@
               "properties": {
                 "type": {
                   "type": "string",
-                  "title": "Type",
-                  "widget": {
-                    "id": "select"
-                  },
+                  "title": "Type",                  
                   "oneOf": [
                     {
                       "enum": [
@@ -483,17 +429,11 @@
                 },
                 "title": {
                   "type": "string",
-                  "title": "Title",
-                  "widget": {
-                    "id": "string"
-                  }
+                  "title": "Title"
                 },
                 "url": {
                   "type": "string",
-                  "title": "Url",
-                  "widget": {
-                    "id": "staticAssets"
-                  }
+                  "title": "Url"
                 },
                 "order": {
                   "type": "number",
@@ -523,9 +463,6 @@
             "title": "Currency",
             "default": "",
             "description": "Currency",
-            "widget": {
-              "id": "select"
-            },
             "oneOf": [
               {
                 "title": "US Dollar",
@@ -570,9 +507,6 @@
           "mediaType": {
             "type": "string",
             "title": "Media Type",
-            "widget": {
-              "id": "select"
-            },
             "oneOf": [
               {
                 "enum": [
@@ -593,9 +527,6 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "widget": {
-              "id": "select"
-            },
             "oneOf": [
               {
                 "enum": [
@@ -629,17 +560,11 @@
           },
           "url": {
             "type": "string",
-            "title": "URL",
-            "widget": {
-              "id": "staticAssets"
-            }
+            "title": "URL"
           },
           "hash": {
             "type": "string",
-            "title": "Media Hash",
-            "widget": {
-              "id": "string"
-            }
+            "title": "Media Hash"
           },
           "order": {
             "type": "number",
@@ -658,9 +583,6 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "widget": {
-              "id": "select"
-            },
             "oneOf": [
               {
                 "title": "Color",
@@ -687,10 +609,7 @@
           },
           "value": {
             "type": "string",
-            "title": "Value",
-            "widget": {
-              "id": "string"
-            }
+            "title": "Value"
           }
         }
       }
@@ -705,9 +624,6 @@
           "material": {
             "type": "string",
             "title": "Material",
-            "widget": {
-              "id": "select"
-            },
             "temp": "Cashmere / Cotton / Denim - Jeans / Exotic leathers / Faux fur / Fur /Leather / Linen / Polyester / Silk / Suede / Synthetic / Tweed / Velvet / Viscose / Wool",
             "oneOf": [
               {
@@ -749,18 +665,12 @@
           },
           "value": {
             "type": "string",
-            "title": "Value",
-            "widget": {
-              "id": "string"
-            }
+            "title": "Value"
           },
           "pourcentage": {
             "type": "string",
             "title": "Pourcentage",
-            "description": "Pourcentage without % (numeric)",
-            "widget": {
-              "id": "string"
-            }
+            "description": "Pourcentage without % (numeric)"
           }
         }
       }
@@ -775,9 +685,6 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "widget": {
-              "id": "select"
-            },
             "oneOf": [
               {
                 "title": "Height",
@@ -811,17 +718,11 @@
           },
           "value": {
             "type": "string",
-            "title": "Value",
-            "widget": {
-              "id": "string"
-            }
+            "title": "Value"
           },
           "unit": {
             "type": "string",
             "title": "Unit",
-            "widget": {
-              "id": "select"
-            },
             "oneOf": [
               {
                 "title": "Inch",
@@ -892,9 +793,6 @@
           "name": {
             "type": "string",
             "title": "Name",
-            "widget": {
-              "id": "select"
-            },
             "oneOf": [
               {
                 "title": "Fair Trade",

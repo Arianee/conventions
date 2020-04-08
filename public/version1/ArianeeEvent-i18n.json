@@ -70,7 +70,9 @@
           "enum": [
             "zh-CN"
           ]
-        }
+        },
+        {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
+        {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"}
       ]
     },    
     "title": {
@@ -184,7 +186,9 @@
                 "enum": [
                   "zh-CN"
                 ]
-              }
+              },
+              {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
+              {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"}
             ]
           },
           "title": {
