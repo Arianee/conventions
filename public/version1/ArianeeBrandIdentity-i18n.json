@@ -51,6 +51,8 @@
                     {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
                     {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
                     {"enum": ["label"], "title":"Label", "description": "label"},
+                    {"enum": ["iosScheme"], "title":"iosScheme", "description": "iosScheme"},
+                    {"enum": ["androidScheme"], "title":"androidScheme", "description": "androidScheme"},
                     {"enum": ["other"], "title":"other", "description": "other"}
                 ]
             },
@@ -125,6 +127,8 @@
                           {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
                           {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
                           {"enum": ["label"], "title":"Label", "description": "label"},
+                          {"enum": ["iosScheme"], "title":"iosScheme", "description": "iosScheme"},
+                          {"enum": ["androidScheme"], "title":"androidScheme", "description": "androidScheme"},
                           {"enum": ["other"], "title":"other", "description": "other"}
                       ]
                   },
