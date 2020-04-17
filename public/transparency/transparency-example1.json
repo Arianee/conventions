@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Castleford Mill factory",
+    "subtitle": "ISO9001 - ISO8700 Certified",
+    "type": "Assembly",
+    "date": "Thu Apr 16 2020 10:06:19 GMT+0200 (heure d’été d’Europe centrale)",
+    "avatar": "http://cert.arianee.org/transparency/avatar1.jpg",
+    "viewdetail": false,
+    "id": 0,
+    "publicKey": "",
+    "detail": {
+      "title": "Castleford Mill factory",
+      "htmlPage": "<h2 style=\"text-align: center\">Castleford mill factory</h2><p>The much loved Heritage trench coat is handmade made in Castleford, Yorkshire. We use over 100 individual process. The most intricate is the crafting of the collard which calls for more than 180 stitches to create a fluid curve. It can take up to a year for an individual to learn the sewing technique alone, demonstrating the skill and crasftsmanship we're famous for around the world</p><div style=\"display:flex;flex-direction: row; flex-wrap:nowrap; justify-content: center\"><img src=\"https://bdharianeemaxime.firebaseapp.com/pub/-M4yGgtGUcz7kn-9nbwG_arianeeResized\"/><img src=\"https://bdharianeemaxime.firebaseapp.com/pub/-M4yGhkU3hnawWi4AaYP_arianeeResized\"/></div><p>At Burberry, great British manufacturing is the foundation, the passion and the essence of everything we are today. Our gabardine and tropical gabardine fabrics are dyed and weven at the Burberry Mill located in Keighley, Yorkshire. Our iconic Heritage trench coat is handmade in Castleford, Yorkshire, using over 100 individual processes. The most intricate of these is the crafting of the collar, which calls for more than 180 stitches to create a fluid curse.</p>",
+      "place": "Castleford UK"
+    }
+  },
+  {
+    "title": "Organic Coton",
+    "subtitle": "ISO 9001:2015 Certifed",
+    "type": "Materials",
+    "date": "Thu Apr 16 2020 10:06:19 GMT+0200 (heure d’été d’Europe centrale)",
+    "avatar": "http://cert.arianee.org/transparency/avatar2.jpg",
+    "viewdetail": false,
+    "id": 1,
+    "publicKey": "",
+    "detail": {
+      "title": "Organic Coton",
+      "htmlPage": "<h2 style=\"text-align:center\">Bio Farm Coop</h2> <h3>Fransico Almeida, Peru</h3><h3>Group: Ecotton (El Carmen, Ica, Peru)</h3> <img style=\"width:80%\" src=\"https://bdharianeemaxime.firebaseapp.com/pub/-M4yP9fANn-e0ktS7BNZ_arianeeResized\"><p>Fransisco spent three years in transition to organic and now been fully organic for tho years. Ecotton provide their organic cotton farmers with ongoing technical support and advice, as weel as offer more stable prices and premiums for their efforts and more ecologically sustainable product.</p><img style=\"width:100%\" src=\"https://bdharianeemaxime.firebaseapp.com/pub/-M4yPAagtgL2h68WRgWS_arianeeResized\">",
+      "place": "Bio Farmer Coop, Peru"
+    }
+  },
+  {
+    "title": "Organic Wool Gabardine",
+    "subtitle": "ISO 9001:2015 Certified",
+    "type": "Label",
+    "date": "Thu Apr 16 2020 10:06:19 GMT+0200 (heure d’été d’Europe centrale)",
+    "avatar": "http://cert.arianee.org/transparency/avatar2.jpg",
+    "viewdetail": false,
+    "id": 2,
+    "publicKey": "",
+    "detail": {
+      "title": "Organic Coton",
+      "place": "Wool cooperative chetna, India"
+    }
+  },
+  {
+    "title": "Organic Bio cotton standard",
+    "subtitle": "Certified by CB's #19862",
+    "type": "Label",
+    "date": "Thu Apr 16 2020 10:06:19 GMT+0200 (heure d’été d’Europe centrale)",
+    "avatar": "http://cert.arianee.org/transparency/avatar3.jpg",
+    "viewdetail": false,
+    "id": 3,
+    "publicKey": "",
+    "detail": {
+      "title": "Organic Bio cotton standard",
+      "place": "Made with organically grown material"
+    }
+  },
+  {
+    "title": "Carbon neutral foot print",
+    "subtitle": "100% electricity from renewable sources",
+    "type": "Label",
+    "date": "Thu Apr 16 2020 10:06:19 GMT+0200 (heure d’été d’Europe centrale)",
+    "avatar": "http://cert.arianee.org/transparency/avatar4.jpg",
+    "viewdetail": false,
+    "id": 4,
+    "publicKey": "",
+    "detail": {
+      "title": "Carbon neutral foot print",
+      "htmlPage": "<h2 style=\"text-align: center\">Zero Footprint Carbon label</h2><img src=\"https://bdharianeemaxime.firebaseapp.com/pub/-M4yMvs-8kr-0GrBs4Kv_arianeeResized\"><h2>Our approach towards Zero</h2><p>We're making solid progress towards our targets. By the end of 2019, we ahd cut relative carbon emissions at our factoreis byt 30% compared to our 2015 baseline. What's more, 56% of our total electricity consuymption came from renewable sources in 2019. We are working towards corld-class efficiency, through innovating our existing processes and implementing large-scale investment projects. And we are forming both global and local partenerships focused on sharing knowledge and expertise to cut emissions across our value chain.</p><div><div style=\"display:flex;flex-direction: row;justify-content: flex-start;align-items: center\"><img style=\"display:block;width:30px;height:30px;margin:10px\" src=\"https://bdharianeemaxime.firebaseapp.com/pub/-M4yMv7V5F-qq-3y-YN7_arianeeResized\"><span>Zero waste water</span></div> <div <div style=\"display:flex;flex-direction: row;justify-content: flex-start;align-items: center\"><img style=\"display:block;width:30px;height:30px;margin:10px\" src=\"https://bdharianeemaxime.firebaseapp.com/pub/-M4yMv7V5F-qq-3y-YN7_arianeeResized\"><span>Recycling packing</span></div> <div <div style=\"display:flex;flex-direction: row;justify-content: flex-start;align-items: center\"><img style=\"display:block;width:30px;height:30px;margin:10px\" src=\"https://bdharianeemaxime.firebaseapp.com/pub/-M4yMv7V5F-qq-3y-YN7_arianeeResized\"><span>100% electricity from renewable sources</span></div></div>"
+    }
+  }
+]

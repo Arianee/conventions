@@ -287,6 +287,13 @@
                 ],
                 "title": "proofLinkAction",
                 "description": "Link with a proof of ownership"
+              },
+              {
+                "enum": [
+                  "transparency"
+                ],
+                "title": "transparency",
+                "description": "Url of transparency events json"
               }
             ]
           },
@@ -409,7 +416,7 @@
               "properties": {
                 "type": {
                   "type": "string",
-                  "title": "Type",                  
+                  "title": "Type",
                   "oneOf": [
                     {
                       "enum": [
@@ -424,6 +431,13 @@
                       ],
                       "title": "proofLinkAction",
                       "description": "Link with a proof of ownership"
+                    },
+                    {
+                      "enum": [
+                        "transparency"
+                      ],
+                      "title": "transparency",
+                      "description": "Url of transparency events json"
                     }
                   ]
                 },
