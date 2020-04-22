@@ -205,7 +205,8 @@
           ]
         },
         {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
-        {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"}
+        {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
+        {"enum": ["de_DE"], "title":"German", "description": "German"}
       ]
     },
     "description": {
@@ -351,7 +352,8 @@
                 ]
               },
               {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
-              {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"}
+              {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
+              {"enum": ["de_DE"], "title":"German", "description": "German"}
             ]
           },
           "description": {

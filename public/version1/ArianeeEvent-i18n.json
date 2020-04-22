@@ -33,9 +33,9 @@
             "auction"
           ]
         }
-       
-      ]      
-    },    
+
+      ]
+    },
     "language": {
       "type": "string",
       "title": "Language",
@@ -72,9 +72,10 @@
           ]
         },
         {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
-        {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"}
+        {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
+        {"enum": ["de_DE"], "title":"German", "description": "German"}
       ]
-    },    
+    },
     "title": {
       "type": "string",
       "title": "Title",
@@ -145,7 +146,7 @@
           }
         }
       }
-    }, 
+    },
     "i18n": {
       "type": "array",
       "title": "Other contents (international)",
@@ -188,7 +189,8 @@
                 ]
               },
               {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
-              {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"}
+              {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
+              {"enum": ["de_DE"], "title":"German", "description": "German"}
             ]
           },
           "title": {
@@ -263,10 +265,10 @@
                 }
               }
             }
-          }                     
+          }
         }
       }
-    },    
+    },
 
     "medias": {
       "type": "array",
@@ -334,7 +336,7 @@
           }
         }
       }
-    },    
+    },
     "attributes": {
       "type": "array",
       "title": "Attributes",
@@ -363,7 +365,7 @@
                 ]
               },
               {
-                "title": "Printed",          
+                "title": "Printed",
                 "description": "Printed",
                 "enum": [
                   "printed"
@@ -380,7 +382,7 @@
           }
         }
       }
-    },     
+    },
     "valuePrice": {
       "type": "string",
       "title": "Event price",
@@ -418,13 +420,13 @@
           ]
         }
       ]
-    },        
+    },
     "location": {
       "type": "string",
       "title": "Location",
       "description": "Event Location",
       "default": ""
-    }    
+    }
   },
   "required": [
     "$schema"
