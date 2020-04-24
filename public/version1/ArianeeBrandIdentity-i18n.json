@@ -40,9 +40,9 @@
         "description": "List of External Contents such as website / documentation",
         "items": {
           "type": "object",
-          "title": "External Contents",
           "properties": {
             "type": {
+              "title": "Type",
               "type": "string",
               "widget": {
                 "id": "select"
@@ -115,9 +115,9 @@
               "description": "List of External Contents such as website / documentation",
               "items": {
                 "type": "object",
-                "title": "External Contents",
                 "properties": {
                   "type": {
+                    "title": "Type",
                     "type": "string",
                     "widget": {
                       "id": "select"
