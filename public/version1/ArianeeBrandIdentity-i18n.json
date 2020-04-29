@@ -14,22 +14,22 @@
       "name": {
         "type": "string",
         "title": "Brand Name",
-        "description": "Name of the brand"
+        "description": "Name of the Brand.\n Likely to be one of the first things displayed on a wallet app."
       },
       "companyName": {
         "type": "string",
         "title": "Company Name",
-        "description": "Name of the company"
+        "description": "Name of the Company who owns the Brand."
       },
       "parentCompanyName": {
         "type": "string",
         "title": "Parent Company Name",
-        "description": "Name of parent company"
+        "description": "Name of the Company who owns the Company who owns the Brand. \n Used for Groups with multiple Companies."
       },
       "description": {
         "type": "string",
         "title": "Description",
-        "description": "Brand / Company description in HTML (main language)",
+        "description": "Description of the Brand / Company. (HTML Accepted)\n A description can be stored for each language",
         "widget": {
           "id": "textarea"
         }
@@ -37,7 +37,7 @@
       "externalContents": {
         "type": "array",
         "title": "External Contents",
-        "description": "List of External Contents such as website / documentation",
+        "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app at the Brand level.\n Specific external contents can be stored for each language.",
         "items": {
           "type": "object",
           "properties": {
@@ -50,7 +50,7 @@
               "oneOf": [
                     {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
                     {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
-                    {"enum": ["label"], "title":"Label", "description": "label"},
+                    {"enum": ["label"], "title":"Label", "description": "official label supported by the Brand and its products"},
                     {"enum": ["iosScheme"], "title":"iosScheme", "description": "iosScheme"},
                     {"enum": ["androidScheme"], "title":"androidScheme", "description": "androidScheme"},
                     {"enum": ["other"], "title":"other", "description": "other"}
@@ -80,7 +80,7 @@
       "i18n": {
         "type": "array",
         "title": "Other languages :  description / external contents",
-        "description": "Brand / Company description in HTML & external contents (specific language)",
+        "description": "Description of the Brand / Company in languages different than the default one. (HTML Accepted)",
 
         "items": {
           "type": "object",
@@ -112,7 +112,7 @@
             "externalContents": {
               "type": "array",
               "title": "External Contents",
-              "description": "List of External Contents such as website / documentation",
+              "description": "Tanslation or specific links to external contents the Brand whish to introduce to the end customer in a wallet app at the Brand level and in languages different than the default one.",
               "items": {
                 "type": "object",
                 "properties": {
@@ -159,7 +159,7 @@
       "arianeeMembership": {
         "type": "string",
         "title": "Arianee Member",
-        "description": "Company is part of Arianee Association",
+        "description": "Is the Company a member of the Arianee project ?",
         "widget": {
           "id": "select"
         },
@@ -230,8 +230,8 @@
                 "id": "select"
               },
               "oneOf": [
-                    {"enum": ["support"], "title":"Support", "description": "Support"},
-                    {"enum": ["sales"], "title":"Sales", "description": "Sales"},
+                    {"enum": ["support"], "title":"Support", "description": "Customer Support"},
+                    {"enum": ["sales"], "title":"Sales", "description": "Sales team"},
                     {"enum": ["hq"], "title":"Headquarter", "description": "Headquarter"},
                     {"enum": ["other"], "title":"other", "description": "other"}
 
@@ -243,7 +243,7 @@
       "pictures": {
         "type": "array",
         "title": "Pictures",
-        "description": "List of Pictures",
+        "description": "Pictures & media used to support the presentation of the Brand and products in the wallet app.",
         "items": {
           "type": "object",
           "properties": {
@@ -286,7 +286,7 @@
       "socialmedia": {
         "type": "array",
         "title": "Social Media",
-        "description": "List of Social Media",
+        "description": "Links to most popular Social Media.",
         "items": {
           "type": "object",
           "properties": {
