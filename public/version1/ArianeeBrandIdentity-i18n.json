@@ -242,8 +242,8 @@
       },
       "pictures": {
         "type": "array",
-        "title": "Pictures",
-        "description": "Pictures & media used to support the presentation of the Brand and products in the wallet app.",
+        "title": "Pictures & Medias",
+        "description": "Pictures & Medias used to support the presentation of the Brand and products in the wallet app.",
         "items": {
           "type": "object",
           "properties": {
