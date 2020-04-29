@@ -14,21 +14,21 @@
     "eventType": {
       "type": "string",
       "title": "Type",
-      "description": "Event type",
+      "description": "The type of Event.",
       "widget": {
               "id": "select"
             },
       "oneOf": [
         {
           "title": "Service",
-          "description": "Service",
+          "description": "Service - usually issued by customer support.",
           "enum": [
             "service"
           ]
         },
         {
           "title": "Auction",
-          "description": "Auction",
+          "description": "Auction - usually issued when a financial transaction and a transfer of certificate are involved.",
           "enum": [
             "auction"
           ]
@@ -38,39 +38,15 @@
     },
     "language": {
       "type": "string",
-      "title": "Language",
+      "title": "Default Language",
       "widget": {
         "id": "select"
       },
       "oneOf": [
-        {
-          "title": "French",
-          "description": "French",
-          "enum": [
-            "fr-FR"
-          ]
-        },
-        {
-          "title": "English (US)",
-          "description": "English (US)",
-          "enum": [
-            "en-US"
-          ]
-        },
-        {
-          "title": "Chinese (traditional)",
-          "description": "Chinese (traditional)",
-          "enum": [
-            "zh-TW"
-          ]
-        },
-        {
-          "title": "Chinese (simplified)",
-          "description": "Chinese (simplified)",
-          "enum": [
-            "zh-CN"
-          ]
-        },
+        {"enum": ["fr-FR"], "title": "French", "description": "French"},
+        {"enum": ["en-US"], "title": "English (US)", "description": "English (US)"},
+        {"enum": ["zh-TW"], "title": "Chinese (traditional)","description": "Chinese (traditional)"},
+        {"enum": ["zh-CN"], "title": "Chinese (simplified)","description": "Chinese (simplified)"},
         {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
         {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
         {"enum": ["de_DE"], "title":"German", "description": "German"}
@@ -79,12 +55,13 @@
     "title": {
       "type": "string",
       "title": "Title",
-      "description": "Event title",
+      "description": "Event title. \n Likely to be the first thing displayed on a wallet app.",
       "default": ""
     },
     "description": {
       "type": "string",
       "title": "Description",
+      "description": "Description of the Event. \n A description can be stored for each language",
       "widget": {
         "id": "textarea"
       }
@@ -93,6 +70,7 @@
       "required": false,
       "type": "array",
       "title": "External Contents",
+      "description": "This field is designed to store the links to external contents the Event issuer whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
       "items": {
         "type": "object",
         "properties": {
@@ -103,27 +81,9 @@
               "id": "select"
             },
             "oneOf": [
-              {
-                "enum": [
-                  "website"
-                ],
-                "title": "Website (main)",
-                "description": "Website (main)"
-              },
-              {
-                "enum": [
-                  "eshop"
-                ],
-                "title": "Eshop",
-                "description": "Eshop"
-              },
-              {
-                "enum": [
-                  "other"
-                ],
-                "title": "other",
-                "description": "other"
-              }
+              {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
+              {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
+              {"enum": ["other"], "title":"other", "description": "other"}
             ]
           },
           "title": {
@@ -149,7 +109,8 @@
     },
     "i18n": {
       "type": "array",
-      "title": "Other contents (international)",
+      "title": "Other languages : Title / Description / External contents",
+      "description": "Events' details in languages different than the default one.",
       "items": {
         "type": "object",
         "properties": {
@@ -160,34 +121,10 @@
               "id": "select"
             },
             "oneOf": [
-              {
-                "title": "French",
-                "description": "French",
-                "enum": [
-                  "fr-FR"
-                ]
-              },
-              {
-                "title": "English (US)",
-                "description": "English (US)",
-                "enum": [
-                  "en-US"
-                ]
-              },
-              {
-                "title": "Chinese (traditional)",
-                "description": "Chinese (traditional)",
-                "enum": [
-                  "zh-TW"
-                ]
-              },
-              {
-                "title": "Chinese (simplified)",
-                "description": "Chinese (simplified)",
-                "enum": [
-                  "zh-CN"
-                ]
-              },
+              {"enum": ["fr-FR"], "title":"French", "description": "French"},
+              {"enum": ["en-US"], "title":"English (US)", "description": "English (US)"},
+              {"enum": ["zh-TW"], "title":"Chinese (traditional)", "description": "Chinese (traditional)"},
+              {"enum": ["zh-CN"], "title":"Chinese (simplified)", "description": "Chinese (simplified)"},
               {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
               {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
               {"enum": ["de_DE"], "title":"German", "description": "German"}
@@ -203,6 +140,7 @@
           "description": {
             "type": "string",
             "title": "Description",
+            "description": "Description of the Event. \n A description can be stored for each language",
             "widget": {
               "id": "textarea"
             }
@@ -212,6 +150,7 @@
             "required": false,
             "type": "array",
             "title": "External Contents",
+            "description": "This field is designed to store the links to external contents the Event issuer whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
             "items": {
               "type": "object",
               "properties": {
@@ -222,27 +161,9 @@
                     "id": "select"
                   },
                   "oneOf": [
-                    {
-                      "enum": [
-                        "website"
-                      ],
-                      "title": "Website (main)",
-                      "description": "Website (main)"
-                    },
-                    {
-                      "enum": [
-                        "eshop"
-                      ],
-                      "title": "Eshop",
-                      "description": "Eshop"
-                    },
-                    {
-                      "enum": [
-                        "other"
-                      ],
-                      "title": "other",
-                      "description": "other"
-                    }
+                    {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
+                    {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
+                    {"enum": ["other"], "title":"other", "description": "other"}
                   ]
                 },
                 "title": {
@@ -272,8 +193,8 @@
 
     "medias": {
       "type": "array",
-      "title": "Medias",
-      "description": "List of Medias (picture, video, ...)",
+      "title": "Pictures & Medias",
+      "description": "Pictures & Medias used to support the presentation of the Event in the wallet app.",
       "items": {
         "type": "object",
         "properties": {
@@ -339,7 +260,8 @@
     },
     "attributes": {
       "type": "array",
-      "title": "Attributes",
+      "title": "Specific Attributes",
+      "description":"Information on the specific attributes of the Event.",
       "items": {
         "type": "object",
         "properties": {
@@ -385,9 +307,9 @@
     },
     "valuePrice": {
       "type": "string",
-      "title": "Event price",
+      "title": "Price",
       "default": "",
-      "description": "Event price"
+      "description": "Price of the service related to the event, if applicable."
     },
     "currencyPrice": {
       "type": "string",
@@ -424,7 +346,7 @@
     "location": {
       "type": "string",
       "title": "Location",
-      "description": "Event Location",
+      "description": "Location related to the event, if applicable.",
       "default": ""
     }
   },
