@@ -49,7 +49,7 @@
         {"enum": ["zh-CN"], "title": "Chinese (simplified)","description": "Chinese (simplified)"},
         {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
         {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
-        {"enum": ["de_DE"], "title":"German", "description": "German"}
+        {"enum": ["de-DE"], "title":"German", "description": "German"}
       ]
     },
     "title": {
@@ -127,7 +127,7 @@
               {"enum": ["zh-CN"], "title":"Chinese (simplified)", "description": "Chinese (simplified)"},
               {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
               {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
-              {"enum": ["de_DE"], "title":"German", "description": "German"}
+              {"enum": ["de-DE"], "title":"German", "description": "German"}
             ]
           },
           "title": {
