@@ -1,0 +1,34 @@
+{
+    "$schema": "https://cert.arianee.org/version1/ArianeeEvent-i18n.json",
+    "title": "Event title",
+    "eventType": "service",
+    "description": "Event description",
+    "language": "en-US",
+    "i18n":[{
+        "language": "fr-FR",
+        "title": "Titre d'évènement",
+        "description": "Contenu d'évènement",
+        "externalContents": [{
+            "title": "Site web Arianee",
+            "type": "website",
+            "url": "https://arianee.org"
+        }]
+    }],
+    "externalContents": [{
+        "title": "Arianee Website",
+        "type": "website",
+        "url": "https://arianee.org"
+    }],
+    "attributes": [{
+        "type": "color",
+        "value": "green"
+    }],
+    "medias": [{
+        "mediaType": "picture",
+        "type": "product",
+        "url": "https://theseus.arianee.org/assets/img/arianee@2x.png"
+    }],
+    "location": "Paris",
+    "valuePrice": "1000",
+    "currencyPrice": "EUR"    
+}
