@@ -6,9 +6,10 @@
     "identity": "0x6f5d3ac15576f0da108cde3b7bbbf8f89eb8e7b2",
     "smartAsset" : "0x512C1FCF401133680f373a386F3f752b98070BC5",
     "staking": "0xa8e4371ab5626b68de62cdd61d3887ce27de1a98",
-    "store": "0x4f001a00034e0d823c30819166dea654cd8b1939",
+    "store": "0xFbC3FCf7F66b26A21BBFe56D2F9EC6bc7922F04f",
     "whitelist": "0x3579669219DC20Aa79E74eEFD5fB2EcB0CE5fE0D",
-    "lost":"0x3Cc02453807B17e79471d134Af8AE57d35E46FdA"
+    "lost":"0x3Cc02453807B17e79471d134Af8AE57d35E46FdA",
+    "message": "0xA187Ff8836e1F1BDD44406667bD74283F7b6f199"
   },
   "httpProvider": "https://sokol.poa.network",
   "chainId": 77
