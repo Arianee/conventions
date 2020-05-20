@@ -1,15 +1,15 @@
 {
-    "contractAdresses" : {
-        "aria": "0xCfEB869F69431e42cdB54A4F4f105C19C080A601",
-        "creditHistory": "0xD833215cBcc3f914bD1C9ece3EE7BF8B14f841bb",
-        "eventArianee": "0x9561C133DD8580860B6b7E504bC5Aa500f0f06a7",
-        "identity": "0x59d3631c86BbE35EF041872d502F218A39FBa150",
-        "smartAsset" : "0xC89Ce4735882C9F0f0FE26686c53074E09B0D550",
-        "staking": "",
-        "store": "0xe982E462b094850F12AF94d21D470e21bE9D0E9C",
-        "whitelist": "0x254dffcd3277C0b1660F6d42EFbB754edaBAbC2B",
-        "lost":"0x4bf749ec68270027C5910220CEAB30Cc284c7BA2"
-    },
-    "httpProvider": "http://ec2-54-229-189-152.eu-west-1.compute.amazonaws.com:8545",
-    "chainId": 1337 
+  "contractAdresses": {
+    "aria": "0x90B510C520CD0d48F6abE56F8bf45Ab8Cd859839",
+    "creditHistory": "0x3FCB33B1Ab68AC3CF262d510f2Bb63F603b2bE14",
+    "eventArianee": "0xaa6A0c02301d7d0b213dbEC2B024420a6cDF0229",
+    "identity": "0xEa1FEb46898Afc99A3C5D0c2fAd3f468b8722326",
+    "smartAsset": "0x1cBB078f21888ebc951c6B88D3071D99f618D043",
+    "staking": "0x1FCa443217407860866be9b0426c5F8193d05668",
+    "store": "0x93Ce0cd82BC9f5c46393e205D8161FdC7FCd2038",
+    "whitelist": "0xf26027cb747C1C670453AaC183622507943B44c4",
+    "lost": "0x4bf749ec68270027C5910220CEAB30Cc284c7BA2"
+  },
+  "httpProvider": "http://ec2-34-245-220-17.eu-west-1.compute.amazonaws.com:8545",
+  "chainId": 82661126
 }
