@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Plan-les-Ouates Manufacture",
+    "subtitle": "In Geneva",
+    "type": "Assembly",
+    "date": "Thu Apr 20 2020 10:06:19 GMT+0200 (heure d’été d’Europe centrale)",
+    "avatar": "http://cert.arianee.org/transparency/avatar1.jpg",
+    "viewdetail": false,
+    "id": 0,
+    "publicKey": "",
+    "detail": {
+      "title": "Plan-les-Ouates Manufacture",
+      "htmlPage": "<h2 style=\"text-align: center\">Plan-les-Ouates Manufacture in Geneva</h2><p style=\"text-align:justify\">Every last detail from Vallée de Joux to the Plan-les-Ouates Manufacture in Geneva reflects Vacheron Constantin's treasured value of harmony. The company's ambition is to champion artistry, agility and human interaction. An integral part of the Manufacture’s DNA, this is the force that powers our human endeavor each and every day. The history that is yet to be written is driven by two words: audacity and timelessness.</p><div style=\"display:flex;flex-direction: row; flex-wrap:nowrap; justify-content: center\"><img src=\"https://bdh-arianee-showroom.firebaseapp.com/pub/-M7wxkqc4-f_eOA_gkUF_arianeeResized\"/>",
+      "place": "Geneva"
+    }
+  },
+  {
+    "title": "Hallmark of Geneva",
+    "subtitle": "in 1886",
+    "type": "Label",
+    "date": "Thu Apr 16 2020 10:06:19 GMT+0200 (heure d’été d’Europe centrale)",
+    "avatar": "http://cert.arianee.org/transparency/avatar2.jpg",
+    "viewdetail": false,
+    "id": 1,
+    "publicKey": "",
+    "detail": {
+      "title": "Hallmark of Geneva",
+      "htmlPage": "<h2 style=\"text-align:center\">Hallmark of Geneva</h2><p style=\"text-align:justify\">Established by the Grand Council of the Republic and Canton of Geneva in 1886, a true standard of excellence and emblem of Geneva watchmaking, the \"Poinçon de Genève\" is a guarantee of origin, the flawless quality of the components in their manufacture, finish and assembly. Vacheron Constantin, which first applied for the hallmark in 1901, is among the few manufacturers that embarked on this road to excellence at an early date.</p><img style=\"Hallmark of Geneva\" src=\"https://bdh-arianee-showroom.firebaseapp.com/pub/-M7wxeY1kq0h7X2Ua7LK_arianeeResized\"/><p style=\"text-align:justify\">Major change: from 2012, the certification will no longer apply merely to the movement, but to the watch in its entirety. The exterior appearance will also be taken into account. The manufacture of components and checks on all operations leading to the completion of the watch will henceforth be subject to more systematic and stringent controls, with a particular focus on whether the assembly, adjustment and casing are completed in Geneva. Inspection of the finished watch also constitutes an integral part of the requirements for the Geneva label. New checks are also to be applied to the water resistance, precision, functions and power reserve of each timepiece.</p>",
+      "place": "Japan"
+    }
+  },
+  {
+    "title": "Handmade Engravings",
+    "subtitle": "Master Watchmakers",
+    "type": "Expertise",
+    "date": "Thu Apr 16 2020 10:06:19 GMT+0200 (heure d’été d’Europe centrale)",
+    "avatar": "http://cert.arianee.org/transparency/avatar2.jpg",
+    "viewdetail": false,
+    "id": 2,
+    "publicKey": "",
+    "detail": {
+      "title": "Handmade Engravings",
+      "htmlPage": "<h2 style=\"text-align:center\">Handmade Engravings</h2><p style=\"text-align:justify\">There are no compromises nor room for error, yet much humility. The mastery and precision of technique keep alive the time-honored skill that is handed down the generations at the Manufacture, from Master Watchmakers to apprentices. Day after day, the expertise of these craftsmen is passed on like an heirloom. They each rely upon the quality of one another’s work to shape every timepiece into a vision of rare beauty and passion.</p><img style=\"MÉTIERS D'ART\" src=\"https://bdh-arianee-showroom.firebaseapp.com/pub/-M7wxh7V3zlwC7wDRXJo_arianeeResized\"/>"
+    }
+  },
+]
