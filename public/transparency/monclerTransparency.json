@@ -1,0 +1,60 @@
+[
+  {
+    "title": "Romania factory",
+    "subtitle": "ISO 14001 Certified",
+    "type": "Assembly",
+    "date": "Thu Apr 16 2020 10:06:19 GMT+0200 (heure d’été d’Europe centrale)",
+    "avatar": "http://cert.arianee.org/transparency/avatar1.jpg",
+    "viewdetail": false,
+    "id": 0,
+    "publicKey": "",
+    "detail": {
+      "title": "Romania factory",
+      "htmlPage": "<h2 style=\"text-align: center\">Romania factory</h2><p style=\"text-align:justify\">All Moncler products are designed and manufactured under the Company’s direct and close supervision. Moncler manages the creative stage, the development of prototypes, and the purchase of raw materials (including accessory components) internally, while it closely oversees the manufacture of final products at its production site in Romania or outsourced to external suppliers.</p><div style=\"display:flex;flex-direction: row; flex-wrap:nowrap; justify-content: center\"><img style=\"margin:0 auto;height:100%;\" src=\"https://bdh-arianee-showroom.firebaseapp.com/pub/-M6UjFdUZVyXm2p62fUF_arianeeResized\"/><img style=\"margin:0 auto;height:100%;\" src=\"https://bdh-arianee-showroom.firebaseapp.com/pub/-M6Ujr8DSOL2I6WoRaod_arianeeResized\"/></div><p>In April, Moncler finalizes the establishment of the production site in Romania, through the recruitment of about 600 additional employees, who have later been integrated in the hub that was previously acquired and that is today operating with about 900 employees.</p>",
+      "place": "Romania"
+    }
+  },
+  {
+    "title": "Nylon",
+    "subtitle": "Japanese fabric made of fine high-density nylon counts",
+    "type": "Materials",
+    "date": "Thu Apr 16 2020 10:06:19 GMT+0200 (heure d’été d’Europe centrale)",
+    "avatar": "http://cert.arianee.org/transparency/avatar2.jpg",
+    "viewdetail": false,
+    "id": 1,
+    "publicKey": "",
+    "detail": {
+      "title": "Nylon",
+      "htmlPage": "<h2 style=\"text-align:center\">Nylon</h2> <h3>Nylon manufactured in Japan</h3><p style=\"text-align:justify\">Moncler is renowned also for its different types of innovative and high-performance nylon used for the production of outerwear collections. Within these, the “Longue Saison” line that is produced with a Japanese fabric made of fine high-density nylon counts. Very light-weight fabric, only 33 gr/mq, that, thanks to its down-proof characteristic, is ideal to make warm and impalpable garments which weigh a little less than a sweater. The quality of the down and nylon, as well that of the raw materials used, is crucial to guarantee the excellence and safety of the final product.</p><img style=\"Nylon\" src=\"https://bdh-arianee-showroom.firebaseapp.com/pub/-M6UpJgiIe-Jj7C_2FKY_arianeeResized\"/>",
+      "place": "Japan"
+    }
+  },
+  {
+    "title": "CO2 Emissions",
+    "subtitle": "Monitoring of emissions CO2",
+    "type": "Environment",
+    "date": "Thu Apr 16 2020 10:06:19 GMT+0200 (heure d’été d’Europe centrale)",
+    "avatar": "http://cert.arianee.org/transparency/avatar2.jpg",
+    "viewdetail": false,
+    "id": 2,
+    "publicKey": "",
+    "detail": {
+      "title": "CO2 Emissions",
+      "htmlPage": "<h2 style=\"text-align:center\">Energy Consumption and emissions CO2</h2><p style=\"text-align:justify\">In order to reduce energy consumption and emissions CO2, Moncler is engaged in various activities in its shops, offices, logistics hub and production site. These range from gradually replacing traditional lighting systems with LED lights, to using green ICT technologies, to identifying new methods to use energy more efficiently, to mitigating the environmental impact of employees’ business travel.</p><img style=\"width:80%\" src=\"https://bdh-arianee-showroom.firebaseapp.com/pub/-M6ZpwPa-i1A6852a4-P_arianeeResized\"/>"
+    }
+  },
+  {
+    "title": "Animal Welfare",
+    "subtitle": "Moncler's DIST Technical Protocol",
+    "type": "Environment",
+    "date": "Thu Apr 16 2020 10:06:19 GMT+0200 (heure d’été d’Europe centrale)",
+    "avatar": "https://bdh-arianee-showroom.firebaseapp.com/pub/-M6ViXLDeWuLzY9rAy9p_arianeeResized",
+    "viewdetail": false,
+    "id": 3,
+    "publicKey": "",
+    "detail": {
+      "title": "Animal Welfare",
+      "htmlPage": "<h2 style=\"text-align:center\">Animal Welfare</h2><p style=\"text-align:justify\">In order to ensure animal welfare, Moncler demands and verifies that all its down suppliers comply with the strict requirements of Moncler’s DIST Technical Protocol (Down Integrity System and Traceability). First implemented in 2015, it regulates farming standards, respect for animal welfare, down traceability and technical quality. Moncler only purchases down that is DIST-certified. Among the core principles of the Protocol that must be respected across the entire supply chain:<br> • down must be derived exclusively from farmed geese and as a by-product of the food chain;<br>• no form of live-plucking or force-feeding of animals is permitted.<br><p> <img style=\"width:100%\" src=\"https://bdh-arianee-showroom.firebaseapp.com/pub/-M6VNOVCIVc2ulB9S8Ai_arianeeResized\"/></div><p style=\"text-align:justify\">Developed based on the unique features of Moncler’s supply chain, the Protocol was the result of an open and constructive dialogue within the scope of a multi-stakeholder forum (established in 2014), taking into account the expectations of the various stakeholders involved and providing a scientific and holistic approach to animal welfare and product traceability. The forum is chaired by a Professor of Management at Ca’ Foscari University, Venice, who is an expert on sustainability issues. Its members include: Moncler officers; experts from the Department of Veterinary Medicine at the University of Milan, the Polish National Institute of Animal Husbandry in Kołuda Wielka, and Compassion in World Farming, an NGO dedicated to the welfare of farm animals; and representatives from certification and consulting firms (Bureau Veritas, Control Union, IDFL and KPMG).<p>"
+    }
+  }
+]
