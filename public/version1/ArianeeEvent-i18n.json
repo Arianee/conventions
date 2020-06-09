@@ -49,7 +49,9 @@
         {"enum": ["zh-CN"], "title": "Chinese (simplified)","description": "Chinese (simplified)"},
         {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
         {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
-        {"enum": ["de-DE"], "title":"German", "description": "German"}
+        {"enum": ["de-DE"], "title":"German", "description": "German"},
+        {"enum": ["es"], "title":"Spanish", "description": "Spanish"},
+        {"enum": ["it"], "title":"Italian", "description": "Italian"}
       ]
     },
     "title": {
@@ -127,7 +129,9 @@
               {"enum": ["zh-CN"], "title":"Chinese (simplified)", "description": "Chinese (simplified)"},
               {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
               {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
-              {"enum": ["de-DE"], "title":"German", "description": "German"}
+              {"enum": ["de-DE"], "title":"German", "description": "German"},
+              {"enum": ["es"], "title":"Spanish", "description": "Spanish"},
+              {"enum": ["it"], "title":"Italian", "description": "Italian"}
             ]
           },
           "title": {
