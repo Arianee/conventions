@@ -6,9 +6,10 @@
     "identity": "0xEa1FEb46898Afc99A3C5D0c2fAd3f468b8722326",
     "smartAsset": "0x1cBB078f21888ebc951c6B88D3071D99f618D043",
     "staking": "0x1FCa443217407860866be9b0426c5F8193d05668",
-    "store": "0x93Ce0cd82BC9f5c46393e205D8161FdC7FCd2038",
+    "store": "0xa32F43A8f4B59E645d3B3713F6C15Dbd259Dba0a",
     "whitelist": "0xf26027cb747C1C670453AaC183622507943B44c4",
-    "lost": "0x4bf749ec68270027C5910220CEAB30Cc284c7BA2"
+    "lost": "0x4bf749ec68270027C5910220CEAB30Cc284c7BA2",
+    "message": "0x7CC2D3356d915881b442624FB823a2f8BaAeB947"
   },
   "httpProvider": "http://ec2-34-245-220-17.eu-west-1.compute.amazonaws.com:8545",
   "chainId": 82661126
