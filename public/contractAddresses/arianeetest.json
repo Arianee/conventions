@@ -9,7 +9,8 @@
     "store": "0xa32F43A8f4B59E645d3B3713F6C15Dbd259Dba0a",
     "whitelist": "0xf26027cb747C1C670453AaC183622507943B44c4",
     "lost": "0x4bf749ec68270027C5910220CEAB30Cc284c7BA2",
-    "message": "0x7CC2D3356d915881b442624FB823a2f8BaAeB947"
+    "message": "0x7CC2D3356d915881b442624FB823a2f8BaAeB947",
+    "userAction": "0xDF82E2b63EadCf37481a1A01d2D24AA4aAAB9622"
   },
   "httpProvider": "http://ec2-34-245-220-17.eu-west-1.compute.amazonaws.com:8545",
   "chainId": 82661126
