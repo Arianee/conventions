@@ -6,8 +6,9 @@
     "identity": "0x7a751b4784140b1957DF21F7Fb9d0D0E42021838",
     "smartAsset" : "0x363574E6C5C71c343d7348093D84320c76d5Dd29",
     "staking": "0xe085cb1b4aa0a7097d182865d24897b3837934f4",
-    "store": "0x8d4722d7c865B60BA2fBcC7b43C5d9788aC91De2",
-    "whitelist": "0xD3Eee7F8e8021DB24825c3457D5479F2B57f40EF"
+    "store": "0xE8966ce72c94e6CeC883633Ff3877af0755b344f",
+    "whitelist": "0xD3Eee7F8e8021DB24825c3457D5479F2B57f40EF",
+    "message": "0x16B6a106450f6Ea816bEB5570EfEC845773f6806"
   },
   "httpProvider": "https://core.poa.network",
   "chainId": 99
