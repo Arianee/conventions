@@ -3,9 +3,9 @@ import {Arianee, NETWORK} from "@arianee/arianeejs";
 const ArianeeMessage = require('../public/version1/ArianeeMessage-i18n.json');
 
 describe("Hash of message should not change", () => {
- 
+
     it('ArianeeMessage-i18n', async (done) => {
-        const expectedHash = "0xfbfce001fa8ef0aeec3564837ce7b7eec265031cadadd8cad33da2fc36af3faa";
+        const expectedHash = "0xa39558edebc4fae7cc525ddc16f8811f6255f18bb4a67985ceb35362af6a5022";
 
         const content = {
             "$schema": "https://cert.arianee.org/version1/ArianeeMessage-i18n.json",
@@ -85,7 +85,7 @@ describe("Hash of message should not change", () => {
                 "type": "product",
                 "url": "https://bdharianeetest.firebaseapp.com/pub/-LzfbdNMkhOxvu5n_cPv_arianeeResized",
                 "order": 2
-            }]            
+            }]
         };
 
         const arianee = await new Arianee().init(NETWORK.arianeeTestnet);
