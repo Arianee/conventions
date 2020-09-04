@@ -290,7 +290,7 @@
                   "proofLinkAction"
                 ],
                 "title": "proofLinkAction",
-                "description": "Link with a proof of ownership. The difference with JWTproofLinkAction is that proofLinkAction does need blockchain transaction. It is not instant but can be revoked."
+                "description": "Link with a proof of ownership. The difference with arianeeAccessTokenActionLink is that proofLinkAction does need blockchain transaction. It is not instant but can be revoked."
               },
               {
                 "enum": [
@@ -301,10 +301,10 @@
               },
               {
                 "enum": [
-                  "JWTproofLinkAction"
+                  "arianeeAccessTokenActionLink"
                 ],
-                "title": "JWTproofLinkAction",
-                "description": "Link with a JWT proof of ownership. The difference with proofLinkAction is that JWTproofLinkAction does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
+                "title": "arianeeAccessTokenActionLink",
+                "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenActionLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
               }
             ]
           },

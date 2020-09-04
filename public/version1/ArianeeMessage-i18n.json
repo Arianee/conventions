@@ -17,7 +17,7 @@
         "title": "Language",
         "widget": {
           "id": "select"
-        },        
+        },
         "description": "Descriptions and external contents can be stored in different languages",
         "oneOf": [
           {
@@ -53,9 +53,9 @@
           {"enum": ["de-DE"], "title":"German", "description": "German"},
           {"enum": ["es"], "title":"Spanish", "description": "Spanish"},
           {"enum": ["it"], "title":"Italian", "description": "Italian"}
-  
+
         ]
-      },      
+      },
       "title": {
         "type": "string",
         "title": "Title of your message"
@@ -96,7 +96,7 @@
             "content": {
               "type": "string",
               "title": "Content of your message"
-            },    
+            },
             "externalContents": {
               "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
               "required": false,
@@ -110,7 +110,7 @@
                     "title": "Type",
                     "widget": {
                       "id": "select"
-                    },                       
+                    },
                     "oneOf": [
                       {
                         "enum": [
@@ -125,6 +125,13 @@
                         ],
                         "title": "proofLinkAction",
                         "description": "Link with a proof of ownership"
+                      },
+                      {
+                        "enum": [
+                          "arianeeAccessTokenActionLink"
+                        ],
+                        "title": "arianeeAccessTokenActionLink",
+                        "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenActionLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
                       },
                       {
                         "enum": [
@@ -165,7 +172,7 @@
               "title": "Media Type",
               "widget": {
                 "id": "select"
-              },               
+              },
               "oneOf": [
                 {
                   "enum": [
@@ -182,13 +189,13 @@
                   "description": "Youtube video"
                 }
               ]
-            },          
+            },
             "type": {
               "type": "string",
               "title": "Type",
               "widget": {
                 "id": "select"
-              },               
+              },
               "oneOf": [
                 {
                   "enum": [
@@ -215,7 +222,7 @@
             }
           }
         }
-      },    
+      },
       "externalContents": {
         "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
         "required": false,
@@ -229,7 +236,7 @@
               "title": "Type",
               "widget": {
                 "id": "select"
-              },               
+              },
               "oneOf": [
                 {
                   "enum": [
@@ -244,6 +251,13 @@
                   ],
                   "title": "proofLinkAction",
                   "description": "Link with a proof of ownership"
+                },
+                {
+                  "enum": [
+                    "arianeeAccessTokenActionLink"
+                  ],
+                  "title": "arianeeAccessTokenActionLink",
+                  "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenActionLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
                 },
                 {
                   "enum": [
@@ -268,8 +282,8 @@
             }
           }
         }
-      }       
-    },   
+      }
+    },
     "required": [
       "$schema"
     ]
