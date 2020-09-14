@@ -1,39 +1,13 @@
 import {Arianee, NETWORK} from "@arianee/arianeejs";
+import * as _ from 'lodash';
+import {isObjectMatchingModel} from 'isobjectmatchingmodel';
 
-const ArianeeAsset = require('../public/version1/ArianeeAsset.json');
-const ArianeeProductCertificate = require('../public/version1/ArianeeProductCertificate-i18n.json');
+const ArianeeProductCertificate = require('../../ArianeeProductCertificate-i18n.json');
+const PreviousVersionArianeeProductCertificate = require('../../../version1/ArianeeProductCertificate-i18n.json');
 
 describe("Hash of certificate should not change", () => {
-    it('ArianeeAsset', async (done) => {
-        const expectedHash = "0xd98c122902dc4c0b41424ff7d4c5a4bb2d8326af09021d58efe12f975cb5be53";
-
-        const content = {
-            "$schema": "https://cert.arianee.org/version1/ArianeeAsset.json",
-            "name": "Mon certificate De test",
-            "v": "0.1",
-            "serialnumber": [{"type": "serialnumber", "value": "12342"}],
-            "brand": "My Brand",
-            "model": "Mon Model",
-            "description": "Ma description",
-            "type": "SmartAsset",
-            "brandLogoHeader": "https://bdharianeestef.firebaseapp.com/pub/-Lzqa6YvOtc4ZeMF2Phb_arianeeResized",
-            "picture": "https://www.fillmurray.com/200/300",
-            "pictures": [],
-            "attributes": [],
-            "size": [],
-            "externalContents": []
-        };
-        const arianee = await new Arianee().init(NETWORK.arianeeTestnet);
-
-        const wallet = arianee.fromRandomMnemonic();
-        const hash = await wallet.utils.cert(ArianeeAsset, content);
-        expect(hash).toBe(expectedHash);
-
-        done();
-    });
-
-    it('1/ ArianeeProductCertificate-i18n', async (done) => {
-        const expectedHash = "0x30cf30b589a602d5d9667a344f69471e20e11c4689cd089377bf70da3c85804d";
+    it('1/ DEV ArianeeProductCertificate-i18n', async (done) => {
+        const expectedHash = "0x1b13ce3a9607dc0530de54d9e0fe3d0cec9afb996f6c5be8f5461ae97aaeb1c2";
 
         const content = {
             "$schema": "https://cert.arianee.org/version1/ArianeeProductCertificate-i18n.json",
@@ -63,7 +37,7 @@ describe("Hash of certificate should not change", () => {
     })
 
     it('2/ ArianeeProductCertificate-i18n', async (done) => {
-        const expectedHash = "0xf0698d7f981c31cbe27c838dc6ab76cf1b9898f9e6281bb6265cda50bb74c75b";
+        const expectedHash = "0xd27ef40285b335776bc16f14244003b3f1147342bf8454113fca2de4e6508a02";
 
         const content = {
             "$schema": "https://cert.arianee.org/version1/ArianeeProductCertificate-i18n.json",
@@ -112,6 +86,7 @@ describe("Hash of certificate should not change", () => {
                 "language": "fr-FR",
                 "description": "<b>Description</b>\nLa montre The Navyclock d'Arianee est un petit modèle utilisant le mouvement à quartz. Boitier en or rose 18 carats, Couronne perlée en or rose 18 carats sertie d'un spinelle synthétique en forme de cabochon, bracelet en cuir.\n\n<b>Dimensions</b>\ndiamètre: 29.5 mm, épaisseur: 6.35 mm, étanche à 3 bar (environ 30 mètres/100 pieds).",
                 "subDescription": [],
+                "name": "The Navyclock 3 French",
                 "externalContents": [{
                     "type": "website",
                     "title": "Site",
@@ -132,6 +107,7 @@ describe("Hash of certificate should not change", () => {
                 "language": "zh-CN",
                 "description": "<b>描述</b>\nThe Navyclock by Arianee 手表，小型款，石英机芯. 18k玫瑰金表壳，18k玫瑰金串珠状表冠，镶有凸圆形人造合成尖晶石，皮革表带.\n\n<b>外壳尺寸</b>\n直径：29.5毫米，厚度：6.35毫米，防水深度达3巴（约30米/ 100英尺\n",
                 "subDescription": [],
+                "name": "The Navyclock 3 Chineese",
                 "externalContents": [{
                     "type": "website",
                     "title": " 网站",
@@ -185,4 +161,11 @@ describe("Hash of certificate should not change", () => {
         done();
     })
 
+});
+
+describe("version", () => {
+    it("should contain all properties from previous version", () => {
+        const d = isObjectMatchingModel(PreviousVersionArianeeProductCertificate,ArianeeProductCertificate);
+        expect(d).toBeTruthy();
+    })
 });

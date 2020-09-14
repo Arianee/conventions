@@ -1,6 +1,6 @@
 import {Arianee, NETWORK} from "@arianee/arianeejs";
 
-const ArianeeMessage = require('../public/version1/ArianeeMessage-i18n.json');
+const ArianeeMessage = require('../ArianeeMessage-i18n.json');
 
 describe("Hash of message should not change", () => {
 
