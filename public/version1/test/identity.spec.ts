@@ -1,6 +1,6 @@
-import {Arianee, NETWORK} from "../node_modules/@arianee/arianeejs/dist/src";
+import {Arianee, NETWORK} from "@arianee/arianeejs";
 
-const ArianeeIdentity = require('../public/version1/ArianeeBrandIdentity-i18n.json');
+const ArianeeIdentity = require('..//ArianeeBrandIdentity-i18n.json');
 
 
 describe("Hash of identity should not change", () => {

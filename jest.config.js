@@ -1,6 +1,6 @@
 module.exports = {
     "roots": [
-        "<rootDir>/test",
+        "<rootDir>",
     ],
     "testEnvironment": "jest-environment-node",
     "transform": {

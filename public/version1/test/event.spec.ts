@@ -1,6 +1,6 @@
 import {Arianee, NETWORK} from "@arianee/arianeejs";
 
-const ArianeeEvent = require('../public/version1/ArianeeEvent-i18n.json');
+const ArianeeEvent = require('../ArianeeEvent-i18n.json');
 
 describe("Hash of event should not change", () => {
 
@@ -9,8 +9,8 @@ describe("Hash of event should not change", () => {
 
         const content = {
             "$schema": "https://cert.arianee.org/version1/ArianeeEvent-i18n.json",
-            "eventType": "Service",    
-            "language": "fr-FR",    
+            "eventType": "Service",
+            "language": "fr-FR",
             "title": "mon titre",
             "description": "ma description",
             "externalContents": [{
@@ -18,19 +18,19 @@ describe("Hash of event should not change", () => {
                   "title": "title",
                   "url": "https://arianee.org",
                   "order": "1"
-            }], 
+            }],
             "i18n": [{
                   "language": "fr-Fr",
                   "title": "my title",
                   "description": "my description",
-        
+
                   "externalContents": [{
                         "type": "website",
                         "title": "my title",
                         "url": "https://arianee.org",
                         "order": "1"
                   }]
-            }],            
+            }],
             "medias": [{
                   "mediaType": "picture",
                   "type": "product",
@@ -41,11 +41,11 @@ describe("Hash of event should not change", () => {
             "attributes": [{
                   "type": "color",
                   "value": "red"
-            }],    
+            }],
             "valuePrice": "100",
-            "currencyPrice": "EUR",        
+            "currencyPrice": "EUR",
             "location": "paris"
-      
+
         };
         const arianee = await new Arianee().init(NETWORK.arianeeTestnet);
         const wallet = arianee.fromRandomMnemonic();
