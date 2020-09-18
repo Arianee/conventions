@@ -1,13 +1,13 @@
 {
   "$id": "https://cert.arianee.org/version2/ArianeeProductCertificate-i18n.json",
   "$schema": "https://cert.arianee.org/version2/ArianeeProductCertificate-i18n.json",
-  "title": "Arianee Certificate",
+  "title": "Arianee Certificate I18n",
   "type": "object",
   "properties": {
     "$schema": {
       "title": "$schema",
       "type": "string",
-      "default": "https://cert.arianee.org/version1/ArianeeProductCertificate-i18n.json",
+      "default": "https://cert.arianee.org/version2/ArianeeProductCertificate-i18n.json",
       "description": "Arianee Certificate i18n"
     },
     "name": {
