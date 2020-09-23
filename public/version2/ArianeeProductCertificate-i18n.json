@@ -463,7 +463,7 @@
                         "service"
                       ],
                       "title": "Servicing",
-                      "description": "Additional descriptions linked to the product. \nSub descriptions can be stored for each language"
+                      "description": "Servicing"
                     },
                     {
                       "enum": [
@@ -477,7 +477,7 @@
                         "other"
                       ],
                       "title": "other",
-                      "description": "Additional descriptions linked to the product. \nSub descriptions can be stored for each language"
+                      "description": "other"
                     }
                   ]
                 },
@@ -595,7 +595,7 @@
                         "proofLinkAction"
                       ],
                       "title": "proofLinkAction",
-                      "description": "Link with a proof of ownership"
+                      "description": "Link with a proof of ownership. The difference with arianeeAccessTokenAuthLink is that proofLinkAction does need blockchain transaction. It is not instant but can be revoked."
                     },
                     {
                       "enum": [
@@ -603,6 +603,13 @@
                       ],
                       "title": "transparency",
                       "description": "Url of transparency events json"
+                    },
+                    {
+                      "enum": [
+                        "arianeeAccessTokenAuthLink"
+                      ],
+                      "title": "arianeeAccessTokenAuthLink",
+                      "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenAuthLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
                     }
                   ]
                 },
@@ -635,6 +642,178 @@
                 "value": {
                   "type": "string",
                   "title": "Value"
+                }
+              }
+            }
+          },
+          "transaparencyItems": {
+            "type": "array",
+            "title": "Transparency information about product",
+            "description": "Transparency information regarding the product",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "title": "Title to be displayed"
+                },
+                "description": {
+                  "type": "string",
+                  "title": "Description",
+                  "description": "Description of the product. (HTML Accepted)\n A description can be stored for each language"
+                },
+                "externalContents": {
+                  "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
+                  "required": false,
+                  "type": "array",
+                  "title": "External Contents",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "title": "Type",
+                        "oneOf": [
+                          {
+                            "enum": [
+                              "website"
+                            ],
+                            "title": "Website (main)",
+                            "description": "Regular link"
+                          },
+                          {
+                            "enum": [
+                              "proofLinkAction"
+                            ],
+                            "title": "proofLinkAction",
+                            "description": "Link with a proof of ownership. The difference with arianeeAccessTokenAuthLink is that proofLinkAction does need blockchain transaction. It is not instant but can be revoked."
+                          },
+                          {
+                            "enum": [
+                              "transparency"
+                            ],
+                            "title": "transparency",
+                            "description": "Url of transparency events json"
+                          },
+                          {
+                            "enum": [
+                              "arianeeAccessTokenAuthLink"
+                            ],
+                            "title": "arianeeAccessTokenAuthLink",
+                            "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenAuthLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
+                          }
+                        ]
+                      },
+                      "title": {
+                        "type": "string",
+                        "title": "Title"
+                      },
+                      "url": {
+                        "type": "string",
+                        "title": "Url"
+                      },
+                      "order": {
+                        "type": "number",
+                        "title": "Order (number)"
+                      }
+                    }
+                  }
+                },
+                "medias": {
+                  "type": "array",
+                  "title": "Medias",
+                  "description": "Picture & media used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "mediaType": {
+                        "type": "string",
+                        "title": "Media Type",
+                        "oneOf": [
+                          {
+                            "enum": [
+                              "picture"
+                            ],
+                            "title": "Picture (png / jpg)",
+                            "description": "Picture (png / jpg)"
+                          },
+                          {
+                            "enum": [
+                              "youtube"
+                            ],
+                            "title": "Youtube video",
+                            "description": "Youtube video"
+                          }
+                        ]
+                      },
+                      "type": {
+                        "type": "string",
+                        "title": "Type",
+                        "oneOf": [
+                          {
+                            "enum": [
+                              "icon"
+                            ],
+                            "title": "icon of label",
+                            "description": "used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)"
+                          },
+                          {
+                            "enum": [
+                              "transparencyPicture"
+                            ],
+                            "title": "Transparency picture",
+                            "description": "A picture depicting the transaparency item"
+                          }
+                        ]
+                      },
+                      "url": {
+                        "type": "string",
+                        "title": "URL"
+                      },
+                      "hash": {
+                        "type": "string",
+                        "title": "Media Hash"
+                      },
+                      "order": {
+                        "type": "number",
+                        "title": "Media Order (number)"
+                      }
+                    }
+                  }
+                },
+                "type": {
+                  "type": "string",
+                  "title": "Type of transparency",
+                  "oneOf": [
+                    {
+                      "title": "material",
+                      "description": "material",
+                      "enum": [
+                        "material"
+                      ]
+                    },
+                    {
+                      "title": "assembly",
+                      "description": "assembly",
+                      "enum": [
+                        "assembly"
+                      ]
+                    },
+                    {
+                      "title": "label",
+                      "description": "label",
+                      "enum": [
+                        "label"
+                      ]
+                    },
+                    {
+                      "title": "logistic",
+                      "description": "logistic",
+                      "enum": [
+                        "logistic"
+                      ]
+                    }
+                  ]
                 }
               }
             }
@@ -1029,7 +1208,7 @@
     },
     "transaparencyItems": {
       "type": "array",
-      "title": "Transaparency information about product",
+      "title": "Transparency information about product",
       "description": "Transparency information regarding the product",
       "items": {
         "type": "object",
