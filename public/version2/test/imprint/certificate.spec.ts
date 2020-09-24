@@ -37,7 +37,7 @@ describe("Hash of certificate should not change", () => {
     })
 
     it('2/ ArianeeProductCertificate-i18n', async (done) => {
-        const expectedHash = "0xd27ef40285b335776bc16f14244003b3f1147342bf8454113fca2de4e6508a02";
+        const expectedHash = "0xe61107117921cf235970bbdfe24b1b89f2a09db80e9f24a76d86be9645dd5b99";
 
         const content = {
             "$schema": "https://cert.arianee.org/version1/ArianeeProductCertificate-i18n.json",
