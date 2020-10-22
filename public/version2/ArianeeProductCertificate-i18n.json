@@ -888,6 +888,13 @@
                       ],
                       "title": "arianeeAccessTokenAuthLink",
                       "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenAuthLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
+                    },
+                    {
+                      "enum": [
+                        "youtube"
+                      ],
+                      "title": "Youtube video",
+                      "description": "Youtube video"
                     }
                   ]
                 },
@@ -1167,7 +1174,14 @@
                       ],
                       "title": "arianeeAccessTokenAuthLink",
                       "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenAuthLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
-                    }
+                    },
+                    {
+                      "enum": [
+                        "youtube"
+                      ],
+                      "title": "Youtube video",
+                      "description": "Youtube video"
+                    }                    
                   ]
                 },
                 "title": {
