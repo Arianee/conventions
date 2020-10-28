@@ -221,6 +221,13 @@
                 "enum": [
                   "vin"
                 ]
+              },
+              {
+                "description": "Poinçon de Genève",
+                "title": "Poinçon de Genève",
+                "enum": [
+                  "pgeneve"
+                ]
               }
             ]
           },
