@@ -348,7 +348,7 @@
                 ],
                 "title": "Youtube video",
                 "description": "Youtube video"
-              }              
+              }
             ]
           },
           "title": {
@@ -751,7 +751,7 @@
         }
       }
     },
-    "transaparencyItems": {
+    "transparencyItems": {
       "type": "array",
       "title": "Transparency information about product",
       "description": "Transparency information regarding the product",
@@ -795,6 +795,10 @@
           "title": {
             "type": "string",
             "title": "Title to be displayed"
+          },
+          "subtitle": {
+            "type": "string",
+            "title": "Subtitle to be displayed"
           },
           "description": {
             "type": "string",
@@ -844,7 +848,7 @@
                         "transparencyPicture"
                       ],
                       "title": "Transparency picture",
-                      "description": "A picture depicting the transaparency item"
+                      "description": "A picture depicting the transparency item"
                     }
                   ]
                 },
@@ -1195,7 +1199,7 @@
                       ],
                       "title": "Youtube video",
                       "description": "Youtube video"
-                    }                    
+                    }
                   ]
                 },
                 "title": {
@@ -1231,7 +1235,7 @@
               }
             }
           },
-          "transaparencyItems": {
+          "transparencyItems": {
             "type": "array",
             "title": "Transparency information about product",
             "description": "Transparency information regarding the product",
@@ -1275,6 +1279,10 @@
                 "title": {
                   "type": "string",
                   "title": "Title to be displayed"
+                },
+                "subtitle": {
+                  "type": "string",
+                  "title": "Subtitle to be displayed"
                 },
                 "description": {
                   "type": "string",
@@ -1324,7 +1332,7 @@
                               "transparencyPicture"
                             ],
                             "title": "Transparency picture",
-                            "description": "A picture depicting the transaparency item"
+                            "description": "A picture depicting the transparency item"
                           }
                         ]
                       },
@@ -1343,7 +1351,6 @@
                     }
                   }
                 },
-
                 "externalContents": {
                   "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
                   "required": false,
@@ -1390,7 +1397,7 @@
                             ],
                             "title": "Youtube video",
                             "description": "Youtube video"
-                          }                          
+                          }
                         ]
                       },
                       "title": {
