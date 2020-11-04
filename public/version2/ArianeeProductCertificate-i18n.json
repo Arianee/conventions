@@ -841,7 +841,7 @@
                         "icon"
                       ],
                       "title": "icon of label",
-                      "description": "used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)"
+                      "description": "An icon depicting the transparency item (png transparent)"
                     },
                     {
                       "enum": [
@@ -1325,7 +1325,7 @@
                               "icon"
                             ],
                             "title": "icon of label",
-                            "description": "used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)"
+                            "description": "An icon depicting the transparency item (png transparent)"
                           },
                           {
                             "enum": [
