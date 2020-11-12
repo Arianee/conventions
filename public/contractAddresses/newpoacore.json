@@ -8,7 +8,8 @@
     "staking": "0xe085cb1b4aa0a7097d182865d24897b3837934f4",
     "store": "0xE8966ce72c94e6CeC883633Ff3877af0755b344f",
     "whitelist": "0xD3Eee7F8e8021DB24825c3457D5479F2B57f40EF",
-    "message": "0x16B6a106450f6Ea816bEB5570EfEC845773f6806"
+    "message": "0x16B6a106450f6Ea816bEB5570EfEC845773f6806",
+    "lost": "0x17a73d584d5526EE0f1D54c6cd16D95409F4509b"
   },
   "httpProvider": "https://core.poa.network",
   "chainId": 99

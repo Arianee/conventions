@@ -8,7 +8,8 @@
         "creditHistory": "0x502a9C8af2441a1E276909405119FaE21F3dC421",
         "whitelist": "0xD3Eee7F8e8021DB24825c3457D5479F2B57f40EF",
         "event": "0x86AD25F4143e608aE4341C0C09Dcf45A7b03C499",
-        "message": "0x16B6a106450f6Ea816bEB5570EfEC845773f6806"
+        "message": "0x16B6a106450f6Ea816bEB5570EfEC845773f6806",
+        "lost": "0x17a73d584d5526EE0f1D54c6cd16D95409F4509b"
     },
     "httpProvider": "https://core.poa.network",
     "chainId": 99
