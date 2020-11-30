@@ -228,6 +228,13 @@
                 "enum": [
                   "pgeneve"
                 ]
+              },
+              {
+                "description": "Millesimation",
+                "title": "Millesimation",
+                "enum": [
+                  "millesimation"
+                ]
               }
             ]
           },
