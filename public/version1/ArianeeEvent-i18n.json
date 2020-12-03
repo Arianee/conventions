@@ -32,8 +32,42 @@
           "enum": [
             "auction"
           ]
+        },
+        {
+          "title": "Initial Sale",
+          "description": "Initial Sale - usually issued for the initial sale.",
+          "enum": [
+            "initialSale"
+          ]
+        },
+        {
+          "title": "Warranty",
+          "description": "Warranty - usually issued when a warranty is attached to the product.",
+          "enum": [
+            "warranty"
+          ]
+        },
+        {
+          "title": "Resell",
+          "description": "Resell - usually issued when a resell event occurs.",
+          "enum": [
+            "resell"
+          ]
+        },
+        {
+          "title": "Repair",
+          "description": "Repair - usually issued when the product is repaired.",
+          "enum": [
+            "repair"
+          ]
+        },
+        {
+          "title": "Experience",
+          "description": "Experience - usually issued when an experienced happens around the product.",
+          "enum": [
+            "experience"
+          ]
         }
-
       ]
     },
     "language": {
