@@ -1268,9 +1268,9 @@
             "items": {
               "type": "object",
               "properties": {
-                "type": {
+                "category": {
                   "type": "string",
-                  "title": "Type of transparency",
+                  "title": "Category of transparency",
                   "oneOf": [
                     {
                       "title": "material",
@@ -1287,21 +1287,61 @@
                       ]
                     },
                     {
-                      "title": "label",
-                      "description": "label",
+                      "title": "impact",
+                      "description": "impact",
                       "enum": [
-                        "label"
+                        "impact"
+                      ]
+                    }
+                  ]
+                },          
+                "type": {
+                  "type": "string",
+                  "title": "Type of transparency",
+                  "oneOf": [
+                    {
+                      "title": "responsible_procurement",
+                      "description": "responsible_procurement",
+                      "enum": [
+                        "responsible_procurement"
                       ]
                     },
                     {
-                      "title": "logistic",
-                      "description": "logistic",
+                      "title": "eco_design",
+                      "description": "eco_design",
                       "enum": [
-                        "logistic"
+                        "eco_design"
+                      ]
+                    },
+                    {
+                      "title": "packaging",
+                      "description": "packaging",
+                      "enum": [
+                        "packaging"
                       ]
                     }
                   ]
                 },
+                "subtype": {
+                  "type": "string",
+                  "title": "Subtype of transparency",
+                  "oneOf": [
+                    {
+                      "title": "material-responsible_procurement-ethical_purchasing",
+                      "description": "material-responsible_procurement-ethical_purchasing",
+                      "enum": [
+                        "material-responsible_procurement-ethical_purchasing"
+                      ]
+                    },
+                    {
+                      "title": "material-responsible_procurement-organic organic",
+                      "description": "material-responsible_procurement-organic organic",
+                      "enum": [
+                        "material-responsible_procurement-organic organic"
+                      ]
+                    }
+                  ]
+                }, 
                 "title": {
                   "type": "string",
                   "title": "Title to be displayed"
