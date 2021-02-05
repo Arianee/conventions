@@ -1,14 +1,14 @@
 {
-  "$id": "https://cert.arianee.org/version3/ArianeeProductCertificate-i18n.json",
-  "$schema": "https://cert.arianee.org/version3/ArianeeProductCertificate-i18n.json",
-  "title": "Arianee Certificate I18n",
+  "$id": "https://cert.arianee.org/version4/ArianeeProductCertificate-i18n.json",
+  "$schema": "https://cert.arianee.org/version4/ArianeeProductCertificate-i18n.json",
+  "title": "Arianee Certificate i18n (transparency and composed)",
   "type": "object",
   "properties": {
     "$schema": {
       "title": "$schema",
       "type": "string",
-      "default": "https://cert.arianee.org/version3/ArianeeProductCertificate-i18n.json",
-      "description": "Arianee Certificate i18n"
+      "default": "https://cert.arianee.org/version4/ArianeeProductCertificate-i18n.json",
+      "description": "Arianee Certificate i18n (transparency and composed)"
     },
     "language": {
       "type": "string",
