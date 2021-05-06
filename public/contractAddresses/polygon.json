@@ -1,0 +1,18 @@
+{
+  "contractAdresses": {
+    "aria": "",
+    "creditHistory": "",
+    "eventArianee": "",
+    "identity": "",
+    "smartAsset": "",
+    "staking": "",
+    "store": "",
+    "whitelist": "",
+    "lost": "",
+    "message": "",
+    "update": "",
+    "userAction": ""
+  },
+  "httpProvider": "https://rpc-mainnet.matic.quiknode.pro",
+  "chainId": 137
+}
