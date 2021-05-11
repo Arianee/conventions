@@ -1,18 +1,18 @@
 {
   "contractAdresses": {
-    "aria": "",
-    "creditHistory": "",
-    "eventArianee": "",
-    "identity": "",
-    "smartAsset": "",
+    "aria": "0x46F48FbdedAa6F5500993BEDE9539ef85F4BeE8e",
+    "creditHistory": "0x2d88D5a7f1e8Dead532aDcA0d701EaE44641B1EA",
+    "eventArianee": "0x4747EfF5AD199a8C74915343cafaFf4867aD0b8f",
+    "identity": "0x6436A1fFa39486bE258B3fbc150B5810b211eD39",
+    "smartAsset": "0xe887FA70E0163E39597126178b8c2CC831D13930",
     "staking": "",
-    "store": "",
-    "whitelist": "",
-    "lost": "",
-    "message": "",
-    "update": "",
+    "store": "0xfdE233ADBA6c346B26f5193415962453C60Cbf33",
+    "whitelist": "0xD6b4Be919bc8a4142B580CCd552C6D1399473B56",
+    "lost": "0x8e08838F3a9C80a5056Bde65DAE91869e2b28c9F",
+    "message": "0x7A1FCB87e4D01DDC54EFF54018FcFfd55Ff55193",
+    "update":  "0x1d4d8835d9e03A73d238e91a1281772fAd633aC2",
     "userAction": ""
   },
-  "httpProvider": "https://rpc-mainnet.matic.quiknode.pro",
+  "httpProvider": "http://polygon.arianee.net:8545",
   "chainId": 137
 }
