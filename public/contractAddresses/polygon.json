@@ -13,6 +13,6 @@
     "update":  "0x1d4d8835d9e03A73d238e91a1281772fAd633aC2",
     "userAction": ""
   },
-  "httpProvider": "http://polygon.arianee.net:8545",
+  "httpProvider": "https://polygon.arianee.net",
   "chainId": 137
 }
