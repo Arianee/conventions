@@ -1,17 +1,18 @@
 {
   "contractAdresses": {
-    "aria": "0x90B510C520CD0d48F6abE56F8bf45Ab8Cd859839",
-    "creditHistory": "0x3FCB33B1Ab68AC3CF262d510f2Bb63F603b2bE14",
-    "eventArianee": "0xaa6A0c02301d7d0b213dbEC2B024420a6cDF0229",
-    "identity": "0xEa1FEb46898Afc99A3C5D0c2fAd3f468b8722326",
-    "smartAsset": "0x1cBB078f21888ebc951c6B88D3071D99f618D043",
-    "staking": "0x1FCa443217407860866be9b0426c5F8193d05668",
-    "store": "0xa32F43A8f4B59E645d3B3713F6C15Dbd259Dba0a",
-    "whitelist": "0xf26027cb747C1C670453AaC183622507943B44c4",
-    "lost": "0x4bf749ec68270027C5910220CEAB30Cc284c7BA2",
-    "message": "0x7CC2D3356d915881b442624FB823a2f8BaAeB947",
-    "userAction": "0xDF82E2b63EadCf37481a1A01d2D24AA4aAAB9622"
+    "aria": "0xB81AFe27c103bcd42f4026CF719AF6D802928765",
+    "creditHistory": "0x9C868D9bf85CA649f219204D16d99A240cB1F011",
+    "eventArianee": "0x8e8de8fe625c376f6d4fb2fc351337268a73388b",
+    "identity": "0x6f5d3ac15576f0da108cde3b7bbbf8f89eb8e7b2",
+    "smartAsset" : "0x512C1FCF401133680f373a386F3f752b98070BC5",
+    "staking": "0xa8e4371ab5626b68de62cdd61d3887ce27de1a98",
+    "store": "0x82890CedCB8Eb0cDC229Ac7B8fdd39f93700C854",
+    "whitelist": "0x3579669219DC20Aa79E74eEFD5fB2EcB0CE5fE0D",
+    "lost":"0x3Cc02453807B17e79471d134Af8AE57d35E46FdA",
+    "message": "0xadD562C6c8D8755E0FaB1c12705831E759b77D00",
+    "userAction": "0x6bDb54FB6227C360b95F9A08Fb670f8207D3476f",
+    "updateSmartAssets": "0x3ae108bF0Ee8bB9D810BfC80aC73394ee1509C7b"
   },
-  "httpProvider": "http://ec2-34-245-220-17.eu-west-1.compute.amazonaws.com:8545",
-  "chainId": 82661126
+  "httpProvider": "http://blockchain:8545",
+  "chainId": 77
 }
