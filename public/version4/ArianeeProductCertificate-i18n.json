@@ -337,6 +337,13 @@
               },
               {
                 "enum": [
+                  "transparency"
+                ],
+                "title": "transparency",
+                "description": "Url of transparency events json"
+              },              
+              {
+                "enum": [
                   "arianeeAccessTokenAuthLink"
                 ],
                 "title": "arianeeAccessTokenAuthLink",
@@ -933,6 +940,13 @@
                       "title": "proofLinkAction",
                       "description": "Link with a proof of ownership. The difference with arianeeAccessTokenAuthLink is that proofLinkAction does need blockchain transaction. It is not instant but can be revoked."
                     },
+                    {
+                      "enum": [
+                        "transparency"
+                      ],
+                      "title": "transparency",
+                      "description": "Url of transparency events json"
+                    },                    
                     {
                       "enum": [
                         "arianeeAccessTokenAuthLink"
