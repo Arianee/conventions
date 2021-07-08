@@ -1,18 +1,18 @@
 {
-  "contractAdresses": {
-    "aria": "0xB81AFe27c103bcd42f4026CF719AF6D802928765",
-    "creditHistory": "0x9C868D9bf85CA649f219204D16d99A240cB1F011",
-    "eventArianee": "0x8e8de8fe625c376f6d4fb2fc351337268a73388b",
-    "identity": "0x6f5d3ac15576f0da108cde3b7bbbf8f89eb8e7b2",
-    "smartAsset" : "0x512C1FCF401133680f373a386F3f752b98070BC5",
-    "staking": "0xa8e4371ab5626b68de62cdd61d3887ce27de1a98",
-    "store": "0x82890CedCB8Eb0cDC229Ac7B8fdd39f93700C854",
-    "whitelist": "0x3579669219DC20Aa79E74eEFD5fB2EcB0CE5fE0D",
-    "lost":"0x3Cc02453807B17e79471d134Af8AE57d35E46FdA",
-    "message": "0xadD562C6c8D8755E0FaB1c12705831E759b77D00",
-    "userAction": "0x6bDb54FB6227C360b95F9A08Fb670f8207D3476f",
-    "updateSmartAssets": "0x3ae108bF0Ee8bB9D810BfC80aC73394ee1509C7b"
+  "contractAdresses":  {
+    "aria": "0x254dffcd3277C0b1660F6d42EFbB754edaBAbC2B",
+    "creditHistory": "0xe982E462b094850F12AF94d21D470e21bE9D0E9C",
+    "eventArianee": "0x59d3631c86BbE35EF041872d502F218A39FBa150",
+    "identity": "0xA57B8a5584442B467b4689F1144D269d096A3daF",
+    "smartAsset": "0xD833215cBcc3f914bD1C9ece3EE7BF8B14f841bb",
+    "staking": "",
+    "store": "0x2612Af3A521c2df9EAF28422Ca335b04AdF3ac66",
+    "whitelist": "0xC89Ce4735882C9F0f0FE26686c53074E09B0D550",
+    "lost": "0x0290FB167208Af455bB137780163b7B7a9a10C16",
+    "message": "0x9561C133DD8580860B6b7E504bC5Aa500f0f06a7",
+    "userAction": "0x67B5656d60a809915323Bf2C40A8bEF15A152e3e",
+    "updateSmartAssets": "0x9b1f7F645351AF3631a656421eD2e40f2802E6c0"
   },
   "httpProvider": "http://blockchain:8545",
-  "chainId": 77
+  "chainId": 42
 }
