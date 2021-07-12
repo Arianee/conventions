@@ -1,5 +1,6 @@
 {
   "projects": {
-    "arianee-cert": "arianee-cert"
+    "arianee-cert": "arianee-cert",
+    "default": "arianee-cert"
   }
 }
