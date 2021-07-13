@@ -1,0 +1,18 @@
+{
+  "contractAdresses" : {
+    "aria": "0xB81AFe27c103bcd42f4026CF719AF6D802928765",
+    "creditHistory": "0x1BB642C5a70938F165cb91EAA8bA471C9dd5CeDa",
+    "eventArianee": "0xC5B853330889Ff88d559Be2181f6b105963d2eFF",
+    "identity": "0x6f5d3ac15576f0da108cde3b7bbbf8f89eb8e7b2",
+    "smartAsset" : "0x2cBE52BcF4BBEE4eCDd7dCFDA11ee46d4132a9b5",
+    "staking": "",
+    "store": "0xE63A880ACb6120Fc3cFf2420BFBb88175484b0bB",
+    "whitelist": "0xd62d641a28B0d2eE9118FA0Fe0bb028c1a52F02c",
+    "lost":"",
+    "message": "0x99bD7Edca72963DEc2Cdd7be5eAdd755D136ca78",
+    "userAction": "0xE63A880ACb6120Fc3cFf2420BFBb88175484b0bB",
+    "updateSmartAssets": "0xdB754B9A0d096307924cC010e28228a520bc4f78"
+  },
+  "httpProvider": "https://sokol.arianee.net",
+  "chainId": 77
+}
