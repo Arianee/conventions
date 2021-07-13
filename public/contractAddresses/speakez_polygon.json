@@ -1,0 +1,18 @@
+{
+  "contractAdresses": {
+    "aria": "0x46F48FbdedAa6F5500993BEDE9539ef85F4BeE8e",
+    "creditHistory": "0x9eAD41dDe084b008c69f00BeB282b76e2f9aEad6",
+    "eventArianee": "0xcA40848C9e055950De144B265Cf742e4083428eC",
+    "identity": "0x6436A1fFa39486bE258B3fbc150B5810b211eD39",
+    "smartAsset": "0x1e9Bf02356a3298De8Cbbc6359c56a9385D25282",
+    "staking": "",
+    "store": "0xB9F3BaFdF803B519e8e624c86d0c8982f19E4F91",
+    "whitelist": "0xbb6041662e8b0dF8EC24feb6Fc19ac4FF0fc29Ed",
+    "lost": "",
+    "message": "0x6Fe0836F36b86225f1aD24c020a7920E19D5C2C9",
+    "update":  "0xd665A3d03ba9044e13Af97e70f9e17F3629038bE",
+    "userAction": "0x259674cED946c2c1C626f917b17Ae8f390976192"
+  },
+  "httpProvider": "https://polygon.arianee.net",
+  "chainId": 137
+}
