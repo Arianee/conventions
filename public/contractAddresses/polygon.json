@@ -6,10 +6,11 @@
     "identity": "0x341162d6fF0C4e9c3E83dA905EE5cc3921D70d1E",
     "smartAsset": "0x821D98cc756811891056D36bC78E76fE4280c50C",
     "store": "0xCD39DC6bCF1F3087021D6FB962eDCd8D9D23a767",
+    "staking": "",
     "whitelist": "0xc563fb28B0B6C36893d9d0AD3bC9d127C12e8653",
     "lost": "0x7F46B7155AADC469C5AD04bCc22A1561A07aF27C",
     "message": "0x307BEb77f66C19Ffb5eDf0607b3f242C39775604",
-    "update":  "0x2739d444966e4B7c323bE1BAb426aABDc6C37C48",
+    "updateSmartAssets":  "0x2739d444966e4B7c323bE1BAb426aABDc6C37C48",
     "userAction": "0x31d212a7e98F248516087e69A74252C9139997a2"
   },
   "httpProvider": "https://polygon.arianee.net",
