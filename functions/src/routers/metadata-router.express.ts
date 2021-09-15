@@ -17,8 +17,8 @@ metaDataRouter.get("/polygon/:instanceId/:tokenId",
       const {instanceId, tokenId} = req.params;
       functions.logger.info("GET /metadata/polygon/:instanceId/:tokenId");
       return res.status(200).send({
-        name: `ArianeePassport ${tokenId}`,
-        description: "TBD",
+        name: `ArianeePassport #${tokenId}`,
+        description: "This NFT is set as private. The owner of the NFT is the only one capable of revealing the content.",
         image: "https://cert.arianee.net/assets/nft-default-metadata.png",
         external_url: "https://arianee.org",
       });
