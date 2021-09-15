@@ -1,0 +1,8 @@
+{
+  "name": "Arianee",
+  "description": "Create and sell NFTs with Arianee, the digital identity standard for all physical or digital products of value. Arianee is built for and by creators.",
+  "image": "https://cert.arianee.org/assets/a-logo.png",
+  "external_link": "https://www.arianee.org",
+  "seller_fee_basis_points": 750,
+  "fee_recipient": "0x9e4B8F14591fafecc1f5113298E88dde419d3274" 
+}
