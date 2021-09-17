@@ -1,17 +1,17 @@
 {
   "contractAdresses": {
     "aria": "0x46F48FbdedAa6F5500993BEDE9539ef85F4BeE8e",
-    "creditHistory": "0xEc486D47075874f1651cc1801d2c2bcb56155840",
-    "eventArianee": "0xE5B33092a5CfF484DEB961B5079D996D382AA185",
-    "identity": "0xF009272c58d28783023e02C7354C2ff4BF1785f3",
-    "smartAsset": "0x5740375Ac9a1210FACcaeE8E353340Ed4C7D3C9C",
+    "creditHistory": "0xd9504158bd3E58295940EA852B4e9B0BBA6f3534",
+    "eventArianee": "0x8DBF69E7057C5Dce4e073BD248E997AA041f819A",
+    "identity": "0xEFF4fC40d53539e40bba354CeA841b9158E1E363",
+    "smartAsset": "0xc14Cc4d89116ec88Ebb63FDf497AaCE6Ff3745dA",
     "staking": "",
-    "store": "0x29Ea53B99787676b4DafD9463cAfAe24D6CBBafA",
-    "whitelist": "0xf4Dbf6Cdf09511bD1B8F09730b69eaF386C619b6",
-    "lost": "0xD5b1a35e62e5d0B5Ff44754593f9b6677d550747",
-    "message": "0x5735Fc65F153dbf668D6675713467479cfe3b03D",
-    "userAction": "0xD1561711189adFdd0C4f585Ceed2d8F28802C756",
-    "updateSmartAssets": "0x93687e457ba4EE6F60a678e9c6da64F5DE6A3a4C"
+    "store": "0x97EE0cfa1880BC67245BA730325b74312918281b",
+    "whitelist": "0xeAbCefAFfa2371c0BFa338F2558131014D0E2620",
+    "lost": "0x5846856B216f372f13E1d6DEa9f603D4B492596B",
+    "message": "0x1e606c00C785938Dc42ba4c12f887C0DD349B94e",
+    "userAction": "0x82D9628f2c3d84c2D9157270bc1b98295E22B404",
+    "updateSmartAssets": "0xD0406166199281C480465266c17028824E71Fb15"
   },
   "httpProvider": "https://polygon.arianee.net",
   "chainId": 137
