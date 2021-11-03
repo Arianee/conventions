@@ -14,6 +14,7 @@
     "updateSmartAssets": "0xD0406166199281C480465266c17028824E71Fb15"
   },
   "httpProvider": "https://polygon.arianee.net",
+  "gasStation": "https://gasstation-mainnet.matic.network",
   "chainId": 137
 }
 
