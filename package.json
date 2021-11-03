@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "deploy:contractAddress": "firebase use arianee-cert && firebase deploy --only hosting",
     "test:watch": "jest --watchAll"
   },
   "repository": {
