@@ -12,7 +12,7 @@
         "lost": "0x17a73d584d5526EE0f1D54c6cd16D95409F4509b",
         "updateSmartAssets" : "0x776B00214cC79145f584E856F9FE4E8ac8B2Aa78"
     },
-    "httpProvider": "https://poa.arianee.net",
+    "httpProvider": "https://poa.arianee.com",
     "gasStation": "https://cert.arianee.org/gasStation/mainnet.json",
     "chainId": 99
 }

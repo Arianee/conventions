@@ -13,7 +13,7 @@
     "userAction": "0x6bDb54FB6227C360b95F9A08Fb670f8207D3476f",
     "updateSmartAssets": "0x3ae108bF0Ee8bB9D810BfC80aC73394ee1509C7b"
   },
-  "httpProvider": "https://sokol.arianee.net",
+  "httpProvider": "https://poa.arianee.com",
   "gasStation": "https://cert.arianee.org/gasStation/testnet.json",
   "chainId": 77
 }

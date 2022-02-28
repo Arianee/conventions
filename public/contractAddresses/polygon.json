@@ -13,7 +13,7 @@
     "userAction": "0x82D9628f2c3d84c2D9157270bc1b98295E22B404",
     "updateSmartAssets": "0xD0406166199281C480465266c17028824E71Fb15"
   },
-  "httpProvider": "https://polygon.arianee.net",
+  "httpProvider": "https://polygon.arianee.com",
   "gasStation": "https://gasstation-mainnet.matic.network",
   "chainId": 137
 }

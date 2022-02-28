@@ -6,8 +6,8 @@
         "store": "0x8c218C1BE2BFE37337B010Af74AB25554D8effB5",
         "staking": "0x3a125be5bb8a3e1c171947c384795b4a488b74a0",
         "creditHistory": "0xF97d0868cF08Ce0550fFD8B109207eB482A5B683",
-        "whitelist": "0xA4AaF327dF4a443E11F6978f6265f7e9219c0806"   
+        "whitelist": "0xA4AaF327dF4a443E11F6978f6265f7e9219c0806"
     },
-    "httpProvider": "https://core.poa.network",
-    "chainId": 99     
+    "httpProvider": "https://poa.arianee.com",
+    "chainId": 99
 }

@@ -13,6 +13,6 @@
     "userAction": "0xE63A880ACb6120Fc3cFf2420BFBb88175484b0bB",
     "updateSmartAssets": "0xdB754B9A0d096307924cC010e28228a520bc4f78"
   },
-  "httpProvider": "https://sokol.arianee.net",
+  "httpProvider": "https://sokol.arianee.com",
   "chainId": 77
 }
