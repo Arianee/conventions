@@ -330,8 +330,9 @@
                 "id": "select"
               },
               "oneOf": [
-                    {"enum": ["missing"], "title":"Provider for missing/stolen process", "description": "Provider for missing/stolen process"}
-                ]
+                    {"enum": ["missing"], "title":"Provider for missing/stolen process", "description": "Provider for missing/stolen process"},
+                    {"enum": ["custodialWallet"], "title":"Custodial Wallet Landing Page", "description": "website where user lands when exporting mnemonic to brand. Address is pub key of to encrypt mnemonic"}
+              ]
             },
             "address": {
               "type": "string",
@@ -349,7 +350,7 @@
             }
           }
         }
-      },      
+      },
       "rpcEndpoint": {
         "type": "string",
         "title": "RPC Endpoint",
