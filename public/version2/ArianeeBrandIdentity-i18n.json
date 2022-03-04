@@ -53,8 +53,9 @@
                     {"enum": ["label"], "title":"Label", "description": "official label supported by the Brand and its products"},
                     {"enum": ["iosScheme"], "title":"iosScheme", "description": "iosScheme"},
                     {"enum": ["androidScheme"], "title":"androidScheme", "description": "androidScheme"},
-                    {"enum": ["other"], "title":"other", "description": "other"}
-                ]
+                    {"enum": ["other"], "title":"other", "description": "other"},
+                    {"enum": ["deepLinkDomain"], "title":"Domain to use for deeplink", "description": "Domain to use for deeplink"}
+              ]
             },
             "title": {
               "type": "string",
