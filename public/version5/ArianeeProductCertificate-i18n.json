@@ -1,0 +1,1580 @@
+{
+  "$id": "https://cert.arianee.org/version5/ArianeeProductCertificate-i18n.json",
+  "$schema": "https://cert.arianee.org/version5/ArianeeProductCertificate-i18n.json",
+  "title": "Arianee Certificate i18n (transparency and composed)",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "title": "$schema",
+      "type": "string",
+      "default": "https://cert.arianee.org/version5/ArianeeProductCertificate-i18n.json",
+      "description": "Arianee Certificate i18n (transparency and composed)"
+    },
+    "language": {
+      "type": "string",
+      "title": "Language",
+      "description": "Descriptions and external contents can be stored in different languages",
+      "oneOf": [
+        {
+          "title": "French",
+          "description": "French",
+          "enum": [
+            "fr-FR"
+          ]
+        },
+        {
+          "title": "English (US)",
+          "description": "English (US)",
+          "enum": [
+            "en-US"
+          ]
+        },
+        {
+          "title": "Chinese (traditional)",
+          "description": "Chinese (traditional)",
+          "enum": [
+            "zh-TW"
+          ]
+        },
+        {
+          "title": "Chinese (simplified)",
+          "description": "Chinese (simplified)",
+          "enum": [
+            "zh-CN"
+          ]
+        },
+        {
+          "enum": [
+            "ko-KR"
+          ],
+          "title": "Korean",
+          "description": "Korean"
+        },
+        {
+          "enum": [
+            "ja-JP"
+          ],
+          "title": "Japanese",
+          "description": "Japanese"
+        },
+        {
+          "enum": [
+            "de-DE"
+          ],
+          "title": "German",
+          "description": "German"
+        },
+        {
+          "enum": [
+            "es"
+          ],
+          "title": "Spanish",
+          "description": "Spanish"
+        },
+        {
+          "enum": [
+            "it"
+          ],
+          "title": "Italian",
+          "description": "Italian"
+        }
+      ]
+    },
+    "name": {
+      "type": "string",
+      "title": "Name",
+      "default": "",
+      "description": "Name of the product.\n Likely to be the first thing displayed on a wallet app."
+    },
+    "sku": {
+      "type": "string",
+      "title": "SKU",
+      "default": "",
+      "description": "The stock keeping unit (SKU) is an alphanumeric code assigned to a product by a business to identify the price, product options and manufacturer of the merchandise."
+    },
+    "gtin": {
+      "type": "string",
+      "title": "GTIN",
+      "default": "",
+      "description": "The Global Trade Item Number (GTIN) is a globally unique 14-digit number used to identify trade items, products, or services. GTIN is also an umbrella term that refers to the entire family of UCC. EAN data structures. The entire family of data structures within the GTIN is: GTIN-12 (UPC)."
+    },
+    "brandInternalId": {
+      "type": "string",
+      "title": "Brand Internal ID",
+      "default": "",
+      "description": "Identification number that end customers will not have access to."
+    },
+    "category": {
+      "type": "string",
+      "title": "Category",
+      "description": "Information on the broad category the product belongs to.",
+      "oneOf": [
+        {
+          "description": "Apparel",
+          "title": "Apparel",
+          "enum": [
+            "apparel"
+          ]
+        },
+        {
+          "description": "Accessory",
+          "title": "Accessory",
+          "enum": [
+            "accessory"
+          ]
+        }
+      ]
+    },
+    "subCategory": {
+      "type": "string",
+      "title": "Sub Category",
+      "description": "Information on the specific category the product belongs to.",
+      "temp": "Shirt Dress T-shirt Sweater Vest Jacket Denim Pants Skirt Swim",
+      "oneOf": [
+        {
+          "description": "Shirt",
+          "title": "Shirt",
+          "enum": [
+            "shirt"
+          ]
+        },
+        {
+          "description": "Dress",
+          "title": "Dress",
+          "enum": [
+            "dress"
+          ]
+        },
+        {
+          "description": "Watch",
+          "title": "Watch",
+          "enum": [
+            "watch"
+          ]
+        }
+      ]
+    },
+    "intended": {
+      "type": "string",
+      "title": "Intended",
+      "description": "Information on the target customer market of the product.",
+      "temp": "Women's Men's Youth-Girls Youth-Boys Toddler-Girls Todder-Boys Infant-Girls Infant-Boys Adult Gender Neutral/Non-binary",
+      "oneOf": [
+        {
+          "description": "Women's",
+          "title": "Women's",
+          "enum": [
+            "womens"
+          ]
+        },
+        {
+          "description": "Men's",
+          "title": "Men's",
+          "enum": [
+            "mens"
+          ]
+        },
+        {
+          "description": "Adult Gender Neutral",
+          "title": "Adult Gender Neutral",
+          "enum": [
+            "neutral"
+          ]
+        }
+      ]
+    },
+    "serialnumber": {
+      "type": "array",
+      "title": "Serial Number",
+      "description": "Identification numbers that end customers will have access to.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "oneOf": [
+              {
+                "description": "Serial Number",
+                "title": "Serial Number",
+                "enum": [
+                  "serialnumber"
+                ]
+              },
+              {
+                "description": "Case Number",
+                "title": "Case Number",
+                "enum": [
+                  "casenumber"
+                ]
+              },
+              {
+                "description": "Movement Number",
+                "title": "Movement Number",
+                "enum": [
+                  "movementnumber"
+                ]
+              },
+              {
+                "description": "Vehicle Identification Number",
+                "title": "Vehicle Identification Number",
+                "enum": [
+                  "vin"
+                ]
+              },
+              {
+                "description": "Poinçon de Genève",
+                "title": "Poinçon de Genève",
+                "enum": [
+                  "pgeneve"
+                ]
+              },
+              {
+                "description": "Millesimation",
+                "title": "Millesimation",
+                "enum": [
+                  "millesimation"
+                ]
+              }
+            ]
+          },
+          "value": {
+            "type": "string",
+            "title": "Value"
+          }
+        }
+      }
+    },
+    "subBrand": {
+      "type": "string",
+      "title": "Sub Brand",
+      "description": "This field may be used when a product is part of a sub Brand owned by the Brand who creates the certificate."
+    },
+    "model": {
+      "type": "string",
+      "title": "Model",
+      "description": "Model of the product to bring precisions to the Name.\n Likely to be the second thing displayed on a wallet app."
+    },
+    "description": {
+      "type": "string",
+      "title": "Description",
+      "description": "Description of the product. (HTML Accepted)\n A description can be stored for each language"
+    },
+    "subDescription": {
+      "required": false,
+      "type": "array",
+      "title": "Description (more)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "oneOf": [
+              {
+                "enum": [
+                  "service"
+                ],
+                "title": "Servicing",
+                "description": "Servicing"
+              },
+              {
+                "enum": [
+                  "recycling"
+                ],
+                "title": "Recycling",
+                "description": "Recycling"
+              },
+              {
+                "enum": [
+                  "other"
+                ],
+                "title": "other",
+                "description": "other"
+              }
+            ]
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "content": {
+            "type": "string",
+            "title": "Content"
+          },
+          "order": {
+            "type": "number",
+            "title": "Order (number)"
+          }
+        }
+      }
+    },
+    "externalContents": {
+      "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
+      "required": false,
+      "type": "array",
+      "title": "External Contents",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "oneOf": [
+              {
+                "enum": [
+                  "website"
+                ],
+                "title": "Website (main)",
+                "description": "Regular link"
+              },
+              {
+                "enum": [
+                  "proofLinkAction"
+                ],
+                "title": "proofLinkAction",
+                "description": "Link with a proof of ownership. The difference with arianeeAccessTokenAuthLink is that proofLinkAction does need blockchain transaction. It is not instant but can be revoked."
+              },
+              {
+                "enum": [
+                  "transparency"
+                ],
+                "title": "transparency",
+                "description": "Url of transparency events json"
+              },              
+              {
+                "enum": [
+                  "arianeeAccessTokenAuthLink"
+                ],
+                "title": "arianeeAccessTokenAuthLink",
+                "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenAuthLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
+              },
+              {
+                "enum": [
+                  "youtube"
+                ],
+                "title": "Youtube video",
+                "description": "Youtube video"
+              }
+            ]
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "url": {
+            "type": "string",
+            "title": "Url"
+          },
+          "order": {
+            "type": "number",
+            "title": "Order (number)"
+          }
+        }
+      }
+    },
+    "msrp": {
+      "type": "array",
+      "title": "Manufacturers suggested retail price",
+      "description": "The manufacturer's suggested retail price (MSRP) is the price a product's producer recommends it be sold for in retail stores. MSRP Country should respect ISO 3166 alpha-3",
+      "items": {
+        "type": "object",
+        "properties": {
+          "msrp": {
+            "type": "string",
+            "title": "MSRP",
+            "default": "",
+            "description": "Manufacturers suggested retail price (number)"
+          },
+          "currency": {
+            "type": "string",
+            "title": "Currency",
+            "default": "",
+            "description": "Currency",
+            "oneOf": [
+              {
+                "title": "US Dollar",
+                "description": "US Dollar",
+                "enum": [
+                  "USD"
+                ]
+              },
+              {
+                "title": "Euro",
+                "description": "Euro",
+                "enum": [
+                  "EUR"
+                ]
+              },
+              {
+                "title": "Pound",
+                "description": "Pound",
+                "enum": [
+                  "GBP"
+                ]
+              }
+            ]
+          },
+          "msrpCountry": {
+            "type": "string",
+            "title": "Country (msrp)",
+            "default": "",
+            "description": "Country of Intended Original Sale (ISO 3166 alpha-3)"
+          }
+        }
+      }
+    },
+    "medias": {
+      "type": "array",
+      "title": "Medias",
+      "description": "Picture & media used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)",
+      "items": {
+        "type": "object",
+        "properties": {
+          "mediaType": {
+            "type": "string",
+            "title": "Media Type",
+            "oneOf": [
+              {
+                "enum": [
+                  "picture"
+                ],
+                "title": "Picture (png / jpg)",
+                "description": "Picture (png / jpg)"
+              },
+              {
+                "enum": [
+                  "youtube"
+                ],
+                "title": "Youtube video",
+                "description": "Youtube video"
+              }
+            ]
+          },
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "oneOf": [
+              {
+                "enum": [
+                  "product"
+                ],
+                "title": "Product media / picture",
+                "description": "used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)"
+              },
+              {
+                "enum": [
+                  "brandItemBackgroundPicture"
+                ],
+                "title": "Brand Item Background Picture (3200x1900) ratioed",
+                "description": "(3200x1900), format : jpg/png, max 400ko created for the certificate in the list of certificates someone has. It should include a product picture."
+              },
+              {
+                "enum": [
+                  "itemBackgroundPicture"
+                ],
+                "title": "Item Background Picture (3000x3000) ratioed",
+                "description": "dark, format .jpg, (3000x3000) max 400ko created for the background of the certificate screen"
+              },
+              {
+                "enum": [
+                  "certificateBackgroundPicture"
+                ],
+                "title": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top",
+                "description": "dark, no logo, format .jpg, (1900x3200), max 400ko created for the background of the transfer/proof of certificate screens"
+              }
+            ]
+          },
+          "url": {
+            "type": "string",
+            "title": "URL"
+          },
+          "hash": {
+            "type": "string",
+            "title": "Media Hash"
+          },
+          "order": {
+            "type": "number",
+            "title": "Media Order (number)"
+          }
+        }
+      }
+    },
+    "customAttributes": {
+      "type": "array",
+      "title": "Custom attributes",
+      "description": "Information on the specific attributes of the product.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "title": "Type"
+          },
+          "value": {
+            "type": "string",
+            "title": "Value"
+          }
+        }
+      }
+    },
+    "attributes": {
+      "type": "array",
+      "title": "Attributes",
+      "description": "Information on the specific attributes of the product that are aimed to be shared with partners.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "trait_type": {
+            "type": "string",
+            "title": "Trait Type (for external service like opensea)"            
+          },          
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "oneOf": [
+              {
+                "title": "Color",
+                "description": "Color",
+                "enum": [
+                  "color"
+                ]
+              },
+              {
+                "title": "Printed",
+                "description": "Printed",
+                "enum": [
+                  "printed"
+                ]
+              },
+              {
+                "title": "Complication",
+                "description": "Complication",
+                "enum": [
+                  "complication"
+                ]
+              }
+            ]
+          },
+          "value": {
+            "type": "string",
+            "title": "Value"
+          }
+        }
+      }
+    },
+    "materials": {
+      "type": "array",
+      "title": "Materials",
+      "description": "Information on the materials used to manufacture the product.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "material": {
+            "type": "string",
+            "title": "Material",
+            "temp": "Cashmere / Cotton / Denim - Jeans / Exotic leathers / Faux fur / Fur /Leather / Linen / Polyester / Silk / Suede / Synthetic / Tweed / Velvet / Viscose / Wool",
+            "oneOf": [
+              {
+                "title": "Cashmere",
+                "description": "Cashmere",
+                "enum": [
+                  "cashmere"
+                ]
+              },
+              {
+                "title": "Cotton",
+                "description": "Cotton",
+                "enum": [
+                  "cotton"
+                ]
+              },
+              {
+                "title": "Denim - Jeans",
+                "description": "Denim - Jeans",
+                "enum": [
+                  "denim-jeans"
+                ]
+              },
+              {
+                "title": "Gold",
+                "description": "Gold",
+                "enum": [
+                  "gold"
+                ]
+              },
+              {
+                "title": "Silver",
+                "description": "Silver",
+                "enum": [
+                  "silver"
+                ]
+              }
+            ]
+          },
+          "value": {
+            "type": "string",
+            "title": "Value"
+          },
+          "pourcentage": {
+            "type": "string",
+            "title": "Pourcentage",
+            "description": "Pourcentage without % (numeric)"
+          }
+        }
+      }
+    },
+    "size": {
+      "type": "array",
+      "title": "Sizes",
+      "description": "Information on the size of the product.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "oneOf": [
+              {
+                "title": "Height",
+                "description": "Height",
+                "enum": [
+                  "height"
+                ]
+              },
+              {
+                "title": "Width",
+                "description": "Width",
+                "enum": [
+                  "width"
+                ]
+              },
+              {
+                "title": "Depth",
+                "description": "Depth",
+                "enum": [
+                  "depth"
+                ]
+              },
+              {
+                "title": "Size",
+                "description": "Size",
+                "enum": [
+                  "size"
+                ]
+              }
+            ]
+          },
+          "value": {
+            "type": "string",
+            "title": "Value"
+          },
+          "unit": {
+            "type": "string",
+            "title": "Unit",
+            "oneOf": [
+              {
+                "title": "Inch",
+                "description": "Inch",
+                "enum": [
+                  "in"
+                ]
+              },
+              {
+                "title": "Centimer",
+                "description": "Centimer",
+                "enum": [
+                  "cm"
+                ]
+              },
+              {
+                "title": "Millimeter",
+                "description": "Millimeter",
+                "enum": [
+                  "mm"
+                ]
+              },
+              {
+                "title": "EU",
+                "description": "EU",
+                "enum": [
+                  "eu"
+                ]
+              },
+              {
+                "title": "UK",
+                "description": "UK",
+                "enum": [
+                  "uk"
+                ]
+              },
+              {
+                "title": "US",
+                "description": "US",
+                "enum": [
+                  "us"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "manufacturingCountry": {
+      "type": "string",
+      "title": "Country (manufacturing)",
+      "default": "",
+      "description": "Country of manufacture in final assembly stage. (ISO 3166 alpha-3)"
+    },
+    "facilityId": {
+      "type": "string",
+      "title": "Facility Identification number",
+      "default": "",
+      "description": "Facility Identification in Open Apparel Registry (OAR) or GS1 database"
+    },
+    "productCertification": {
+      "type": "array",
+      "title": "Product Certifications & Compliance",
+      "description": "Certifications a Brand owns at the product level. \nIt is currently an information not verified and the Brand bares all responsibilities related to its affiliation to a certification. ",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name",
+            "oneOf": [
+              {
+                "title": "Fair Trade",
+                "description": "Fair Trade",
+                "enum": [
+                  "fairtrade"
+                ]
+              },
+              {
+                "title": "WWF",
+                "description": "WWF",
+                "enum": [
+                  "wwf"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "transparencyItems": {
+      "type": "array",
+      "title": "Transparency information about product",
+      "description": "Transparency information regarding the product",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "title": "Category of transparency",
+            "oneOf": [
+              {
+                "title": "material",
+                "description": "material",
+                "enum": [
+                  "material"
+                ]
+              },
+              {
+                "title": "assembly",
+                "description": "assembly",
+                "enum": [
+                  "assembly"
+                ]
+              },
+              {
+                "title": "impact",
+                "description": "impact",
+                "enum": [
+                  "impact"
+                ]
+              }
+            ]
+          },          
+          "type": {
+            "type": "string",
+            "title": "Type of transparency",
+            "oneOf": [
+              {
+                "title": "responsible_procurement",
+                "description": "responsible_procurement",
+                "enum": [
+                  "responsible_procurement"
+                ]
+              },
+              {
+                "title": "eco_design",
+                "description": "eco_design",
+                "enum": [
+                  "eco_design"
+                ]
+              },
+              {
+                "title": "packaging",
+                "description": "packaging",
+                "enum": [
+                  "packaging"
+                ]
+              }
+            ]
+          },
+          "subtype": {
+            "type": "string",
+            "title": "Subtype of transparency",
+            "oneOf": [
+              {
+                "title": "material-responsible_procurement-ethical_purchasing",
+                "description": "material-responsible_procurement-ethical_purchasing",
+                "enum": [
+                  "material-responsible_procurement-ethical_purchasing"
+                ]
+              },
+              {
+                "title": "material-responsible_procurement-organic organic",
+                "description": "material-responsible_procurement-organic organic",
+                "enum": [
+                  "material-responsible_procurement-organic organic"
+                ]
+              }
+            ]
+          },          
+          "title": {
+            "type": "string",
+            "title": "Title to be displayed"
+          },
+          "subtitle": {
+            "type": "string",
+            "title": "Subtitle to be displayed"
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "description": "Description of the product. (HTML Accepted)\n A description can be stored for each language"
+          },
+          "medias": {
+            "type": "array",
+            "title": "Medias",
+            "description": "Picture & media used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)",
+            "items": {
+              "type": "object",
+              "properties": {
+                "mediaType": {
+                  "type": "string",
+                  "title": "Media Type",
+                  "oneOf": [
+                    {
+                      "enum": [
+                        "picture"
+                      ],
+                      "title": "Picture (png / jpg)",
+                      "description": "Picture (png / jpg)"
+                    },
+                    {
+                      "enum": [
+                        "youtube"
+                      ],
+                      "title": "Youtube video",
+                      "description": "Youtube video"
+                    }
+                  ]
+                },
+                "type": {
+                  "type": "string",
+                  "title": "Type",
+                  "oneOf": [
+                    {
+                      "enum": [
+                        "icon"
+                      ],
+                      "title": "icon of label",
+                      "description": "An icon depicting the transparency item (png transparent)"
+                    },
+                    {
+                      "enum": [
+                        "transparencyPicture"
+                      ],
+                      "title": "Transparency picture",
+                      "description": "A picture depicting the transparency item"
+                    }
+                  ]
+                },
+                "url": {
+                  "type": "string",
+                  "title": "URL"
+                },
+                "hash": {
+                  "type": "string",
+                  "title": "Media Hash"
+                },
+                "order": {
+                  "type": "number",
+                  "title": "Media Order (number)"
+                }
+              }
+            }
+          },
+          "externalContents": {
+            "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
+            "required": false,
+            "type": "array",
+            "title": "External Contents",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "title": "Type",
+                  "oneOf": [
+                    {
+                      "enum": [
+                        "website"
+                      ],
+                      "title": "Website (main)",
+                      "description": "Regular link"
+                    },
+                    {
+                      "enum": [
+                        "proofLinkAction"
+                      ],
+                      "title": "proofLinkAction",
+                      "description": "Link with a proof of ownership. The difference with arianeeAccessTokenAuthLink is that proofLinkAction does need blockchain transaction. It is not instant but can be revoked."
+                    },
+                    {
+                      "enum": [
+                        "transparency"
+                      ],
+                      "title": "transparency",
+                      "description": "Url of transparency events json"
+                    },                    
+                    {
+                      "enum": [
+                        "arianeeAccessTokenAuthLink"
+                      ],
+                      "title": "arianeeAccessTokenAuthLink",
+                      "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenAuthLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
+                    },
+                    {
+                      "enum": [
+                        "youtube"
+                      ],
+                      "title": "Youtube video",
+                      "description": "Youtube video"
+                    }
+                  ]
+                },
+                "title": {
+                  "type": "string",
+                  "title": "Title"
+                },
+                "url": {
+                  "type": "string",
+                  "title": "Url"
+                },
+                "order": {
+                  "type": "number",
+                  "title": "Order (number)"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "i18n": {
+      "type": "array",
+      "title": "Other languages :  description / external contents",
+      "items": {
+        "type": "object",
+        "properties": {
+          "language": {
+            "type": "string",
+            "title": "Language",
+            "oneOf": [
+              {
+                "description": "French",
+                "title": "French",
+                "enum": [
+                  "fr-FR"
+                ]
+              },
+              {
+                "description": "English (US)",
+                "title": "English (US)",
+                "enum": [
+                  "en-US"
+                ]
+              },
+              {
+                "description": "Chinese (traditional)",
+                "title": "Chinese (traditional)",
+                "enum": [
+                  "zh-TW"
+                ]
+              },
+              {
+                "description": "Chinese (simplified)",
+                "title": "Chinese (simplified)",
+                "enum": [
+                  "zh-CN"
+                ]
+              },
+              {
+                "enum": [
+                  "ko-KR"
+                ],
+                "title": "Korean",
+                "description": "Korean"
+              },
+              {
+                "enum": [
+                  "ja-JP"
+                ],
+                "title": "Japanese",
+                "description": "Japanese"
+              },
+              {
+                "enum": [
+                  "de-DE"
+                ],
+                "title": "German",
+                "description": "German"
+              },
+              {
+                "enum": [
+                  "es"
+                ],
+                "title": "Spanish",
+                "description": "Spanish"
+              },
+              {
+                "enum": [
+                  "it"
+                ],
+                "title": "Italian",
+                "description": "Italian"
+              }
+            ]
+          },
+          "name": {
+            "type": "string",
+            "title": "Name",
+            "default": "",
+            "description": "Name of the product.\n Likely to be the first thing displayed on a wallet app."
+          },
+          "model": {
+            "type": "string",
+            "title": "Model",
+            "description": "Model of the product to bring precisions to the Name.\n Likely to be the second thing displayed on a wallet app."
+          },
+          "subBrand": {
+            "type": "string",
+            "title": "Sub Brand",
+            "description": "This field may be used when a product is part of a sub Brand owned by the Brand who creates the certificate."
+          },
+          "description": {
+            "type": "string",
+            "title": "Description"
+          },
+          "subDescription": {
+            "required": false,
+            "type": "array",
+            "title": "Description (more)",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "title": "Type",
+                  "oneOf": [
+                    {
+                      "enum": [
+                        "service"
+                      ],
+                      "title": "Servicing",
+                      "description": "Servicing"
+                    },
+                    {
+                      "enum": [
+                        "recycling"
+                      ],
+                      "title": "Recycling",
+                      "description": "Recycling"
+                    },
+                    {
+                      "enum": [
+                        "other"
+                      ],
+                      "title": "other",
+                      "description": "other"
+                    }
+                  ]
+                },
+                "title": {
+                  "type": "string",
+                  "title": "Title"
+                },
+                "content": {
+                  "type": "string",
+                  "title": "Content"
+                },
+                "order": {
+                  "type": "number",
+                  "title": "Order (number)"
+                }
+              }
+            }
+          },
+          "medias": {
+            "type": "array",
+            "title": "Medias",
+            "description": "Picture & media used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)",
+            "items": {
+              "type": "object",
+              "properties": {
+                "mediaType": {
+                  "type": "string",
+                  "title": "Media Type",
+                  "oneOf": [
+                    {
+                      "enum": [
+                        "picture"
+                      ],
+                      "title": "Picture (png / jpg)",
+                      "description": "Picture (png / jpg)"
+                    },
+                    {
+                      "enum": [
+                        "youtube"
+                      ],
+                      "title": "Youtube video",
+                      "description": "Youtube video"
+                    }
+                  ]
+                },
+                "type": {
+                  "type": "string",
+                  "title": "Type",
+                  "oneOf": [
+                    {
+                      "enum": [
+                        "product"
+                      ],
+                      "title": "Product media / picture",
+                      "description": "used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)"
+                    },
+                    {
+                      "enum": [
+                        "brandItemBackgroundPicture"
+                      ],
+                      "title": "Brand Item Background Picture (3200x1900) ratioed",
+                      "description": "(3200x1900), format : jpg/png, max 400ko created for the certificate in the list of certificates someone has. It should include a product picture."
+                    },
+                    {
+                      "enum": [
+                        "itemBackgroundPicture"
+                      ],
+                      "title": "Item Background Picture (3000x3000) ratioed",
+                      "description": "dark, format .jpg, (3000x3000) max 400ko created for the background of the certificate screen"
+                    },
+                    {
+                      "enum": [
+                        "certificateBackgroundPicture"
+                      ],
+                      "title": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top",
+                      "description": "dark, no logo, format .jpg, (1900x3200), max 400ko created for the background of the transfer/proof of certificate screens"
+                    }
+                  ]
+                },
+                "url": {
+                  "type": "string",
+                  "title": "URL"
+                },
+                "hash": {
+                  "type": "string",
+                  "title": "Media Hash"
+                },
+                "order": {
+                  "type": "number",
+                  "title": "Media Order (number)"
+                }
+              }
+            }
+          },
+          "externalContents": {
+            "required": false,
+            "type": "array",
+            "title": "External Contents",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "title": "Type",
+                  "oneOf": [
+                    {
+                      "enum": [
+                        "website"
+                      ],
+                      "title": "Website (main)",
+                      "description": "Regular link"
+                    },
+                    {
+                      "enum": [
+                        "proofLinkAction"
+                      ],
+                      "title": "proofLinkAction",
+                      "description": "Link with a proof of ownership. The difference with arianeeAccessTokenAuthLink is that proofLinkAction does need blockchain transaction. It is not instant but can be revoked."
+                    },
+                    {
+                      "enum": [
+                        "arianeeAccessTokenAuthLink"
+                      ],
+                      "title": "arianeeAccessTokenAuthLink",
+                      "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenAuthLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
+                    },
+                    {
+                      "enum": [
+                        "youtube"
+                      ],
+                      "title": "Youtube video",
+                      "description": "Youtube video"
+                    }
+                  ]
+                },
+                "title": {
+                  "type": "string",
+                  "title": "Title"
+                },
+                "url": {
+                  "type": "string",
+                  "title": "Url"
+                },
+                "order": {
+                  "type": "number",
+                  "title": "Order (number)"
+                }
+              }
+            }
+          },
+          "customAttributes": {
+            "type": "array",
+            "title": "Custom attributes",
+            "description": "Information on the specific attributes of the product.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "title": "Type"
+                },
+                "value": {
+                  "type": "string",
+                  "title": "Value"
+                }
+              }
+            }
+          },
+          "transparencyItems": {
+            "type": "array",
+            "title": "Transparency information about product",
+            "description": "Transparency information regarding the product",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "type": "string",
+                  "title": "Category of transparency",
+                  "oneOf": [
+                    {
+                      "title": "material",
+                      "description": "material",
+                      "enum": [
+                        "material"
+                      ]
+                    },
+                    {
+                      "title": "assembly",
+                      "description": "assembly",
+                      "enum": [
+                        "assembly"
+                      ]
+                    },
+                    {
+                      "title": "impact",
+                      "description": "impact",
+                      "enum": [
+                        "impact"
+                      ]
+                    }
+                  ]
+                },          
+                "type": {
+                  "type": "string",
+                  "title": "Type of transparency",
+                  "oneOf": [
+                    {
+                      "title": "responsible_procurement",
+                      "description": "responsible_procurement",
+                      "enum": [
+                        "responsible_procurement"
+                      ]
+                    },
+                    {
+                      "title": "eco_design",
+                      "description": "eco_design",
+                      "enum": [
+                        "eco_design"
+                      ]
+                    },
+                    {
+                      "title": "packaging",
+                      "description": "packaging",
+                      "enum": [
+                        "packaging"
+                      ]
+                    }
+                  ]
+                },
+                "subtype": {
+                  "type": "string",
+                  "title": "Subtype of transparency",
+                  "oneOf": [
+                    {
+                      "title": "material-responsible_procurement-ethical_purchasing",
+                      "description": "material-responsible_procurement-ethical_purchasing",
+                      "enum": [
+                        "material-responsible_procurement-ethical_purchasing"
+                      ]
+                    },
+                    {
+                      "title": "material-responsible_procurement-organic organic",
+                      "description": "material-responsible_procurement-organic organic",
+                      "enum": [
+                        "material-responsible_procurement-organic organic"
+                      ]
+                    }
+                  ]
+                }, 
+                "title": {
+                  "type": "string",
+                  "title": "Title to be displayed"
+                },
+                "subtitle": {
+                  "type": "string",
+                  "title": "Subtitle to be displayed"
+                },
+                "description": {
+                  "type": "string",
+                  "title": "Description",
+                  "description": "Description of the product. (HTML Accepted)\n A description can be stored for each language"
+                },
+                "medias": {
+                  "type": "array",
+                  "title": "Medias",
+                  "description": "Picture & media used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "mediaType": {
+                        "type": "string",
+                        "title": "Media Type",
+                        "oneOf": [
+                          {
+                            "enum": [
+                              "picture"
+                            ],
+                            "title": "Picture (png / jpg)",
+                            "description": "Picture (png / jpg)"
+                          },
+                          {
+                            "enum": [
+                              "youtube"
+                            ],
+                            "title": "Youtube video",
+                            "description": "Youtube video"
+                          }
+                        ]
+                      },
+                      "type": {
+                        "type": "string",
+                        "title": "Type",
+                        "oneOf": [
+                          {
+                            "enum": [
+                              "icon"
+                            ],
+                            "title": "icon of label",
+                            "description": "An icon depicting the transparency item (png transparent)"
+                          },
+                          {
+                            "enum": [
+                              "transparencyPicture"
+                            ],
+                            "title": "Transparency picture",
+                            "description": "A picture depicting the transparency item"
+                          }
+                        ]
+                      },
+                      "url": {
+                        "type": "string",
+                        "title": "URL"
+                      },
+                      "hash": {
+                        "type": "string",
+                        "title": "Media Hash"
+                      },
+                      "order": {
+                        "type": "number",
+                        "title": "Media Order (number)"
+                      }
+                    }
+                  }
+                },
+                "externalContents": {
+                  "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
+                  "required": false,
+                  "type": "array",
+                  "title": "External Contents",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "title": "Type",
+                        "oneOf": [
+                          {
+                            "enum": [
+                              "website"
+                            ],
+                            "title": "Website (main)",
+                            "description": "Regular link"
+                          },
+                          {
+                            "enum": [
+                              "proofLinkAction"
+                            ],
+                            "title": "proofLinkAction",
+                            "description": "Link with a proof of ownership. The difference with arianeeAccessTokenAuthLink is that proofLinkAction does need blockchain transaction. It is not instant but can be revoked."
+                          },
+                          {
+                            "enum": [
+                              "transparency"
+                            ],
+                            "title": "transparency",
+                            "description": "Url of transparency events json"
+                          },
+                          {
+                            "enum": [
+                              "arianeeAccessTokenAuthLink"
+                            ],
+                            "title": "arianeeAccessTokenAuthLink",
+                            "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenAuthLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
+                          },
+                          {
+                            "enum": [
+                              "youtube"
+                            ],
+                            "title": "Youtube video",
+                            "description": "Youtube video"
+                          }
+                        ]
+                      },
+                      "title": {
+                        "type": "string",
+                        "title": "Title"
+                      },
+                      "url": {
+                        "type": "string",
+                        "title": "Url"
+                      },
+                      "order": {
+                        "type": "number",
+                        "title": "Order (number)"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "parentCertificates": {
+      "description": "This field is designed to store the links to parent certificates.",
+      "required": false,
+      "type": "array",
+      "title": "Parent Certificates",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "oneOf": [
+              {
+                "enum": [
+                  "full"
+                ],
+                "title": "Full",
+                "description": "Full"
+              }
+            ]
+          },
+          "arianeeLink": {
+            "type": "string",
+            "title": "Url"
+          },
+          "order": {
+            "type": "number",
+            "title": "Order (number)"
+          }
+        }
+      }
+    },
+    "image": {
+      "type": "string",
+      "title": "Image (for external services like OpenSea)",
+      "default": "",
+      "description": "Image for external services."
+    },     
+    "image_data": {
+      "type": "string",
+      "title": "Raw SVG image data (for external services like OpenSea)",
+      "default": "",
+      "description": "Raw SVG image data for external services."
+    },       
+    "external_url": {
+      "type": "string",
+      "title": "External URL (for external services like OpenSea)",
+      "default": "",
+      "description": "External URL for external services."
+    },    
+    "background_color": {
+      "type": "string",
+      "title": "background_color (for external services like OpenSea)",
+      "default": "",
+      "description": "background_color for external services."
+    },   
+    "animation_url": {
+      "type": "string",
+      "title": "animation_url (for external services like OpenSea)",
+      "default": "",
+      "description": "animation_url for external services."
+    },    
+    "youtube_url": {
+      "type": "string",
+      "title": "youtube_url (for external services like OpenSea)",
+      "default": "",
+      "description": "youtube_url for external services."
+    }           
+  },
+  "required": [
+    "$schema"
+  ]
+}
