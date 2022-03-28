@@ -341,7 +341,7 @@
                 ],
                 "title": "transparency",
                 "description": "Url of transparency events json"
-              },              
+              },
               {
                 "enum": [
                   "arianeeAccessTokenAuthLink"
@@ -527,8 +527,8 @@
         "properties": {
           "trait_type": {
             "type": "string",
-            "title": "Trait Type (for external service like opensea)"            
-          },          
+            "title": "Trait Type (for external service like opensea)"
+          },
           "type": {
             "type": "string",
             "title": "Type",
@@ -795,7 +795,7 @@
                 ]
               }
             ]
-          },          
+          },
           "type": {
             "type": "string",
             "title": "Type of transparency",
@@ -842,7 +842,7 @@
                 ]
               }
             ]
-          },          
+          },
           "title": {
             "type": "string",
             "title": "Title to be displayed"
@@ -950,7 +950,7 @@
                       ],
                       "title": "transparency",
                       "description": "Url of transparency events json"
-                    },                    
+                    },
                     {
                       "enum": [
                         "arianeeAccessTokenAuthLink"
@@ -1243,6 +1243,13 @@
                       ],
                       "title": "Youtube video",
                       "description": "Youtube video"
+                    },
+                    {
+                      "enum": [
+                        "authRedirectTo"
+                      ],
+                      "title": "Authentified One 2 Many",
+                      "description": "Link to redirect to a another claimaible nft. NFT should redirect to the same link with Arianee access token"
                     }
                   ]
                 },
@@ -1312,7 +1319,7 @@
                       ]
                     }
                   ]
-                },          
+                },
                 "type": {
                   "type": "string",
                   "title": "Type of transparency",
@@ -1359,7 +1366,7 @@
                       ]
                     }
                   ]
-                }, 
+                },
                 "title": {
                   "type": "string",
                   "title": "Title to be displayed"
@@ -1481,6 +1488,13 @@
                             ],
                             "title": "Youtube video",
                             "description": "Youtube video"
+                          },
+                          {
+                            "enum": [
+                              "authRedirectTo"
+                            ],
+                            "title": "Authentified One 2 Many",
+                            "description": "Link to redirect to a another claimaible nft. NFT should redirect to the same link with Arianee access token"
                           }
                         ]
                       },
@@ -1542,37 +1556,37 @@
       "title": "Image (for external services like OpenSea)",
       "default": "",
       "description": "Image for external services."
-    },     
+    },
     "image_data": {
       "type": "string",
       "title": "Raw SVG image data (for external services like OpenSea)",
       "default": "",
       "description": "Raw SVG image data for external services."
-    },       
+    },
     "external_url": {
       "type": "string",
       "title": "External URL (for external services like OpenSea)",
       "default": "",
       "description": "External URL for external services."
-    },    
+    },
     "background_color": {
       "type": "string",
       "title": "background_color (for external services like OpenSea)",
       "default": "",
       "description": "background_color for external services."
-    },   
+    },
     "animation_url": {
       "type": "string",
       "title": "animation_url (for external services like OpenSea)",
       "default": "",
       "description": "animation_url for external services."
-    },    
+    },
     "youtube_url": {
       "type": "string",
       "title": "youtube_url (for external services like OpenSea)",
       "default": "",
       "description": "youtube_url for external services."
-    }           
+    }
   },
   "required": [
     "$schema"
