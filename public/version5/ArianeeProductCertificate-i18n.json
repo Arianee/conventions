@@ -448,6 +448,13 @@
                 ],
                 "title": "Youtube video",
                 "description": "Youtube video"
+              },
+              {
+                "enum": [
+                  "3dModel"
+                ],
+                "title": "3D Model",
+                "description": "A 3D Model (glb / gltf)"
               }
             ]
           },
@@ -482,6 +489,20 @@
                 ],
                 "title": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top",
                 "description": "dark, no logo, format .jpg, (1900x3200), max 400ko created for the background of the transfer/proof of certificate screens"
+              },
+              {
+                "enum": [
+                  "3dModelPreview"
+                ],
+                "title": "3D model preview image, displayed in the media list in the wallet application",
+                "description": "[3D model / 1] Preview image (ideally .png of the model in idle state)"
+              },
+              {
+                "enum": [
+                  "3dModelAsset"
+                ],
+                "title": "3D model asset, rendered in the wallet application",
+                "description": "[3D model / 2] Model file (.glb, .gltf, can contain animations), requires [3D Model / 1] to be set right before"
               }
             ]
           },
@@ -1153,6 +1174,13 @@
                       ],
                       "title": "Youtube video",
                       "description": "Youtube video"
+                    },
+                    {
+                      "enum": [
+                        "3dModel"
+                      ],
+                      "title": "3D Model",
+                      "description": "A 3D Model (glb / gltf)"
                     }
                   ]
                 },
@@ -1187,6 +1215,20 @@
                       ],
                       "title": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top",
                       "description": "dark, no logo, format .jpg, (1900x3200), max 400ko created for the background of the transfer/proof of certificate screens"
+                    },
+                    {
+                      "enum": [
+                        "3dModelPreview"
+                      ],
+                      "title": "3D model preview image, displayed in the media list in the wallet application",
+                      "description": "[3D model / 1] Preview image (ideally .png of the model in idle state)"
+                    },
+                    {
+                      "enum": [
+                        "3dModelAsset"
+                      ],
+                      "title": "3D model asset, rendered in the wallet application",
+                      "description": "[3D model / 2] Model file (.glb, .gltf, can contain animations), requires [3D Model / 1] to be set right before"
                     }
                   ]
                 },
