@@ -77,6 +77,13 @@
           ],
           "title": "Italian",
           "description": "Italian"
+        },
+        {
+          "enum": [
+            "ru"
+          ],
+          "title": "Russian",
+          "description": "Russian"
         }
       ]
     },
@@ -1078,6 +1085,13 @@
                 ],
                 "title": "Italian",
                 "description": "Italian"
+              },
+              {
+                "enum": [
+                  "ru"
+                ],
+                "title": "Russian",
+                "description": "Russian"
               }
             ]
           },
