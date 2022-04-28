@@ -362,6 +362,13 @@
                 ],
                 "title": "Youtube video",
                 "description": "Youtube video"
+              },
+              {
+                "enum": [
+                  "authRedirectTo"
+                ],
+                "title": "Authentified One 2 Many",
+                "description": "Link to redirect to a another claimaible nft. NFT should redirect to the same link with Arianee access token"
               }
             ]
           },
@@ -1544,13 +1551,6 @@
                             ],
                             "title": "Youtube video",
                             "description": "Youtube video"
-                          },
-                          {
-                            "enum": [
-                              "authRedirectTo"
-                            ],
-                            "title": "Authentified One 2 Many",
-                            "description": "Link to redirect to a another claimaible nft. NFT should redirect to the same link with Arianee access token"
                           }
                         ]
                       },
