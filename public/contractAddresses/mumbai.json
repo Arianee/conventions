@@ -14,5 +14,6 @@
     "userAction": ""
   },
   "httpProvider": "https://matic-mumbai.chainstacklabs.com",
+  "gasStation": "https://cert.arianee.org/gasStation/mumbai.json",
   "chainId": 80001
 }
