@@ -469,6 +469,13 @@
                 ],
                 "title": "3D Model",
                 "description": "A 3D Model (glb / gltf)"
+              },
+              {
+                "enum": [
+                  "video"
+                ],
+                "title": "Video",
+                "description": "A video (mp4)"
               }
             ]
           },
@@ -517,6 +524,20 @@
                 ],
                 "title": "3D model asset, rendered in the wallet application",
                 "description": "[3D model / 2] Model file (.glb, .gltf, can contain animations), requires [3D Model / 1] to be set right before"
+              },
+              {
+                "enum": [
+                  "videoPreview"
+                ],
+                "title": "Video preview image, displayed in the media list in the wallet application",
+                "description": "[Video / 1] Preview image (ideally .png of a frame of the video)"
+              },
+              {
+                "enum": [
+                  "videoSource"
+                ],
+                "title": "Video source, played in the wallet application",
+                "description": "[Video / 2] Video source (.mp4), requires [Video / 1] to be set right before"
               }
             ]
           },
@@ -1202,6 +1223,13 @@
                       ],
                       "title": "3D Model",
                       "description": "A 3D Model (glb / gltf)"
+                    },
+                    {
+                      "enum": [
+                        "video"
+                      ],
+                      "title": "Video",
+                      "description": "A video (mp4)"
                     }
                   ]
                 },
@@ -1250,6 +1278,20 @@
                       ],
                       "title": "3D model asset, rendered in the wallet application",
                       "description": "[3D model / 2] Model file (.glb, .gltf, can contain animations), requires [3D Model / 1] to be set right before"
+                    },
+                    {
+                      "enum": [
+                        "videoPreview"
+                      ],
+                      "title": "Video preview image, displayed in the media list in the wallet application",
+                      "description": "[Video / 1] Preview image (ideally .png of a frame of the video)"
+                    },
+                    {
+                      "enum": [
+                        "videoSource"
+                      ],
+                      "title": "Video source, played in the wallet application",
+                      "description": "[Video / 2] Video source (.mp4), requires [Video / 1] to be set right before"
                     }
                   ]
                 },
