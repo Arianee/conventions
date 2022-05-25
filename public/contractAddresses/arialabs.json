@@ -1,0 +1,19 @@
+{
+  "contractAdresses": {
+    "aria": "0x46F48FbdedAa6F5500993BEDE9539ef85F4BeE8e",
+    "creditHistory": "0x1Fd8035Ca1A5F7588b0f1788774B435e1a6c3931",
+    "eventArianee": "0x2a0b176c7D6E98b613e5a114aB2Befb2C6E0e27F",
+    "identity": "0xEFF4fC40d53539e40bba354CeA841b9158E1E363",
+    "smartAsset": "0xDCb0B81223547540dA3537Bf2F19eAE09FB0A97E",
+    "staking": "",
+    "store": "0x368C07e7c2a291730E3B608B4a17D3C9476F1bFD",
+    "whitelist": "0x09bE68876CcC96774FB41e37d7F940fBf1661060",
+    "lost": "0xD5bcf189A62001D72296bA04cB8C68Fdb9D9C6f0",
+    "message": "0x713766dCfb06e67790Ab8e2A0352b37B29d6071E",
+    "userAction": "0xC84B23B6B9aEc5Fd0189C8a51b639cA3322f02F4",
+    "updateSmartAssets": "0xB8d776ad613D28bF8258Af7dbfF32314E8CE0e36"
+  },
+  "httpProvider": "https://polygon.arianee.net",
+  "gasStation": "https://gasstation.arianee.com/137",
+  "chainId": 137
+}
