@@ -13,7 +13,7 @@
     "update": "0xfdE233ADBA6c346B26f5193415962453C60Cbf33",
     "userAction": ""
   },
-  "httpProvider": "https://matic-mumbai.chainstacklabs.com",
+  "httpProvider": "https://mumbai.arianee.net",
   "gasStation": "https://cert.arianee.org/gasStation/mumbai.json",
   "chainId": 80001
 }
