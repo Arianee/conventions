@@ -2,7 +2,32 @@
 version: 2.1
 orbs:
   node: circleci/node@5.0.2
-  firebase-deploy: azdevs/firebase-deploy@1.0.0
+
+commands:
+  deploy-firebase:
+    description: Deploy to Firebase
+    parameters:
+      token:
+        type: string
+        description: Firebase Deploy Token
+      alias:
+        type: string
+        default: "default"
+        description: Firebase project alias to deploy to
+      only:
+        description: Firebase service to deploy on
+        type: enum
+        enum:
+          - hosting
+          - functions
+        default: hosting
+    steps:
+      - run:
+          name: Install Firebase Tools
+          command: npm install --prefix=./firebase-deploy firebase-tools
+      - run:
+          name: Deploy to Firebase
+          command: ./firebase-deploy/node_modules/.bin/firebase deploy --token=<< parameters.token >> -P << parameters.alias >> --only << parameters.only >>
 
 jobs:
   test:
@@ -25,9 +50,10 @@ jobs:
       - checkout
       - attach_workspace:
           at: ./
-      - firebase-deploy/deploy:
+      - deploy-firebase:
           alias: arianee-cert
           token: $FIREBASE_DEPLOY_TOKEN
+          only: hosting
 
 workflows:
   test-and-deploy:
