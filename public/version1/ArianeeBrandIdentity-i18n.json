@@ -53,7 +53,8 @@
                     {"enum": ["label"], "title":"Label", "description": "official label supported by the Brand and its products"},
                     {"enum": ["iosScheme"], "title":"iosScheme", "description": "iosScheme"},
                     {"enum": ["androidScheme"], "title":"androidScheme", "description": "androidScheme"},
-                    {"enum": ["other"], "title":"other", "description": "other"}
+                    {"enum": ["other"], "title":"other", "description": "other"},
+                    {"enum": ["hostedWallet"], "title":"HostedWallet", "description": "custodial wallet's url"}
                 ]
             },
             "title": {
