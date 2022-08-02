@@ -1,364 +1,364 @@
 {
-    "$id": "https://cert.arianee.org/version2/ArianeeBrandIdentity-i18n.json",
-    "$schema": "https://cert.arianee.org/version2/ArianeeBrandIdentity-i18n.json",
-    "title": "Arianee Brand Identity",
-    "description": "Describing an Arianee Brand Identity.",
-    "type": "object",
-    "properties": {
-      "$schema": {
-        "title": "$schema",
-        "type": "string",
-        "default": "https://cert.arianee.org/version2/ArianeeBrandIdentity-i18n.json",
-        "widget": "hidden"
-      },
-      "name": {
-        "type": "string",
-        "title": "Brand Name",
-        "description": "Name of the Brand.\n Likely to be one of the first things displayed on a wallet app."
-      },
-      "companyName": {
-        "type": "string",
-        "title": "Company Name",
-        "description": "Name of the Company who owns the Brand."
-      },
-      "parentCompanyName": {
-        "type": "string",
-        "title": "Parent Company Name",
-        "description": "Name of the Company who owns the Company who owns the Brand. \n Used for Groups with multiple Companies."
-      },
-      "description": {
-        "type": "string",
-        "title": "Description",
-        "description": "Description of the Brand / Company. (HTML Accepted)\n A description can be stored for each language",
-        "widget": {
-          "id": "textarea"
-        }
-      },
-      "externalContents": {
-        "type": "array",
-        "title": "External Contents",
-        "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app at the Brand level.\n Specific external contents can be stored for each language.",
-        "items": {
-          "type": "object",
-          "properties": {
-            "type": {
-              "title": "Type",
-              "type": "string",
-              "widget": {
-                "id": "select"
-              },
-              "oneOf": [
-                    {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
-                    {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
-                    {"enum": ["label"], "title":"Label", "description": "official label supported by the Brand and its products"},
-                    {"enum": ["iosScheme"], "title":"iosScheme", "description": "iosScheme"},
-                    {"enum": ["androidScheme"], "title":"androidScheme", "description": "androidScheme"},
-                    {"enum": ["other"], "title":"other", "description": "other"},
-                    {"enum": ["deepLinkDomain"], "title":"Domain to use for deeplink", "description": "Domain to use for deeplink"}
-              ]
+  "$id": "https://cert.arianee.org/version2/ArianeeBrandIdentity-i18n.json",
+  "$schema": "https://cert.arianee.org/version2/ArianeeBrandIdentity-i18n.json",
+  "title": "Arianee Brand Identity",
+  "description": "Describing an Arianee Brand Identity.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "title": "$schema",
+      "type": "string",
+      "default": "https://cert.arianee.org/version2/ArianeeBrandIdentity-i18n.json",
+      "widget": "hidden"
+    },
+    "name": {
+      "type": "string",
+      "title": "Brand Name",
+      "description": "Name of the Brand.\n Likely to be one of the first things displayed on a wallet app."
+    },
+    "companyName": {
+      "type": "string",
+      "title": "Company Name",
+      "description": "Name of the Company who owns the Brand."
+    },
+    "parentCompanyName": {
+      "type": "string",
+      "title": "Parent Company Name",
+      "description": "Name of the Company who owns the Company who owns the Brand. \n Used for Groups with multiple Companies."
+    },
+    "description": {
+      "type": "string",
+      "title": "Description",
+      "description": "Description of the Brand / Company. (HTML Accepted)\n A description can be stored for each language",
+      "widget": {
+        "id": "textarea"
+      }
+    },
+    "externalContents": {
+      "type": "array",
+      "title": "External Contents",
+      "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app at the Brand level.\n Specific external contents can be stored for each language.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "title": "Type",
+            "type": "string",
+            "widget": {
+              "id": "select"
             },
-            "title": {
-              "type": "string",
-              "title": "Title",
-              "widget": {
-                "id": "string"
-              }
-            },
-            "url": {
-              "type": "string",
-              "title": "Url",
-              "widget": {
-                "id": "string"
-              }
-            },
-            "order": {
-              "type": "number",
-              "title": "Order (number)"
+            "oneOf": [
+              {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
+              {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
+              {"enum": ["label"], "title":"Label", "description": "official label supported by the Brand and its products"},
+              {"enum": ["iosScheme"], "title":"iosScheme", "description": "iosScheme"},
+              {"enum": ["androidScheme"], "title":"androidScheme", "description": "androidScheme"},
+              {"enum": ["other"], "title":"other", "description": "other"},
+              {"enum": ["deepLinkDomain"], "title":"Domain to use for deeplink", "description": "Domain to use for deeplink"}
+            ]
+          },
+          "title": {
+            "type": "string",
+            "title": "Title",
+            "widget": {
+              "id": "string"
             }
+          },
+          "url": {
+            "type": "string",
+            "title": "Url",
+            "widget": {
+              "id": "string"
+            }
+          },
+          "order": {
+            "type": "number",
+            "title": "Order (number)"
           }
         }
-      },
-      "i18n": {
-        "type": "array",
-        "title": "Other languages :  description / external contents",
-        "description": "Description of the Brand / Company in languages different than the default one. (HTML Accepted)",
+      }
+    },
+    "i18n": {
+      "type": "array",
+      "title": "Other languages :  description / external contents",
+      "description": "Description of the Brand / Company in languages different than the default one. (HTML Accepted)",
 
-        "items": {
-          "type": "object",
-          "properties": {
-            "language": {
-              "type": "string",
-              "title": "Language",
-              "widget": {
-                "id": "select"
-              },
-              "oneOf": [
-                    {"enum": ["fr-FR"], "title":"French", "description": "French"},
-                    {"enum": ["en-US"], "title":"English (american)", "description": "English (american)"},
-                    {"enum": ["zh-TW"], "title":"Traditional chinese", "description": "Traditional chinese"},
-                    {"enum": ["zh-CN"], "title":"Simplified chinese", "description": "Simplified chinese"},
-                    {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
-                    {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
-                    {"enum": ["de-DE"], "title":"German", "description": "German"},
-                    {"enum": ["es"], "title":"Spanish", "description": "Spanish"},
-                    {"enum": ["it"], "title":"Italian", "description": "Italian"}
-              ]
+      "items": {
+        "type": "object",
+        "properties": {
+          "language": {
+            "type": "string",
+            "title": "Language",
+            "widget": {
+              "id": "select"
             },
-            "description": {
-              "type": "string",
-              "title": "Description",
-              "widget": {
-                "id": "textarea"
-              }
-            },
+            "oneOf": [
+              {"enum": ["fr-FR"], "title":"French", "description": "French"},
+              {"enum": ["en-US"], "title":"English (american)", "description": "English (american)"},
+              {"enum": ["zh-TW"], "title":"Traditional chinese", "description": "Traditional chinese"},
+              {"enum": ["zh-CN"], "title":"Simplified chinese", "description": "Simplified chinese"},
+              {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
+              {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
+              {"enum": ["de-DE"], "title":"German", "description": "German"},
+              {"enum": ["es"], "title":"Spanish", "description": "Spanish"},
+              {"enum": ["it"], "title":"Italian", "description": "Italian"}
+            ]
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "widget": {
+              "id": "textarea"
+            }
+          },
 
-            "externalContents": {
-              "type": "array",
-              "title": "External Contents",
-              "description": "Tanslation or specific links to external contents the Brand whish to introduce to the end customer in a wallet app at the Brand level and in languages different than the default one.",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "type": {
-                    "title": "Type",
-                    "type": "string",
-                    "widget": {
-                      "id": "select"
-                    },
-                    "oneOf": [
-                          {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
-                          {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
-                          {"enum": ["label"], "title":"Label", "description": "label"},
-                          {"enum": ["iosScheme"], "title":"iosScheme", "description": "iosScheme"},
-                          {"enum": ["androidScheme"], "title":"androidScheme", "description": "androidScheme"},
-                          {"enum": ["other"], "title":"other", "description": "other"}
-                      ]
+          "externalContents": {
+            "type": "array",
+            "title": "External Contents",
+            "description": "Tanslation or specific links to external contents the Brand whish to introduce to the end customer in a wallet app at the Brand level and in languages different than the default one.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "title": "Type",
+                  "type": "string",
+                  "widget": {
+                    "id": "select"
                   },
-                  "title": {
-                    "type": "string",
-                    "title": "Title",
-                    "widget": {
-                      "id": "string"
-                    }
+                  "oneOf": [
+                    {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
+                    {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
+                    {"enum": ["label"], "title":"Label", "description": "label"},
+                    {"enum": ["iosScheme"], "title":"iosScheme", "description": "iosScheme"},
+                    {"enum": ["androidScheme"], "title":"androidScheme", "description": "androidScheme"},
+                    {"enum": ["other"], "title":"other", "description": "other"}
+                  ]
+                },
+                "title": {
+                  "type": "string",
+                  "title": "Title",
+                  "widget": {
+                    "id": "string"
+                  }
+                },
+                "url": {
+                  "type": "string",
+                  "title": "Url",
+                  "widget": {
+                    "id": "string"
                   },
-                  "url": {
-                    "type": "string",
-                    "title": "Url",
-                    "widget": {
-                      "id": "string"
-                    },
                   "order": {
                     "type": "number",
                     "title": "Order (number)"
-                    }
                   }
                 }
               }
             }
           }
         }
-      },
-
-      "arianeeMembership": {
-        "type": "string",
-        "title": "Arianee Member",
-        "description": "Is the Company a member of the Arianee project ?",
-        "widget": {
-          "id": "select"
-        },
-        "oneOf": [
-              {"enum": ["not_member"], "title":"Not member", "description": "Not member"},
-              {"enum": ["associate_member"], "title":"Associate Member", "description": "Associate Member"},
-              {"enum": ["group_member"], "title":"Group member", "description": "Group member"},
-              {"enum": ["maison_member"], "title":"Maison member", "description": "Maison member"}
-
-          ]
-      },
-      "address": {
-        "type": "object",
-        "title": "Address",
-        "description": "Company HQ address",
-
-        "properties": {
-          "street_address": {
-            "type": "string",
-            "title": "Street Address"
-          },
-          "street_address2": {
-            "type": "string",
-            "title": "Street Address 2"
-          },
-          "zipcode": {
-            "type": "string",
-            "title": "Zip Code"
-          },
-          "city": {
-            "type": "string",
-            "title": "City"
-          },
-          "state": {
-            "type": "string",
-            "title": "State"
-          },
-          "country": {
-            "type": "string",
-            "title": "Country"
-          }
-        }
-      },
-      "contacts": {
-        "description": "List of company contacts",
-        "type": "array",
-        "title": "Contacts",
-        "items": {
-          "title": "Contacts",
-          "type": "object",
-          "properties": {
-            "name": {
-              "title": "Name",
-              "type": "string"
-            },
-            "email": {
-              "title": "Email",
-              "type": "string"
-            },
-            "title": {
-              "title": "Title",
-              "type": "string"
-            },
-            "type": {
-              "title": "Type",
-              "type": "string",
-              "widget": {
-                "id": "select"
-              },
-              "oneOf": [
-                    {"enum": ["support"], "title":"Support", "description": "Customer Support"},
-                    {"enum": ["sales"], "title":"Sales", "description": "Sales team"},
-                    {"enum": ["hq"], "title":"Headquarter", "description": "Headquarter"},
-                    {"enum": ["other"], "title":"other", "description": "other"}
-
-                ]
-            }
-          }
-        }
-      },
-      "pictures": {
-        "type": "array",
-        "title": "Pictures & Medias",
-        "description": "Pictures & Medias used to support the presentation of the Brand and products in the wallet app.",
-        "items": {
-          "type": "object",
-          "properties": {
-            "type": {
-              "type": "string",
-              "title": "Type",
-              "widget": {
-                "id": "select"
-              },
-              "oneOf": [
-                    {"enum": ["brandLogoHeader"], "title":"Brand Logo Header (2000x700) transparent (working with a white background) PNG", "description": "Brand Logo Header (2000x700) transparent (working with a white background) PNG"},
-                    {"enum": ["brandLogoHeaderReversed"], "title":"Brand Logo Header (2000x700) transparent (working with a black background) PNG", "description": "Brand Logo Header (2000x700) transparent (working with a black background) PNG"},
-                    {"enum": ["brandLogoSquare"], "title":"Brand Logo Square (1000x1000) no transparency", "description": "Brand Logo Square (1000x1000) no transparency"},
-                    {"enum": ["brandHomePicture"], "title":"Brand Collection Picture (3200x1900) ratioed", "description": "Brand Collection Picture (3200x1900) ratioed"},
-                    {"enum": ["brandItemBackgroundPicture"], "title":"Brand Item Background Picture (3200x1900) ratioed", "description": "Brand Item Background Picture (3200x1900) ratioed"},
-                    {"enum": ["itemBackgroundPicture"], "title": "Item Background Picture (3000x3000) ratioed", "description": "Item Background Picture (3000x3000) ratioed"},
-                    {"enum": ["brandBackgroundPicture"], "title":"Brand Background picture (1900x3200) preferably dark", "description": "Brand Background picture (1900x3200) preferably dark"},
-                    {"enum": ["certificateBackgroundPicture"], "title":"Certificate Background Picture (1900x3200 TBD) preferably dark", "description": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top"}
-
-
-                ]
-            },
-            "url": {
-              "type": "string",
-              "title": "URL",
-              "widget": {
-                "id": "staticAssets"
-              }
-            },
-            "hash": {
-              "type": "string",
-              "title": "Image Hash",
-              "widget": {
-                "id": "string"
-              }
-            }
-          }
-        }
-      },
-      "socialmedia": {
-        "type": "array",
-        "title": "Social Media",
-        "description": "Links to most popular Social Media.",
-        "items": {
-          "type": "object",
-          "properties": {
-            "type": {
-              "type": "string",
-              "title": "Type",
-              "widget": {
-                "id": "select"
-              },
-              "oneOf": [
-                    {"enum": ["facebook"], "title":"Facebook", "description": "Facebook"},
-                    {"enum": ["instagram"], "title":"Instagram", "description": "Instagram"},
-                    {"enum": ["twitter"], "title":"Twitter", "description": "Twitter"},
-                    {"enum": ["youtube"], "title":"Youtube", "description": "Youtube"}
-
-                ]
-            },
-            "value": {
-              "type": "string",
-              "title": "Value",
-              "widget": {
-                "id": "string"
-              }
-            }
-          }
-        }
-      },
-      "providers": {
-        "type": "array",
-        "title": "Providers",
-        "description": "Define external providers approved by the brand.",
-        "items": {
-          "type": "object",
-          "properties": {
-            "type": {
-              "title": "Type",
-              "type": "string",
-              "widget": {
-                "id": "select"
-              },
-              "oneOf": [
-                    {"enum": ["missing"], "title":"Provider for missing/stolen process", "description": "Provider for missing/stolen process"},
-                    {"enum": ["custodialWallet"], "title":"Custodial Wallet Landing Page", "description": "website where user lands when exporting mnemonic to brand. Address is pub key of to encrypt mnemonic"}
-              ]
-            },
-            "address": {
-              "type": "string",
-              "title": "Address",
-              "widget": {
-                "id": "string"
-              }
-            },
-            "url": {
-              "type": "string",
-              "title": "Url",
-              "widget": {
-                "id": "string"
-              }
-            }
-          }
-        }
-      },
-      "rpcEndpoint": {
-        "type": "string",
-        "title": "RPC Endpoint",
-        "description": "Certificate Management Platform RPC URL"
       }
     },
-    "required": [
-      "$schema"
-    ]
-  }
+
+    "arianeeMembership": {
+      "type": "string",
+      "title": "Arianee Member",
+      "description": "Is the Company a member of the Arianee project ?",
+      "widget": {
+        "id": "select"
+      },
+      "oneOf": [
+        {"enum": ["not_member"], "title":"Not member", "description": "Not member"},
+        {"enum": ["associate_member"], "title":"Associate Member", "description": "Associate Member"},
+        {"enum": ["group_member"], "title":"Group member", "description": "Group member"},
+        {"enum": ["maison_member"], "title":"Maison member", "description": "Maison member"}
+
+      ]
+    },
+    "address": {
+      "type": "object",
+      "title": "Address",
+      "description": "Company HQ address",
+
+      "properties": {
+        "street_address": {
+          "type": "string",
+          "title": "Street Address"
+        },
+        "street_address2": {
+          "type": "string",
+          "title": "Street Address 2"
+        },
+        "zipcode": {
+          "type": "string",
+          "title": "Zip Code"
+        },
+        "city": {
+          "type": "string",
+          "title": "City"
+        },
+        "state": {
+          "type": "string",
+          "title": "State"
+        },
+        "country": {
+          "type": "string",
+          "title": "Country"
+        }
+      }
+    },
+    "contacts": {
+      "description": "List of company contacts",
+      "type": "array",
+      "title": "Contacts",
+      "items": {
+        "title": "Contacts",
+        "type": "object",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "email": {
+            "title": "Email",
+            "type": "string"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "type": {
+            "title": "Type",
+            "type": "string",
+            "widget": {
+              "id": "select"
+            },
+            "oneOf": [
+              {"enum": ["support"], "title":"Support", "description": "Customer Support"},
+              {"enum": ["sales"], "title":"Sales", "description": "Sales team"},
+              {"enum": ["hq"], "title":"Headquarter", "description": "Headquarter"},
+              {"enum": ["other"], "title":"other", "description": "other"},
+              {"enum": ["hostedWallet"], "title":"HostedWallet", "description": "custodial wallet's url"}
+            ]
+          }
+        }
+      }
+    },
+    "pictures": {
+      "type": "array",
+      "title": "Pictures & Medias",
+      "description": "Pictures & Medias used to support the presentation of the Brand and products in the wallet app.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "widget": {
+              "id": "select"
+            },
+            "oneOf": [
+              {"enum": ["brandLogoHeader"], "title":"Brand Logo Header (2000x700) transparent (working with a white background) PNG", "description": "Brand Logo Header (2000x700) transparent (working with a white background) PNG"},
+              {"enum": ["brandLogoHeaderReversed"], "title":"Brand Logo Header (2000x700) transparent (working with a black background) PNG", "description": "Brand Logo Header (2000x700) transparent (working with a black background) PNG"},
+              {"enum": ["brandLogoSquare"], "title":"Brand Logo Square (1000x1000) no transparency", "description": "Brand Logo Square (1000x1000) no transparency"},
+              {"enum": ["brandHomePicture"], "title":"Brand Collection Picture (3200x1900) ratioed", "description": "Brand Collection Picture (3200x1900) ratioed"},
+              {"enum": ["brandItemBackgroundPicture"], "title":"Brand Item Background Picture (3200x1900) ratioed", "description": "Brand Item Background Picture (3200x1900) ratioed"},
+              {"enum": ["itemBackgroundPicture"], "title": "Item Background Picture (3000x3000) ratioed", "description": "Item Background Picture (3000x3000) ratioed"},
+              {"enum": ["brandBackgroundPicture"], "title":"Brand Background picture (1900x3200) preferably dark", "description": "Brand Background picture (1900x3200) preferably dark"},
+              {"enum": ["certificateBackgroundPicture"], "title":"Certificate Background Picture (1900x3200 TBD) preferably dark", "description": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top"}
+
+
+            ]
+          },
+          "url": {
+            "type": "string",
+            "title": "URL",
+            "widget": {
+              "id": "staticAssets"
+            }
+          },
+          "hash": {
+            "type": "string",
+            "title": "Image Hash",
+            "widget": {
+              "id": "string"
+            }
+          }
+        }
+      }
+    },
+    "socialmedia": {
+      "type": "array",
+      "title": "Social Media",
+      "description": "Links to most popular Social Media.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "title": "Type",
+            "widget": {
+              "id": "select"
+            },
+            "oneOf": [
+              {"enum": ["facebook"], "title":"Facebook", "description": "Facebook"},
+              {"enum": ["instagram"], "title":"Instagram", "description": "Instagram"},
+              {"enum": ["twitter"], "title":"Twitter", "description": "Twitter"},
+              {"enum": ["youtube"], "title":"Youtube", "description": "Youtube"}
+
+            ]
+          },
+          "value": {
+            "type": "string",
+            "title": "Value",
+            "widget": {
+              "id": "string"
+            }
+          }
+        }
+      }
+    },
+    "providers": {
+      "type": "array",
+      "title": "Providers",
+      "description": "Define external providers approved by the brand.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "title": "Type",
+            "type": "string",
+            "widget": {
+              "id": "select"
+            },
+            "oneOf": [
+              {"enum": ["missing"], "title":"Provider for missing/stolen process", "description": "Provider for missing/stolen process"},
+              {"enum": ["custodialWallet"], "title":"Custodial Wallet Landing Page", "description": "website where user lands when exporting mnemonic to brand. Address is pub key of to encrypt mnemonic"}
+            ]
+          },
+          "address": {
+            "type": "string",
+            "title": "Address",
+            "widget": {
+              "id": "string"
+            }
+          },
+          "url": {
+            "type": "string",
+            "title": "Url",
+            "widget": {
+              "id": "string"
+            }
+          }
+        }
+      }
+    },
+    "rpcEndpoint": {
+      "type": "string",
+      "title": "RPC Endpoint",
+      "description": "Certificate Management Platform RPC URL"
+    }
+  },
+  "required": [
+    "$schema"
+  ]
+}
