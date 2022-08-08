@@ -54,7 +54,8 @@
                     {"enum": ["iosScheme"], "title":"iosScheme", "description": "iosScheme"},
                     {"enum": ["androidScheme"], "title":"androidScheme", "description": "androidScheme"},
                     {"enum": ["other"], "title":"other", "description": "other"},
-                    {"enum": ["deepLinkDomain"], "title":"Domain to use for deeplink", "description": "Domain to use for deeplink"}
+                    {"enum": ["deepLinkDomain"], "title":"Domain to use for deeplink", "description": "Domain to use for deeplink"},
+                    {"enum": ["hostedWallet"], "title":"HostedWallet", "description": "custodial wallet's url"}
               ]
             },
             "title": {
@@ -236,8 +237,7 @@
                     {"enum": ["support"], "title":"Support", "description": "Customer Support"},
                     {"enum": ["sales"], "title":"Sales", "description": "Sales team"},
                     {"enum": ["hq"], "title":"Headquarter", "description": "Headquarter"},
-                    {"enum": ["other"], "title":"other", "description": "other"},
-                    {"enum": ["hostedWallet"], "title":"HostedWallet", "description": "custodial wallet's url"}
+                    {"enum": ["other"], "title":"other", "description": "other"}
                 ]
             }
           }
