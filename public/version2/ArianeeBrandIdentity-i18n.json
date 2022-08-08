@@ -236,8 +236,8 @@
                     {"enum": ["support"], "title":"Support", "description": "Customer Support"},
                     {"enum": ["sales"], "title":"Sales", "description": "Sales team"},
                     {"enum": ["hq"], "title":"Headquarter", "description": "Headquarter"},
-                    {"enum": ["other"], "title":"other", "description": "other"}
-
+                    {"enum": ["other"], "title":"other", "description": "other"},
+                    {"enum": ["hostedWallet"], "title":"HostedWallet", "description": "custodial wallet's url"}
                 ]
             }
           }
