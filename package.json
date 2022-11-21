@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Arianee/conventions#readme",
   "dependencies": {
-    "@arianee/arianeejs": "^1.9.0"
+    "@arianee/arianeejs": "^1.102.0"
   },
   "devDependencies": {
     "@types/jest": "^25.1.2",
