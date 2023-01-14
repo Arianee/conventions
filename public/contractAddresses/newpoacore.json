@@ -13,6 +13,6 @@
     "updateSmartAssets" : "0x776B00214cC79145f584E856F9FE4E8ac8B2Aa78"
   },
   "httpProvider": "https://poa.arianee.net",
-  "gasStation": "https://cert.arianee.org/gasStation/mainnet.json",
+  "gasStation": "https://cert.arianee.net/gasStation/mainnet.json",
   "chainId": 99
 }
