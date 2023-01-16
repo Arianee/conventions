@@ -14,6 +14,6 @@
         "updateSmartAssets" : "0x3ae108bF0Ee8bB9D810BfC80aC73394ee1509C7b"
     },
     "httpProvider": "https://sokol.arianee.net",
-    "gasStation": "https://cert.arianee.org/gasStation/testnet.json",
+    "gasStation": "https://cert.arianee.net/gasStation/testnet.json",
     "chainId": 77
 }
