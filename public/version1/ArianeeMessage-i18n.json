@@ -19,7 +19,7 @@
           "id": "select"
         },
         "description": "Descriptions and external contents can be stored in different languages",
-        "oneOf": [
+        "anyOf": [
           {
             "title": "French",
             "description": "French",
@@ -52,7 +52,8 @@
           {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
           {"enum": ["de-DE"], "title":"German", "description": "German"},
           {"enum": ["es"], "title":"Spanish", "description": "Spanish"},
-          {"enum": ["it"], "title":"Italian", "description": "Italian"}
+          {"enum": ["it"], "title":"Italian", "description": "Italian"},
+          {"title": "Other", "type": "string"}
 
         ]
       },
@@ -77,7 +78,7 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
+              "anyOf": [
                     {"enum": ["fr-FR"], "title":"French", "description": "French"},
                     {"enum": ["en-US"], "title":"English (american)", "description": "English (american)"},
                     {"enum": ["zh-TW"], "title":"Traditional chinese", "description": "Traditional chinese"},
@@ -86,7 +87,9 @@
                     {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
                     {"enum": ["de-DE"], "title":"German", "description": "German"},
                     {"enum": ["es"], "title":"Spanish", "description": "Spanish"},
-                    {"enum": ["it"], "title":"Italian", "description": "Italian"}
+                    {"enum": ["it"], "title":"Italian", "description": "Italian"},
+                    {"title": "Other", "type": "string"}
+
               ]
             },
             "title": {
@@ -99,7 +102,6 @@
             },
             "externalContents": {
               "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
-              "required": false,
               "type": "array",
               "title": "External Contents",
               "items": {
@@ -111,7 +113,7 @@
                     "widget": {
                       "id": "select"
                     },
-                    "oneOf": [
+                    "anyOf": [
                       {
                         "enum": [
                           "website"
@@ -139,7 +141,8 @@
                         ],
                         "title": "transparency",
                         "description": "Url of transparency events json"
-                      }
+                      },
+                      {"title": "Other", "type": "string"}
                     ]
                   },
                   "title": {
@@ -173,7 +176,7 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
+              "anyOf": [
                 {
                   "enum": [
                     "picture"
@@ -187,7 +190,8 @@
                   ],
                   "title": "Youtube video",
                   "description": "Youtube video"
-                }
+                },
+                {"title": "Other", "type": "string"}
               ]
             },
             "type": {
@@ -196,14 +200,15 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
+              "anyOf": [
                 {
                   "enum": [
                     "product"
                   ],
                   "title": "Product media / picture",
                   "description": "used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)"
-                }
+                },
+                {"title": "Other", "type": "string"}
               ]
             },
             "url": {
@@ -225,7 +230,6 @@
       },
       "externalContents": {
         "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
-        "required": false,
         "type": "array",
         "title": "External Contents",
         "items": {
@@ -237,7 +241,7 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
+              "anyOf": [
                 {
                   "enum": [
                     "website"
@@ -265,7 +269,8 @@
                   ],
                   "title": "transparency",
                   "description": "Url of transparency events json"
-                }
+                },
+                {"title": "Other", "type": "string"}
               ]
             },
             "title": {

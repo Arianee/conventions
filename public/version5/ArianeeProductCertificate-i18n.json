@@ -14,76 +14,61 @@
       "type": "string",
       "title": "Language",
       "description": "Descriptions and external contents can be stored in different languages",
-      "oneOf": [
+      "anyOf": [
         {
           "title": "French",
           "description": "French",
-          "enum": [
-            "fr-FR"
-          ]
+          "enum": ["fr-FR"]
         },
         {
           "title": "English (US)",
           "description": "English (US)",
-          "enum": [
-            "en-US"
-          ]
+          "enum": ["en-US"]
         },
         {
           "title": "Chinese (traditional)",
           "description": "Chinese (traditional)",
-          "enum": [
-            "zh-TW"
-          ]
+          "enum": ["zh-TW"]
         },
         {
           "title": "Chinese (simplified)",
           "description": "Chinese (simplified)",
-          "enum": [
-            "zh-CN"
-          ]
+          "enum": ["zh-CN"]
         },
         {
-          "enum": [
-            "ko-KR"
-          ],
+          "enum": ["ko-KR"],
           "title": "Korean",
           "description": "Korean"
         },
         {
-          "enum": [
-            "ja-JP"
-          ],
+          "enum": ["ja-JP"],
           "title": "Japanese",
           "description": "Japanese"
         },
         {
-          "enum": [
-            "de-DE"
-          ],
+          "enum": ["de-DE"],
           "title": "German",
           "description": "German"
         },
         {
-          "enum": [
-            "es"
-          ],
+          "enum": ["es"],
           "title": "Spanish",
           "description": "Spanish"
         },
         {
-          "enum": [
-            "it"
-          ],
+          "enum": ["it"],
           "title": "Italian",
           "description": "Italian"
         },
         {
-          "enum": [
-            "ru"
-          ],
+          "enum": ["ru"],
           "title": "Russian",
           "description": "Russian"
+        },
+        {
+          "title": "Other",
+          "description": "Any other language that is not part of the enum",
+          "type": "string"
         }
       ]
     },
@@ -115,20 +100,20 @@
       "type": "string",
       "title": "Category",
       "description": "Information on the broad category the product belongs to.",
-      "oneOf": [
+      "anyOf": [
         {
           "description": "Apparel",
           "title": "Apparel",
-          "enum": [
-            "apparel"
-          ]
+          "enum": ["apparel"]
         },
         {
           "description": "Accessory",
           "title": "Accessory",
-          "enum": [
-            "accessory"
-          ]
+          "enum": ["accessory"]
+        },
+        {
+          "title": "Other",
+          "type": "string"
         }
       ]
     },
@@ -136,28 +121,25 @@
       "type": "string",
       "title": "Sub Category",
       "description": "Information on the specific category the product belongs to.",
-      "temp": "Shirt Dress T-shirt Sweater Vest Jacket Denim Pants Skirt Swim",
-      "oneOf": [
+      "anyOf": [
         {
           "description": "Shirt",
           "title": "Shirt",
-          "enum": [
-            "shirt"
-          ]
+          "enum": ["shirt"]
         },
         {
           "description": "Dress",
           "title": "Dress",
-          "enum": [
-            "dress"
-          ]
+          "enum": ["dress"]
         },
         {
           "description": "Watch",
           "title": "Watch",
-          "enum": [
-            "watch"
-          ]
+          "enum": ["watch"]
+        },
+        {
+          "title": "Other",
+          "type": "string"
         }
       ]
     },
@@ -165,28 +147,25 @@
       "type": "string",
       "title": "Intended",
       "description": "Information on the target customer market of the product.",
-      "temp": "Women's Men's Youth-Girls Youth-Boys Toddler-Girls Todder-Boys Infant-Girls Infant-Boys Adult Gender Neutral/Non-binary",
-      "oneOf": [
+      "anyOf": [
         {
           "description": "Women's",
           "title": "Women's",
-          "enum": [
-            "womens"
-          ]
+          "enum": ["womens"]
         },
         {
           "description": "Men's",
           "title": "Men's",
-          "enum": [
-            "mens"
-          ]
+          "enum": ["mens"]
         },
         {
           "description": "Adult Gender Neutral",
           "title": "Adult Gender Neutral",
-          "enum": [
-            "neutral"
-          ]
+          "enum": ["neutral"]
+        },
+        {
+          "title": "Other",
+          "type": "string"
         }
       ]
     },
@@ -200,20 +179,16 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "oneOf": [
+            "anyOf": [
               {
                 "description": "Serial Number",
                 "title": "Serial Number",
-                "enum": [
-                  "serialnumber"
-                ]
+                "enum": ["serialnumber"]
               },
               {
                 "description": "Case Number",
                 "title": "Case Number",
-                "enum": [
-                  "casenumber"
-                ]
+                "enum": ["casenumber"]
               },
               {
                 "description": "Movement Number",
@@ -225,16 +200,12 @@
               {
                 "description": "Vehicle Identification Number",
                 "title": "Vehicle Identification Number",
-                "enum": [
-                  "vin"
-                ]
+                "enum": ["vin"]
               },
               {
                 "description": "Poinçon de Genève",
                 "title": "Poinçon de Genève",
-                "enum": [
-                  "pgeneve"
-                ]
+                "enum": ["pgeneve"]
               },
               {
                 "description": "Millesimation",
@@ -242,6 +213,10 @@
                 "enum": [
                   "millesimation"
                 ]
+              },
+              {
+                "title": "Other",
+                "type": "string"
               }
             ]
           },
@@ -268,7 +243,6 @@
       "description": "Description of the product. (HTML Accepted)\n A description can be stored for each language"
     },
     "subDescription": {
-      "required": false,
       "type": "array",
       "title": "Description (more)",
       "items": {
@@ -277,27 +251,25 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "oneOf": [
+            "anyOf": [
               {
-                "enum": [
-                  "service"
-                ],
+                "enum": ["service"],
                 "title": "Servicing",
                 "description": "Servicing"
               },
               {
-                "enum": [
-                  "recycling"
-                ],
+                "enum": ["recycling"],
                 "title": "Recycling",
                 "description": "Recycling"
               },
               {
-                "enum": [
-                  "other"
-                ],
+                "enum": ["other"],
                 "title": "other",
                 "description": "other"
+              },
+              {
+                "title": "Other",
+                "type": "string"
               }
             ]
           },
@@ -318,7 +290,6 @@
     },
     "externalContents": {
       "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
-      "required": false,
       "type": "array",
       "title": "External Contents",
       "items": {
@@ -327,11 +298,9 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "oneOf": [
+            "anyOf": [
               {
-                "enum": [
-                  "website"
-                ],
+                "enum": ["website"],
                 "title": "Website (main)",
                 "description": "Regular link"
               },
@@ -357,9 +326,7 @@
                 "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenAuthLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
               },
               {
-                "enum": [
-                  "youtube"
-                ],
+                "enum": ["youtube"],
                 "title": "Youtube video",
                 "description": "Youtube video"
               },
@@ -369,6 +336,10 @@
                 ],
                 "title": "Authentified One 2 Many",
                 "description": "Link to redirect to a another claimaible nft. NFT should redirect to the same link with Arianee access token"
+              },
+              {
+                "title": "Other",
+                "type": "string"
               }
             ]
           },
@@ -405,27 +376,25 @@
             "title": "Currency",
             "default": "",
             "description": "Currency",
-            "oneOf": [
+            "anyOf": [
               {
                 "title": "US Dollar",
                 "description": "US Dollar",
-                "enum": [
-                  "USD"
-                ]
+                "enum": ["USD"]
               },
               {
                 "title": "Euro",
                 "description": "Euro",
-                "enum": [
-                  "EUR"
-                ]
+                "enum": ["EUR"]
               },
               {
                 "title": "Pound",
                 "description": "Pound",
-                "enum": [
-                  "GBP"
-                ]
+                "enum": ["GBP"]
+              },
+              {
+                "title": "Other",
+                "type": "string"
               }
             ]
           },
@@ -448,45 +417,39 @@
           "mediaType": {
             "type": "string",
             "title": "Media Type",
-            "oneOf": [
+            "anyOf": [
               {
-                "enum": [
-                  "picture"
-                ],
+                "enum": ["picture"],
                 "title": "Picture (png / jpg)",
                 "description": "Picture (png / jpg)"
               },
               {
-                "enum": [
-                  "youtube"
-                ],
+                "enum": ["youtube"],
                 "title": "Youtube video",
                 "description": "Youtube video"
               },
               {
-                "enum": [
-                  "3dModel"
-                ],
+                "enum": ["3dModel"],
                 "title": "3D Model",
                 "description": "A 3D Model (glb / gltf)"
               },
               {
-                "enum": [
-                  "video"
-                ],
+                "enum": ["video"],
                 "title": "Video",
                 "description": "A video (mp4)"
+              },
+              {
+                "title": "Other",
+                "type": "string"
               }
             ]
           },
           "type": {
             "type": "string",
             "title": "Type",
-            "oneOf": [
+            "anyOf": [
               {
-                "enum": [
-                  "product"
-                ],
+                "enum": ["product"],
                 "title": "Product media / picture",
                 "description": "used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)"
               },
@@ -533,11 +496,13 @@
                 "description": "[Video / 1] Preview image (ideally .png of a frame of the video)"
               },
               {
-                "enum": [
-                  "videoSource"
-                ],
+                "enum": ["videoSource"],
                 "title": "Video source, played in the wallet application",
                 "description": "[Video / 2] Video source (.mp4), requires [Video / 1] to be set right before"
+              },
+              {
+                "title": "Other",
+                "type": "string"
               }
             ]
           },
@@ -588,27 +553,25 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "oneOf": [
+            "anyOf": [
               {
                 "title": "Color",
                 "description": "Color",
-                "enum": [
-                  "color"
-                ]
+                "enum": ["color"]
               },
               {
                 "title": "Printed",
                 "description": "Printed",
-                "enum": [
-                  "printed"
-                ]
+                "enum": ["printed"]
               },
               {
                 "title": "Complication",
                 "description": "Complication",
-                "enum": [
-                  "complication"
-                ]
+                "enum": ["complication"]
+              },
+              {
+                "title": "Other",
+                "type": "string"
               }
             ]
           },
@@ -629,42 +592,35 @@
           "material": {
             "type": "string",
             "title": "Material",
-            "temp": "Cashmere / Cotton / Denim - Jeans / Exotic leathers / Faux fur / Fur /Leather / Linen / Polyester / Silk / Suede / Synthetic / Tweed / Velvet / Viscose / Wool",
-            "oneOf": [
+            "anyOf": [
               {
                 "title": "Cashmere",
                 "description": "Cashmere",
-                "enum": [
-                  "cashmere"
-                ]
+                "enum": ["cashmere"]
               },
               {
                 "title": "Cotton",
                 "description": "Cotton",
-                "enum": [
-                  "cotton"
-                ]
+                "enum": ["cotton"]
               },
               {
                 "title": "Denim - Jeans",
                 "description": "Denim - Jeans",
-                "enum": [
-                  "denim-jeans"
-                ]
+                "enum": ["denim-jeans"]
               },
               {
                 "title": "Gold",
                 "description": "Gold",
-                "enum": [
-                  "gold"
-                ]
+                "enum": ["gold"]
               },
               {
                 "title": "Silver",
                 "description": "Silver",
-                "enum": [
-                  "silver"
-                ]
+                "enum": ["silver"]
+              },
+              {
+                "title": "Other",
+                "type": "string"
               }
             ]
           },
@@ -690,34 +646,30 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "oneOf": [
+            "anyOf": [
               {
                 "title": "Height",
                 "description": "Height",
-                "enum": [
-                  "height"
-                ]
+                "enum": ["height"]
               },
               {
                 "title": "Width",
                 "description": "Width",
-                "enum": [
-                  "width"
-                ]
+                "enum": ["width"]
               },
               {
                 "title": "Depth",
                 "description": "Depth",
-                "enum": [
-                  "depth"
-                ]
+                "enum": ["depth"]
               },
               {
                 "title": "Size",
                 "description": "Size",
-                "enum": [
-                  "size"
-                ]
+                "enum": ["size"]
+              },
+              {
+                "title": "Other",
+                "type": "string"
               }
             ]
           },
@@ -728,48 +680,40 @@
           "unit": {
             "type": "string",
             "title": "Unit",
-            "oneOf": [
+            "anyOf": [
               {
                 "title": "Inch",
                 "description": "Inch",
-                "enum": [
-                  "in"
-                ]
+                "enum": ["in"]
               },
               {
                 "title": "Centimer",
                 "description": "Centimer",
-                "enum": [
-                  "cm"
-                ]
+                "enum": ["cm"]
               },
               {
                 "title": "Millimeter",
                 "description": "Millimeter",
-                "enum": [
-                  "mm"
-                ]
+                "enum": ["mm"]
               },
               {
                 "title": "EU",
                 "description": "EU",
-                "enum": [
-                  "eu"
-                ]
+                "enum": ["eu"]
               },
               {
                 "title": "UK",
                 "description": "UK",
-                "enum": [
-                  "uk"
-                ]
+                "enum": ["uk"]
               },
               {
                 "title": "US",
                 "description": "US",
-                "enum": [
-                  "us"
-                ]
+                "enum": ["us"]
+              },
+              {
+                "title": "Other",
+                "type": "string"
               }
             ]
           }
@@ -798,20 +742,20 @@
           "name": {
             "type": "string",
             "title": "Name",
-            "oneOf": [
+            "anyOf": [
               {
                 "title": "Fair Trade",
                 "description": "Fair Trade",
-                "enum": [
-                  "fairtrade"
-                ]
+                "enum": ["fairtrade"]
               },
               {
                 "title": "WWF",
                 "description": "WWF",
-                "enum": [
-                  "wwf"
-                ]
+                "enum": ["wwf"]
+              },
+              {
+                "title": "Other",
+                "type": "string"
               }
             ]
           }
@@ -828,34 +772,32 @@
           "category": {
             "type": "string",
             "title": "Category of transparency",
-            "oneOf": [
+            "anyOf": [
               {
                 "title": "material",
                 "description": "material",
-                "enum": [
-                  "material"
-                ]
+                "enum": ["material"]
               },
               {
                 "title": "assembly",
                 "description": "assembly",
-                "enum": [
-                  "assembly"
-                ]
+                "enum": ["assembly"]
               },
               {
                 "title": "impact",
                 "description": "impact",
-                "enum": [
-                  "impact"
-                ]
+                "enum": ["impact"]
+              },
+              {
+                "title": "Other",
+                "type": "string"
               }
             ]
           },
           "type": {
             "type": "string",
             "title": "Type of transparency",
-            "oneOf": [
+            "anyOf": [
               {
                 "title": "responsible_procurement",
                 "description": "responsible_procurement",
@@ -866,23 +808,23 @@
               {
                 "title": "eco_design",
                 "description": "eco_design",
-                "enum": [
-                  "eco_design"
-                ]
+                "enum": ["eco_design"]
               },
               {
                 "title": "packaging",
                 "description": "packaging",
-                "enum": [
-                  "packaging"
-                ]
+                "enum": ["packaging"]
+              },
+              {
+                "title": "Other",
+                "type": "string"
               }
             ]
           },
           "subtype": {
             "type": "string",
             "title": "Subtype of transparency",
-            "oneOf": [
+            "anyOf": [
               {
                 "title": "material-responsible_procurement-ethical_purchasing",
                 "description": "material-responsible_procurement-ethical_purchasing",
@@ -896,6 +838,10 @@
                 "enum": [
                   "material-responsible_procurement-organic organic"
                 ]
+              },
+              {
+                "title": "Other",
+                "type": "string"
               }
             ]
           },
@@ -922,7 +868,7 @@
                 "mediaType": {
                   "type": "string",
                   "title": "Media Type",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "enum": [
                         "picture"
@@ -936,17 +882,19 @@
                       ],
                       "title": "Youtube video",
                       "description": "Youtube video"
+                    },
+                    {
+                      "title": "Other",
+                      "type": "string"
                     }
                   ]
                 },
                 "type": {
                   "type": "string",
                   "title": "Type",
-                  "oneOf": [
+                  "anyOf": [
                     {
-                      "enum": [
-                        "icon"
-                      ],
+                      "enum": ["icon"],
                       "title": "icon of label",
                       "description": "An icon depicting the transparency item (png transparent)"
                     },
@@ -956,6 +904,10 @@
                       ],
                       "title": "Transparency picture",
                       "description": "A picture depicting the transparency item"
+                    },
+                    {
+                      "title": "Other",
+                      "type": "string"
                     }
                   ]
                 },
@@ -976,7 +928,6 @@
           },
           "externalContents": {
             "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
-            "required": false,
             "type": "array",
             "title": "External Contents",
             "items": {
@@ -985,7 +936,7 @@
                 "type": {
                   "type": "string",
                   "title": "Type",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "enum": [
                         "website"
@@ -1020,6 +971,10 @@
                       ],
                       "title": "Youtube video",
                       "description": "Youtube video"
+                    },
+                    {
+                      "title": "Other",
+                      "type": "string"
                     }
                   ]
                 },
@@ -1050,76 +1005,62 @@
           "language": {
             "type": "string",
             "title": "Language",
-            "oneOf": [
+            "description": "Descriptions and external contents can be stored in different languages",
+            "anyOf": [
               {
-                "description": "French",
                 "title": "French",
-                "enum": [
-                  "fr-FR"
-                ]
+                "description": "French",
+                "enum": ["fr-FR"]
               },
               {
-                "description": "English (US)",
                 "title": "English (US)",
-                "enum": [
-                  "en-US"
-                ]
+                "description": "English (US)",
+                "enum": ["en-US"]
               },
               {
-                "description": "Chinese (traditional)",
                 "title": "Chinese (traditional)",
-                "enum": [
-                  "zh-TW"
-                ]
+                "description": "Chinese (traditional)",
+                "enum": ["zh-TW"]
               },
               {
-                "description": "Chinese (simplified)",
                 "title": "Chinese (simplified)",
-                "enum": [
-                  "zh-CN"
-                ]
+                "description": "Chinese (simplified)",
+                "enum": ["zh-CN"]
               },
               {
-                "enum": [
-                  "ko-KR"
-                ],
+                "enum": ["ko-KR"],
                 "title": "Korean",
                 "description": "Korean"
               },
               {
-                "enum": [
-                  "ja-JP"
-                ],
+                "enum": ["ja-JP"],
                 "title": "Japanese",
                 "description": "Japanese"
               },
               {
-                "enum": [
-                  "de-DE"
-                ],
+                "enum": ["de-DE"],
                 "title": "German",
                 "description": "German"
               },
               {
-                "enum": [
-                  "es"
-                ],
+                "enum": ["es"],
                 "title": "Spanish",
                 "description": "Spanish"
               },
               {
-                "enum": [
-                  "it"
-                ],
+                "enum": ["it"],
                 "title": "Italian",
                 "description": "Italian"
               },
               {
-                "enum": [
-                  "ru"
-                ],
+                "enum": ["ru"],
                 "title": "Russian",
                 "description": "Russian"
+              },
+              {
+                "title": "Other",
+                "description": "Any other language that is not part of the enum",
+                "type": "string"
               }
             ]
           },
@@ -1144,7 +1085,6 @@
             "title": "Description"
           },
           "subDescription": {
-            "required": false,
             "type": "array",
             "title": "Description (more)",
             "items": {
@@ -1153,7 +1093,7 @@
                 "type": {
                   "type": "string",
                   "title": "Type",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "enum": [
                         "service"
@@ -1169,11 +1109,13 @@
                       "description": "Recycling"
                     },
                     {
-                      "enum": [
-                        "other"
-                      ],
+                      "enum": ["other"],
                       "title": "other",
                       "description": "other"
+                    },
+                    {
+                      "title": "Other",
+                      "type": "string"
                     }
                   ]
                 },
@@ -1202,7 +1144,7 @@
                 "mediaType": {
                   "type": "string",
                   "title": "Media Type",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "enum": [
                         "picture"
@@ -1225,18 +1167,20 @@
                       "description": "A 3D Model (glb / gltf)"
                     },
                     {
-                      "enum": [
-                        "video"
-                      ],
+                      "enum": ["video"],
                       "title": "Video",
                       "description": "A video (mp4)"
+                    },
+                    {
+                      "title": "Other",
+                      "type": "string"
                     }
                   ]
                 },
                 "type": {
                   "type": "string",
                   "title": "Type",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "enum": [
                         "product"
@@ -1292,6 +1236,10 @@
                       ],
                       "title": "Video source, played in the wallet application",
                       "description": "[Video / 2] Video source (.mp4), requires [Video / 1] to be set right before"
+                    },
+                    {
+                      "title": "Other",
+                      "type": "string"
                     }
                   ]
                 },
@@ -1311,7 +1259,6 @@
             }
           },
           "externalContents": {
-            "required": false,
             "type": "array",
             "title": "External Contents",
             "items": {
@@ -1320,7 +1267,7 @@
                 "type": {
                   "type": "string",
                   "title": "Type",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "enum": [
                         "website"
@@ -1355,6 +1302,10 @@
                       ],
                       "title": "Authentified One 2 Many",
                       "description": "Link to redirect to a another claimaible nft. NFT should redirect to the same link with Arianee access token"
+                    },
+                    {
+                      "title": "Other",
+                      "type": "string"
                     }
                   ]
                 },
@@ -1401,7 +1352,7 @@
                 "category": {
                   "type": "string",
                   "title": "Category of transparency",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "title": "material",
                       "description": "material",
@@ -1419,16 +1370,18 @@
                     {
                       "title": "impact",
                       "description": "impact",
-                      "enum": [
-                        "impact"
-                      ]
+                      "enum": ["impact"]
+                    },
+                    {
+                      "title": "Other",
+                      "type": "string"
                     }
                   ]
                 },
                 "type": {
                   "type": "string",
                   "title": "Type of transparency",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "title": "responsible_procurement",
                       "description": "responsible_procurement",
@@ -1449,13 +1402,17 @@
                       "enum": [
                         "packaging"
                       ]
+                    },
+                    {
+                      "title": "Other",
+                      "type": "string"
                     }
                   ]
                 },
                 "subtype": {
                   "type": "string",
                   "title": "Subtype of transparency",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "title": "material-responsible_procurement-ethical_purchasing",
                       "description": "material-responsible_procurement-ethical_purchasing",
@@ -1469,6 +1426,10 @@
                       "enum": [
                         "material-responsible_procurement-organic organic"
                       ]
+                    },
+                    {
+                      "title": "Other",
+                      "type": "string"
                     }
                   ]
                 },
@@ -1495,7 +1456,7 @@
                       "mediaType": {
                         "type": "string",
                         "title": "Media Type",
-                        "oneOf": [
+                        "anyOf": [
                           {
                             "enum": [
                               "picture"
@@ -1509,13 +1470,17 @@
                             ],
                             "title": "Youtube video",
                             "description": "Youtube video"
+                          },
+                          {
+                            "title": "Other",
+                            "type": "string"
                           }
                         ]
                       },
                       "type": {
                         "type": "string",
                         "title": "Type",
-                        "oneOf": [
+                        "anyOf": [
                           {
                             "enum": [
                               "icon"
@@ -1529,6 +1494,10 @@
                             ],
                             "title": "Transparency picture",
                             "description": "A picture depicting the transparency item"
+                          },
+                          {
+                            "title": "Other",
+                            "type": "string"
                           }
                         ]
                       },
@@ -1549,7 +1518,6 @@
                 },
                 "externalContents": {
                   "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
-                  "required": false,
                   "type": "array",
                   "title": "External Contents",
                   "items": {
@@ -1558,7 +1526,7 @@
                       "type": {
                         "type": "string",
                         "title": "Type",
-                        "oneOf": [
+                        "anyOf": [
                           {
                             "enum": [
                               "website"
@@ -1593,6 +1561,10 @@
                             ],
                             "title": "Youtube video",
                             "description": "Youtube video"
+                          },
+                          {
+                            "title": "Other",
+                            "type": "string"
                           }
                         ]
                       },
@@ -1619,7 +1591,6 @@
     },
     "parentCertificates": {
       "description": "This field is designed to store the links to parent certificates.",
-      "required": false,
       "type": "array",
       "title": "Parent Certificates",
       "items": {
@@ -1628,13 +1599,15 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "oneOf": [
+            "anyOf": [
               {
-                "enum": [
-                  "full"
-                ],
+                "enum": ["full"],
                 "title": "Full",
                 "description": "Full"
+              },
+              {
+                "title": "Other",
+                "type": "string"
               }
             ]
           },
@@ -1686,7 +1659,5 @@
       "description": "youtube_url for external services."
     }
   },
-  "required": [
-    "$schema"
-  ]
+  "required": ["$schema"]
 }

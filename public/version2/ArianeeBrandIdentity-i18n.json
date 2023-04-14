@@ -47,7 +47,7 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
+              "anyOf": [
                     {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
                     {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
                     {"enum": ["label"], "title":"Label", "description": "official label supported by the Brand and its products"},
@@ -55,7 +55,8 @@
                     {"enum": ["androidScheme"], "title":"androidScheme", "description": "androidScheme"},
                     {"enum": ["other"], "title":"other", "description": "other"},
                     {"enum": ["deepLinkDomain"], "title":"Domain to use for deeplink", "description": "Domain to use for deeplink"},
-                    {"enum": ["hostedWallet"], "title":"HostedWallet", "description": "custodial wallet's url"}
+                    {"enum": ["hostedWallet"], "title":"HostedWallet", "description": "custodial wallet's url"},
+                    {"title":"Other", "type":"string"}
               ]
             },
             "title": {
@@ -93,7 +94,7 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
+              "anyOf": [
                     {"enum": ["fr-FR"], "title":"French", "description": "French"},
                     {"enum": ["en-US"], "title":"English (american)", "description": "English (american)"},
                     {"enum": ["zh-TW"], "title":"Traditional chinese", "description": "Traditional chinese"},
@@ -102,7 +103,8 @@
                     {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
                     {"enum": ["de-DE"], "title":"German", "description": "German"},
                     {"enum": ["es"], "title":"Spanish", "description": "Spanish"},
-                    {"enum": ["it"], "title":"Italian", "description": "Italian"}
+                    {"enum": ["it"], "title":"Italian", "description": "Italian"},
+                    {"title":"Other", "type":"string"}
               ]
             },
             "description": {
@@ -126,13 +128,14 @@
                     "widget": {
                       "id": "select"
                     },
-                    "oneOf": [
+                    "anyOf": [
                           {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
                           {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
                           {"enum": ["label"], "title":"Label", "description": "label"},
                           {"enum": ["iosScheme"], "title":"iosScheme", "description": "iosScheme"},
                           {"enum": ["androidScheme"], "title":"androidScheme", "description": "androidScheme"},
-                          {"enum": ["other"], "title":"other", "description": "other"}
+                          {"enum": ["other"], "title":"other", "description": "other"},
+                          {"title":"Other", "type":"string"}
                       ]
                   },
                   "title": {
@@ -167,12 +170,12 @@
         "widget": {
           "id": "select"
         },
-        "oneOf": [
+        "anyOf": [
               {"enum": ["not_member"], "title":"Not member", "description": "Not member"},
               {"enum": ["associate_member"], "title":"Associate Member", "description": "Associate Member"},
               {"enum": ["group_member"], "title":"Group member", "description": "Group member"},
-              {"enum": ["maison_member"], "title":"Maison member", "description": "Maison member"}
-
+              {"enum": ["maison_member"], "title":"Maison member", "description": "Maison member"},
+              {"title": "Other", "type": "string"}
           ]
       },
       "address": {
@@ -233,11 +236,12 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
+              "anyOf": [
                     {"enum": ["support"], "title":"Support", "description": "Customer Support"},
                     {"enum": ["sales"], "title":"Sales", "description": "Sales team"},
                     {"enum": ["hq"], "title":"Headquarter", "description": "Headquarter"},
-                    {"enum": ["other"], "title":"other", "description": "other"}
+                    {"enum": ["other"], "title":"other", "description": "other"},
+                    {"title": "Other", "type": "string"}
                 ]
             }
           }
@@ -256,7 +260,7 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
+              "anyOf": [
                     {"enum": ["brandLogoHeader"], "title":"Brand Logo Header (2000x700) transparent (working with a white background) PNG", "description": "Brand Logo Header (2000x700) transparent (working with a white background) PNG"},
                     {"enum": ["brandLogoHeaderReversed"], "title":"Brand Logo Header (2000x700) transparent (working with a black background) PNG", "description": "Brand Logo Header (2000x700) transparent (working with a black background) PNG"},
                     {"enum": ["brandLogoSquare"], "title":"Brand Logo Square (1000x1000) no transparency", "description": "Brand Logo Square (1000x1000) no transparency"},
@@ -264,7 +268,8 @@
                     {"enum": ["brandItemBackgroundPicture"], "title":"Brand Item Background Picture (3200x1900) ratioed", "description": "Brand Item Background Picture (3200x1900) ratioed"},
                     {"enum": ["itemBackgroundPicture"], "title": "Item Background Picture (3000x3000) ratioed", "description": "Item Background Picture (3000x3000) ratioed"},
                     {"enum": ["brandBackgroundPicture"], "title":"Brand Background picture (1900x3200) preferably dark", "description": "Brand Background picture (1900x3200) preferably dark"},
-                    {"enum": ["certificateBackgroundPicture"], "title":"Certificate Background Picture (1900x3200 TBD) preferably dark", "description": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top"}
+                    {"enum": ["certificateBackgroundPicture"], "title":"Certificate Background Picture (1900x3200 TBD) preferably dark", "description": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top"},
+                    {"title": "Other", "type": "string"}
 
 
                 ]
@@ -299,11 +304,12 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
+              "anyOf": [
                     {"enum": ["facebook"], "title":"Facebook", "description": "Facebook"},
                     {"enum": ["instagram"], "title":"Instagram", "description": "Instagram"},
                     {"enum": ["twitter"], "title":"Twitter", "description": "Twitter"},
-                    {"enum": ["youtube"], "title":"Youtube", "description": "Youtube"}
+                    {"enum": ["youtube"], "title":"Youtube", "description": "Youtube"},
+                    {"title": "Other", "type": "string"}
 
                 ]
             },
@@ -332,7 +338,8 @@
               },
               "oneOf": [
                     {"enum": ["missing"], "title":"Provider for missing/stolen process", "description": "Provider for missing/stolen process"},
-                    {"enum": ["custodialWallet"], "title":"Custodial Wallet Landing Page", "description": "website where user lands when exporting mnemonic to brand. Address is pub key of to encrypt mnemonic"}
+                    {"enum": ["custodialWallet"], "title":"Custodial Wallet Landing Page", "description": "website where user lands when exporting mnemonic to brand. Address is pub key of to encrypt mnemonic"},
+                    {"title": "Other", "type": "string"}
               ]
             },
             "address": {
