@@ -292,7 +292,7 @@
         }
       },
       "externalContents": {
-        "required": false,
+
         "type": "array",
         "title": "External Contents",
         "items": {

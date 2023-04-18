@@ -103,7 +103,7 @@
       }
     },
     "externalContents": {
-      "required": false,
+
       "type": "array",
       "title": "External Contents",
       "description": "This field is designed to store the links to external contents the Event issuer whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
@@ -185,7 +185,7 @@
           },
 
           "externalContents": {
-            "required": false,
+
             "type": "array",
             "title": "External Contents",
             "description": "This field is designed to store the links to external contents the Event issuer whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
