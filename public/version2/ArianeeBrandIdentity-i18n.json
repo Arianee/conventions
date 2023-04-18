@@ -47,7 +47,7 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
+              "anyOf": [
                     {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
                     {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
                     {"enum": ["label"], "title":"Label", "description": "official label supported by the Brand and its products"},
@@ -93,7 +93,7 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
+              "anyOf": [
                     {"enum": ["fr-FR"], "title":"French", "description": "French"},
                     {"enum": ["en-US"], "title":"English (american)", "description": "English (american)"},
                     {"enum": ["zh-TW"], "title":"Traditional chinese", "description": "Traditional chinese"},
@@ -126,7 +126,7 @@
                     "widget": {
                       "id": "select"
                     },
-                    "oneOf": [
+                    "anyOf": [
                           {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
                           {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
                           {"enum": ["label"], "title":"Label", "description": "label"},
@@ -167,7 +167,7 @@
         "widget": {
           "id": "select"
         },
-        "oneOf": [
+        "anyOf": [
               {"enum": ["not_member"], "title":"Not member", "description": "Not member"},
               {"enum": ["associate_member"], "title":"Associate Member", "description": "Associate Member"},
               {"enum": ["group_member"], "title":"Group member", "description": "Group member"},
@@ -233,7 +233,7 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
+              "anyOf": [
                     {"enum": ["support"], "title":"Support", "description": "Customer Support"},
                     {"enum": ["sales"], "title":"Sales", "description": "Sales team"},
                     {"enum": ["hq"], "title":"Headquarter", "description": "Headquarter"},
@@ -256,7 +256,7 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
+              "anyOf": [
                     {"enum": ["brandLogoHeader"], "title":"Brand Logo Header (2000x700) transparent (working with a white background) PNG", "description": "Brand Logo Header (2000x700) transparent (working with a white background) PNG"},
                     {"enum": ["brandLogoHeaderReversed"], "title":"Brand Logo Header (2000x700) transparent (working with a black background) PNG", "description": "Brand Logo Header (2000x700) transparent (working with a black background) PNG"},
                     {"enum": ["brandLogoSquare"], "title":"Brand Logo Square (1000x1000) no transparency", "description": "Brand Logo Square (1000x1000) no transparency"},
@@ -299,7 +299,7 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
+              "anyOf": [
                     {"enum": ["facebook"], "title":"Facebook", "description": "Facebook"},
                     {"enum": ["instagram"], "title":"Instagram", "description": "Instagram"},
                     {"enum": ["twitter"], "title":"Twitter", "description": "Twitter"},
@@ -330,7 +330,7 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
+              "anyOf": [
                     {"enum": ["missing"], "title":"Provider for missing/stolen process", "description": "Provider for missing/stolen process"},
                     {"enum": ["custodialWallet"], "title":"Custodial Wallet Landing Page", "description": "website where user lands when exporting mnemonic to brand. Address is pub key of to encrypt mnemonic"}
               ]

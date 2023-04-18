@@ -18,7 +18,7 @@
       "widget": {
               "id": "select"
             },
-      "oneOf": [
+      "anyOf": [
         {
           "title": "Service",
           "description": "Service - usually issued by customer support.",
@@ -76,7 +76,7 @@
       "widget": {
         "id": "select"
       },
-      "oneOf": [
+      "anyOf": [
         {"enum": ["fr-FR"], "title": "French", "description": "French"},
         {"enum": ["en-US"], "title": "English (US)", "description": "English (US)"},
         {"enum": ["zh-TW"], "title": "Chinese (traditional)","description": "Chinese (traditional)"},
@@ -116,7 +116,7 @@
             "widget": {
               "id": "select"
             },
-            "oneOf": [
+            "anyOf": [
               {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
               {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
               {"enum": ["other"], "title":"other", "description": "other"}
@@ -156,7 +156,7 @@
             "widget": {
               "id": "select"
             },
-            "oneOf": [
+            "anyOf": [
               {"enum": ["fr-FR"], "title":"French", "description": "French"},
               {"enum": ["en-US"], "title":"English (US)", "description": "English (US)"},
               {"enum": ["zh-TW"], "title":"Chinese (traditional)", "description": "Chinese (traditional)"},
@@ -198,7 +198,7 @@
                   "widget": {
                     "id": "select"
                   },
-                  "oneOf": [
+                  "anyOf": [
                     {"enum": ["website"], "title":"Website (main)", "description": "Website (main)"},
                     {"enum": ["eshop"], "title":"Eshop", "description": "Eshop"},
                     {"enum": ["other"], "title":"other", "description": "other"}
@@ -242,7 +242,7 @@
             "widget": {
               "id": "select"
             },
-            "oneOf": [
+            "anyOf": [
               {
                 "enum": [
                   "picture"
@@ -265,7 +265,7 @@
             "widget": {
               "id": "select"
             },
-            "oneOf": [
+            "anyOf": [
               {
                 "enum": [
                   "product"
@@ -309,7 +309,7 @@
             "widget": {
               "id": "select"
             },
-            "oneOf": [
+            "anyOf": [
               {
                 "title": "Color",
                 "description": "Color",
@@ -357,7 +357,7 @@
       "widget": {
         "id": "select"
       },
-      "oneOf": [
+      "anyOf": [
         {
           "title": "US Dollar",
           "description": "US Dollar",

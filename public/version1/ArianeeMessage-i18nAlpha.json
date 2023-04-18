@@ -32,7 +32,7 @@
               "widget": {
                 "id": "select"
               },
-              "oneOf": [
+              "anyOf": [
                     {"enum": ["fr-FR"], "title":"French", "description": "French"},
                     {"enum": ["en-US"], "title":"English (american)", "description": "English (american)"},
                     {"enum": ["zh-TW"], "title":"Traditional chinese", "description": "Traditional chinese"},

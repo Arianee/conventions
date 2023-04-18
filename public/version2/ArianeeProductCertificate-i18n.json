@@ -14,7 +14,7 @@
       "type": "string",
       "title": "Language",
       "description": "Descriptions and external contents can be stored in different languages",
-      "oneOf": [
+      "anyOf": [
         {
           "title": "French",
           "description": "French",
@@ -108,7 +108,7 @@
       "type": "string",
       "title": "Category",
       "description": "Information on the broad category the product belongs to.",
-      "oneOf": [
+      "anyOf": [
         {
           "description": "Apparel",
           "title": "Apparel",
@@ -129,8 +129,8 @@
       "type": "string",
       "title": "Sub Category",
       "description": "Information on the specific category the product belongs to.",
-      "temp": "Shirt Dress T-shirt Sweater Vest Jacket Denim Pants Skirt Swim",
-      "oneOf": [
+
+      "anyOf": [
         {
           "description": "Shirt",
           "title": "Shirt",
@@ -158,8 +158,8 @@
       "type": "string",
       "title": "Intended",
       "description": "Information on the target customer market of the product.",
-      "temp": "Women's Men's Youth-Girls Youth-Boys Toddler-Girls Todder-Boys Infant-Girls Infant-Boys Adult Gender Neutral/Non-binary",
-      "oneOf": [
+
+      "anyOf": [
         {
           "description": "Women's",
           "title": "Women's",
@@ -193,7 +193,7 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "oneOf": [
+            "anyOf": [
               {
                 "description": "Serial Number",
                 "title": "Serial Number",
@@ -270,7 +270,7 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "oneOf": [
+            "anyOf": [
               {
                 "enum": [
                   "service"
@@ -320,7 +320,7 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "oneOf": [
+            "anyOf": [
               {
                 "enum": [
                   "website"
@@ -391,7 +391,7 @@
             "title": "Currency",
             "default": "",
             "description": "Currency",
-            "oneOf": [
+            "anyOf": [
               {
                 "title": "US Dollar",
                 "description": "US Dollar",
@@ -434,7 +434,7 @@
           "mediaType": {
             "type": "string",
             "title": "Media Type",
-            "oneOf": [
+            "anyOf": [
               {
                 "enum": [
                   "picture"
@@ -454,7 +454,7 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "oneOf": [
+            "anyOf": [
               {
                 "enum": [
                   "product"
@@ -528,7 +528,7 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "oneOf": [
+            "anyOf": [
               {
                 "title": "Color",
                 "description": "Color",
@@ -569,8 +569,8 @@
           "material": {
             "type": "string",
             "title": "Material",
-            "temp": "Cashmere / Cotton / Denim - Jeans / Exotic leathers / Faux fur / Fur /Leather / Linen / Polyester / Silk / Suede / Synthetic / Tweed / Velvet / Viscose / Wool",
-            "oneOf": [
+
+            "anyOf": [
               {
                 "title": "Cashmere",
                 "description": "Cashmere",
@@ -630,7 +630,7 @@
           "type": {
             "type": "string",
             "title": "Type",
-            "oneOf": [
+            "anyOf": [
               {
                 "title": "Height",
                 "description": "Height",
@@ -668,7 +668,7 @@
           "unit": {
             "type": "string",
             "title": "Unit",
-            "oneOf": [
+            "anyOf": [
               {
                 "title": "Inch",
                 "description": "Inch",
@@ -738,7 +738,7 @@
           "name": {
             "type": "string",
             "title": "Name",
-            "oneOf": [
+            "anyOf": [
               {
                 "title": "Fair Trade",
                 "description": "Fair Trade",
@@ -768,7 +768,7 @@
           "type": {
             "type": "string",
             "title": "Type of transparency",
-            "oneOf": [
+            "anyOf": [
               {
                 "title": "material",
                 "description": "material",
@@ -822,7 +822,7 @@
                 "mediaType": {
                   "type": "string",
                   "title": "Media Type",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "enum": [
                         "picture"
@@ -842,7 +842,7 @@
                 "type": {
                   "type": "string",
                   "title": "Type",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "enum": [
                         "icon"
@@ -885,7 +885,7 @@
                 "type": {
                   "type": "string",
                   "title": "Type",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "enum": [
                         "website"
@@ -950,7 +950,7 @@
           "language": {
             "type": "string",
             "title": "Language",
-            "oneOf": [
+            "anyOf": [
               {
                 "description": "French",
                 "title": "French",
@@ -1046,7 +1046,7 @@
                 "type": {
                   "type": "string",
                   "title": "Type",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "enum": [
                         "service"
@@ -1095,7 +1095,7 @@
                 "mediaType": {
                   "type": "string",
                   "title": "Media Type",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "enum": [
                         "picture"
@@ -1115,7 +1115,7 @@
                 "type": {
                   "type": "string",
                   "title": "Type",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "enum": [
                         "product"
@@ -1171,7 +1171,7 @@
                 "type": {
                   "type": "string",
                   "title": "Type",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "enum": [
                         "website"
@@ -1252,7 +1252,7 @@
                 "type": {
                   "type": "string",
                   "title": "Type of transparency",
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "title": "material",
                       "description": "material",
@@ -1306,7 +1306,7 @@
                       "mediaType": {
                         "type": "string",
                         "title": "Media Type",
-                        "oneOf": [
+                        "anyOf": [
                           {
                             "enum": [
                               "picture"
@@ -1326,7 +1326,7 @@
                       "type": {
                         "type": "string",
                         "title": "Type",
-                        "oneOf": [
+                        "anyOf": [
                           {
                             "enum": [
                               "icon"
@@ -1369,7 +1369,7 @@
                       "type": {
                         "type": "string",
                         "title": "Type",
-                        "oneOf": [
+                        "anyOf": [
                           {
                             "enum": [
                               "website"

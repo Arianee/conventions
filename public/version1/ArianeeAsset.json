@@ -33,7 +33,7 @@
             "widget": {
               "id": "select"
             },
-            "oneOf": [
+            "anyOf": [
               {
                 "description": "Serial Number",
                 "enum": [
@@ -136,7 +136,7 @@
             "widget": {
               "id": "select"
             },
-            "oneOf": [
+            "anyOf": [
               {
                 "description": "Color",
                 "enum": [
@@ -179,7 +179,7 @@
             "widget": {
               "id": "select"
             },
-            "oneOf": [
+            "anyOf": [
               {
                 "description": "Height",
                 "enum": [
@@ -219,7 +219,7 @@
             "widget": {
               "id": "select"
             },
-            "oneOf": [
+            "anyOf": [
               {
                 "description": "Inch",
                 "enum": [
