@@ -1,0 +1,9 @@
+{
+  "mainnet": "poacore",
+  "testnet": "sokol",
+  "polygon": "polygon",
+  "mumbai": "mumbai",
+  "stadetoulousain": "stadetoulousain",
+  "ysl":"ysl",
+  "arialabs":"arialabs"
+}
