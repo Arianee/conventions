@@ -261,7 +261,7 @@
       "description": "Description of the product. (HTML Accepted)\n A description can be stored for each language"
     },
     "subDescription": {
-      "required": false,
+
       "type": "array",
       "title": "Description (more)",
       "items": {
@@ -311,7 +311,7 @@
     },
     "externalContents": {
       "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
-      "required": false,
+
       "type": "array",
       "title": "External Contents",
       "items": {
@@ -923,7 +923,7 @@
           },
           "externalContents": {
             "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
-            "required": false,
+
             "type": "array",
             "title": "External Contents",
             "items": {
@@ -1084,7 +1084,7 @@
             "title": "Description"
           },
           "subDescription": {
-            "required": false,
+
             "type": "array",
             "title": "Description (more)",
             "items": {
@@ -1209,7 +1209,7 @@
             }
           },
           "externalContents": {
-            "required": false,
+
             "type": "array",
             "title": "External Contents",
             "items": {
@@ -1440,7 +1440,7 @@
                 },
                 "externalContents": {
                   "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
-                  "required": false,
+
                   "type": "array",
                   "title": "External Contents",
                   "items": {
@@ -1510,7 +1510,7 @@
     },
     "parentCertificates": {
       "description": "This field is designed to store the links to parent certificates.",
-      "required": false,
+
       "type": "array",
       "title": "Parent Certificates",
       "items": {

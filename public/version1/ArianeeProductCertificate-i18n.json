@@ -59,7 +59,7 @@
       "type": "string",
       "title": "Sub Category",
       "description":"Information on the specific category the product belongs to.",
-      "temp": "Shirt Dress T-shirt Sweater Vest Jacket Denim Pants Skirt Swim",
+
       "oneOf": [
         {
           "description": "Shirt",
@@ -88,7 +88,7 @@
       "type": "string",
       "title": "Intended",
       "description":"Information on the target customer market of the product.",
-      "temp": "Women's Men's Youth-Girls Youth-Boys Toddler-Girls Todder-Boys Infant-Girls Infant-Boys Adult Gender Neutral/Non-binary",
+
       "oneOf": [
         {
           "description": "Women's",
@@ -218,7 +218,7 @@
       "description": "Description of the product. (HTML Accepted)\n A description can be stored for each language"
     },
     "subDescription": {
-      "required": false,
+
       "type": "array",
       "title": "Description (more)",
       "items": {
@@ -268,7 +268,7 @@
     },
     "externalContents": {
       "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
-      "required": false,
+
       "type": "array",
       "title": "External Contents",
       "items": {
@@ -373,7 +373,7 @@
             "title": "Description"
           },
           "subDescription": {
-            "required": false,
+
             "type": "array",
             "title": "Description (more)",
             "items": {
@@ -422,7 +422,7 @@
             }
           },
           "externalContents": {
-            "required": false,
+
             "type": "array",
             "title": "External Contents",
             "items": {
@@ -652,7 +652,7 @@
           "material": {
             "type": "string",
             "title": "Material",
-            "temp": "Cashmere / Cotton / Denim - Jeans / Exotic leathers / Faux fur / Fur /Leather / Linen / Polyester / Silk / Suede / Synthetic / Tweed / Velvet / Viscose / Wool",
+
             "oneOf": [
               {
                 "title": "Cashmere",
