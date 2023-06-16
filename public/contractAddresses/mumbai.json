@@ -15,5 +15,6 @@
   },
   "httpProvider": "https://mumbai.arianee.net",
   "gasStation": "https://gasstation.arianee.com/80001",
-  "chainId": 80001
+  "chainId": 80001,
+  "protocolVersion": "1.1"
 }

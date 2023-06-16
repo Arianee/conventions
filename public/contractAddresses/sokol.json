@@ -15,5 +15,6 @@
     },
     "httpProvider": "https://sokol.arianee.net",
     "gasStation": "https://cert.arianee.net/gasStation/testnet.json",
-    "chainId": 77
+    "chainId": 77,
+    "protocolVersion": "1.0"
 }
