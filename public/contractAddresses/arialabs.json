@@ -15,5 +15,6 @@
   },
   "httpProvider": "https://polygon.arianee.net",
   "gasStation": "https://gasstation.arianee.com/137",
-  "chainId": 137
+  "chainId": 137,
+  "protocolVersion": "1.1"
 }

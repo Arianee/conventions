@@ -14,5 +14,6 @@
     },
     "httpProvider": "https://poa.arianee.net",
     "gasStation": "https://cert.arianee.net/gasStation/mainnet.json",
-    "chainId": 99
+    "chainId": 99,
+    "protocolVersion": "1.0"
 }

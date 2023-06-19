@@ -15,5 +15,6 @@
   },
   "httpProvider": "http://blockchain:8545",
   "gasStation": "https://cert.arianee.net/gasStation/arianeetestnet.json",
-  "chainId": 42
+  "chainId": 42,
+  "protocolVersion": "1.1"
 }
