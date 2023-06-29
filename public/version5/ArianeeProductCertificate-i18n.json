@@ -158,6 +158,13 @@
           "enum": [
             "watch"
           ]
+        },
+        {
+          "description": "Digital Asset",
+          "title": "Digital Asset",
+          "enum": [
+            "Digital Asset"
+          ]
         }
       ]
     },
@@ -476,6 +483,11 @@
                 ],
                 "title": "Video",
                 "description": "A video (mp4)"
+              },
+              {
+                "enum": ["AR"],
+                "title": "Augmented Reality",
+                "description": "Augmented reality content"
               }
             ]
           },
@@ -538,6 +550,21 @@
                 ],
                 "title": "Video source, played in the wallet application",
                 "description": "[Video / 2] Video source (.mp4), requires [Video / 1] to be set right before"
+              },
+              {
+                "enum": ["ARPreview"],
+                "title": "Augmented Reality preview",
+                "description": "[Augmented Reality preview] used to support the presentation of the AR asset in the wallet app.  (ideally .png with transparent background and square, less than 1mo)"
+              },
+              {
+                "enum": ["ARAsset"],
+                "title": "Augmented Reality asset",
+                "description": "[Augmented Reality asset] AR asset file (USDZ)"
+              },
+              {
+                "enum": ["ARPrimaryAsset"],
+                "title": "Augmented Reality Primay asset",
+                "description": "[Augmented Reality Primay asset] AR asset file (USDZ)"
               }
             ]
           },
@@ -1230,6 +1257,11 @@
                       ],
                       "title": "Video",
                       "description": "A video (mp4)"
+                    },
+                    {
+                      "enum": ["AR"],
+                      "title": "Augmented Reality",
+                      "description": "Augmented reality content"
                     }
                   ]
                 },
@@ -1292,6 +1324,21 @@
                       ],
                       "title": "Video source, played in the wallet application",
                       "description": "[Video / 2] Video source (.mp4), requires [Video / 1] to be set right before"
+                    },
+                    {
+                      "enum": ["ARPreview"],
+                      "title": "Augmented Reality preview",
+                      "description": "[Augmented Reality preview] used to support the presentation of the AR asset in the wallet app.  (ideally .png with transparent background and square, less than 1mo)"
+                    },
+                    {
+                      "enum": ["ARAsset"],
+                      "title": "Augmented Reality asset",
+                      "description": "[Augmented Reality asset] AR asset file (USDZ)"
+                    },
+                    {
+                      "enum": ["ARPrimaryAsset"],
+                      "title": "Augmented Reality Primay asset",
+                      "description": "[Augmented Reality Primay asset] AR asset file (USDZ)"
                     }
                   ]
                 },
