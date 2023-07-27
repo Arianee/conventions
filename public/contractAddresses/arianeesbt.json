@@ -1,0 +1,22 @@
+{
+  "contractAdresses": {
+    "aria": "0x0000000000000000000000000000000000001010",
+    "creditHistory": "0x6c9A62612F4A0B1597e4Bf04A76678874CCB75c8",
+    "eventArianee": "0xDa89458D489c7c4BAF3663321eEE694c15000017",
+    "identity": "",
+    "smartAsset": "0x6a26cC23152973480E4bB8033b9Ad3e6d445466a",
+    "staking": "",
+    "store": "0x792D78608c0570e033CA129724BcBA3096b63510",
+    "whitelist": "0x4C7DAb2951C954f32BB68f2241C347aa8bc65FD7",
+    "lost": "0x8E5f950D4Ca5de8304eb55552bd7699d20462449",
+    "message": "0xE801F8b875499bAe8a08076d38A5d1F7dfEb2AFC",
+    "userAction": "0x6dbE630E7761A7905FA3D0aF50E54180650931bA",
+    "updateSmartAssets": "0x4f7aD45dea69169c410Cb6C2681ff0ABc87a6FE9"
+
+  },
+  "httpProvider": "https://polygonsupernet.arianee.net",
+  "gasStation": "https://gasstation.arianee.com/11891",
+  "chainId": 11891,
+  "protocolVersion": "1.5",
+  "soulbound": true
+}
