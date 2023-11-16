@@ -1,0 +1,20 @@
+{
+  "contractAdresses":  {
+    "aria": "0x254dffcd3277C0b1660F6d42EFbB754edaBAbC2B",
+    "creditHistory": "0xe982E462b094850F12AF94d21D470e21bE9D0E9C",
+    "eventArianee": "0x59d3631c86BbE35EF041872d502F218A39FBa150",
+    "identity": "0xA57B8a5584442B467b4689F1144D269d096A3daF",
+    "smartAsset": "0xD833215cBcc3f914bD1C9ece3EE7BF8B14f841bb",
+    "staking": "",
+    "store": "0x2612Af3A521c2df9EAF28422Ca335b04AdF3ac66",
+    "whitelist": "0xC89Ce4735882C9F0f0FE26686c53074E09B0D550",
+    "lost": "0x0290FB167208Af455bB137780163b7B7a9a10C16",
+    "message": "0x9561C133DD8580860B6b7E504bC5Aa500f0f06a7",
+    "userAction": "0x67B5656d60a809915323Bf2C40A8bEF15A152e3e",
+    "updateSmartAssets": "0x9b1f7F645351AF3631a656421eD2e40f2802E6c0"
+  },
+  "httpProvider": "http://blockchain:8545",
+  "gasStation": "https://cert.arianee.net/gasStation/arianeetestnet.json",
+  "chainId": 42,
+  "protocolVersion": "1.1"
+}
