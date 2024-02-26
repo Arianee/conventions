@@ -54,7 +54,18 @@
     "rewrites": [ {
       "source": "/metadata/**",
       "function": "metadata"
-    }]
+    },
+      {
+        "source": "/contractAddresses/testnet.json",
+        "destination": "/contractAddresses/sokol.json",
+        "type": 301
+      },
+      {
+        "source": "/contractAddresses/newsokol.json",
+        "destination": "/contractAddresses/sokol.json",
+        "type": 301
+      }
+    ]
   },
   "functions": {
     "predeploy": [
