@@ -24,7 +24,7 @@ commands:
     steps:
       - run:
           name: Install Firebase Tools
-          command: npm install --prefix=./firebase-deploy firebase-tools
+          command: npm install --prefix=./firebase-deploy firebase-tools@10.9.2
       - run:
           name: Deploy to Firebase
           command: ./firebase-deploy/node_modules/.bin/firebase deploy --token=<< parameters.token >> -P << parameters.alias >> --only << parameters.only >>
@@ -43,6 +43,9 @@ jobs:
           root: ./
           paths:
             - "*"
+      - run:
+          name: Install Firebase Tools (test if node version works with firebase tools)
+          command: npm install --prefix=./firebase-deploy firebase-tools@10.9.2
   deploy:
     docker:
       - image: cimg/node:16.19
