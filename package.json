@@ -18,10 +18,8 @@
     "url": "https://github.com/Arianee/conventions/issues"
   },
   "homepage": "https://github.com/Arianee/conventions#readme",
-  "dependencies": {
-    "@arianee/arianeejs": "^1.102.0"
-  },
   "devDependencies": {
+    "@arianee/arianeejs": "^1.102.0",
     "@types/jest": "^25.1.2",
     "@types/node": "^13.7.1",
     "isobjectmatchingmodel": "^1.0.1",
