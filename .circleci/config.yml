@@ -24,7 +24,7 @@ commands:
     steps:
       - run:
           name: Install Firebase Tools
-          command: npm install --prefix=./firebase-deploy firebase-tools@10.9.2
+          command: npm install --prefix=./firebase-deploy firebase-tools
       - run:
           name: Deploy to Firebase
           command: ./firebase-deploy/node_modules/.bin/firebase deploy --token=<< parameters.token >> -P << parameters.alias >> --only << parameters.only >>
@@ -39,20 +39,11 @@ jobs:
       - run:
           name: test
           command: npm run test
-      - persist_to_workspace:
-          root: ./
-          paths:
-            - "*"
-      - run:
-          name: Install Firebase Tools (test if node version works with firebase tools)
-          command: npm install --prefix=./firebase-deploy firebase-tools@10.9.2
   deploy:
     docker:
-      - image: cimg/node:16.19
+      - image: cimg/node:20.11.1
     steps:
       - checkout
-      - attach_workspace:
-          at: ./
       - deploy-firebase:
           alias: arianee-cert
           token: $FIREBASE_DEPLOY_TOKEN
