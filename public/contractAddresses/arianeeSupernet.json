@@ -5,9 +5,12 @@
     "eventArianee": "0xD64bfed4255519711f9B26F0434555b6cC9556C1",
     "identity": "0x381b9f7911119a41cf2b54047c0cD39d4D221fA3",
     "smartAsset": "0x8a15FB08505da784076fc82a4e66c3C7FFABC148",
+    "staking": "",
     "store": "0x84afB313581F91b27aFBf384DE0bE6D0fe3d8821",
     "whitelist": "0x067629132c05a30DdB26608a5a4E1c3c320AD4B2",
+    "lost": "",
     "message": "0xE5Eb52fB5E85D8C388a59Ab9931B886C9BF22b8D",
+    "userAction": "",
     "updateSmartAssets": "0x9224cBd69d1706Cce792641FF9D54c78799FCD59"
   },
   "httpProvider": "https://polygonsupernet.arianee.net",
