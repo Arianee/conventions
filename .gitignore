@@ -3,3 +3,4 @@
 .idea/
 .firebase/
 node_modules
+.history
