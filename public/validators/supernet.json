@@ -1,0 +1,32 @@
+[
+  {
+    "address": "0x260b2F9a3434ce5aC0D2C06972eAEa80D62456F8",
+    "name": "Arianee 1",
+    "imageURL": "https://raw.githubusercontent.com/Arianee/conventions/main/public/assets/validators/arianee.jpg"
+  },
+  {
+    "address": "0x4316e150681a58f87Cb8d0DD89101BCcBaeBdf9b",
+    "name": "Arianee 2",
+    "imageURL": "https://raw.githubusercontent.com/Arianee/conventions/main/public/assets/validators/arianee.jpg"
+  },
+  {
+    "address": "0xE0EE0b6E8bA13Fe518FB61f083091f2a5BE20E8C",
+    "name": "Arianee 3",
+    "imageURL": "https://raw.githubusercontent.com/Arianee/conventions/main/public/assets/validators/arianee.jpg"
+  },
+  {
+    "address": "0x3Dd05190E1C62cd065e809dCBdddC53B8dc07a90",
+    "name": "Arianee 4",
+    "imageURL": "https://raw.githubusercontent.com/Arianee/conventions/main/public/assets/validators/arianee.jpg"
+  },
+  {
+    "address": "0xDcA6D669cAa2C3aC5698835E667c1bb2Eeb5673b",
+    "name": "Arianee 5",
+    "imageURL": "https://raw.githubusercontent.com/Arianee/conventions/main/public/assets/validators/arianee.jpg"
+  },
+  {
+    "address": "0xDDB520d955A76dd04Fa6522cabca9228bEB35789",
+    "name": "Arianee 6",
+    "imageURL": "https://raw.githubusercontent.com/Arianee/conventions/main/public/assets/validators/arianee.jpg"
+  }
+]
