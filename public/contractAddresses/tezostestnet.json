@@ -1,21 +1,20 @@
 {
   "contractAdresses": {
-    "aria": "0xDd28C9792d1A81E182B892A9C93a8852dd8346F9",
-    "creditHistory": "0x7a7F8428A9cA978b7e762F47D6AEE5097Fa359C2",
-    "eventArianee": "0x15EaB4D029bedb5f802770E29021173326204f26",
-    "identity": "0x5E1F4834DecdC485dD636F6660CC7aD573ae1420",
-    "smartAsset": "0x3e3A6CfBb5E50b89D656F651152c2007AD3c9D84",
+    "aria": "0x21Bd61F4A103133420e3a76913C29E8B767b8D70",
+    "creditHistory": "0x273333dE5b9109362D6eCA52CbA41B489F52E111",
+    "eventArianee": "0x95B23f85a63e3ece3f591b8E823FaaFeA60aae3c",
+    "identity": "0x73800b0d0Cc92F06475345048B3D232c25A24076",
+    "smartAsset": "0x9cBa56e620A1EeF019B9605755f54B1056A29CaD",
     "staking": "",
-    "store": "0x4bA506172d3fE254ef0B8a4980E08551483AD2F2",
-    "whitelist": "",
-    "lost": "",
-    "message": "0x8Dd6D2e8aB6f8012d5B1f272a3Fa78FcB2ff446E",
-    "userAction": "",
-    "updateSmartAssets": "0x995385516dD0dea917FfEA172996eb7B8992Ba2E"
+    "store": "0xD44Eb4605A229DE32c73cfe0525bEcdDDdEe0d5B",
+    "whitelist": "0x90d4c7Cbce94Fc6F2808c6007880732779961139",
+    "lost": "0x7f197feE23B4167c96E6806F542Dc1CFce9CA56f",
+    "message": "0x1EEa2e0d49A150E066731Bc3eD0b9b626F18cD23",
+    "userAction": "0x0D6EC916146D2c90544e6c6583dd5AB02D391C3C",
+    "updateSmartAssets": "0x4042061EFCA028E87fE772C6097aA2Aa93A85045"
   },
-  "httpProvider": "https://evm.ghostnet-evm.tzalpha.net",
-  "gasStation": "https://cert.arianee.net/gasStation/testnet.json",
-  "chainId": 128123,
-  "protocolVersion": "1"
+  "httpProvider": "https://etherlink-mainnet.arianee.net",
+  "gasStation": "https://gasstation.arianee.com/42793",
+  "chainId": 42793,
+  "protocolVersion": "1.5"
 }
-
