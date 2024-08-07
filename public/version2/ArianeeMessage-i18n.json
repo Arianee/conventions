@@ -1,0 +1,296 @@
+{
+    "$id": "https://cert.arianee.org/version2/ArianeeMessage-i18n.json",
+    "$schema": "https://cert.arianee.org/version2/ArianeeMessage-i18n.json",
+    "title": "Arianee Message",
+    "description": "Describing an Arianee Message.",
+    "type": "object",
+    "properties": {
+      "$schema": {
+        "title": "$schema",
+        "type": "string",
+        "default": "https://cert.arianee.org/version1/ArianeeMessage-i18n.json",
+        "widget": "hidden"
+      },
+
+      "language": {
+        "type": "string",
+        "title": "Language",
+        "widget": {
+          "id": "select"
+        },
+        "description": "Descriptions and external contents can be stored in different languages",
+        "oneOf": [
+          {
+            "title": "French",
+            "description": "French",
+            "enum": [
+              "fr-FR"
+            ]
+          },
+          {
+            "title": "English (US)",
+            "description": "English (US)",
+            "enum": [
+              "en-US"
+            ]
+          },
+          {
+            "title": "Chinese (traditional)",
+            "description": "Chinese (traditional)",
+            "enum": [
+              "zh-TW"
+            ]
+          },
+          {
+            "title": "Chinese (simplified)",
+            "description": "Chinese (simplified)",
+            "enum": [
+              "zh-CN"
+            ]
+          },
+          {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
+          {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
+          {"enum": ["de-DE"], "title":"German", "description": "German"},
+          {"enum": ["es"], "title":"Spanish", "description": "Spanish"},
+          {"enum": ["it"], "title":"Italian", "description": "Italian"}
+
+        ]
+      },
+      "title": {
+        "type": "string",
+        "title": "Title of your message"
+      },
+      "content": {
+        "type": "string",
+        "title": "Content of your message"
+      },
+      "i18n": {
+        "type": "array",
+        "title": "Other languages",
+        "description": "If you want your message to be translated",
+        "items": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "title": "Language",
+              "widget": {
+                "id": "select"
+              },
+              "oneOf": [
+                    {"enum": ["fr-FR"], "title":"French", "description": "French"},
+                    {"enum": ["en-US"], "title":"English (american)", "description": "English (american)"},
+                    {"enum": ["zh-TW"], "title":"Traditional chinese", "description": "Traditional chinese"},
+                    {"enum": ["zh-CN"], "title":"Simplified chinese", "description": "Simplified chinese"},
+                    {"enum": ["ko-KR"], "title":"Korean", "description": "Korean"},
+                    {"enum": ["ja-JP"], "title":"Japanese", "description": "Japanese"},
+                    {"enum": ["de-DE"], "title":"German", "description": "German"},
+                    {"enum": ["es"], "title":"Spanish", "description": "Spanish"},
+                    {"enum": ["it"], "title":"Italian", "description": "Italian"}
+              ]
+            },
+            "title": {
+              "type": "string",
+              "title": "Title of your message"
+            },
+            "content": {
+              "type": "string",
+              "title": "Content of your message"
+            },
+            "externalContents": {
+              "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
+
+              "type": "array",
+              "title": "External Contents",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "title": "Type",
+                    "widget": {
+                      "id": "select"
+                    },
+                    "oneOf": [
+                      {
+                        "enum": [
+                          "website"
+                        ],
+                        "title": "Website (main)",
+                        "description":"Regular link"
+                      },
+                      {
+                        "enum": [
+                          "proofLinkAction"
+                        ],
+                        "title": "proofLinkAction",
+                        "description": "Link with a proof of ownership"
+                      },
+                      {
+                        "enum": [
+                          "arianeeAccessTokenAuthLink"
+                        ],
+                        "title": "arianeeAccessTokenAuthLink",
+                        "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenAuthLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
+                      },
+                      {
+                        "enum": [
+                          "actionButton"
+                        ],
+                        "title": "transparency",
+                        "description": "Url of transparency events json"
+                      }
+                    ]
+                  },
+                  "title": {
+                    "type": "string",
+                    "title": "Title"
+                  },
+                  "url": {
+                    "type": "string",
+                    "title": "Url"
+                  },
+                  "order": {
+                    "type": "number",
+                    "title": "Order (number)"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "pictures": {
+        "type": "array",
+        "title": "Pictures & Medias",
+        "description": "Pictures & Medias used inside the message (as attachements)",
+        "items": {
+          "type": "object",
+          "properties": {
+            "mediaType": {
+              "type": "string",
+              "title": "Media Type",
+              "widget": {
+                "id": "select"
+              },
+              "oneOf": [
+                {
+                  "enum": [
+                    "picture"
+                  ],
+                  "title": "Picture (png / jpg)",
+                  "description": "Picture (png / jpg)"
+                },
+                {
+                  "enum": [
+                    "youtube"
+                  ],
+                  "title": "Youtube video",
+                  "description": "Youtube video"
+                }
+              ]
+            },
+            "type": {
+              "type": "string",
+              "title": "Type",
+              "widget": {
+                "id": "select"
+              },
+              "oneOf": [
+                {
+                  "enum": [
+                    "product"
+                  ],
+                  "title": "Product media / picture",
+                  "description": "used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)"
+                }
+              ]
+            },
+            "url": {
+              "type": "string",
+              "title": "URL",
+              "widget": {
+                "id": "staticAssets"
+              }
+            },
+            "hash": {
+              "type": "string",
+              "title": "Image Hash",
+              "widget": {
+                "id": "string"
+              }
+            }
+          }
+        }
+      },
+      "externalContents": {
+        "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
+
+        "type": "array",
+        "title": "External Contents",
+        "items": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "title": "Type",
+              "widget": {
+                "id": "select"
+              },
+              "oneOf": [
+                {
+                  "enum": [
+                    "website"
+                  ],
+                  "title": "Website (main)",
+                  "description":"Regular link"
+                },
+                {
+                  "enum": [
+                    "proofLinkAction"
+                  ],
+                  "title": "proofLinkAction",
+                  "description": "Link with a proof of ownership"
+                },
+                {
+                  "enum": [
+                    "arianeeAccessTokenAuthLink"
+                  ],
+                  "title": "arianeeAccessTokenAuthLink",
+                  "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenAuthLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
+                },
+                {
+                  "enum": [
+                    "actionButton"
+                  ],
+                  "title": "transparency",
+                  "description": "Url of transparency events json"
+                }
+              ]
+            },
+            "title": {
+              "type": "string",
+              "title": "Title"
+            },
+            "url": {
+              "type": "string",
+              "title": "Url"
+            },
+            "order": {
+              "type": "number",
+              "title": "Order (number)"
+            }
+          }
+        }
+      },
+      "issuer_signature": {
+        "type": "string",
+        "title": "Issuer Signature (for full privacy)",
+        "default": "",
+        "description": "Issuer Signature (for full privacy)"
+      }
+    },
+    "required": [
+      "$schema"
+    ]
+  }
