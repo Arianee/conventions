@@ -6,11 +6,19 @@
     "identity": "0xFBC09ac05422b067f8916503fC33BCF014dF6779",
     "smartAsset": "0xC35C6Ec800a4d9918fD1a1BF3060CFE3926f318e",
     "staking": "",
-    "store": "0x1242D3f0c3cf6f48A5c79075C18F9e68Db6D1a9B",
+    "store": "0x80778e0236269D899d1B45a9d1C6005a2e93b9Eb",
     "whitelist": "0xE4AEa5d5B1234297196E16fBE32594aDAF756399",
     "lost": "0xBD19B2fe422077255526976eA644dec5fFe4Aaba",
     "message": "0xB7a8DE1E6E09EAA32BC8A9442AA6899f2bEa9899",
-    "updateSmartAssets": "0x19d4b31c4F39388677baC471bE311b869F692c9a"
+    "updateSmartAssets": "0x19d4b31c4F39388677baC471bE311b869F692c9a",
+    "rewardsHistory": "0x20F01FFE862A73893Ab48e6fA17F8c2bA0960e21",
+    "hasher": "0xF49177755d27FcA5111973ADF1EbC4079E7e0EEE",
+    "creditRegister": "0x38C77c7132f4F6c302998100904c4f11371aEA5c",
+    "creditVerifier": "0x3787E889Ac6832615239b28152126CD5Bcf0749D",
+    "creditNotePool": "0xF4228ECF5C2A9472c38684905BbcE014151509F1",
+    "ownershipVerifier": "0xeeBaF0F6819308a441C0592DeBB6A5FC10fdE83a",
+    "issuerProxy": "0xcb8948BB39398A86fd09af15E7160572e0C27ecA"
+
   },
   "httpProvider": "https://supernettestnet.arianee.net",
   "gasStation": "https://gasstation.arianee.com/11891",
