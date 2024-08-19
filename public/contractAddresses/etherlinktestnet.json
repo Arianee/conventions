@@ -1,0 +1,21 @@
+{
+  "contractAdresses":  {
+    "aria": "0x757494946FD1A932aFDD3b04D791DA2a8071b4ad",
+    "creditHistory": "0x3F4B61a8B06f385826Fbe9890a08bcE22125AeB6",
+    "rewardsHistory": "0xa6167068F2253820Fbbb44d94403d2446F3E505C",
+    "eventArianee": "0x50D150716441365BfEea509c36De35cF80320029",
+    "identity": "0x1699f4F02a8F4ABC36BB87239C8CCd4D196D7b8B",
+    "smartAsset": "0x17e631ED032eCE7c2811B6972527767E1148CcFe",
+    "staking": "",
+    "store": "0x1beDC1ff137F18fa9DbC83d6357206A5F5ad78fd",
+    "whitelist": "0xD65Cf97df953cFec5BE0b4659a098260B909F55E",
+    "lost": "0xD7E0A901692C500C9a663F964aa0CE411B4d2500",
+    "message": "0x9Dbcf2De1b15DA2981E726f3D6143d9b84E6dFC9",
+    "userAction": "0xa6e120f59Dfe127d63412e515AeA2b517711451a",
+    "updateSmartAssets": "0x6020f87C0E5850374f2B3adbE868cB6c7a232e7b"
+  },
+  "httpProvider": "https://etherlink-testnet.arianee.net",
+  "gasStation": "https://gasstation.arianee.com/128123",
+  "chainId": 128123,
+  "protocolVersion": "1.5"
+}
