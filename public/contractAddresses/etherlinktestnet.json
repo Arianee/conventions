@@ -13,12 +13,12 @@
     "message": "0x9Dbcf2De1b15DA2981E726f3D6143d9b84E6dFC9",
     "userAction": "0xa6e120f59Dfe127d63412e515AeA2b517711451a",
     "updateSmartAssets": "0x6020f87C0E5850374f2B3adbE868cB6c7a232e7b",
-    "hasher": "0x255dAB48e6347f871605dC61411fE2a394762C5B",
-    "creditRegister": "0xBD88aCB041547f81C7a100B70503F6c31F98592F",
-    "creditVerifier": "0x615f86cd1d6204bE94bb4ED64B7A780447fD8893",
-    "creditNotePool": "0xe8ec37c89BD32F7bFE36D45ffDcc57a195882071",
-    "ownershipVerifier": "0xeb2DE409Dd0E753AdFB535103091EF69aC877c06",
-    "issuerProxy": "0xa99ae652a105201C7b1eC77d60dF0693c0A7c68a"
+    "hasher": "0xc256b279d4848F08522C9783eEfCC568e72BE698",
+    "creditRegister": "0xe54964Cc1ABD97c7b0C4Ee64d04Ad7882C063787",
+    "creditVerifier": "0x9117A021064C1791DB38743590698eD318bB12ed",
+    "creditNotePool": "0x6179196F4B5b097B04F1AC39506868EcdEA7Ff55",
+    "ownershipVerifier": "0x5BD532d2e16A0C5C1A336152dcE7a9E16DF4Cde1",
+    "issuerProxy": "0x20d9FFC9a7FD7c8D36e54eEc2Fd643CBe0B3ca99"
   },
   "httpProvider": "https://etherlink-testnet.arianee.net",
   "gasStation": "https://gasstation.arianee.com/128123",
