@@ -2260,13 +2260,6 @@
         "unit": { "type": "string" }
       }
     },
-    "weight": {
-      "type": "object",
-      "properties": {
-        "value": { "type": "string" },
-        "unit": { "type": "string" }
-      }
-    },
     "reparabilityIndex": {
       "type": "object",
       "properties": {
