@@ -667,6 +667,16 @@
                 "title": "US",
                 "description": "US",
                 "enum": ["us"]
+              },
+              {
+                "title": "Kilogram",
+                "description": "Kilogram",
+                "enum": ["kg"]
+              },
+              {
+                "title": "Pound",
+                "description": "Pound",
+                "enum": ["lb"]
               }
             ]
           }
@@ -1270,16 +1280,12 @@
                     {
                       "title": "material-responsible_procurement-ethical_purchasing",
                       "description": "material-responsible_procurement-ethical_purchasing",
-                      "enum": [
-                        "material-responsible_procurement-ethical_purchasing"
-                      ]
+                      "enum": ["material-responsible_procurement-ethical_purchasing"]
                     },
                     {
                       "title": "material-responsible_procurement-organic organic",
                       "description": "material-responsible_procurement-organic organic",
-                      "enum": [
-                        "material-responsible_procurement-organic organic"
-                      ]
+                      "enum": ["material-responsible_procurement-organic organic"]
                     }
                   ]
                 },
@@ -2255,6 +2261,7 @@
     },
     "postSaleManufacturerWarrantyPeriod": {
       "type": "object",
+      "title": "Post Sale Manufacturer Warranty Period",
       "properties": {
         "value": { "type": "string" },
         "unit": { "type": "string" }
@@ -2262,6 +2269,7 @@
     },
     "reparabilityIndex": {
       "type": "object",
+      "title": "Reparability Index",
       "properties": {
         "value": { "type": "string" },
         "indexDefinitionYear": { "type": "string" }
@@ -2269,6 +2277,7 @@
     },
     "energyConsumption": {
       "type": "object",
+      "title": "Energy Consumption",
       "properties": {
         "value": { "type": "string" },
         "unit": { "type": "string" }
@@ -2276,6 +2285,7 @@
     },
     "waterConsumption": {
       "type": "object",
+      "title": "Water Consumption",
       "properties": {
         "value": { "type": "string" },
         "unit": { "type": "string" }
@@ -2283,45 +2293,56 @@
     },
     "energyClass": {
       "type": "object",
+      "title": "Energy Class",
       "properties": {
         "value": { "type": "string" },
         "indexDefinitionYear": { "type": "string" }
       }
     },
     "dangerousSubstance": {
-      "type": "boolean"
+      "type": "boolean",
+      "title": "Dangerous Substance",
+      "default": false
     },
     "recyclabilityMention": {
-      "type": "string"
+      "type": "string",
+      "title": "Recyclability Mention"
     },
     "preciousOrCriticalMetals": {
-      "type": "boolean"
+      "type": "boolean",
+      "title": "Precious or Critical Metals",
+      "default": false
     },
     "recycledContent": {
-      "type": "boolean"
+      "type": "boolean",
+      "title": "Recycled Content",
+      "default": false
     },
     "ecoModulation": {
-      "type": "string"
+      "type": "string",
+      "title": "Eco Modulation"
     },
     "services": {
       "type": "array",
+      "title": "Services",
       "items": {
         "type": "object",
         "properties": {
-          "title": { "type": "string" },
-          "icon": { "type": "string" },
-          "url": { "type": "string" }
+          "title": { "type": "string", "title": "Title" },
+          "icon": { "type": "string", "title": "Icon" },
+          "url": { "type": "string", "title": "URL" }
         }
       }
     },
     "externalContent": {
       "type": "array",
+      "title": "External Content",
       "items": {
         "type": "object",
         "properties": {
-          "title": { "type": "string" },
-          "icon": { "type": "string" },
-          "url": { "type": "string" }
+          "title": { "type": "string", "title": "Title" },
+          "icon": { "type": "string", "title": "Icon" },
+          "url": { "type": "string", "title": "URL" }
         }
       }
     }
