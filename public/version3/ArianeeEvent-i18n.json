@@ -21,37 +21,37 @@
       "oneOf": [
         {
           "title": "Service",
-          "description": "Service - usually issued by customer support.",
+          "description": "A service-related event, typically issued by customer support. Examples include maintenance or technical support actions.",
           "enum": ["service"]
         },
         {
           "title": "Auction",
-          "description": "Auction - usually issued when a financial transaction and a transfer of certificate are involved.",
+          "description": "An event associated with a financial transaction and the transfer of a certificate, such as an auction.",
           "enum": ["auction"]
         },
         {
           "title": "Initial Sale",
-          "description": "Initial Sale - usually issued for the initial sale.",
+          "description": "The initial sale of the product, marking its first transaction or release.",
           "enum": ["initialSale"]
         },
         {
           "title": "Warranty",
-          "description": "Warranty - usually issued when a warranty is attached to the product.",
+          "description": "An event related to a warranty attached to the product, such as warranty activation or updates.",
           "enum": ["warranty"]
         },
         {
           "title": "Resell",
-          "description": "Resell - usually issued when a resell event occurs.",
+          "description": "An event documenting the resale of a product, representing a secondary market transaction.",
           "enum": ["resell"]
         },
         {
           "title": "Repair",
-          "description": "Repair - usually issued when the product is repaired.",
+          "description": "A repair event indicating that the product has undergone maintenance or restoration.",
           "enum": ["repair"]
         },
         {
           "title": "Experience",
-          "description": "Experience - usually issued when an experienced happens around the product.",
+          "description": "An event describing an experience related to the product, such as a special event, VIP access, or an activity involving the product.",
           "enum": ["experience"]
         }
       ]
