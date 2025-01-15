@@ -381,6 +381,7 @@
     },
     "eventDate": {
       "type": "string",
+      "title": "Event date",
       "format": "date-time",
       "description": "The date and time of the event in ISO 8601 format."
     }
