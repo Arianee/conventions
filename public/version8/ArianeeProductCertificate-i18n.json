@@ -2345,7 +2345,57 @@
           "url": { "type": "string", "title": "URL" }
         }
       }
-    }
+    },
+    "ecosystem": {
+      "type": "object",
+      "title": "Ecosystem",
+      "properties": {
+        "categorieReglementaire": {
+          "type": "string",
+          "title": "Catégorie Réglementaire"
+        },
+        "secteur": {
+          "type": "string",
+          "title": "Secteur"
+        },
+        "fluxNiveau1": {
+          "type": "string",
+          "title": "Flux Niveau 1"
+        },
+        "fluxNiveau2": {
+          "type": "string",
+          "title": "Flux Niveau 2"
+        },
+        "typeEquipementNiveau1": {
+          "type": "object",
+          "title": "Type Équipement Niveau 1",
+          "properties": {
+            "id": {
+              "type": "string",
+              "title": "ID"
+            },
+            "label": {
+              "type": "string",
+              "title": "Label"
+            }
+          }
+        },
+        "typeEquipementNiveau2": {
+          "type": "object",
+          "title": "Type Équipement Niveau 2",
+          "properties": {
+            "id": {
+              "type": "string",
+              "title": "ID"
+            },
+            "label": {
+              "type": "string",
+              "title": "Label"
+            }
+          }
+        }
+      }
+    }    
   },
   "required": ["$schema"]
 }
