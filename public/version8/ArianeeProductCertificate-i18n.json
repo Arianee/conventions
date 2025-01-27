@@ -2280,7 +2280,8 @@
       "title": "Energy Consumption",
       "properties": {
         "value": { "type": "string" },
-        "unit": { "type": "string" }
+        "unit": { "type": "string" },
+        "label": { "type": "string" }
       }
     },
     "waterConsumption": {
