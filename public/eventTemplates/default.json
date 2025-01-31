@@ -1,0 +1,61 @@
+[
+    {
+      "metadata": {
+        "name": "Service Client",
+        "icon": "https://storage.googleapis.com/kelpie-cdn/icons/service.webp"
+      },
+      "content": "{\"eventType\":\"service\",\"language\":\"fr-FR\",\"title\":\"Assistance technique effectuée\",\"description\":\"Votre demande d'assistance a été traitée avec succès.\",\"i18n\":[],\"$schema\":\"https://cert.arianee.org/version1/ArianeeEvent-i18n.json\"}"
+    },
+    {
+      "metadata": {
+        "name": "Vente initiale",
+        "icon": "https://storage.googleapis.com/kelpie-cdn/icons/initialsale.webp"
+      },
+      "content": "{\"eventType\":\"initialSale\",\"language\":\"fr-FR\",\"title\":\"Produit acheté\",\"description\":\"Félicitations ! Votre produit a été acheté et est désormais sous votre possession.\",\"i18n\":[],\"$schema\":\"https://cert.arianee.org/version1/ArianeeEvent-i18n.json\"}"
+    },
+    {
+      "metadata": {
+        "name": "Activation de la garantie",
+        "icon": "https://storage.googleapis.com/kelpie-cdn/icons/warranyactivation.webp"
+      },
+      "content": "{\"eventType\":\"warranty\",\"language\":\"fr-FR\",\"title\":\"Activation de la garantie\",\"description\":\"La garantie de votre produit a été activée ou mise à jour avec succès. Pour une durée de %duration%.\",\"i18n\":[],\"$schema\":\"https://cert.arianee.org/version3/ArianeeEvent-i18n.json\"}",
+      "attributes": [
+        {
+          "field": "%duration%",
+          "label": "Durée",
+          "freeEntry": true,
+          "required": true,
+          "type": "select",
+          "options": [
+            {
+              "label": "1 an",
+              "value": "1 an"
+            },
+            {
+              "label": "2 ans",
+              "value": "2 ans"
+            },
+            {
+              "label": "4 ans",
+              "value": "4 ans"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "name": "Revente du produit",
+        "icon": "https://storage.googleapis.com/kelpie-cdn/icons/resell.webp"
+      },
+      "content": "{\"eventType\":\"resell\",\"language\":\"fr-FR\",\"title\":\"Produit revendu\",\"description\":\"Ce produit a été revendu à un nouveau propriétaire. L'historique de propriété a été mis à jour.\",\"i18n\":[],\"$schema\":\"https://cert.arianee.org/version1/ArianeeEvent-i18n.json\"}"
+    },
+    {
+      "metadata": {
+        "name": "Réparation effectuée",
+        "icon": "https://storage.googleapis.com/kelpie-cdn/icons/repair.webp"
+      },
+      "content": "{\"eventType\":\"repair\",\"language\":\"fr-FR\",\"title\":\"Réparation effectuée\",\"description\":\"Votre produit a été réparé avec succès et est désormais opérationnel.\",\"i18n\":[],\"$schema\":\"https://cert.arianee.org/version1/ArianeeEvent-i18n.json\"}"
+    }
+  ]
+  
