@@ -53,6 +53,11 @@
           "title": "Experience",
           "description": "An event describing an experience related to the product, such as a special event, VIP access, or an activity involving the product.",
           "enum": ["experience"]
+        },
+        {
+          "title": "Transfer",
+          "description": "An off-chain record of ownership change.",
+          "enum": ["transfer"]
         }
       ]
     },
