@@ -2273,33 +2273,33 @@
       "type": "object",
       "title": "Post Sale Manufacturer Warranty Period",
       "properties": {
-        "value": { "type": "string" },
-        "unit": { "type": "string" }
+        "value": { "type": "string", "title": "Value"  },
+        "unit": { "type": "string", "title": "Unit"  }
       }
     },
     "reparabilityIndex": {
       "type": "object",
       "title": "Reparability Index",
       "properties": {
-        "value": { "type": "string" },
-        "indexDefinitionYear": { "type": "string" }
+        "value": { "type": "string", "title": "Value" },
+        "indexDefinitionYear": { "type": "string", "title": "Year Index" }
       }
     },
     "energyConsumption": {
       "type": "object",
       "title": "Energy Consumption",
       "properties": {
-        "value": { "type": "string" },
-        "unit": { "type": "string" },
-        "label": { "type": "string" }
+        "value": { "type": "string", "title": "Quantity" },
+        "unit": { "type": "string", "title": "Unit" },
+        "label": { "type": "string", "title": "Label" }
       }
     },
     "waterConsumption": {
       "type": "object",
       "title": "Water Consumption",
       "properties": {
-        "value": { "type": "string" },
-        "unit": { "type": "string" }
+        "value": { "type": "string", "title": "Quantity" },
+        "unit": { "type": "string", "title": "Unit" }
       }
     },
     "energyClass": {
