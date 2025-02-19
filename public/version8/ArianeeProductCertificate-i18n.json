@@ -2306,8 +2306,8 @@
       "type": "object",
       "title": "Energy Class",
       "properties": {
-        "value": { "type": "string" },
-        "indexDefinitionYear": { "type": "string" }
+        "value": { "type": "string", "title": "Value"  },
+        "indexDefinitionYear": { "type": "string", "title": "Year Index"  }
       }
     },
     "dangerousSubstance": {
