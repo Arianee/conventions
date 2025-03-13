@@ -387,7 +387,7 @@
       "description": "Location related to the event, if applicable.",
       "default": ""
     },
-    "issuer_signature": {
+    "issuerSignature": {
       "type": "string",
       "title": "Issuer Signature (for full privacy)",
       "default": "",

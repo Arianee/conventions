@@ -2224,7 +2224,7 @@
         }
       }
     },
-    "issuer_signature": {
+    "issuerSignature": {
       "type": "string",
       "title": "Issuer Signature (for full privacy)",
       "default": "",
