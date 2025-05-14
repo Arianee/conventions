@@ -1773,6 +1773,11 @@
                               "description": "Repair - usually issued when the product is repaired.",
                               "enum": ["repair"]
                             },
+                             {
+                              "title": "Refurbished",
+                              "description": "Refurbished - the product has been restored to a like-new condition.",
+                              "enum": ["refurbished"]
+                            },
                             {
                               "title": "Experience",
                               "description": "Experience - usually issued when an experienced happens around the product.",
