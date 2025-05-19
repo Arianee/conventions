@@ -58,6 +58,11 @@
           "title": "Transfer",
           "description": "An off-chain record of ownership change.",
           "enum": ["transfer"]
+        },
+        {
+          "title": "Refurbished",
+          "description": "Refurbished - the product has been restored to a like-new condition.",
+          "enum": ["refurbished"]
         }
       ]
     },
