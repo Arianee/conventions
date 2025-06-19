@@ -105,6 +105,41 @@
           "description": "Accessory",
           "title": "Accessory",
           "enum": ["accessory"]
+        },
+        {
+          "description": "Shoes",
+          "title": "Shoes",
+          "enum": ["Shoes"]
+        },
+        {
+          "description": "Bags",
+          "title": "Bags",
+          "enum": ["Bags"]
+        },
+        {
+          "description": "Tops",
+          "title": "Tops",
+          "enum": ["Tops"]
+        },
+        {
+          "description": "Dresses/Jumpsuits",
+          "title": "Dresses/Jumpsuits",
+          "enum": ["Dresses/Jumpsuits"]
+        },
+        {
+          "description": "Outerwear",
+          "title": "Outerwear",
+          "enum": ["Outerwear"]
+        },
+        {
+          "description": "Bottoms",
+          "title": "Bottoms",
+          "enum": ["Bottoms"]
+        },
+        {
+          "description": "Accessories",
+          "title": "Accessories",
+          "enum": ["Accessories"]
         }
       ]
     },
@@ -112,7 +147,6 @@
       "type": "string",
       "title": "Sub Category",
       "description": "Information on the specific category the product belongs to.",
-
       "oneOf": [
         {
           "description": "Shirt",
@@ -133,6 +167,181 @@
           "description": "Digital Asset",
           "title": "Digital Asset",
           "enum": ["Digital Asset"]
+        },
+        {
+          "description": "Blouse",
+          "title": "Blouse",
+          "enum": ["Blouse"]
+        },
+        {
+          "description": "Tote",
+          "title": "Tote",
+          "enum": ["Tote"]
+        },
+        {
+          "description": "Maxi skirt",
+          "title": "Maxi skirt",
+          "enum": ["Maxi skirt"]
+        },
+        {
+          "description": "Bag",
+          "title": "Bag",
+          "enum": ["Bag"]
+        },
+        {
+          "description": "Coat",
+          "title": "Coat",
+          "enum": ["Coat"]
+        },
+        {
+          "description": "Gown/Formal dress",
+          "title": "Gown/Formal dress",
+          "enum": ["Gown/Formal dress"]
+        },
+        {
+          "description": "Hold All",
+          "title": "Hold All",
+          "enum": ["Hold All"]
+        },
+        {
+          "description": "Loafers",
+          "title": "Loafers",
+          "enum": ["Loafers"]
+        },
+        {
+          "description": "Boots",
+          "title": "Boots",
+          "enum": ["Boots"]
+        },
+        {
+          "description": "Denim dress",
+          "title": "Denim dress",
+          "enum": ["Denim dress"]
+        },
+        {
+          "description": "Shoulder/Crossbody",
+          "title": "Shoulder/Crossbody",
+          "enum": ["Shoulder/Crossbody"]
+        },
+        {
+          "description": "Gloves",
+          "title": "Gloves",
+          "enum": ["Gloves"]
+        },
+        {
+          "description": "Knit dress",
+          "title": "Knit dress",
+          "enum": ["Knit dress"]
+        },
+        {
+          "description": "Jeans",
+          "title": "Jeans",
+          "enum": ["Jeans"]
+        },
+        {
+          "description": "Down coat/Parka",
+          "title": "Down coat/Parka",
+          "enum": ["Down coat/Parka"]
+        },
+        {
+          "description": "Sweatshirt",
+          "title": "Sweatshirt",
+          "enum": ["Sweatshirt"]
+        },
+        {
+          "description": "Jumpsuit",
+          "title": "Jumpsuit",
+          "enum": ["Jumpsuit"]
+        },
+        {
+          "description": "Wallet",
+          "title": "Wallet",
+          "enum": ["Wallet"]
+        },
+        {
+          "description": "Purse/Clutch",
+          "title": "Purse/Clutch",
+          "enum": ["Purse/Clutch"]
+        },
+        {
+          "description": "Jacket",
+          "title": "Jacket",
+          "enum": ["Jacket"]
+        },
+        {
+          "description": "Briefcase",
+          "title": "Briefcase",
+          "enum": ["Briefcase"]
+        },
+        {
+          "description": "Gilet",
+          "title": "Gilet",
+          "enum": ["Gilet"]
+        },
+        {
+          "description": "T-shirt",
+          "title": "T-shirt",
+          "enum": ["T-shirt"]
+        },
+        {
+          "description": "Casual dress",
+          "title": "Casual dress",
+          "enum": ["Casual dress"]
+        },
+        {
+          "description": "Knitwear",
+          "title": "Knitwear",
+          "enum": ["Knitwear"]
+        },
+        {
+          "description": "Backpack",
+          "title": "Backpack",
+          "enum": ["Backpack"]
+        },
+        {
+          "description": "Trousers",
+          "title": "Trousers",
+          "enum": ["Trousers"]
+        },
+        {
+          "description": "Blazer",
+          "title": "Blazer",
+          "enum": ["Blazer"]
+        },
+        {
+          "description": "Flats",
+          "title": "Flats",
+          "enum": ["Flats"]
+        },
+        {
+          "description": "Scarf",
+          "title": "Scarf",
+          "enum": ["Scarf"]
+        },
+        {
+          "description": "Mini Skirts",
+          "title": "Mini Skirts",
+          "enum": ["Mini Skirts"]
+        },
+        {
+          "description": "Trainers",
+          "title": "Trainers",
+          "enum": ["Trainers"]
+        },
+        {
+          "description": "Leather jacket",
+          "title": "Leather jacket",
+          "enum": ["Leather jacket"]
+        },
+        {
+          "description": "Heels",
+          "title": "Heels",
+          "enum": ["Heels"]
+        },
+        {
+          "description": "Shorts",
+          "title": "Shorts",
+          "enum": ["Shorts"]
         }
       ]
     },
@@ -140,7 +349,6 @@
       "type": "string",
       "title": "Intended",
       "description": "Information on the target customer market of the product.",
-
       "oneOf": [
         {
           "description": "Women's",
@@ -268,7 +476,6 @@
     },
     "externalContents": {
       "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
-
       "type": "array",
       "title": "External Contents",
       "items": {
@@ -556,7 +763,6 @@
           "material": {
             "type": "string",
             "title": "Material",
-
             "oneOf": [
               {
                 "title": "Cashmere",
@@ -866,7 +1072,6 @@
           },
           "externalContents": {
             "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
-
             "type": "array",
             "title": "External Contents",
             "items": {
@@ -1368,7 +1573,6 @@
                 },
                 "externalContents": {
                   "description": "This field is designed to store the links to external contents the Brand whish to introduce to the end customer in a wallet app.\n Specific external contents can be stored for each language.",
-
                   "type": "array",
                   "title": "External Contents",
                   "items": {
@@ -1428,7 +1632,6 @@
     },
     "parentCertificates": {
       "description": "This field is designed to store the links to parent certificates.",
-
       "type": "array",
       "title": "Parent Certificates",
       "items": {
@@ -1981,7 +2184,6 @@
                                   "id": "textarea"
                                 }
                               },
-
                               "externalContents": {
                                 "type": "array",
                                 "title": "External Contents",

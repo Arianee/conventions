@@ -63,6 +63,11 @@
           "title": "Refurbished",
           "description": "Refurbished - the product has been restored to a like-new condition.",
           "enum": ["refurbished"]
+        },
+        {
+          "title": "Delivery",
+          "description": "Delivery - the product has been delivered to the customer.",
+          "enum": ["delivery"]
         }
       ]
     },
