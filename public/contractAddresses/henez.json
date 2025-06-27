@@ -1,0 +1,28 @@
+{
+    "contractAdresses": {
+      "aria": "0x5b350D4400138FC16782E784B48e59Fcc8660383",
+      "identity": "0x0f96173278218648CFC558958019E93990564CF9",
+      "smartAsset": "0xeAa21979E8cAf8183715fc8428D01244dAeee6B5",
+      "updateSmartAssets": "0xca166E16b6D747BF77bEFE899026165E7102f930",
+      "eventArianee": "0xB32C660A6a07eC605D0d6c5bB345fe62D968a1f9",
+      "message": "0x19391dA8afB70C363Ea2e4e215aaa5683e70506a",
+      "whitelist": "0x771924523A178d5608Af810120fd0fBAf70cC644",
+      "lost": "0xC23e7533f89eDD9e42Aab91e5E4fC92387C8B152",
+      "creditHistory": "0x16E4b89638dfC0229C974aF0FF36dFe98dc83F14",
+      "rewardsHistory": "0xcDec68143C7727633da43b03bda9d6f8Db6DEEe4",
+      "store": "0x688ac322ce367A23ca1B1a7B4da2abC4C2cD8B13",
+      "staking": "0x0000000000000000000000000000000000000000",
+      "userAction": "0x0000000000000000000000000000000000000000",
+      "hasher": "0x0000000000000000000000000000000000000000",
+      "creditRegister": "0x0000000000000000000000000000000000000000",
+      "creditVerifier": "0x0000000000000000000000000000000000000000",
+      "creditNotePool": "0x0000000000000000000000000000000000000000",
+      "poseidon": "0x0000000000000000000000000000000000000000",
+      "ownershipVerifier": "0x0000000000000000000000000000000000000000",
+      "issuerProxy": "0x0000000000000000000000000000000000000000"
+    },
+    "httpProvider": "https://henez.calderachain.xyz/http",
+    "gasStation": "https://gasstation.arianee.com/91111",
+    "chainId": 91111,
+    "protocolVersion": "1.6"
+  }
