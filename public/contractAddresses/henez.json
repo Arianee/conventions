@@ -21,7 +21,7 @@
       "ownershipVerifier": "0x0000000000000000000000000000000000000000",
       "issuerProxy": "0x0000000000000000000000000000000000000000"
     },
-    "httpProvider": "https://henez.calderachain.xyz/http",
+    "httpProvider": "https://henez.arianee.net/",
     "gasStation": "https://gasstation.arianee.com/91111",
     "chainId": 91111,
     "protocolVersion": "1.6"
