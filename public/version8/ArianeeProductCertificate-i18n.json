@@ -109,37 +109,37 @@
         {
           "description": "Shoes",
           "title": "Shoes",
-          "enum": ["Shoes"]
+          "enum": ["shoes"]
         },
         {
           "description": "Bags",
           "title": "Bags",
-          "enum": ["Bags"]
+          "enum": ["bags"]
         },
         {
           "description": "Tops",
           "title": "Tops",
-          "enum": ["Tops"]
+          "enum": ["tops"]
         },
         {
           "description": "Dresses/Jumpsuits",
           "title": "Dresses/Jumpsuits",
-          "enum": ["Dresses/Jumpsuits"]
+          "enum": ["dresses/Jumpsuits"]
         },
         {
           "description": "Outerwear",
           "title": "Outerwear",
-          "enum": ["Outerwear"]
+          "enum": ["outerwear"]
         },
         {
           "description": "Bottoms",
           "title": "Bottoms",
-          "enum": ["Bottoms"]
+          "enum": ["bottoms"]
         },
         {
           "description": "Accessories",
           "title": "Accessories",
-          "enum": ["Accessories"]
+          "enum": ["accessories"]
         }
       ]
     },
@@ -166,182 +166,182 @@
         {
           "description": "Digital Asset",
           "title": "Digital Asset",
-          "enum": ["Digital Asset"]
+          "enum": ["digital asset"]
         },
         {
           "description": "Blouse",
           "title": "Blouse",
-          "enum": ["Blouse"]
+          "enum": ["blouse"]
         },
         {
           "description": "Tote",
           "title": "Tote",
-          "enum": ["Tote"]
+          "enum": ["tote"]
         },
         {
           "description": "Maxi skirt",
           "title": "Maxi skirt",
-          "enum": ["Maxi skirt"]
+          "enum": ["maxi skirt"]
         },
         {
           "description": "Bag",
           "title": "Bag",
-          "enum": ["Bag"]
+          "enum": ["bag"]
         },
         {
           "description": "Coat",
           "title": "Coat",
-          "enum": ["Coat"]
+          "enum": ["coat"]
         },
         {
           "description": "Gown/Formal dress",
           "title": "Gown/Formal dress",
-          "enum": ["Gown/Formal dress"]
+          "enum": ["gown/formal dress"]
         },
         {
           "description": "Hold All",
           "title": "Hold All",
-          "enum": ["Hold All"]
+          "enum": ["hold all"]
         },
         {
           "description": "Loafers",
           "title": "Loafers",
-          "enum": ["Loafers"]
+          "enum": ["loafers"]
         },
         {
           "description": "Boots",
           "title": "Boots",
-          "enum": ["Boots"]
+          "enum": ["boots"]
         },
         {
           "description": "Denim dress",
           "title": "Denim dress",
-          "enum": ["Denim dress"]
+          "enum": ["denim dress"]
         },
         {
           "description": "Shoulder/Crossbody",
           "title": "Shoulder/Crossbody",
-          "enum": ["Shoulder/Crossbody"]
+          "enum": ["dhoulder/crossbody"]
         },
         {
           "description": "Gloves",
           "title": "Gloves",
-          "enum": ["Gloves"]
+          "enum": ["gloves"]
         },
         {
           "description": "Knit dress",
           "title": "Knit dress",
-          "enum": ["Knit dress"]
+          "enum": ["knit dress"]
         },
         {
           "description": "Jeans",
           "title": "Jeans",
-          "enum": ["Jeans"]
+          "enum": ["jeans"]
         },
         {
           "description": "Down coat/Parka",
           "title": "Down coat/Parka",
-          "enum": ["Down coat/Parka"]
+          "enum": ["down coat/parka"]
         },
         {
           "description": "Sweatshirt",
           "title": "Sweatshirt",
-          "enum": ["Sweatshirt"]
+          "enum": ["sweatshirt"]
         },
         {
           "description": "Jumpsuit",
           "title": "Jumpsuit",
-          "enum": ["Jumpsuit"]
+          "enum": ["jumpsuit"]
         },
         {
           "description": "Wallet",
           "title": "Wallet",
-          "enum": ["Wallet"]
+          "enum": ["wallet"]
         },
         {
           "description": "Purse/Clutch",
           "title": "Purse/Clutch",
-          "enum": ["Purse/Clutch"]
+          "enum": ["purse/clutch"]
         },
         {
           "description": "Jacket",
           "title": "Jacket",
-          "enum": ["Jacket"]
+          "enum": ["jacket"]
         },
         {
           "description": "Briefcase",
           "title": "Briefcase",
-          "enum": ["Briefcase"]
+          "enum": ["briefcase"]
         },
         {
           "description": "Gilet",
           "title": "Gilet",
-          "enum": ["Gilet"]
+          "enum": ["gilet"]
         },
         {
           "description": "T-shirt",
           "title": "T-shirt",
-          "enum": ["T-shirt"]
+          "enum": ["t-shirt"]
         },
         {
           "description": "Casual dress",
           "title": "Casual dress",
-          "enum": ["Casual dress"]
+          "enum": ["casual dress"]
         },
         {
           "description": "Knitwear",
           "title": "Knitwear",
-          "enum": ["Knitwear"]
+          "enum": ["knitwear"]
         },
         {
           "description": "Backpack",
           "title": "Backpack",
-          "enum": ["Backpack"]
+          "enum": ["backpack"]
         },
         {
           "description": "Trousers",
           "title": "Trousers",
-          "enum": ["Trousers"]
+          "enum": ["trousers"]
         },
         {
           "description": "Blazer",
           "title": "Blazer",
-          "enum": ["Blazer"]
+          "enum": ["blazer"]
         },
         {
           "description": "Flats",
           "title": "Flats",
-          "enum": ["Flats"]
+          "enum": ["flats"]
         },
         {
           "description": "Scarf",
           "title": "Scarf",
-          "enum": ["Scarf"]
+          "enum": ["scarf"]
         },
         {
           "description": "Mini Skirts",
           "title": "Mini Skirts",
-          "enum": ["Mini Skirts"]
+          "enum": ["mini skirts"]
         },
         {
           "description": "Trainers",
           "title": "Trainers",
-          "enum": ["Trainers"]
+          "enum": ["trainers"]
         },
         {
           "description": "Leather jacket",
           "title": "Leather jacket",
-          "enum": ["Leather jacket"]
+          "enum": ["leather jacket"]
         },
         {
           "description": "Heels",
           "title": "Heels",
-          "enum": ["Heels"]
+          "enum": ["heels"]
         },
         {
           "description": "Shorts",
           "title": "Shorts",
-          "enum": ["Shorts"]
+          "enum": ["shorts"]
         }
       ]
     },
