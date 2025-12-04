@@ -388,6 +388,11 @@
       "description": "Location related to the event, if applicable.",
       "default": ""
     },
+    "deepLinkDomain": {
+      "type": "string",
+      "title": "Domain to use for deeplink",
+      "description": "Domain to use for deeplink"
+    },
     "issuerSignature": {
       "type": "string",
       "title": "Issuer Signature (for full privacy)",
