@@ -18,70 +18,50 @@
         {
           "title": "French",
           "description": "French",
-          "enum": [
-            "fr-FR"
-          ]
+          "enum": ["fr-FR"]
         },
         {
           "title": "English (US)",
           "description": "English (US)",
-          "enum": [
-            "en-US"
-          ]
+          "enum": ["en-US"]
         },
         {
           "title": "Chinese (traditional)",
           "description": "Chinese (traditional)",
-          "enum": [
-            "zh-TW"
-          ]
+          "enum": ["zh-TW"]
         },
         {
           "title": "Chinese (simplified)",
           "description": "Chinese (simplified)",
-          "enum": [
-            "zh-CN"
-          ]
+          "enum": ["zh-CN"]
         },
         {
-          "enum": [
-            "ko-KR"
-          ],
+          "enum": ["ko-KR"],
           "title": "Korean",
           "description": "Korean"
         },
         {
-          "enum": [
-            "ja-JP"
-          ],
+          "enum": ["ja-JP"],
           "title": "Japanese",
           "description": "Japanese"
         },
         {
-          "enum": [
-            "de-DE"
-          ],
+          "enum": ["de-DE"],
           "title": "German",
           "description": "German"
         },
         {
-          "enum": [
-            "es"
-          ],
+          "enum": ["es"],
           "title": "Spanish",
           "description": "Spanish"
         },
         {
-          "enum": [
-            "it"
-          ],
+          "enum": ["it"],
           "title": "Italian",
           "description": "Italian"
         },
         {
-          "enum": [
-            "ru"
-          ],
+          "enum": ["ru"],
           "title": "Russian",
           "description": "Russian"
         }
@@ -114,368 +94,12 @@
     "category": {
       "type": "string",
       "title": "Category",
-      "description": "Information on the broad category the product belongs to.",
-      "anyOf": [
-        {
-          "oneOf": [
-            {
-              "description": "Apparel",
-              "title": "Apparel",
-              "enum": [
-                "apparel"
-              ]
-            },
-            {
-              "description": "Accessory",
-              "title": "Accessory",
-              "enum": [
-                "accessory"
-              ]
-            },
-            {
-              "description": "Shoes",
-              "title": "Shoes",
-              "enum": [
-                "shoes"
-              ]
-            },
-            {
-              "description": "Bags",
-              "title": "Bags",
-              "enum": [
-                "bags"
-              ]
-            },
-            {
-              "description": "Tops",
-              "title": "Tops",
-              "enum": [
-                "tops"
-              ]
-            },
-            {
-              "description": "Dresses/Jumpsuits",
-              "title": "Dresses/Jumpsuits",
-              "enum": [
-                "dresses/Jumpsuits"
-              ]
-            },
-            {
-              "description": "Outerwear",
-              "title": "Outerwear",
-              "enum": [
-                "outerwear"
-              ]
-            },
-            {
-              "description": "Bottoms",
-              "title": "Bottoms",
-              "enum": [
-                "bottoms"
-              ]
-            },
-            {
-              "description": "Accessories",
-              "title": "Accessories",
-              "enum": [
-                "accessories"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "string",
-          "description": "Custom category value"
-        }
-      ]
+      "description": "Information on the broad category the product belongs to."
     },
     "subCategory": {
       "type": "string",
       "title": "Sub Category",
-      "description": "Information on the specific category the product belongs to.",
-      "anyOf": [
-        {
-          "oneOf": [
-            {
-              "description": "Shirt",
-              "title": "Shirt",
-              "enum": [
-                "shirt"
-              ]
-            },
-            {
-              "description": "Dress",
-              "title": "Dress",
-              "enum": [
-                "dress"
-              ]
-            },
-            {
-              "description": "Watch",
-              "title": "Watch",
-              "enum": [
-                "watch"
-              ]
-            },
-            {
-              "description": "Digital Asset",
-              "title": "Digital Asset",
-              "enum": [
-                "digital asset"
-              ]
-            },
-            {
-              "description": "Blouse",
-              "title": "Blouse",
-              "enum": [
-                "blouse"
-              ]
-            },
-            {
-              "description": "Tote",
-              "title": "Tote",
-              "enum": [
-                "tote"
-              ]
-            },
-            {
-              "description": "Maxi skirt",
-              "title": "Maxi skirt",
-              "enum": [
-                "maxi skirt"
-              ]
-            },
-            {
-              "description": "Bag",
-              "title": "Bag",
-              "enum": [
-                "bag"
-              ]
-            },
-            {
-              "description": "Coat",
-              "title": "Coat",
-              "enum": [
-                "coat"
-              ]
-            },
-            {
-              "description": "Gown/Formal dress",
-              "title": "Gown/Formal dress",
-              "enum": [
-                "gown/formal dress"
-              ]
-            },
-            {
-              "description": "Hold All",
-              "title": "Hold All",
-              "enum": [
-                "hold all"
-              ]
-            },
-            {
-              "description": "Loafers",
-              "title": "Loafers",
-              "enum": [
-                "loafers"
-              ]
-            },
-            {
-              "description": "Boots",
-              "title": "Boots",
-              "enum": [
-                "boots"
-              ]
-            },
-            {
-              "description": "Denim dress",
-              "title": "Denim dress",
-              "enum": [
-                "denim dress"
-              ]
-            },
-            {
-              "description": "Shoulder/Crossbody",
-              "title": "Shoulder/Crossbody",
-              "enum": [
-                "dhoulder/crossbody"
-              ]
-            },
-            {
-              "description": "Gloves",
-              "title": "Gloves",
-              "enum": [
-                "gloves"
-              ]
-            },
-            {
-              "description": "Knit dress",
-              "title": "Knit dress",
-              "enum": [
-                "knit dress"
-              ]
-            },
-            {
-              "description": "Jeans",
-              "title": "Jeans",
-              "enum": [
-                "jeans"
-              ]
-            },
-            {
-              "description": "Down coat/Parka",
-              "title": "Down coat/Parka",
-              "enum": [
-                "down coat/parka"
-              ]
-            },
-            {
-              "description": "Sweatshirt",
-              "title": "Sweatshirt",
-              "enum": [
-                "sweatshirt"
-              ]
-            },
-            {
-              "description": "Jumpsuit",
-              "title": "Jumpsuit",
-              "enum": [
-                "jumpsuit"
-              ]
-            },
-            {
-              "description": "Wallet",
-              "title": "Wallet",
-              "enum": [
-                "wallet"
-              ]
-            },
-            {
-              "description": "Purse/Clutch",
-              "title": "Purse/Clutch",
-              "enum": [
-                "purse/clutch"
-              ]
-            },
-            {
-              "description": "Jacket",
-              "title": "Jacket",
-              "enum": [
-                "jacket"
-              ]
-            },
-            {
-              "description": "Briefcase",
-              "title": "Briefcase",
-              "enum": [
-                "briefcase"
-              ]
-            },
-            {
-              "description": "Gilet",
-              "title": "Gilet",
-              "enum": [
-                "gilet"
-              ]
-            },
-            {
-              "description": "T-shirt",
-              "title": "T-shirt",
-              "enum": [
-                "t-shirt"
-              ]
-            },
-            {
-              "description": "Casual dress",
-              "title": "Casual dress",
-              "enum": [
-                "casual dress"
-              ]
-            },
-            {
-              "description": "Knitwear",
-              "title": "Knitwear",
-              "enum": [
-                "knitwear"
-              ]
-            },
-            {
-              "description": "Backpack",
-              "title": "Backpack",
-              "enum": [
-                "backpack"
-              ]
-            },
-            {
-              "description": "Trousers",
-              "title": "Trousers",
-              "enum": [
-                "trousers"
-              ]
-            },
-            {
-              "description": "Blazer",
-              "title": "Blazer",
-              "enum": [
-                "blazer"
-              ]
-            },
-            {
-              "description": "Flats",
-              "title": "Flats",
-              "enum": [
-                "flats"
-              ]
-            },
-            {
-              "description": "Scarf",
-              "title": "Scarf",
-              "enum": [
-                "scarf"
-              ]
-            },
-            {
-              "description": "Mini Skirts",
-              "title": "Mini Skirts",
-              "enum": [
-                "mini skirts"
-              ]
-            },
-            {
-              "description": "Trainers",
-              "title": "Trainers",
-              "enum": [
-                "trainers"
-              ]
-            },
-            {
-              "description": "Leather jacket",
-              "title": "Leather jacket",
-              "enum": [
-                "leather jacket"
-              ]
-            },
-            {
-              "description": "Heels",
-              "title": "Heels",
-              "enum": [
-                "heels"
-              ]
-            },
-            {
-              "description": "Shorts",
-              "title": "Shorts",
-              "enum": [
-                "shorts"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "string",
-          "description": "Custom sub-category value"
-        }
-      ]
+      "description": "Information on the specific category the product belongs to."
     },
     "intended": {
       "type": "string",
@@ -485,23 +109,17 @@
         {
           "description": "Women's",
           "title": "Women's",
-          "enum": [
-            "womens"
-          ]
+          "enum": ["womens"]
         },
         {
           "description": "Men's",
           "title": "Men's",
-          "enum": [
-            "mens"
-          ]
+          "enum": ["mens"]
         },
         {
           "description": "Adult Gender Neutral",
           "title": "Adult Gender Neutral",
-          "enum": [
-            "neutral"
-          ]
+          "enum": ["neutral"]
         }
       ]
     },
@@ -519,44 +137,32 @@
               {
                 "description": "Serial Number",
                 "title": "Serial Number",
-                "enum": [
-                  "serialnumber"
-                ]
+                "enum": ["serialnumber"]
               },
               {
                 "description": "Case Number",
                 "title": "Case Number",
-                "enum": [
-                  "casenumber"
-                ]
+                "enum": ["casenumber"]
               },
               {
                 "description": "Movement Number",
                 "title": "Movement Number",
-                "enum": [
-                  "movementnumber"
-                ]
+                "enum": ["movementnumber"]
               },
               {
                 "description": "Vehicle Identification Number",
                 "title": "Vehicle Identification Number",
-                "enum": [
-                  "vin"
-                ]
+                "enum": ["vin"]
               },
               {
                 "description": "Poinçon de Genève",
                 "title": "Poinçon de Genève",
-                "enum": [
-                  "pgeneve"
-                ]
+                "enum": ["pgeneve"]
               },
               {
                 "description": "Millesimation",
                 "title": "Millesimation",
-                "enum": [
-                  "millesimation"
-                ]
+                "enum": ["millesimation"]
               }
             ]
           },
@@ -593,23 +199,17 @@
             "title": "Type",
             "oneOf": [
               {
-                "enum": [
-                  "service"
-                ],
+                "enum": ["service"],
                 "title": "Servicing",
                 "description": "Servicing"
               },
               {
-                "enum": [
-                  "recycling"
-                ],
+                "enum": ["recycling"],
                 "title": "Recycling",
                 "description": "Recycling"
               },
               {
-                "enum": [
-                  "other"
-                ],
+                "enum": ["other"],
                 "title": "other",
                 "description": "other"
               }
@@ -642,51 +242,37 @@
             "title": "Type",
             "oneOf": [
               {
-                "enum": [
-                  "website"
-                ],
+                "enum": ["website"],
                 "title": "Website (main)",
                 "description": "Regular link"
               },
               {
-                "enum": [
-                  "proofLinkAction"
-                ],
+                "enum": ["proofLinkAction"],
                 "title": "proofLinkAction",
                 "description": "Link with a proof of ownership. The difference with arianeeAccessTokenAuthLink is that proofLinkAction does need blockchain transaction. It is not instant but can be revoked."
               },
               {
-                "enum": [
-                  "transparency"
-                ],
+                "enum": ["transparency"],
                 "title": "transparency",
                 "description": "Url of transparency events json"
               },
               {
-                "enum": [
-                  "arianeeAccessTokenAuthLink"
-                ],
+                "enum": ["arianeeAccessTokenAuthLink"],
                 "title": "arianeeAccessTokenAuthLink",
                 "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenAuthLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
               },
               {
-                "enum": [
-                  "youtube"
-                ],
+                "enum": ["youtube"],
                 "title": "Youtube video",
                 "description": "Youtube video"
               },
               {
-                "enum": [
-                  "authRedirectTo"
-                ],
+                "enum": ["authRedirectTo"],
                 "title": "Authentified One 2 Many",
                 "description": "Link to redirect to a another claimaible nft. NFT should redirect to the same link with Arianee access token"
               },
               {
-                "enum": [
-                  "userManual"
-                ],
+                "enum": ["userManual"],
                 "title": "User manual",
                 "description": "Link to user manual"
               }
@@ -729,23 +315,17 @@
               {
                 "title": "US Dollar",
                 "description": "US Dollar",
-                "enum": [
-                  "USD"
-                ]
+                "enum": ["USD"]
               },
               {
                 "title": "Euro",
                 "description": "Euro",
-                "enum": [
-                  "EUR"
-                ]
+                "enum": ["EUR"]
               },
               {
                 "title": "Pound",
                 "description": "Pound",
-                "enum": [
-                  "GBP"
-                ]
+                "enum": ["GBP"]
               }
             ]
           },
@@ -770,37 +350,27 @@
             "title": "Media Type",
             "oneOf": [
               {
-                "enum": [
-                  "picture"
-                ],
+                "enum": ["picture"],
                 "title": "Picture (png / jpg)",
                 "description": "Picture (png / jpg)"
               },
               {
-                "enum": [
-                  "youtube"
-                ],
+                "enum": ["youtube"],
                 "title": "Youtube video",
                 "description": "Youtube video"
               },
               {
-                "enum": [
-                  "3dModel"
-                ],
+                "enum": ["3dModel"],
                 "title": "3D Model",
                 "description": "A 3D Model (glb / gltf)"
               },
               {
-                "enum": [
-                  "video"
-                ],
+                "enum": ["video"],
                 "title": "Video",
                 "description": "A video (mp4)"
               },
               {
-                "enum": [
-                  "AR"
-                ],
+                "enum": ["AR"],
                 "title": "Augmented Reality",
                 "description": "Augmented reality content"
               }
@@ -811,79 +381,57 @@
             "title": "Type",
             "oneOf": [
               {
-                "enum": [
-                  "product"
-                ],
+                "enum": ["product"],
                 "title": "Product media / picture",
                 "description": "used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)"
               },
               {
-                "enum": [
-                  "brandItemBackgroundPicture"
-                ],
+                "enum": ["brandItemBackgroundPicture"],
                 "title": "Brand Item Background Picture (3200x1900) ratioed",
                 "description": "(3200x1900), format : jpg/png, max 400ko created for the certificate in the list of certificates someone has. It should include a product picture."
               },
               {
-                "enum": [
-                  "itemBackgroundPicture"
-                ],
+                "enum": ["itemBackgroundPicture"],
                 "title": "Item Background Picture (3000x3000) ratioed",
                 "description": "dark, format .jpg, (3000x3000) max 400ko created for the background of the certificate screen"
               },
               {
-                "enum": [
-                  "certificateBackgroundPicture"
-                ],
+                "enum": ["certificateBackgroundPicture"],
                 "title": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top",
                 "description": "dark, no logo, format .jpg, (1900x3200), max 400ko created for the background of the transfer/proof of certificate screens"
               },
               {
-                "enum": [
-                  "3dModelPreview"
-                ],
+                "enum": ["3dModelPreview"],
                 "title": "3D model preview image, displayed in the media list in the wallet application",
                 "description": "[3D model / 1] Preview image (ideally .png of the model in idle state)"
               },
               {
-                "enum": [
-                  "3dModelAsset"
-                ],
+                "enum": ["3dModelAsset"],
                 "title": "3D model asset, rendered in the wallet application",
                 "description": "[3D model / 2] Model file (.glb, .gltf, can contain animations), requires [3D Model / 1] to be set right before"
               },
               {
-                "enum": [
-                  "videoPreview"
-                ],
+                "enum": ["videoPreview"],
                 "title": "Video preview image, displayed in the media list in the wallet application",
                 "description": "[Video / 1] Preview image (ideally .png of a frame of the video)"
               },
               {
-                "enum": [
-                  "videoSource"
-                ],
+                "enum": ["videoSource"],
                 "title": "Video source, played in the wallet application",
                 "description": "[Video / 2] Video source (.mp4), requires [Video / 1] to be set right before"
               },
               {
-                "enum": [
-                  "ARPreview"
-                ],
+                "enum": ["ARPreview"],
                 "title": "Augmented Reality preview",
                 "description": "[Augmented Reality preview] used to support the presentation of the AR asset in the wallet app.  (ideally .png with transparent background and square, less than 1mo)"
               },
               {
-                "enum": [
-                  "ARAsset"
-                ],
+                "enum": ["ARAsset"],
                 "title": "Augmented Reality asset",
                 "description": "[Augmented Reality asset] AR asset file (USDZ)"
               },
               {
-                "enum": [
-                  "ARPrimaryAsset"
-                ],
+                "enum": ["ARPrimaryAsset"],
                 "title": "Augmented Reality Primay asset",
                 "description": "[Augmented Reality Primay asset] AR asset file (USDZ)"
               }
@@ -940,23 +488,17 @@
               {
                 "title": "Color",
                 "description": "Color",
-                "enum": [
-                  "color"
-                ]
+                "enum": ["color"]
               },
               {
                 "title": "Printed",
                 "description": "Printed",
-                "enum": [
-                  "printed"
-                ]
+                "enum": ["printed"]
               },
               {
                 "title": "Complication",
                 "description": "Complication",
-                "enum": [
-                  "complication"
-                ]
+                "enum": ["complication"]
               }
             ]
           },
@@ -981,37 +523,27 @@
               {
                 "title": "Cashmere",
                 "description": "Cashmere",
-                "enum": [
-                  "cashmere"
-                ]
+                "enum": ["cashmere"]
               },
               {
                 "title": "Cotton",
                 "description": "Cotton",
-                "enum": [
-                  "cotton"
-                ]
+                "enum": ["cotton"]
               },
               {
                 "title": "Denim - Jeans",
                 "description": "Denim - Jeans",
-                "enum": [
-                  "denim-jeans"
-                ]
+                "enum": ["denim-jeans"]
               },
               {
                 "title": "Gold",
                 "description": "Gold",
-                "enum": [
-                  "gold"
-                ]
+                "enum": ["gold"]
               },
               {
                 "title": "Silver",
                 "description": "Silver",
-                "enum": [
-                  "silver"
-                ]
+                "enum": ["silver"]
               }
             ]
           },
@@ -1041,37 +573,27 @@
               {
                 "title": "Weight",
                 "description": "Weight",
-                "enum": [
-                  "weight"
-                ]
+                "enum": ["weight"]
               },
               {
                 "title": "Height",
                 "description": "Height",
-                "enum": [
-                  "height"
-                ]
+                "enum": ["height"]
               },
               {
                 "title": "Width",
                 "description": "Width",
-                "enum": [
-                  "width"
-                ]
+                "enum": ["width"]
               },
               {
                 "title": "Depth",
                 "description": "Depth",
-                "enum": [
-                  "depth"
-                ]
+                "enum": ["depth"]
               },
               {
                 "title": "Size",
                 "description": "Size",
-                "enum": [
-                  "size"
-                ]
+                "enum": ["size"]
               }
             ]
           },
@@ -1086,58 +608,42 @@
               {
                 "title": "Inch",
                 "description": "Inch",
-                "enum": [
-                  "in"
-                ]
+                "enum": ["in"]
               },
               {
                 "title": "Centimer",
                 "description": "Centimer",
-                "enum": [
-                  "cm"
-                ]
+                "enum": ["cm"]
               },
               {
                 "title": "Millimeter",
                 "description": "Millimeter",
-                "enum": [
-                  "mm"
-                ]
+                "enum": ["mm"]
               },
               {
                 "title": "EU",
                 "description": "EU",
-                "enum": [
-                  "eu"
-                ]
+                "enum": ["eu"]
               },
               {
                 "title": "UK",
                 "description": "UK",
-                "enum": [
-                  "uk"
-                ]
+                "enum": ["uk"]
               },
               {
                 "title": "US",
                 "description": "US",
-                "enum": [
-                  "us"
-                ]
+                "enum": ["us"]
               },
               {
                 "title": "Kilogram",
                 "description": "Kilogram",
-                "enum": [
-                  "kg"
-                ]
+                "enum": ["kg"]
               },
               {
                 "title": "Pound",
                 "description": "Pound",
-                "enum": [
-                  "lb"
-                ]
+                "enum": ["lb"]
               }
             ]
           }
@@ -1176,16 +682,12 @@
               {
                 "title": "Fair Trade",
                 "description": "Fair Trade",
-                "enum": [
-                  "fairtrade"
-                ]
+                "enum": ["fairtrade"]
               },
               {
                 "title": "WWF",
                 "description": "WWF",
-                "enum": [
-                  "wwf"
-                ]
+                "enum": ["wwf"]
               }
             ]
           }
@@ -1206,23 +708,17 @@
               {
                 "title": "material",
                 "description": "material",
-                "enum": [
-                  "material"
-                ]
+                "enum": ["material"]
               },
               {
                 "title": "assembly",
                 "description": "assembly",
-                "enum": [
-                  "assembly"
-                ]
+                "enum": ["assembly"]
               },
               {
                 "title": "impact",
                 "description": "impact",
-                "enum": [
-                  "impact"
-                ]
+                "enum": ["impact"]
               }
             ]
           },
@@ -1233,23 +729,17 @@
               {
                 "title": "responsible_procurement",
                 "description": "responsible_procurement",
-                "enum": [
-                  "responsible_procurement"
-                ]
+                "enum": ["responsible_procurement"]
               },
               {
                 "title": "eco_design",
                 "description": "eco_design",
-                "enum": [
-                  "eco_design"
-                ]
+                "enum": ["eco_design"]
               },
               {
                 "title": "packaging",
                 "description": "packaging",
-                "enum": [
-                  "packaging"
-                ]
+                "enum": ["packaging"]
               }
             ]
           },
@@ -1260,16 +750,12 @@
               {
                 "title": "material-responsible_procurement-ethical_purchasing",
                 "description": "material-responsible_procurement-ethical_purchasing",
-                "enum": [
-                  "material-responsible_procurement-ethical_purchasing"
-                ]
+                "enum": ["material-responsible_procurement-ethical_purchasing"]
               },
               {
                 "title": "material-responsible_procurement-organic organic",
                 "description": "material-responsible_procurement-organic organic",
-                "enum": [
-                  "material-responsible_procurement-organic organic"
-                ]
+                "enum": ["material-responsible_procurement-organic organic"]
               }
             ]
           },
@@ -1298,16 +784,12 @@
                   "title": "Media Type",
                   "oneOf": [
                     {
-                      "enum": [
-                        "picture"
-                      ],
+                      "enum": ["picture"],
                       "title": "Picture (png / jpg)",
                       "description": "Picture (png / jpg)"
                     },
                     {
-                      "enum": [
-                        "youtube"
-                      ],
+                      "enum": ["youtube"],
                       "title": "Youtube video",
                       "description": "Youtube video"
                     }
@@ -1318,16 +800,12 @@
                   "title": "Type",
                   "oneOf": [
                     {
-                      "enum": [
-                        "icon"
-                      ],
+                      "enum": ["icon"],
                       "title": "icon of label",
                       "description": "An icon depicting the transparency item (png transparent)"
                     },
                     {
-                      "enum": [
-                        "transparencyPicture"
-                      ],
+                      "enum": ["transparencyPicture"],
                       "title": "Transparency picture",
                       "description": "A picture depicting the transparency item"
                     }
@@ -1360,37 +838,27 @@
                   "title": "Type",
                   "oneOf": [
                     {
-                      "enum": [
-                        "website"
-                      ],
+                      "enum": ["website"],
                       "title": "Website (main)",
                       "description": "Regular link"
                     },
                     {
-                      "enum": [
-                        "proofLinkAction"
-                      ],
+                      "enum": ["proofLinkAction"],
                       "title": "proofLinkAction",
                       "description": "Link with a proof of ownership. The difference with arianeeAccessTokenAuthLink is that proofLinkAction does need blockchain transaction. It is not instant but can be revoked."
                     },
                     {
-                      "enum": [
-                        "transparency"
-                      ],
+                      "enum": ["transparency"],
                       "title": "transparency",
                       "description": "Url of transparency events json"
                     },
                     {
-                      "enum": [
-                        "arianeeAccessTokenAuthLink"
-                      ],
+                      "enum": ["arianeeAccessTokenAuthLink"],
                       "title": "arianeeAccessTokenAuthLink",
                       "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenAuthLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
                     },
                     {
-                      "enum": [
-                        "youtube"
-                      ],
+                      "enum": ["youtube"],
                       "title": "Youtube video",
                       "description": "Youtube video"
                     }
@@ -1427,70 +895,50 @@
               {
                 "description": "French",
                 "title": "French",
-                "enum": [
-                  "fr-FR"
-                ]
+                "enum": ["fr-FR"]
               },
               {
                 "description": "English (US)",
                 "title": "English (US)",
-                "enum": [
-                  "en-US"
-                ]
+                "enum": ["en-US"]
               },
               {
                 "description": "Chinese (traditional)",
                 "title": "Chinese (traditional)",
-                "enum": [
-                  "zh-TW"
-                ]
+                "enum": ["zh-TW"]
               },
               {
                 "description": "Chinese (simplified)",
                 "title": "Chinese (simplified)",
-                "enum": [
-                  "zh-CN"
-                ]
+                "enum": ["zh-CN"]
               },
               {
-                "enum": [
-                  "ko-KR"
-                ],
+                "enum": ["ko-KR"],
                 "title": "Korean",
                 "description": "Korean"
               },
               {
-                "enum": [
-                  "ja-JP"
-                ],
+                "enum": ["ja-JP"],
                 "title": "Japanese",
                 "description": "Japanese"
               },
               {
-                "enum": [
-                  "de-DE"
-                ],
+                "enum": ["de-DE"],
                 "title": "German",
                 "description": "German"
               },
               {
-                "enum": [
-                  "es"
-                ],
+                "enum": ["es"],
                 "title": "Spanish",
                 "description": "Spanish"
               },
               {
-                "enum": [
-                  "it"
-                ],
+                "enum": ["it"],
                 "title": "Italian",
                 "description": "Italian"
               },
               {
-                "enum": [
-                  "ru"
-                ],
+                "enum": ["ru"],
                 "title": "Russian",
                 "description": "Russian"
               }
@@ -1527,23 +975,17 @@
                   "title": "Type",
                   "oneOf": [
                     {
-                      "enum": [
-                        "service"
-                      ],
+                      "enum": ["service"],
                       "title": "Servicing",
                       "description": "Servicing"
                     },
                     {
-                      "enum": [
-                        "recycling"
-                      ],
+                      "enum": ["recycling"],
                       "title": "Recycling",
                       "description": "Recycling"
                     },
                     {
-                      "enum": [
-                        "other"
-                      ],
+                      "enum": ["other"],
                       "title": "other",
                       "description": "other"
                     }
@@ -1576,37 +1018,27 @@
                   "title": "Media Type",
                   "oneOf": [
                     {
-                      "enum": [
-                        "picture"
-                      ],
+                      "enum": ["picture"],
                       "title": "Picture (png / jpg)",
                       "description": "Picture (png / jpg)"
                     },
                     {
-                      "enum": [
-                        "youtube"
-                      ],
+                      "enum": ["youtube"],
                       "title": "Youtube video",
                       "description": "Youtube video"
                     },
                     {
-                      "enum": [
-                        "3dModel"
-                      ],
+                      "enum": ["3dModel"],
                       "title": "3D Model",
                       "description": "A 3D Model (glb / gltf)"
                     },
                     {
-                      "enum": [
-                        "video"
-                      ],
+                      "enum": ["video"],
                       "title": "Video",
                       "description": "A video (mp4)"
                     },
                     {
-                      "enum": [
-                        "AR"
-                      ],
+                      "enum": ["AR"],
                       "title": "Augmented Reality",
                       "description": "Augmented reality content"
                     }
@@ -1617,79 +1049,57 @@
                   "title": "Type",
                   "oneOf": [
                     {
-                      "enum": [
-                        "product"
-                      ],
+                      "enum": ["product"],
                       "title": "Product media / picture",
                       "description": "used to support the presentation of the product in the wallet app.  (ideally .png with transparent background and square, less than 1mo)"
                     },
                     {
-                      "enum": [
-                        "brandItemBackgroundPicture"
-                      ],
+                      "enum": ["brandItemBackgroundPicture"],
                       "title": "Brand Item Background Picture (3200x1900) ratioed",
                       "description": "(3200x1900), format : jpg/png, max 400ko created for the certificate in the list of certificates someone has. It should include a product picture."
                     },
                     {
-                      "enum": [
-                        "itemBackgroundPicture"
-                      ],
+                      "enum": ["itemBackgroundPicture"],
                       "title": "Item Background Picture (3000x3000) ratioed",
                       "description": "dark, format .jpg, (3000x3000) max 400ko created for the background of the certificate screen"
                     },
                     {
-                      "enum": [
-                        "certificateBackgroundPicture"
-                      ],
+                      "enum": ["certificateBackgroundPicture"],
                       "title": "Certificate Background Picture (1900x3200 TBD) preferably dark - with logo on top",
                       "description": "dark, no logo, format .jpg, (1900x3200), max 400ko created for the background of the transfer/proof of certificate screens"
                     },
                     {
-                      "enum": [
-                        "3dModelPreview"
-                      ],
+                      "enum": ["3dModelPreview"],
                       "title": "3D model preview image, displayed in the media list in the wallet application",
                       "description": "[3D model / 1] Preview image (ideally .png of the model in idle state)"
                     },
                     {
-                      "enum": [
-                        "3dModelAsset"
-                      ],
+                      "enum": ["3dModelAsset"],
                       "title": "3D model asset, rendered in the wallet application",
                       "description": "[3D model / 2] Model file (.glb, .gltf, can contain animations), requires [3D Model / 1] to be set right before"
                     },
                     {
-                      "enum": [
-                        "videoPreview"
-                      ],
+                      "enum": ["videoPreview"],
                       "title": "Video preview image, displayed in the media list in the wallet application",
                       "description": "[Video / 1] Preview image (ideally .png of a frame of the video)"
                     },
                     {
-                      "enum": [
-                        "videoSource"
-                      ],
+                      "enum": ["videoSource"],
                       "title": "Video source, played in the wallet application",
                       "description": "[Video / 2] Video source (.mp4), requires [Video / 1] to be set right before"
                     },
                     {
-                      "enum": [
-                        "ARPreview"
-                      ],
+                      "enum": ["ARPreview"],
                       "title": "Augmented Reality preview",
                       "description": "[Augmented Reality preview] used to support the presentation of the AR asset in the wallet app.  (ideally .png with transparent background and square, less than 1mo)"
                     },
                     {
-                      "enum": [
-                        "ARAsset"
-                      ],
+                      "enum": ["ARAsset"],
                       "title": "Augmented Reality asset",
                       "description": "[Augmented Reality asset] AR asset file (USDZ)"
                     },
                     {
-                      "enum": [
-                        "ARPrimaryAsset"
-                      ],
+                      "enum": ["ARPrimaryAsset"],
                       "title": "Augmented Reality Primay asset",
                       "description": "[Augmented Reality Primay asset] AR asset file (USDZ)"
                     }
@@ -1721,44 +1131,32 @@
                   "title": "Type",
                   "oneOf": [
                     {
-                      "enum": [
-                        "website"
-                      ],
+                      "enum": ["website"],
                       "title": "Website (main)",
                       "description": "Regular link"
                     },
                     {
-                      "enum": [
-                        "proofLinkAction"
-                      ],
+                      "enum": ["proofLinkAction"],
                       "title": "proofLinkAction",
                       "description": "Link with a proof of ownership. The difference with arianeeAccessTokenAuthLink is that proofLinkAction does need blockchain transaction. It is not instant but can be revoked."
                     },
                     {
-                      "enum": [
-                        "arianeeAccessTokenAuthLink"
-                      ],
+                      "enum": ["arianeeAccessTokenAuthLink"],
                       "title": "arianeeAccessTokenAuthLink",
                       "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenAuthLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
                     },
                     {
-                      "enum": [
-                        "youtube"
-                      ],
+                      "enum": ["youtube"],
                       "title": "Youtube video",
                       "description": "Youtube video"
                     },
                     {
-                      "enum": [
-                        "authRedirectTo"
-                      ],
+                      "enum": ["authRedirectTo"],
                       "title": "Authentified One 2 Many",
                       "description": "Link to redirect to a another claimaible nft. NFT should redirect to the same link with Arianee access token"
                     },
                     {
-                      "enum": [
-                        "userManual"
-                      ],
+                      "enum": ["userManual"],
                       "title": "User manual",
                       "description": "Link to user manual"
                     }
@@ -1811,23 +1209,17 @@
                     {
                       "title": "material",
                       "description": "material",
-                      "enum": [
-                        "material"
-                      ]
+                      "enum": ["material"]
                     },
                     {
                       "title": "assembly",
                       "description": "assembly",
-                      "enum": [
-                        "assembly"
-                      ]
+                      "enum": ["assembly"]
                     },
                     {
                       "title": "impact",
                       "description": "impact",
-                      "enum": [
-                        "impact"
-                      ]
+                      "enum": ["impact"]
                     }
                   ]
                 },
@@ -1838,23 +1230,17 @@
                     {
                       "title": "responsible_procurement",
                       "description": "responsible_procurement",
-                      "enum": [
-                        "responsible_procurement"
-                      ]
+                      "enum": ["responsible_procurement"]
                     },
                     {
                       "title": "eco_design",
                       "description": "eco_design",
-                      "enum": [
-                        "eco_design"
-                      ]
+                      "enum": ["eco_design"]
                     },
                     {
                       "title": "packaging",
                       "description": "packaging",
-                      "enum": [
-                        "packaging"
-                      ]
+                      "enum": ["packaging"]
                     }
                   ]
                 },
@@ -1865,16 +1251,12 @@
                     {
                       "title": "material-responsible_procurement-ethical_purchasing",
                       "description": "material-responsible_procurement-ethical_purchasing",
-                      "enum": [
-                        "material-responsible_procurement-ethical_purchasing"
-                      ]
+                      "enum": ["material-responsible_procurement-ethical_purchasing"]
                     },
                     {
                       "title": "material-responsible_procurement-organic organic",
                       "description": "material-responsible_procurement-organic organic",
-                      "enum": [
-                        "material-responsible_procurement-organic organic"
-                      ]
+                      "enum": ["material-responsible_procurement-organic organic"]
                     }
                   ]
                 },
@@ -1903,16 +1285,12 @@
                         "title": "Media Type",
                         "oneOf": [
                           {
-                            "enum": [
-                              "picture"
-                            ],
+                            "enum": ["picture"],
                             "title": "Picture (png / jpg)",
                             "description": "Picture (png / jpg)"
                           },
                           {
-                            "enum": [
-                              "youtube"
-                            ],
+                            "enum": ["youtube"],
                             "title": "Youtube video",
                             "description": "Youtube video"
                           }
@@ -1923,16 +1301,12 @@
                         "title": "Type",
                         "oneOf": [
                           {
-                            "enum": [
-                              "icon"
-                            ],
+                            "enum": ["icon"],
                             "title": "icon of label",
                             "description": "An icon depicting the transparency item (png transparent)"
                           },
                           {
-                            "enum": [
-                              "transparencyPicture"
-                            ],
+                            "enum": ["transparencyPicture"],
                             "title": "Transparency picture",
                             "description": "A picture depicting the transparency item"
                           }
@@ -1965,37 +1339,27 @@
                         "title": "Type",
                         "oneOf": [
                           {
-                            "enum": [
-                              "website"
-                            ],
+                            "enum": ["website"],
                             "title": "Website (main)",
                             "description": "Regular link"
                           },
                           {
-                            "enum": [
-                              "proofLinkAction"
-                            ],
+                            "enum": ["proofLinkAction"],
                             "title": "proofLinkAction",
                             "description": "Link with a proof of ownership. The difference with arianeeAccessTokenAuthLink is that proofLinkAction does need blockchain transaction. It is not instant but can be revoked."
                           },
                           {
-                            "enum": [
-                              "transparency"
-                            ],
+                            "enum": ["transparency"],
                             "title": "transparency",
                             "description": "Url of transparency events json"
                           },
                           {
-                            "enum": [
-                              "arianeeAccessTokenAuthLink"
-                            ],
+                            "enum": ["arianeeAccessTokenAuthLink"],
                             "title": "arianeeAccessTokenAuthLink",
                             "description": "Link with a Arianee Access Token, proof of ownership. The difference with proofLinkAction is that arianeeAccessTokenAuthLink does not need blockchain transaction. It is instant but cannnot be revoked. However it does expire."
                           },
                           {
-                            "enum": [
-                              "youtube"
-                            ],
+                            "enum": ["youtube"],
                             "title": "Youtube video",
                             "description": "Youtube video"
                           }
@@ -2034,9 +1398,7 @@
             "title": "Type",
             "oneOf": [
               {
-                "enum": [
-                  "full"
-                ],
+                "enum": ["full"],
                 "title": "Full",
                 "description": "Full"
               }
@@ -2343,58 +1705,42 @@
                             {
                               "title": "Service",
                               "description": "Service - usually issued by customer support.",
-                              "enum": [
-                                "service"
-                              ]
+                              "enum": ["service"]
                             },
                             {
                               "title": "Auction",
                               "description": "Auction - usually issued when a financial transaction and a transfer of certificate are involved.",
-                              "enum": [
-                                "auction"
-                              ]
+                              "enum": ["auction"]
                             },
                             {
                               "title": "Initial Sale",
                               "description": "Initial Sale - usually issued for the initial sale.",
-                              "enum": [
-                                "initialSale"
-                              ]
+                              "enum": ["initialSale"]
                             },
                             {
                               "title": "Warranty",
                               "description": "Warranty - usually issued when a warranty is attached to the product.",
-                              "enum": [
-                                "warranty"
-                              ]
+                              "enum": ["warranty"]
                             },
                             {
                               "title": "Resell",
                               "description": "Resell - usually issued when a resell event occurs.",
-                              "enum": [
-                                "resell"
-                              ]
+                              "enum": ["resell"]
                             },
                             {
                               "title": "Repair",
                               "description": "Repair - usually issued when the product is repaired.",
-                              "enum": [
-                                "repair"
-                              ]
+                              "enum": ["repair"]
                             },
-                            {
+                             {
                               "title": "Refurbished",
                               "description": "Refurbished - the product has been restored to a like-new condition.",
-                              "enum": [
-                                "refurbished"
-                              ]
+                              "enum": ["refurbished"]
                             },
                             {
                               "title": "Experience",
                               "description": "Experience - usually issued when an experienced happens around the product.",
-                              "enum": [
-                                "experience"
-                              ]
+                              "enum": ["experience"]
                             }
                           ]
                         },
@@ -2406,65 +1752,47 @@
                           },
                           "oneOf": [
                             {
-                              "enum": [
-                                "fr-FR"
-                              ],
+                              "enum": ["fr-FR"],
                               "title": "French",
                               "description": "French"
                             },
                             {
-                              "enum": [
-                                "en-US"
-                              ],
+                              "enum": ["en-US"],
                               "title": "English (US)",
                               "description": "English (US)"
                             },
                             {
-                              "enum": [
-                                "zh-TW"
-                              ],
+                              "enum": ["zh-TW"],
                               "title": "Chinese (traditional)",
                               "description": "Chinese (traditional)"
                             },
                             {
-                              "enum": [
-                                "zh-CN"
-                              ],
+                              "enum": ["zh-CN"],
                               "title": "Chinese (simplified)",
                               "description": "Chinese (simplified)"
                             },
                             {
-                              "enum": [
-                                "ko-KR"
-                              ],
+                              "enum": ["ko-KR"],
                               "title": "Korean",
                               "description": "Korean"
                             },
                             {
-                              "enum": [
-                                "ja-JP"
-                              ],
+                              "enum": ["ja-JP"],
                               "title": "Japanese",
                               "description": "Japanese"
                             },
                             {
-                              "enum": [
-                                "de-DE"
-                              ],
+                              "enum": ["de-DE"],
                               "title": "German",
                               "description": "German"
                             },
                             {
-                              "enum": [
-                                "es"
-                              ],
+                              "enum": ["es"],
                               "title": "Spanish",
                               "description": "Spanish"
                             },
                             {
-                              "enum": [
-                                "it"
-                              ],
+                              "enum": ["it"],
                               "title": "Italian",
                               "description": "Italian"
                             }
@@ -2499,23 +1827,17 @@
                                 },
                                 "oneOf": [
                                   {
-                                    "enum": [
-                                      "website"
-                                    ],
+                                    "enum": ["website"],
                                     "title": "Website (main)",
                                     "description": "Website (main)"
                                   },
                                   {
-                                    "enum": [
-                                      "eshop"
-                                    ],
+                                    "enum": ["eshop"],
                                     "title": "Eshop",
                                     "description": "Eshop"
                                   },
                                   {
-                                    "enum": [
-                                      "other"
-                                    ],
+                                    "enum": ["other"],
                                     "title": "other",
                                     "description": "other"
                                   }
@@ -2557,65 +1879,47 @@
                                 },
                                 "oneOf": [
                                   {
-                                    "enum": [
-                                      "fr-FR"
-                                    ],
+                                    "enum": ["fr-FR"],
                                     "title": "French",
                                     "description": "French"
                                   },
                                   {
-                                    "enum": [
-                                      "en-US"
-                                    ],
+                                    "enum": ["en-US"],
                                     "title": "English (US)",
                                     "description": "English (US)"
                                   },
                                   {
-                                    "enum": [
-                                      "zh-TW"
-                                    ],
+                                    "enum": ["zh-TW"],
                                     "title": "Chinese (traditional)",
                                     "description": "Chinese (traditional)"
                                   },
                                   {
-                                    "enum": [
-                                      "zh-CN"
-                                    ],
+                                    "enum": ["zh-CN"],
                                     "title": "Chinese (simplified)",
                                     "description": "Chinese (simplified)"
                                   },
                                   {
-                                    "enum": [
-                                      "ko-KR"
-                                    ],
+                                    "enum": ["ko-KR"],
                                     "title": "Korean",
                                     "description": "Korean"
                                   },
                                   {
-                                    "enum": [
-                                      "ja-JP"
-                                    ],
+                                    "enum": ["ja-JP"],
                                     "title": "Japanese",
                                     "description": "Japanese"
                                   },
                                   {
-                                    "enum": [
-                                      "de-DE"
-                                    ],
+                                    "enum": ["de-DE"],
                                     "title": "German",
                                     "description": "German"
                                   },
                                   {
-                                    "enum": [
-                                      "es"
-                                    ],
+                                    "enum": ["es"],
                                     "title": "Spanish",
                                     "description": "Spanish"
                                   },
                                   {
-                                    "enum": [
-                                      "it"
-                                    ],
+                                    "enum": ["it"],
                                     "title": "Italian",
                                     "description": "Italian"
                                   }
@@ -2651,23 +1955,17 @@
                                       },
                                       "oneOf": [
                                         {
-                                          "enum": [
-                                            "website"
-                                          ],
+                                          "enum": ["website"],
                                           "title": "Website (main)",
                                           "description": "Website (main)"
                                         },
                                         {
-                                          "enum": [
-                                            "eshop"
-                                          ],
+                                          "enum": ["eshop"],
                                           "title": "Eshop",
                                           "description": "Eshop"
                                         },
                                         {
-                                          "enum": [
-                                            "other"
-                                          ],
+                                          "enum": ["other"],
                                           "title": "other",
                                           "description": "other"
                                         }
@@ -2712,16 +2010,12 @@
                                 },
                                 "oneOf": [
                                   {
-                                    "enum": [
-                                      "picture"
-                                    ],
+                                    "enum": ["picture"],
                                     "title": "Picture (png / jpg)",
                                     "description": "Picture (png / jpg)"
                                   },
                                   {
-                                    "enum": [
-                                      "youtube"
-                                    ],
+                                    "enum": ["youtube"],
                                     "title": "Youtube video",
                                     "description": "Youtube video"
                                   }
@@ -2735,9 +2029,7 @@
                                 },
                                 "oneOf": [
                                   {
-                                    "enum": [
-                                      "product"
-                                    ],
+                                    "enum": ["product"],
                                     "title": "Event media / picture",
                                     "description": "Event media / picture"
                                   }
@@ -2781,23 +2073,17 @@
                                   {
                                     "title": "Color",
                                     "description": "Color",
-                                    "enum": [
-                                      "color"
-                                    ]
+                                    "enum": ["color"]
                                   },
                                   {
                                     "title": "Material",
                                     "description": "Material",
-                                    "enum": [
-                                      "material"
-                                    ]
+                                    "enum": ["material"]
                                   },
                                   {
                                     "title": "Printed",
                                     "description": "Printed",
-                                    "enum": [
-                                      "printed"
-                                    ]
+                                    "enum": ["printed"]
                                   }
                                 ]
                               },
@@ -2829,23 +2115,17 @@
                             {
                               "title": "US Dollar",
                               "description": "US Dollar",
-                              "enum": [
-                                "USD"
-                              ]
+                              "enum": ["USD"]
                             },
                             {
                               "title": "Euro",
                               "description": "Euro",
-                              "enum": [
-                                "EUR"
-                              ]
+                              "enum": ["EUR"]
                             },
                             {
                               "title": "Pound",
                               "description": "Pound",
-                              "enum": [
-                                "GBP"
-                              ]
+                              "enum": ["GBP"]
                             }
                           ]
                         },
@@ -2956,74 +2236,41 @@
       "type": "object",
       "title": "Post Sale Manufacturer Warranty Period",
       "properties": {
-        "value": {
-          "type": "string",
-          "title": "Value"
-        },
-        "unit": {
-          "type": "string",
-          "title": "Unit"
-        }
+        "value": { "type": "string", "title": "Value"  },
+        "unit": { "type": "string", "title": "Unit"  }
       }
     },
     "reparabilityIndex": {
       "type": "object",
       "title": "Reparability Index",
       "properties": {
-        "value": {
-          "type": "string",
-          "title": "Value"
-        },
-        "indexDefinitionYear": {
-          "type": "string",
-          "title": "Year Index"
-        }
+        "value": { "type": "string", "title": "Value" },
+        "indexDefinitionYear": { "type": "string", "title": "Year Index" }
       }
     },
     "energyConsumption": {
       "type": "object",
       "title": "Energy Consumption",
       "properties": {
-        "value": {
-          "type": "string",
-          "title": "Quantity"
-        },
-        "unit": {
-          "type": "string",
-          "title": "Unit"
-        },
-        "label": {
-          "type": "string",
-          "title": "Label"
-        }
+        "value": { "type": "string", "title": "Quantity" },
+        "unit": { "type": "string", "title": "Unit" },
+        "label": { "type": "string", "title": "Label" }
       }
     },
     "waterConsumption": {
       "type": "object",
       "title": "Water Consumption",
       "properties": {
-        "value": {
-          "type": "string",
-          "title": "Quantity"
-        },
-        "unit": {
-          "type": "string",
-          "title": "Unit"
-        }
+        "value": { "type": "string", "title": "Quantity" },
+        "unit": { "type": "string", "title": "Unit" }
       }
     },
     "energyClass": {
       "type": "object",
       "title": "Energy Class",
       "properties": {
-        "value": {
-          "type": "string",
-          "title": "Value"
-        },
-        "indexDefinitionYear": {
-          "type": "string",
-          "title": "Year Index"
-        }
+        "value": { "type": "string", "title": "Value"  },
+        "indexDefinitionYear": { "type": "string", "title": "Year Index"  }
       }
     },
     "dangerousSubstance": {
@@ -3055,18 +2302,9 @@
       "items": {
         "type": "object",
         "properties": {
-          "title": {
-            "type": "string",
-            "title": "Title"
-          },
-          "icon": {
-            "type": "string",
-            "title": "Icon"
-          },
-          "url": {
-            "type": "string",
-            "title": "URL"
-          }
+          "title": { "type": "string", "title": "Title" },
+          "icon": { "type": "string", "title": "Icon" },
+          "url": { "type": "string", "title": "URL" }
         }
       }
     },
@@ -3076,18 +2314,9 @@
       "items": {
         "type": "object",
         "properties": {
-          "title": {
-            "type": "string",
-            "title": "Title"
-          },
-          "icon": {
-            "type": "string",
-            "title": "Icon"
-          },
-          "url": {
-            "type": "string",
-            "title": "URL"
-          }
+          "title": { "type": "string", "title": "Title" },
+          "icon": { "type": "string", "title": "Icon" },
+          "url": { "type": "string", "title": "URL" }
         }
       }
     },
@@ -3142,7 +2371,5 @@
       }
     }
   },
-  "required": [
-    "$schema"
-  ]
+  "required": ["$schema"]
 }
