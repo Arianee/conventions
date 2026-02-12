@@ -247,6 +247,11 @@
                 "description": "Regular link"
               },
               {
+                "enum": ["originalProductPage"],
+                "title": "Original Product Page",
+                "description": "Link to the original product page on the brand's website"
+              },
+              {
                 "enum": ["proofLinkAction"],
                 "title": "proofLinkAction",
                 "description": "Link with a proof of ownership. The difference with arianeeAccessTokenAuthLink is that proofLinkAction does need blockchain transaction. It is not instant but can be revoked."
