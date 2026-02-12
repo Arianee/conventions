@@ -22,52 +22,79 @@
         {
           "title": "Service",
           "description": "A service-related event, typically issued by customer support. Examples include maintenance or technical support actions.",
-          "enum": ["service"]
+          "enum": [
+            "service"
+          ]
         },
         {
           "title": "Auction",
           "description": "An event associated with a financial transaction and the transfer of a certificate, such as an auction.",
-          "enum": ["auction"]
+          "enum": [
+            "auction"
+          ]
         },
         {
           "title": "Initial Sale",
           "description": "The initial sale of the product, marking its first transaction or release.",
-          "enum": ["initialSale"]
+          "enum": [
+            "initialSale"
+          ]
         },
         {
           "title": "Warranty",
           "description": "An event related to a warranty attached to the product, such as warranty activation or updates.",
-          "enum": ["warranty"]
+          "enum": [
+            "warranty"
+          ]
         },
         {
           "title": "Resell",
           "description": "An event documenting the resale of a product, representing a secondary market transaction.",
-          "enum": ["resell"]
+          "enum": [
+            "resell"
+          ]
         },
         {
           "title": "Repair",
           "description": "A repair event indicating that the product has undergone maintenance or restoration.",
-          "enum": ["repair"]
+          "enum": [
+            "repair"
+          ]
         },
         {
           "title": "Experience",
           "description": "An event describing an experience related to the product, such as a special event, VIP access, or an activity involving the product.",
-          "enum": ["experience"]
+          "enum": [
+            "experience"
+          ]
         },
         {
           "title": "Transfer",
           "description": "An off-chain record of ownership change.",
-          "enum": ["transfer"]
+          "enum": [
+            "transfer"
+          ]
         },
         {
           "title": "Refurbished",
           "description": "Refurbished - the product has been restored to a like-new condition.",
-          "enum": ["refurbished"]
+          "enum": [
+            "refurbished"
+          ]
         },
         {
           "title": "Delivery",
           "description": "Delivery - the product has been delivered to the customer.",
-          "enum": ["delivery"]
+          "enum": [
+            "delivery"
+          ]
+        },
+        {
+          "title": "Manufactured",
+          "description": "A manufacturing event indicating that the product has been produced or assembled.",
+          "enum": [
+            "manufactured"
+          ]
         }
       ]
     },
@@ -78,23 +105,69 @@
         "id": "select"
       },
       "oneOf": [
-        { "enum": ["fr-FR"], "title": "French", "description": "French" },
-        { "enum": ["en-US"], "title": "English (US)", "description": "English (US)" },
         {
-          "enum": ["zh-TW"],
+          "enum": [
+            "fr-FR"
+          ],
+          "title": "French",
+          "description": "French"
+        },
+        {
+          "enum": [
+            "en-US"
+          ],
+          "title": "English (US)",
+          "description": "English (US)"
+        },
+        {
+          "enum": [
+            "zh-TW"
+          ],
           "title": "Chinese (traditional)",
           "description": "Chinese (traditional)"
         },
         {
-          "enum": ["zh-CN"],
+          "enum": [
+            "zh-CN"
+          ],
           "title": "Chinese (simplified)",
           "description": "Chinese (simplified)"
         },
-        { "enum": ["ko-KR"], "title": "Korean", "description": "Korean" },
-        { "enum": ["ja-JP"], "title": "Japanese", "description": "Japanese" },
-        { "enum": ["de-DE"], "title": "German", "description": "German" },
-        { "enum": ["es"], "title": "Spanish", "description": "Spanish" },
-        { "enum": ["it"], "title": "Italian", "description": "Italian" }
+        {
+          "enum": [
+            "ko-KR"
+          ],
+          "title": "Korean",
+          "description": "Korean"
+        },
+        {
+          "enum": [
+            "ja-JP"
+          ],
+          "title": "Japanese",
+          "description": "Japanese"
+        },
+        {
+          "enum": [
+            "de-DE"
+          ],
+          "title": "German",
+          "description": "German"
+        },
+        {
+          "enum": [
+            "es"
+          ],
+          "title": "Spanish",
+          "description": "Spanish"
+        },
+        {
+          "enum": [
+            "it"
+          ],
+          "title": "Italian",
+          "description": "Italian"
+        }
       ]
     },
     "title": {
@@ -125,9 +198,27 @@
               "id": "select"
             },
             "oneOf": [
-              { "enum": ["website"], "title": "Website (main)", "description": "Website (main)" },
-              { "enum": ["eshop"], "title": "Eshop", "description": "Eshop" },
-              { "enum": ["other"], "title": "other", "description": "other" }
+              {
+                "enum": [
+                  "website"
+                ],
+                "title": "Website (main)",
+                "description": "Website (main)"
+              },
+              {
+                "enum": [
+                  "eshop"
+                ],
+                "title": "Eshop",
+                "description": "Eshop"
+              },
+              {
+                "enum": [
+                  "other"
+                ],
+                "title": "other",
+                "description": "other"
+              }
             ]
           },
           "title": {
@@ -165,23 +256,69 @@
               "id": "select"
             },
             "oneOf": [
-              { "enum": ["fr-FR"], "title": "French", "description": "French" },
-              { "enum": ["en-US"], "title": "English (US)", "description": "English (US)" },
               {
-                "enum": ["zh-TW"],
+                "enum": [
+                  "fr-FR"
+                ],
+                "title": "French",
+                "description": "French"
+              },
+              {
+                "enum": [
+                  "en-US"
+                ],
+                "title": "English (US)",
+                "description": "English (US)"
+              },
+              {
+                "enum": [
+                  "zh-TW"
+                ],
                 "title": "Chinese (traditional)",
                 "description": "Chinese (traditional)"
               },
               {
-                "enum": ["zh-CN"],
+                "enum": [
+                  "zh-CN"
+                ],
                 "title": "Chinese (simplified)",
                 "description": "Chinese (simplified)"
               },
-              { "enum": ["ko-KR"], "title": "Korean", "description": "Korean" },
-              { "enum": ["ja-JP"], "title": "Japanese", "description": "Japanese" },
-              { "enum": ["de-DE"], "title": "German", "description": "German" },
-              { "enum": ["es"], "title": "Spanish", "description": "Spanish" },
-              { "enum": ["it"], "title": "Italian", "description": "Italian" }
+              {
+                "enum": [
+                  "ko-KR"
+                ],
+                "title": "Korean",
+                "description": "Korean"
+              },
+              {
+                "enum": [
+                  "ja-JP"
+                ],
+                "title": "Japanese",
+                "description": "Japanese"
+              },
+              {
+                "enum": [
+                  "de-DE"
+                ],
+                "title": "German",
+                "description": "German"
+              },
+              {
+                "enum": [
+                  "es"
+                ],
+                "title": "Spanish",
+                "description": "Spanish"
+              },
+              {
+                "enum": [
+                  "it"
+                ],
+                "title": "Italian",
+                "description": "Italian"
+              }
             ]
           },
           "title": {
@@ -199,7 +336,6 @@
               "id": "textarea"
             }
           },
-
           "externalContents": {
             "type": "array",
             "title": "External Contents",
@@ -215,12 +351,26 @@
                   },
                   "oneOf": [
                     {
-                      "enum": ["website"],
+                      "enum": [
+                        "website"
+                      ],
                       "title": "Website (main)",
                       "description": "Website (main)"
                     },
-                    { "enum": ["eshop"], "title": "Eshop", "description": "Eshop" },
-                    { "enum": ["other"], "title": "other", "description": "other" }
+                    {
+                      "enum": [
+                        "eshop"
+                      ],
+                      "title": "Eshop",
+                      "description": "Eshop"
+                    },
+                    {
+                      "enum": [
+                        "other"
+                      ],
+                      "title": "other",
+                      "description": "other"
+                    }
                   ]
                 },
                 "title": {
@@ -247,7 +397,6 @@
         }
       }
     },
-
     "medias": {
       "type": "array",
       "title": "Pictures & Medias",
@@ -263,12 +412,16 @@
             },
             "oneOf": [
               {
-                "enum": ["picture"],
+                "enum": [
+                  "picture"
+                ],
                 "title": "Picture (png / jpg)",
                 "description": "Picture (png / jpg)"
               },
               {
-                "enum": ["youtube"],
+                "enum": [
+                  "youtube"
+                ],
                 "title": "Youtube video",
                 "description": "Youtube video"
               }
@@ -282,7 +435,9 @@
             },
             "oneOf": [
               {
-                "enum": ["product"],
+                "enum": [
+                  "product"
+                ],
                 "title": "Event media / picture",
                 "description": "Event media / picture"
               }
@@ -326,17 +481,23 @@
               {
                 "title": "Color",
                 "description": "Color",
-                "enum": ["color"]
+                "enum": [
+                  "color"
+                ]
               },
               {
                 "title": "Material",
                 "description": "Material",
-                "enum": ["material"]
+                "enum": [
+                  "material"
+                ]
               },
               {
                 "title": "Printed",
                 "description": "Printed",
-                "enum": ["printed"]
+                "enum": [
+                  "printed"
+                ]
               }
             ]
           },
@@ -368,17 +529,23 @@
         {
           "title": "US Dollar",
           "description": "US Dollar",
-          "enum": ["USD"]
+          "enum": [
+            "USD"
+          ]
         },
         {
           "title": "Euro",
           "description": "Euro",
-          "enum": ["EUR"]
+          "enum": [
+            "EUR"
+          ]
         },
         {
           "title": "Pound",
           "description": "Pound",
-          "enum": ["GBP"]
+          "enum": [
+            "GBP"
+          ]
         }
       ]
     },
@@ -406,5 +573,7 @@
       "description": "The date and time of the event in ISO 8601 format."
     }
   },
-  "required": ["$schema"]
+  "required": [
+    "$schema"
+  ]
 }
