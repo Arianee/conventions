@@ -395,8 +395,8 @@
     },
     "deepLinkDomain": {
       "type": "string",
-      "title": "Domain to use for deeplink",
-      "description": "Domain to use for deeplink"
+      "title": "Deeplink domain",
+      "description": "Url to use for the product page"
     },
     "issuerSignature": {
       "type": "string",
