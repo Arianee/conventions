@@ -68,6 +68,11 @@
           "title": "Delivery",
           "description": "Delivery - the product has been delivered to the customer.",
           "enum": ["delivery"]
+        },
+        {
+          "title": "End Of Life",
+          "description": "Indicates that the product has reached the end of its lifecycle. This may include disposal, recycling, or destruction.",
+          "enum": ["endOfLife"]
         }
       ]
     },
