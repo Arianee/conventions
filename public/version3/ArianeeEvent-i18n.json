@@ -70,6 +70,11 @@
           "enum": ["delivery"]
         },
         {
+          "title": "Manufacturing",
+          "description": "An event recording the manufacture of the product, capturing production details such as facility, date, and batch information.",
+          "enum": ["manufacturing"]
+        },
+        {
           "title": "End Of Life",
           "description": "Indicates that the product has reached the end of its lifecycle. This may include disposal, recycling, or destruction.",
           "enum": ["endOfLife"]
