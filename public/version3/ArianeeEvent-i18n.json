@@ -414,6 +414,19 @@
       "title": "Event date",
       "format": "date-time",
       "description": "The date and time of the event in ISO 8601 format."
+    },
+    "warranty": {
+      "type": "object",
+      "title": "Warranty",
+      "description": "Warranty information updated or declared by this event.",
+      "properties": {
+        "endDate": {
+          "type": "string",
+          "title": "Warranty end date",
+          "format": "date",
+          "description": "The updated warranty end date applicable after this event, in ISO 8601 date format."
+        }
+      }
     }
   },
   "required": ["$schema"]
