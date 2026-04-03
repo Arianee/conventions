@@ -19,64 +19,64 @@
         "id": "select"
       },
       "oneOf": [
-        {
-          "title": "Service",
-          "description": "A service-related event, typically issued by customer support. Examples include maintenance or technical support actions.",
-          "enum": ["service"]
-        },
-        {
-          "title": "Auction",
-          "description": "An event associated with a financial transaction and the transfer of a certificate, such as an auction.",
-          "enum": ["auction"]
-        },
-        {
-          "title": "Initial Sale",
-          "description": "The initial sale of the product, marking its first transaction or release.",
-          "enum": ["initialSale"]
-        },
-        {
-          "title": "Warranty",
-          "description": "An event related to a warranty attached to the product, such as warranty activation or updates.",
-          "enum": ["warranty"]
-        },
-        {
-          "title": "Resell",
-          "description": "An event documenting the resale of a product, representing a secondary market transaction.",
-          "enum": ["resell"]
-        },
-        {
-          "title": "Repair",
-          "description": "A repair event indicating that the product has undergone maintenance or restoration.",
-          "enum": ["repair"]
-        },
-        {
-          "title": "Experience",
-          "description": "An event describing an experience related to the product, such as a special event, VIP access, or an activity involving the product.",
-          "enum": ["experience"]
-        },
-        {
-          "title": "Transfer",
-          "description": "An off-chain record of ownership change.",
-          "enum": ["transfer"]
-        },
-        {
-          "title": "Refurbished",
-          "description": "Refurbished - the product has been restored to a like-new condition.",
-          "enum": ["refurbished"]
-        },
-        {
-          "title": "Delivery",
-          "description": "Delivery - the product has been delivered to the customer.",
-          "enum": ["delivery"]
-        },
-        {
+             {
           "title": "Manufacturing",
-          "description": "An event recording the manufacture of the product, capturing production details such as facility, date, and batch information.",
+          "description": "Manufacturing: the product has been manufactured, capturing production details such as facility, date, and batch information.",
           "enum": ["manufacturing"]
         },
         {
+          "title": "Delivery",
+          "description": "Delivery: the product has been delivered to the customer or to a point of sale.",
+          "enum": ["delivery"]
+        },
+        {
+          "title": "Initial Sale",
+          "description": "Initial Sale: the product has been sold for the first time, marking its first commercial transaction.",
+          "enum": ["initialSale"]
+        },
+        {
+          "title": "Transfer",
+          "description": "Transfer: the product ownership has changed, recorded as an off-chain transfer.",
+          "enum": ["transfer"]
+        },
+        {
+          "title": "Resell",
+          "description": "Resell: the product has been resold on the secondary market.",
+          "enum": ["resell"]
+        },
+        {
+          "title": "Auction",
+          "description": "Auction: the product has been sold through an auction process.",
+          "enum": ["auction"]
+        },
+        {
+          "title": "Warranty",
+          "description": "Warranty: a warranty has been activated or updated for the product.",
+          "enum": ["warranty"]
+        },
+        {
+          "title": "Service",
+          "description": "Service: the product has received a service intervention, such as maintenance or technical support.",
+          "enum": ["service"]
+        },
+        {
+          "title": "Repair",
+          "description": "Repair: the product has undergone a repair or restoration.",
+          "enum": ["repair"]
+        },
+        {
+          "title": "Refurbished",
+          "description": "Refurbished: the product has been restored to a like-new condition.",
+          "enum": ["refurbished"]
+        },
+        {
+          "title": "Experience",
+          "description": "Experience: an experience has been associated with the product, such as a special event, VIP access, or an exclusive activity.",
+          "enum": ["experience"]
+        },
+        {
           "title": "End Of Life",
-          "description": "Indicates that the product has reached the end of its lifecycle. This may include disposal, recycling, or destruction.",
+          "description": "End Of Life: the product has reached the end of its lifecycle, including disposal, recycling, or destruction.",
           "enum": ["endOfLife"]
         }
       ]
