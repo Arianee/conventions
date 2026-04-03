@@ -20,9 +20,9 @@
       },
       "oneOf": [
              {
-          "title": "Manufacturing",
-          "description": "Manufacturing: the product has been manufactured, capturing production details such as facility, date, and batch information.",
-          "enum": ["manufacturing"]
+          "title": "Manufactured",
+          "description": "Manufactured: the product has been manufactured, capturing production details such as facility, date, and batch information.",
+          "enum": ["manufactured"]
         },
         {
           "title": "Delivery",
