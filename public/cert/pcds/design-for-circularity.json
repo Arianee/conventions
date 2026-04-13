@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cert.arianee.org/schemas/pcds/design-for-circularity.json",
+  "title": "PCDS — Design for Circularity",
+  "description": "Design aspects enabling circular economy: disassembly, recyclability, modularity and reuse potential (aligned with ISO 59040:2025 Product Circularity Data Sheet).",
+  "type": "object",
+  "properties": {
+    "designForDisassembly": {
+      "type": "object",
+      "description": "Disassembly characteristics of the product.",
+      "properties": {
+        "isDesignedForDisassembly": { "type": "boolean" },
+        "disassemblyInstructions": { "type": "string" },
+        "disassemblyTime": {
+          "type": "object",
+          "properties": {
+            "value": { "type": "number" },
+            "unit": { "type": "string", "enum": ["minutes", "hours"] }
+          }
+        },
+        "toolsRequired": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "fastenerTypes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["screw", "snap-fit", "adhesive", "weld", "rivet", "clip"]
+          }
+        }
+      }
+    },
+    "materialRecyclability": {
+      "type": "object",
+      "description": "Recyclability assessment of the product's materials.",
+      "properties": {
+        "recyclabilityRate": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Percentage of product mass that is recyclable."
+        },
+        "materials": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "massPercentage": { "type": "number", "minimum": 0, "maximum": 100 },
+              "recyclable": { "type": "boolean" },
+              "recyclingStream": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "modularity": {
+      "type": "object",
+      "description": "Modularity characteristics enabling repair and upgrade.",
+      "properties": {
+        "isModular": { "type": "boolean" },
+        "replaceableModules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "isReplaceable": { "type": "boolean" },
+              "isUpgradeable": { "type": "boolean" },
+              "sparePartAvailable": { "type": "boolean" }
+            }
+          }
+        }
+      }
+    },
+    "reusePotential": {
+      "type": "object",
+      "description": "Reuse and refurbishment potential.",
+      "properties": {
+        "isReusable": { "type": "boolean" },
+        "isRefurbishable": { "type": "boolean" },
+        "isRemanufacturable": { "type": "boolean" },
+        "expectedReuseCycles": { "type": "integer", "minimum": 0 },
+        "refurbishmentInstructions": { "type": "string" }
+      }
+    },
+    "recycledContent": {
+      "type": "object",
+      "description": "Pre- and post-consumer recycled content.",
+      "properties": {
+        "totalRecycledContentPercentage": { "type": "number", "minimum": 0, "maximum": 100 },
+        "preConsumerPercentage": { "type": "number", "minimum": 0, "maximum": 100 },
+        "postConsumerPercentage": { "type": "number", "minimum": 0, "maximum": 100 }
+      }
+    }
+  }
+}

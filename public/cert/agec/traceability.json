@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cert.arianee.org/schemas/agec/traceability.json",
+  "title": "AGEC — Traceability",
+  "description": "Product origin, manufacturing location and supply-chain traceability data required by the French Anti-Waste Law (Loi AGEC).",
+  "type": "object",
+  "properties": {
+    "countryOfOrigin": {
+      "type": "string",
+      "description": "ISO 3166-1 alpha-2 country code of the product's origin."
+    },
+    "manufacturingLocation": {
+      "type": "object",
+      "description": "Location where the product was manufactured or assembled.",
+      "properties": {
+        "country": { "type": "string", "description": "ISO 3166-1 alpha-2 country code." },
+        "region": { "type": "string" },
+        "city": { "type": "string" },
+        "facilityName": { "type": "string" },
+        "facilityId": { "type": "string", "description": "Unique identifier for the facility (e.g. GLN)." }
+      }
+    },
+    "mainComponents": {
+      "type": "array",
+      "description": "Traceability of main components or raw materials.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "componentName": { "type": "string" },
+          "materialName": { "type": "string" },
+          "countryOfOrigin": { "type": "string" },
+          "supplierName": { "type": "string" },
+          "certifications": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "qualityLabels": {
+      "type": "array",
+      "description": "Quality or environmental labels and certifications held by the product.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "issuingBody": { "type": "string" },
+          "certificateUrl": { "type": "string", "format": "uri" },
+          "validUntil": { "type": "string", "format": "date" }
+        }
+      }
+    },
+    "supplyChainActors": {
+      "type": "array",
+      "description": "Key actors in the supply chain for due diligence purposes.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "role": { "type": "string", "enum": ["manufacturer", "assembler", "importer", "distributor", "processor"] },
+          "name": { "type": "string" },
+          "country": { "type": "string" },
+          "identifier": { "type": "string", "description": "SIRET, DUNS, or other business identifier." }
+        }
+      }
+    }
+  }
+}

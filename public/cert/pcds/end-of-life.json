@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cert.arianee.org/schemas/pcds/end-of-life.json",
+  "title": "PCDS — End of Life",
+  "description": "End-of-life information: collection, recycling, recovery and disposal pathways (aligned with ISO 59040:2025 Product Circularity Data Sheet).",
+  "type": "object",
+  "properties": {
+    "collectionInformation": {
+      "type": "object",
+      "description": "How the product should be collected at end of life.",
+      "properties": {
+        "collectionScheme": {
+          "type": "string",
+          "enum": ["municipal", "producer-take-back", "retailer-take-back", "dedicated-collection-point", "other"],
+          "description": "Applicable collection scheme."
+        },
+        "collectionInstructions": { "type": "string" },
+        "collectionPointUrl": { "type": "string", "format": "uri" },
+        "depositScheme": {
+          "type": "object",
+          "properties": {
+            "applicable": { "type": "boolean" },
+            "depositAmount": { "type": "number" },
+            "currency": { "type": "string" }
+          }
+        }
+      }
+    },
+    "recyclingInformation": {
+      "type": "object",
+      "description": "Recycling pathways and rates.",
+      "properties": {
+        "recyclabilityAssessment": {
+          "type": "string",
+          "enum": ["fully-recyclable", "partially-recyclable", "not-recyclable"]
+        },
+        "targetRecyclingRate": { "type": "number", "minimum": 0, "maximum": 100 },
+        "recyclingInstructions": { "type": "string" },
+        "materialsToSeparate": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "materialName": { "type": "string" },
+              "separationMethod": { "type": "string" },
+              "recyclingStream": { "type": "string" }
+            }
+          }
+        },
+        "contaminantsToRemove": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "energyRecovery": {
+      "type": "object",
+      "description": "Energy recovery potential when recycling is not feasible.",
+      "properties": {
+        "suitableForEnergyRecovery": { "type": "boolean" },
+        "calorificValue": {
+          "type": "object",
+          "properties": {
+            "value": { "type": "number" },
+            "unit": { "type": "string", "enum": ["MJ/kg", "kWh/kg"] }
+          }
+        }
+      }
+    },
+    "disposal": {
+      "type": "object",
+      "description": "Final disposal requirements when no other pathway is available.",
+      "properties": {
+        "requiresSpecialDisposal": { "type": "boolean" },
+        "wasteClassification": { "type": "string", "description": "European Waste Catalogue code." },
+        "disposalInstructions": { "type": "string" },
+        "hazardousWaste": { "type": "boolean" }
+      }
+    },
+    "extendedProducerResponsibility": {
+      "type": "object",
+      "description": "EPR scheme information.",
+      "properties": {
+        "eprScheme": { "type": "string" },
+        "eprRegistrationNumber": { "type": "string" },
+        "eprOrganization": { "type": "string" }
+      }
+    }
+  }
+}

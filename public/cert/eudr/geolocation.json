@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cert.arianee.org/schemas/eudr/geolocation.json",
+  "title": "EUDR — Geolocation",
+  "description": "Geolocation data for EU Deforestation Regulation (EUDR) compliance: coordinates of plots of land where commodities were produced, deforestation-free status and monitoring data.",
+  "type": "object",
+  "properties": {
+    "productionPlots": {
+      "type": "array",
+      "description": "Plots of land where the commodity or derived product was produced.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "plotId": {
+            "type": "string",
+            "description": "Unique identifier for the production plot."
+          },
+          "country": {
+            "type": "string",
+            "description": "ISO 3166-1 alpha-2 country code."
+          },
+          "region": { "type": "string" },
+          "coordinates": {
+            "type": "object",
+            "description": "Geographic coordinates (WGS 84).",
+            "properties": {
+              "latitude": { "type": "number", "minimum": -90, "maximum": 90 },
+              "longitude": { "type": "number", "minimum": -180, "maximum": 180 }
+            },
+            "required": ["latitude", "longitude"]
+          },
+          "polygon": {
+            "type": "array",
+            "description": "GeoJSON-style polygon defining the plot boundary. Array of [longitude, latitude] pairs.",
+            "items": {
+              "type": "array",
+              "items": { "type": "number" },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "minItems": 4
+          },
+          "areaHectares": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Area of the plot in hectares."
+          },
+          "productionDate": {
+            "type": "string",
+            "format": "date",
+            "description": "Date of harvest or production."
+          }
+        },
+        "required": ["plotId", "country"]
+      }
+    },
+    "deforestationFreeStatus": {
+      "type": "object",
+      "description": "Declaration that the commodity is deforestation-free per EUDR Article 3.",
+      "properties": {
+        "isDeforestationFree": {
+          "type": "boolean",
+          "description": "Whether the commodity was produced on land not subject to deforestation after 31 December 2020."
+        },
+        "cutoffDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Reference cut-off date (default: 2020-12-31)."
+        },
+        "verificationMethod": {
+          "type": "string",
+          "enum": ["satellite-monitoring", "field-audit", "third-party-certification", "self-declaration"],
+          "description": "Method used to verify deforestation-free status."
+        },
+        "verificationDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "verificationBody": { "type": "string" }
+      }
+    },
+    "satelliteMonitoring": {
+      "type": "object",
+      "description": "Satellite imagery and monitoring data supporting the deforestation-free claim.",
+      "properties": {
+        "provider": { "type": "string" },
+        "imageryDate": { "type": "string", "format": "date" },
+        "resolution": {
+          "type": "object",
+          "properties": {
+            "value": { "type": "number" },
+            "unit": { "type": "string", "enum": ["meters", "cm"] }
+          }
+        },
+        "forestCoverPercentage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Percentage of forest cover on the plot at the imagery date."
+        },
+        "reportUrl": { "type": "string", "format": "uri" }
+      }
+    },
+    "commodity": {
+      "type": "object",
+      "description": "The regulated commodity or derived product.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["cattle", "cocoa", "coffee", "oil-palm", "rubber", "soya", "wood"],
+          "description": "One of the seven EUDR-regulated commodities."
+        },
+        "derivedProduct": { "type": "string", "description": "Name of the derived product if applicable." },
+        "hsCode": { "type": "string", "description": "Harmonised System customs code." },
+        "quantity": {
+          "type": "object",
+          "properties": {
+            "value": { "type": "number" },
+            "unit": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

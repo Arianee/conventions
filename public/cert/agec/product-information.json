@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cert.arianee.org/schemas/agec/product-information.json",
+  "title": "AGEC — Product Information",
+  "description": "Product environmental qualities required by the French Anti-Waste Law (Loi AGEC, Decree 2022-748): repairability index, recycled content, hazardous substances and end-of-life instructions.",
+  "type": "object",
+  "properties": {
+    "repairabilityIndex": {
+      "type": "object",
+      "description": "Repairability index as defined by French Decree 2020-1757.",
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10,
+          "description": "Overall repairability score (0–10)."
+        },
+        "criteria": {
+          "type": "object",
+          "properties": {
+            "documentation": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 10,
+              "description": "Score for availability of technical documentation."
+            },
+            "disassembly": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 10,
+              "description": "Score for ease of disassembly."
+            },
+            "sparePartsAvailability": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 10,
+              "description": "Score for spare parts availability."
+            },
+            "sparePartsPrice": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 10,
+              "description": "Score for spare parts pricing."
+            },
+            "productSpecific": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 10,
+              "description": "Product-category-specific criterion score."
+            }
+          }
+        }
+      }
+    },
+    "durabilityIndex": {
+      "type": "object",
+      "description": "Durability index (when applicable).",
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10,
+          "description": "Overall durability score (0–10)."
+        },
+        "expectedLifespan": {
+          "type": "object",
+          "properties": {
+            "value": { "type": "number" },
+            "unit": { "type": "string", "enum": ["years", "months", "cycles"] }
+          }
+        }
+      }
+    },
+    "recycledContent": {
+      "type": "object",
+      "description": "Incorporation of recycled material.",
+      "properties": {
+        "percentage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Percentage of recycled material by weight."
+        },
+        "materials": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "recycledPercentage": { "type": "number", "minimum": 0, "maximum": 100 }
+            }
+          }
+        }
+      }
+    },
+    "hazardousSubstances": {
+      "type": "array",
+      "description": "Hazardous substances present in the product (REACH/CLP).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "casNumber": { "type": "string", "pattern": "^\\d{2,7}-\\d{2}-\\d$" },
+          "concentration": {
+            "type": "object",
+            "properties": {
+              "value": { "type": "number" },
+              "unit": { "type": "string", "enum": ["ppm", "percent", "mg/kg"] }
+            }
+          }
+        }
+      }
+    },
+    "endOfLifeInstructions": {
+      "type": "object",
+      "description": "Sorting, recycling and disposal instructions.",
+      "properties": {
+        "sortingInstructions": { "type": "string" },
+        "recyclability": {
+          "type": "object",
+          "properties": {
+            "recyclable": { "type": "boolean" },
+            "recyclingRate": { "type": "number", "minimum": 0, "maximum": 100 }
+          }
+        },
+        "disposalGuidelines": { "type": "string" },
+        "triman": {
+          "type": "boolean",
+          "description": "Whether the Triman logo applies."
+        }
+      }
+    },
+    "prematureObsolescence": {
+      "type": "object",
+      "description": "Information on measures taken against premature obsolescence.",
+      "properties": {
+        "softwareUpdateAvailability": {
+          "type": "object",
+          "properties": {
+            "duration": { "type": "number" },
+            "unit": { "type": "string", "enum": ["years", "months"] }
+          }
+        },
+        "softwareUpdateImpact": { "type": "string" }
+      }
+    }
+  }
+}
