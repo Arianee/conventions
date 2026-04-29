@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Terra Matters PCDS",
+  "description": "Schema validating the Terra Matters / Arianee flat PCDS export format (string-encoded answers, sections-as-array).",
+  "type": "object",
+  "required": ["sections", "pcdsPrivate", "pcds_identifier", "pcds_template_identifier"],
+  "additionalProperties": false,
+  "properties": {
+    "pcdsPrivate": { "type": "boolean" },
+    "pcds_identifier": { "type": "string", "minLength": 1 },
+    "pcds_template_identifier": { "type": "string", "minLength": 1 },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/Section" }
+    }
+  },
+  "$defs": {
+    "Section": {
+      "type": "object",
+      "required": ["section_identifier", "section_description", "visible", "subsections"],
+      "additionalProperties": false,
+      "properties": {
+        "section_identifier": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "section_description": { "type": "string" },
+        "visible": { "type": "boolean" },
+        "subsections": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Subsection" }
+        }
+      }
+    },
+    "Subsection": {
+      "type": "object",
+      "required": ["subsection_identifier", "subsection_description", "statements"],
+      "additionalProperties": false,
+      "properties": {
+        "subsection_identifier": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "subsection_description": { "type": "string" },
+        "statements": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Statement" }
+        }
+      }
+    },
+    "Statement": {
+      "type": "object",
+      "required": [
+        "statement_identifier",
+        "statement_description",
+        "answerValue",
+        "answerType",
+        "value",
+        "audited",
+        "specification",
+        "groupid",
+        "questionid"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "statement_identifier": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9a-z]+)+$"
+        },
+        "statement_description": { "type": "string" },
+        "answerValue": {
+          "description": "Raw answer. Booleans are stringified ('true'/'false'). May be null when no value.",
+          "type": ["string", "null"]
+        },
+        "answerType": {
+          "type": "string",
+          "enum": ["string", "number", "boolean"]
+        },
+        "value": { "type": ["string", "null"] },
+        "audited": { "type": "string" },
+        "specification": { "type": "string" },
+        "groupid": { "type": "string" },
+        "questionid": { "type": "string" },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "answerType": { "const": "boolean" } }, "required": ["answerType"] },
+          "then": {
+            "properties": {
+              "answerValue": {
+                "oneOf": [
+                  { "type": "string", "enum": ["true", "false"] },
+                  { "type": "null" }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "answerType": { "const": "number" } }, "required": ["answerType"] },
+          "then": {
+            "properties": {
+              "answerValue": {
+                "oneOf": [
+                  { "type": "string", "pattern": "^-?[0-9]+(\\.[0-9]+)?$" },
+                  { "type": "null" }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
