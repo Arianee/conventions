@@ -1,0 +1,36 @@
+{
+  "title": "Product Core",
+  "description": "Common display fields shown on every product passport.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Commercial name",
+      "description": "Product name shown to end-customers."
+    },
+    "image": {
+      "type": "string",
+      "format": "uri",
+      "title": "Image",
+      "description": "Cover image URL."
+    },
+    "brand": {
+      "type": "string",
+      "title": "Brand"
+    },
+    "category": {
+      "type": "string",
+      "title": "Category"
+    },
+    "sku": {
+      "type": "string",
+      "title": "SKU",
+      "description": "Commercial display SKU, distinct from the business product group id."
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    }
+  },
+  "required": []
+}
