@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "name": "schema:name",
+    "description": "schema:description",
+    "model": "schema:model",
+    "sku": "schema:sku",
+    "gtin": "schema:gtin",
+    "EAN": "schema:gtin13",
+    "category": "schema:category",
+    "subBrand": "schema:brand",
+    "manufacturer": "schema:manufacturer",
+    "manufacturingCountry": "schema:countryOfOrigin",
+    "image": { "@id": "schema:image", "@type": "@id" },
+    "external_url": { "@id": "schema:url", "@type": "@id" }
+  }
+}
