@@ -1,0 +1,17 @@
+{
+  "comment": "JSON-LD context for Arianee product certificates (v8/v9 schemas). This file is a translation dictionary: it maps our certificate field names (left) to globally-published schema.org concepts (right), so that any machine that doesn't know Arianee can still understand our data. A certificate becomes machine-interpretable JSON-LD by adding a single line: \"@context\": \"https://cert.arianee.org/contexts/arianee-product-v1.jsonld\". Fields not listed here are simply ignored by JSON-LD consumers. This file is NOT a schema (the v8/v9 JSON Schemas validate the SHAPE of a cert; this file declares the MEANING of its fields). Once published it is immutable: to change a mapping, publish arianee-product-v2.jsonld. This 'comment' key is ignored by JSON-LD processors, which only read '@context'. See ARI-3434.",
+  "@context": {
+    "name": "https://schema.org/name",
+    "description": "https://schema.org/description",
+    "model": "https://schema.org/model",
+    "sku": "https://schema.org/sku",
+    "gtin": "https://schema.org/gtin",
+    "EAN": "https://schema.org/gtin13",
+    "category": "https://schema.org/category",
+    "subBrand": "https://schema.org/brand",
+    "manufacturer": "https://schema.org/manufacturer",
+    "manufacturingCountry": "https://schema.org/countryOfOrigin",
+    "image": { "@id": "https://schema.org/image", "@type": "@id" },
+    "external_url": { "@id": "https://schema.org/url", "@type": "@id" }
+  }
+}
