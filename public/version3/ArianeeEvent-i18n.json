@@ -78,6 +78,21 @@
           "title": "End Of Life",
           "description": "End Of Life: the product has reached the end of its lifecycle, including disposal, recycling, or destruction.",
           "enum": ["endOfLife"]
+        },
+        {
+          "title": "Reception",
+          "description": "Reception: the product has been received at a collection, sorting or processing facility, before any inspection.",
+          "enum": ["reception"]
+        },
+        {
+          "title": "Sorting",
+          "description": "Sorting: the product has been inspected and sorted at a sorting facility, determining whether it goes to reuse or to recycling.",
+          "enum": ["sorting"]
+        },
+        {
+          "title": "Reuse",
+          "description": "Reuse: the product has been directed to a reuse channel and sent to a second-life operator, rather than being recycled.",
+          "enum": ["reuse"]
         }
       ]
     },
