@@ -1403,7 +1403,7 @@
             "title": "Type",
             "oneOf": [
               {
-                "enum": ["full"],
+                "enum": ["full", "Full"],
                 "title": "Full",
                 "description": "Full"
               }
