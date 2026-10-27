@@ -47,6 +47,15 @@
         ]
       },
       {
+        "source": "feature-flips/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=60"
+          }
+        ]
+      },
+      {
         "source": "cert/*.json",
         "headers": [
           {
