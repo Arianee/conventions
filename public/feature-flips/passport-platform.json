@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "staging": {
+    "brands": {},
+    "dapp": { "enabled": false, "redirectUrl": "https://passport-viewer.staging.arianee.com" }
+  },
+  "prod": {
+    "brands": {},
+    "dapp": { "enabled": false, "redirectUrl": "https://passport-viewer.arianee.com" }
+  }
+}
