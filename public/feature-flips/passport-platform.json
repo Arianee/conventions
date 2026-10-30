@@ -4,6 +4,9 @@
     "brands": {
       "jmm-sync-2": {
         "forge": { "enabled": true, "apiUrl": "https://passport-platform.api.staging.arianee.com" }
+      },
+      "darty": {
+        "forge": { "enabled": true, "apiUrl": "https://passport-platform.api.staging.arianee.com" }
       }
     },
     "dapp": { "enabled": false, "redirectUrl": "https://passport-viewer.staging.arianee.com" }
