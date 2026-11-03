@@ -48,5 +48,6 @@ Rules:
 - Brand key = NMP name = first label of the NMP host (`bdh-jmm`); The Forge reads it from its login endpoint (`bdh-jmm.api.arianee.com`).
 - `forge`: transparent switch of The Forge to the Passport Platform API (`apiUrl`). `nmp`: modal redirecting NMP users to `redirectUrl`. `dapp`: global (not per brand) redirect to `redirectUrl`.
 - An absent brand or app means `enabled: false`.
+- `forge.settings` (optional): The Forge's settings in Passport Platform mode, same shape as the `value` of the BDH's `forgeSettings` (`{ "featureFlips": { "events", "update", "nameplateExtraction": boolean, "dppPortalRedirect": string } }`). In that mode The Forge reads them here and never calls the BDH `publicConfiguration`; absent means The Forge defaults (ARI-3932). Older Forge builds ignore the field.
 - Clients fetch it with a plain GET and **no custom header** (bypass any interceptor adding `x-api-key` / `Authorization`): hosting answers the CORS preflight without `Access-Control-Allow-Headers`, so a custom header makes the fetch fail — and an API key has no business going to cert.arianee.org anyway.
 - `public/feature-flips/test/passport-platform.spec.ts` guards the shape and that every URL is https on an Arianee domain.
