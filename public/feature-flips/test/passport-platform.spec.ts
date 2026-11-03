@@ -5,6 +5,7 @@ interface Flag {
     enabled: boolean;
     apiUrl?: string;
     redirectUrl?: string;
+    settings?: { featureFlips?: Record<string, unknown> };
 }
 
 const flags = JSON.parse(
@@ -20,9 +21,28 @@ const isPlainObject = (value: unknown) =>
     typeof value === 'object' && value !== null && !Array.isArray(value);
 
 const expectFlag =(flag: Flag, urlKey: 'apiUrl' | 'redirectUrl') => {
-    expect(Object.keys(flag).sort()).toEqual(['enabled', urlKey].sort());
+    expect(Object.keys(flag).filter((key) => key !== 'settings').sort()).toEqual(['enabled', urlKey].sort());
     expect(typeof flag.enabled).toBe('boolean');
     expect(flag[urlKey]).toMatch(ARIANEE_HTTPS);
+};
+
+// Forge settings (ARI-3932): the value of the BDH's `forgeSettings`, read by
+// The Forge in Passport Platform mode instead of the BDH publicConfiguration.
+const FORGE_FEATURE_FLIPS: Record<string, 'boolean' | 'string'> = {
+    events: 'boolean',
+    update: 'boolean',
+    nameplateExtraction: 'boolean',
+    dppPortalRedirect: 'string',
+};
+
+const expectForgeSettings = (settings: Flag['settings']) => {
+    expect(isPlainObject(settings)).toBe(true);
+    expect(Object.keys(settings!)).toEqual(['featureFlips']);
+    expect(isPlainObject(settings!.featureFlips)).toBe(true);
+    for (const [flip, value] of Object.entries(settings!.featureFlips!)) {
+        expect(Object.keys(FORGE_FEATURE_FLIPS)).toContain(flip);
+        expect(typeof value).toBe(FORGE_FEATURE_FLIPS[flip]);
+    }
 };
 
 describe('passport-platform feature flips', () => {
@@ -41,7 +61,7 @@ describe('passport-platform feature flips', () => {
                 expectFlag(flags[env].dapp, 'redirectUrl');
             });
 
-            it('should key brands by NMP name with only forge / nmp flags', () => {
+            it('should key brands by NMP name with only forge / nmp flags (forge may carry settings)', () => {
                 expect(isPlainObject(flags[env].brands)).toBe(true);
                 for (const [brand, apps] of Object.entries<Record<string, Flag>>(flags[env].brands)) {
                     expect(brand).toMatch(/^[a-z0-9-]+$/);
@@ -49,6 +69,10 @@ describe('passport-platform feature flips', () => {
                     for (const [app, flag] of Object.entries(apps)) {
                         expect(['forge', 'nmp']).toContain(app);
                         expectFlag(flag, app === 'forge' ? 'apiUrl' : 'redirectUrl');
+                        if ('settings' in flag) {
+                            expect(app).toBe('forge');
+                            expectForgeSettings(flag.settings);
+                        }
                     }
                 }
             });
